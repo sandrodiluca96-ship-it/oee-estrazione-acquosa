@@ -1,0 +1,650 @@
+id,id_turno,data_turno,turno,macchina,lotto,codice_droga,codice_semilavorato,descrizione,kg_droga,kg_liquido,residuo_secco_pct,kg_puro,kg_semilavorato,pct_puro_semilavorato,kg_puro_equivalente,note
+H-S-0,H-20250109-Spray,2025-01-09,,Spray Dryer,S25/0005,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,0.0,0,0,183.60000000000002,459.0,40.0,183.60000000000002,Importato dallo storico EVRA
+H-S-1,H-20250110-Spray,2025-01-10,,Spray Dryer,S25/0002,,WSDBTLAC0803000A,"Semilavorato Betulla foglia e.s.          >= 1,0%   flavonoidi totali calc. come vitessina; >3.0% iperoside",0.0,0,0,193.0,482.5,40.0,193.0,Importato dallo storico EVRA
+H-S-2,H-20250110-Spray,2025-01-10,,Spray Dryer,S25/0003,,WSDHDRHC08R0400A,Semilavorato Edera foglia e.s. D/E 4:1,0.0,0,0,75.2,188.0,40.0,75.2,Importato dallo storico EVRA
+H-C-3,H-20250113-Comber,2025-01-13,,Comber,S25/0006,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,1000.0,0,0,132.5,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-4,H-20250113-Comber,2025-01-13,,Comber,S25/0007,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,500.0,0,0,148.0,0.0,0.0,148.0,Importato dallo storico EVRA
+H-S-5,H-20250114-Spray,2025-01-14,,Spray Dryer,S25/0004,,WSDTMRIC05R0200A,Semilavorato Tamarindo frutto estratto   secco acquoso,0.0,0,0,109.60000000000001,274.0,40.0,109.60000000000001,Importato dallo storico EVRA
+H-C-6,H-20250114-Comber,2025-01-14,,Comber,S25/0009,,WSDCRCLC15R0300A,Semilavorato Curcuma rizoma e.s.,500.0,0,0,35.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-C-7,H-20250114-Comber,2025-01-14,,Comber,S25/0010,,WSDVTXAC05R0300A,Semilavorato Agnocasto frutto e.s.,1000.0,0,0,66.25,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-8,H-20250116-Spray,2025-01-16,,Spray Dryer,S25/0007,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,0.0,0,0,179.20000000000002,448.0,40.0,179.20000000000002,Importato dallo storico EVRA
+H-S-9,H-20250117-Spray,2025-01-17,,Spray Dryer,S25/0006,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,0.0,0,0,165.0,412.5,40.0,165.0,Importato dallo storico EVRA
+H-S-10,H-20250117-Spray,2025-01-17,,Spray Dryer,S25/0009,,WSDCRCLC15R0300A,Semilavorato Curcuma rizoma e.s.,0.0,0,0,94.0,235.0,40.0,94.0,Importato dallo storico EVRA
+H-S-11,H-20250121-Spray,2025-01-21,,Spray Dryer,S25/0010,,WSDVTXAC05R0300A,Semilavorato Agnocasto frutto e.s.,0.0,0,0,60.5,151.25,40.0,60.5,Importato dallo storico EVRA
+H-C-12,H-20250121-Comber,2025-01-21,,Comber,S25/0011,,WSDLSPCC10R0300A,Semilavorato Lespedeza parti aeree e.s.,600.0,0,0,57.0,0.0,0.0,90.0,Importato dallo storico EVRA
+H-C-13,H-20250121-Comber,2025-01-21,,Comber,S25/0012,,WSDALTOC14R0200A,Semilavorato Altea radice estratto secco,522.0,0,0,68.0,0.0,0.0,78.3,Importato dallo storico EVRA
+H-S-14,H-20250122-Spray,2025-01-22,,Spray Dryer,S25/0011,,WSDLSPCC10R0300A,Semilavorato Lespedeza parti aeree e.s.,0.0,0,0,110.80000000000001,277.0,40.0,110.80000000000001,Importato dallo storico EVRA
+H-C-15,H-20250122-Comber,2025-01-22,,Comber,S25/0013,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,560.0,0,0,100.4,0.0,0.0,100.4,Importato dallo storico EVRA
+H-S-16,H-20250122-Spray,2025-01-22,,Spray Dryer,S25/0013,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,45.36000000000001,113.4,40.0,45.36000000000001,Importato dallo storico EVRA
+H-S-17,H-20250123-Spray,2025-01-23,,Spray Dryer,S25/0012,,WSDALTOC14R0200A,Semilavorato Altea radice estratto secco,0.0,0,0,115.2,288.0,40.0,115.2,Importato dallo storico EVRA
+H-C-18,H-20250123-Comber,2025-01-23,,Comber,S25/0014,,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,528.0,0,0,65.0,0.0,0.0,79.2,Importato dallo storico EVRA
+H-S-19,H-20250124-Spray,2025-01-24,,Spray Dryer,S25/0014,,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,0.0,0,0,54.0,135.0,40.0,54.0,Importato dallo storico EVRA
+H-S-20,H-20250124-Spray,2025-01-24,,Spray Dryer,S25/0015,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,0.0,0,0,18.6,46.5,40.0,18.6,Importato dallo storico EVRA
+H-C-21,H-20250127-Comber,2025-01-27,,Comber,S25/0016,,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,1349.0,0,0,187.0,0.0,0.0,202.35,Importato dallo storico EVRA
+H-C-22,H-20250127-Comber,2025-01-27,,Comber,S25/0017,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,213.0,0,0,20.0,0.0,0.0,31.95,Importato dallo storico EVRA
+H-S-23,H-20250129-Spray,2025-01-29,,Spray Dryer,S25/0017,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,18.0,45.0,40.0,18.0,Importato dallo storico EVRA
+H-S-24,H-20250130-Spray,2025-01-30,,Spray Dryer,S25/0016,,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,0.0,0,0,216.8,542.0,40.0,216.8,Importato dallo storico EVRA
+H-C-25,H-20250130-Comber,2025-01-30,,Comber,S25/0018,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,380.0,0,0,81.0,0.0,0.0,81.0,Importato dallo storico EVRA
+H-C-26,H-20250130-Comber,2025-01-30,,Comber,S25/0019,,WSDECLGC08R0200A,Semilavorato Eucalipto foglia e.s.,1160.0,0,0,170.0,0.0,0.0,174.0,Importato dallo storico EVRA
+H-S-27,H-20250131-Spray,2025-01-31,,Spray Dryer,S25/0018,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,34.4,86.0,40.0,34.4,Importato dallo storico EVRA
+H-C-28,H-20250203-Comber,2025-02-03,,Comber,S25/0021,,WSDPHSVL12R0200A,Semilavorato Fagiolo baccello e.s. Local,444.0,0,0,14.199999999999989,0.0,0.0,66.6,Importato dallo storico EVRA
+H-C-29,H-20250203-Comber,2025-02-03,,Comber,S25/0022,,WSDRHMFC0206000A,Semilavorato Frangula corteccia e.s.>=   6.0% glucofranguline calcolate come glucofrangulina A,1038.0,0,0,149.5,0.0,0.0,155.7,Importato dallo storico EVRA
+H-S-30,H-20250204-Spray,2025-02-04,,Spray Dryer,S25/0019,,WSDECLGC08R0200A,Semilavorato Eucalipto foglia e.s.,0.0,0,0,188.0,470.0,40.0,188.0,Importato dallo storico EVRA
+H-S-31,H-20250204-Spray,2025-02-04,,Spray Dryer,S25/0021,,WSDPHSVL12R0200A,Semilavorato Fagiolo baccello e.s. Local,0.0,0,0,93.68,234.2,40.0,93.68,Importato dallo storico EVRA
+H-C-32,H-20250204-Comber,2025-02-04,,Comber,S25/0023,,WSDGNTNC14R0400A,Semilavorato Genziana radice e.s.        D/E 4:1,450.0,0,0,87.0,0.0,0.0,87.0,Importato dallo storico EVRA
+H-S-33,H-20250205-Spray,2025-02-05,,Spray Dryer,S25/0022,,WSDRHMFC0206000A,Semilavorato Frangula corteccia e.s.>=   6.0% glucofranguline calcolate come glucofrangulina A,0.0,0,0,79.80000000000001,199.5,40.00000000000001,79.80000000000001,Importato dallo storico EVRA
+H-C-34,H-20250205-Comber,2025-02-05,,Comber,S25/0024,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,1150.0,0,0,249.0,0.0,0.0,249.0,Importato dallo storico EVRA
+H-S-35,H-20250206-Spray,2025-02-06,,Spray Dryer,S25/0023,,WSDGNTNC14R0400A,Semilavorato Genziana radice e.s.        D/E 4:1,0.0,0,0,94.80000000000001,237.0,40.0,94.80000000000001,Importato dallo storico EVRA
+H-C-36,H-20250206-Comber,2025-02-06,,Comber,S25/0025,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,500.0,0,0,107.10000000000002,0.0,0.0,107.10000000000002,Importato dallo storico EVRA
+H-C-37,H-20250206-Comber,2025-02-06,,Comber,S25/0026,,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,50.0,0,0,0.0,0.0,0.0,7.5,Importato dallo storico EVRA
+H-S-38,H-20250207-Spray,2025-02-07,,Spray Dryer,S25/0024,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,105.60000000000001,264.0,40.0,105.60000000000001,Importato dallo storico EVRA
+H-S-39,H-20250207-Spray,2025-02-07,,Spray Dryer,S25/0026,,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,0.0,0,0,39.2,98.0,40.0,39.2,Importato dallo storico EVRA
+H-S-40,H-20250210-Spray,2025-02-10,,Spray Dryer,S25/0025,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,0.0,0,0,130.84,327.1,40.0,130.84,Importato dallo storico EVRA
+H-C-41,H-20250210-Comber,2025-02-10,,Comber,S25/0028,,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,1778.0,0,0,185.0,0.0,0.0,266.7,Importato dallo storico EVRA
+H-C-42,H-20250211-Comber,2025-02-11,,Comber,S25/0030,,WGLPLLCC17R0400A,Semilavorato Guaranà seme estratto secco acquoso 4:1 granulare,500.0,0,0,59.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-43,H-20250212-Spray,2025-02-12,,Spray Dryer,S25/0028,,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,0.0,0,0,162.0,405.0,40.0,162.0,Importato dallo storico EVRA
+H-C-44,H-20250212-Comber,2025-02-12,,Comber,S25/0032,,WSDACHMC34R0200A,Semilavorato Achillea sommità erba fior  estratto secco D/E 2:1,375.0,0,0,16.299999999999997,0.0,0.0,56.25,Importato dallo storico EVRA
+H-C-45,H-20250212-Comber,2025-02-12,,Comber,S25/0033,,WSDGLLGOC07R0400A,Semilavorato Galega erba e.s.,125.0,0,0,15.0,0.0,0.0,18.75,Importato dallo storico EVRA
+H-S-46,H-20250213-Spray,2025-02-13,,Spray Dryer,S25/0030,,WGLPLLCC17R0400A,Semilavorato Guaranà seme estratto secco acquoso 4:1 granulare,0.0,0,0,63.6,159.0,40.0,63.6,Importato dallo storico EVRA
+H-S-47,H-20250213-Spray,2025-02-13,,Spray Dryer,S25/0031,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,28.0,70.0,40.0,28.0,Importato dallo storico EVRA
+H-S-48,H-20250214-Spray,2025-02-14,,Spray Dryer,S25/0033,,WSDGLLGOC07R0400A,Semilavorato Galega erba e.s.,0.0,0,0,30.0,75.0,40.0,30.0,Importato dallo storico EVRA
+H-S-49,H-20250214-Spray,2025-02-14,,Spray Dryer,S25/0034,,WSDVTSTC08R0200A,Semilavorato Vite rossa foglia e.s.,0.0,0,0,103.28,258.2,40.0,103.28,Importato dallo storico EVRA
+H-C-50,H-20250214-Comber,2025-02-14,,Comber,S25/0035,,WSDVSCAC0800000A,Semilavorato Vischio foglie              estratto secco     D/E 4:1,300.0,0,0,53.0,0.0,0.0,53.0,Importato dallo storico EVRA
+H-S-51,H-20250217-Spray,2025-02-17,,Spray Dryer,S25/0035,,WSDVSCAC0800000A,Semilavorato Vischio foglie              estratto secco     D/E 4:1,0.0,0,0,61.2,153.0,40.0,61.2,Importato dallo storico EVRA
+H-S-52,H-20250218-Spray,2025-02-18,,Spray Dryer,S25/0036,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,89.2,223.0,40.0,89.2,Importato dallo storico EVRA
+H-C-53,H-20250218-Comber,2025-02-18,,Comber,S25/0038,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,1000.0,0,0,194.5,0.0,0.0,194.5,Importato dallo storico EVRA
+H-S-54,H-20250219-Spray,2025-02-19,,Spray Dryer,S25/0029,,YSDMDBAC05R1000C,Semilavorato Mela annurca e.s.           frutto D/E 10:1 uso cosmetico,0.0,0,0,19.8,49.5,40.0,19.8,Importato dallo storico EVRA
+H-S-55,H-20250219-Spray,2025-02-19,,Spray Dryer,S25/0038,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,167.8,419.5,40.0,167.8,Importato dallo storico EVRA
+H-C-56,H-20250219-Comber,2025-02-19,,Comber,S25/0039,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,1000.0,0,0,200.0,0.0,0.0,200.0,Importato dallo storico EVRA
+H-S-57,H-20250220-Spray,2025-02-20,,Spray Dryer,S25/0039,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,84.0,210.0,40.0,84.0,Importato dallo storico EVRA
+H-C-58,H-20250220-Comber,2025-02-20,,Comber,S25/0040,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,504.0,0,0,66.30000000000001,0.0,0.0,75.6,Importato dallo storico EVRA
+H-S-59,H-20250221-Spray,2025-02-21,,Spray Dryer,S25/0040,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,0.0,0,0,62.52000000000001,156.3,40.0,62.52000000000001,Importato dallo storico EVRA
+H-C-60,H-20250221-Comber,2025-02-21,,Comber,S25/0041,,WSDFMROC10R0400A,Semilavorato Fumaria parti aeree sommità estratto secco D/E 4:1,500.0,0,0,60.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-61,H-20250221-Spray,2025-02-21,,Spray Dryer,S25/0041,,WSDFMROC10R0400A,Semilavorato Fumaria parti aeree sommità estratto secco D/E 4:1,0.0,0,0,96.0,240.0,40.0,96.0,Importato dallo storico EVRA
+H-C-62,H-20250221-Comber,2025-02-21,,Comber,S25/0042,,WSDACHMC34R0200A,Semilavorato Achillea sommità erba fior  estratto secco D/E 2:1,625.0,0,0,23.700000000000003,0.0,0.0,93.75,Importato dallo storico EVRA
+H-C-63,H-20250224-Comber,2025-02-24,,Comber,S25/0045,,WSDFMROC10R0400A,Semilavorato Fumaria parti aeree sommità estratto secco D/E 4:1,500.0,0,0,76.0,0.0,0.0,76.0,Importato dallo storico EVRA
+H-C-64,H-20250226-Comber,2025-02-26,,Comber,S25/0046,,WSDHDRHC08R0400A,Semilavorato Edera foglia e.s. D/E 4:1,400.0,0,0,44.0,0.0,0.0,60.0,Importato dallo storico EVRA
+H-C-65,H-20250226-Comber,2025-02-26,,Comber,S25/0047,,WSDCCRPC1700000A,Semilavorato Zucchini seme e.s.,900.0,0,0,9.0,0.0,0.0,135.0,Importato dallo storico EVRA
+H-S-66,H-20250227-Spray,2025-02-27,,Spray Dryer,S25/0045,,WSDFMROC10R0400A,Semilavorato Fumaria parti aeree sommità estratto secco D/E 4:1,0.0,0,0,100.4,251.0,40.0,100.4,Importato dallo storico EVRA
+H-C-67,H-20250227-Comber,2025-02-27,,Comber,S25/0048,,WSDPMSBC08R0300A,Semilavorato Boldo foglie e.s.,200.0,0,0,25.5,0.0,0.0,30.0,Importato dallo storico EVRA
+H-S-68,H-20250228-Spray,2025-02-28,,Spray Dryer,S25/0046,,WSDHDRHC08R0400A,Semilavorato Edera foglia e.s. D/E 4:1,0.0,0,0,69.60000000000001,174.0,40.0,69.60000000000001,Importato dallo storico EVRA
+H-S-69,H-20250228-Spray,2025-02-28,,Spray Dryer,S25/0048,,WSDPMSBC08R0300A,Semilavorato Boldo foglie e.s.,0.0,0,0,50.2,125.5,40.0,50.2,Importato dallo storico EVRA
+H-S-70,H-20250303-Spray,2025-03-03,,Spray Dryer,S25/0047,,WSDCCRPC1700000A,Semilavorato Zucchini seme e.s.,0.0,0,0,153.60000000000002,384.0,40.00000000000001,153.60000000000002,Importato dallo storico EVRA
+H-C-71,H-20250303-Comber,2025-03-03,,Comber,S25/0049,,WSDCCRMC17R0400A,Semilavorato Zucca seme e.s.              4:1 (indicativo),500.0,0,0,9.199999999999989,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-72,H-20250305-Spray,2025-03-05,,Spray Dryer,S25/0049,,WSDCCRMC17R0400A,Semilavorato Zucca seme e.s.              4:1 (indicativo),0.0,0,0,113.68,284.2,40.0,113.68,Importato dallo storico EVRA
+H-S-73,H-20250305-Spray,2025-03-05,,Spray Dryer,S25/0050,,WSDARNMC04R0400A,Semilavorato Arnica Montana fiori E.S.,0.0,0,0,20.8,52.0,40.0,20.8,Importato dallo storico EVRA
+H-S-74,H-20250305-Spray,2025-03-05,,Spray Dryer,S25/0051,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,160.0,400.0,40.0,160.0,Importato dallo storico EVRA
+H-C-75,H-20250305-Comber,2025-03-05,,Comber,S25/0053,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,1000.0,0,0,98.5,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-76,H-20250306-Spray,2025-03-06,,Spray Dryer,S25/0053,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,0.0,0,0,113.4,283.5,40.0,113.4,Importato dallo storico EVRA
+H-C-77,H-20250306-Comber,2025-03-06,,Comber,S25/0055,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,1512.0,0,0,172.20000000000005,0.0,0.0,226.79999999999998,Importato dallo storico EVRA
+H-C-78,H-20250306-Comber,2025-03-06,,Comber,S25/0056,,WSDGRNRC10R0400A,Semilavorato Grindelia sommità e.s.,125.0,0,0,13.0,0.0,0.0,18.75,Importato dallo storico EVRA
+H-S-79,H-20250307-Spray,2025-03-07,,Spray Dryer,S25/0056,,WSDGRNRC10R0400A,Semilavorato Grindelia sommità e.s.,0.0,0,0,39.2,98.0,40.0,39.2,Importato dallo storico EVRA
+H-C-80,H-20250307-Comber,2025-03-07,,Comber,S25/0058,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,625.0,0,0,117.5,0.0,0.0,117.5,Importato dallo storico EVRA
+H-S-81,H-20250307-Spray,2025-03-07,,Spray Dryer,S25/0058,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,49.800000000000004,124.5,40.0,49.800000000000004,Importato dallo storico EVRA
+H-C-82,H-20250311-Comber,2025-03-11,,Comber,S25/0060,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,375.0,0,0,56.5,0.0,0.0,56.5,Importato dallo storico EVRA
+H-S-83,H-20250312-Spray,2025-03-12,,Spray Dryer,S25/0055,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,207.88000000000002,519.7,40.0,207.88000000000002,Importato dallo storico EVRA
+H-S-84,H-20250312-Spray,2025-03-12,,Spray Dryer,S25/0059,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,0.0,0,0,92.0,230.0,40.0,92.0,Importato dallo storico EVRA
+H-S-85,H-20250312-Spray,2025-03-12,,Spray Dryer,S25/0060,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,24.0,60.0,40.0,24.0,Importato dallo storico EVRA
+H-C-86,H-20250312-Comber,2025-03-12,,Comber,S25/0061,,WSDEPLAC07R0400A,Semilavorato Epilobio (angustifolium)    erba estratto secco D/E 4:1,1000.0,0,0,156.0,0.0,0.0,156.0,Importato dallo storico EVRA
+H-S-87,H-20250313-Spray,2025-03-13,,Spray Dryer,S25/0061,,WSDEPLAC07R0400A,Semilavorato Epilobio (angustifolium)    erba estratto secco D/E 4:1,0.0,0,0,118.4,296.0,40.0,118.4,Importato dallo storico EVRA
+H-C-88,H-20250313-Comber,2025-03-13,,Comber,S25/0069,,WSDGRNRC10R0400A,Semilavorato Grindelia sommità e.s.,1502.0,0,0,165.0,0.0,0.0,225.29999999999998,Importato dallo storico EVRA
+H-S-89,H-20250314-Spray,2025-03-14,,Spray Dryer,S25/0068,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,114.5,286.25,40.0,114.5,Importato dallo storico EVRA
+H-C-90,H-20250317-Comber,2025-03-17,,Comber,S25/0071,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,2000.0,0,0,246.39999999999998,0.0,0.0,300.0,Importato dallo storico EVRA
+H-S-91,H-20250318-Spray,2025-03-18,,Spray Dryer,S25/0069,,WSDGRNRC10R0400A,Semilavorato Grindelia sommità e.s.,0.0,0,0,172.0,430.0,40.0,172.0,Importato dallo storico EVRA
+H-S-92,H-20250319-Spray,2025-03-19,,Spray Dryer,S25/0071,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,0.0,0,0,224.56,561.4,40.0,224.56,Importato dallo storico EVRA
+H-S-93,H-20250320-Spray,2025-03-20,,Spray Dryer,S25/0070,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,0.0,0,0,102.2,255.5,40.0,102.2,Importato dallo storico EVRA
+H-S-94,H-20250320-Spray,2025-03-20,,Spray Dryer,S25/0072,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,37.0,92.5,40.0,37.0,Importato dallo storico EVRA
+H-S-95,H-20250321-Spray,2025-03-21,,Spray Dryer,S25/0073,,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,0.0,0,0,85.60000000000001,214.0,40.0,85.60000000000001,Importato dallo storico EVRA
+H-C-96,H-20250321-Comber,2025-03-21,,Comber,S25/0074,,WSDHBSSC04R0400A,Semilavorato Ibisco (Karkadè) fiore e.s. D/E 4:1,1250.0,0,0,403.0,0.0,0.0,403.0,Importato dallo storico EVRA
+H-S-97,H-20250326-Spray,2025-03-26,,Spray Dryer,S25/0074,,WSDHBSSC04R0400A,Semilavorato Ibisco (Karkadè) fiore e.s. D/E 4:1,0.0,0,0,477.20000000000005,1193.0,40.0,477.20000000000005,Importato dallo storico EVRA
+H-C-98,H-20250326-Comber,2025-03-26,,Comber,S25/0077,,WSDCHRAC07R0400A,Semilavorato Crisantello erba e.s.       D/E 4:1,1020.0,0,0,126.0,0.0,0.0,153.0,Importato dallo storico EVRA
+H-C-99,H-20250326-Comber,2025-03-26,,Comber,S25/0078,,WSDPTYOC02R0400A,Semilavorato Muira Puama corteccia e.s.  D/E 4:1,1650.0,0,0,34.39999999999998,0.0,0.0,247.5,Importato dallo storico EVRA
+H-S-100,H-20250327-Spray,2025-03-27,,Spray Dryer,S25/0078,,WSDPTYOC02R0400A,Semilavorato Muira Puama corteccia e.s.  D/E 4:1,0.0,0,0,117.75999999999999,294.4,40.0,117.75999999999999,Importato dallo storico EVRA
+H-C-101,H-20250327-Comber,2025-03-27,,Comber,S25/0079,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,1384.0,0,0,134.7,0.0,0.0,207.6,Importato dallo storico EVRA
+H-S-102,H-20250328-Spray,2025-03-28,,Spray Dryer,S25/0077,,WSDCHRAC07R0400A,Semilavorato Crisantello erba e.s.       D/E 4:1,0.0,0,0,102.4,256.0,40.0,102.4,Importato dallo storico EVRA
+H-S-103,H-20250328-Spray,2025-03-28,,Spray Dryer,S25/0079,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,0.0,0,0,103.88,259.7,40.0,103.88,Importato dallo storico EVRA
+H-C-104,H-20250328-Comber,2025-03-28,,Comber,S25/0080,,WSDONNSC14R0400A,Semilavorato Ononide radice e.s. D/E 4:1,260.0,0,0,25.0,0.0,0.0,39.0,Importato dallo storico EVRA
+H-C-105,H-20250328-Comber,2025-03-28,,Comber,S25/0081,,WSDONNSC14R0400A,Semilavorato Ononide radice e.s. D/E 4:1,534.0,0,0,57.0,0.0,0.0,80.1,Importato dallo storico EVRA
+H-S-106,H-20250331-Spray,2025-03-31,,Spray Dryer,S25/0080,,WSDONNSC14R0400A,Semilavorato Ononide radice e.s. D/E 4:1,0.0,0,0,26.0,65.0,40.0,26.0,Importato dallo storico EVRA
+H-S-107,H-20250331-Spray,2025-03-31,,Spray Dryer,S25/0081,,WSDONNSC14R0400A,Semilavorato Ononide radice e.s. D/E 4:1,0.0,0,0,64.8,162.0,40.0,64.8,Importato dallo storico EVRA
+H-C-108,H-20250331-Comber,2025-03-31,,Comber,S25/0083,,WSDPLLNC31R0300A,Semilavorato Polline naturale granuli es,300.0,0,0,272.0,0.0,0.0,272.0,Importato dallo storico EVRA
+H-S-109,H-20250401-Spray,2025-04-01,,Spray Dryer,S25/0076,,WSDECHUC14R0200A,Semilavorato Echinacea purpurea radice   estratto secco,0.0,0,0,65.60000000000001,164.0,40.00000000000001,65.60000000000001,Importato dallo storico EVRA
+H-C-110,H-20250401-Comber,2025-04-01,,Comber,S25/0084,,WSDORTSC08R0300A,Semilavorato Ortosiphon foglia e.s.,1555.0,0,0,154.39999999999998,0.0,0.0,233.25,Importato dallo storico EVRA
+H-S-111,H-20250402-Spray,2025-04-02,,Spray Dryer,S25/0082,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,0.0,0,0,100.0,250.0,40.0,100.0,Importato dallo storico EVRA
+H-S-112,H-20250403-Spray,2025-04-03,,Spray Dryer,S25/0084,,WSDORTSC08R0300A,Semilavorato Ortosiphon foglia e.s.,0.0,0,0,137.76,344.4,40.0,137.76,Importato dallo storico EVRA
+H-C-113,H-20250403-Comber,2025-04-03,,Comber,S25/0085,,WSDPMPAC05R0400A,Semilavorato Anice verde frutto e.s. D/E 4:1,200.0,0,0,21.5,0.0,0.0,30.0,Importato dallo storico EVRA
+H-S-114,H-20250403-Spray,2025-04-03,,Spray Dryer,S25/0085,,WSDPMPAC05R0400A,Semilavorato Anice verde frutto e.s. D/E 4:1,0.0,0,0,34.6,86.5,40.0,34.6,Importato dallo storico EVRA
+H-S-115,H-20250404-Spray,2025-04-04,,Spray Dryer,S25/0083,,WSDPLLNC31R0300A,Semilavorato Polline naturale granuli es,0.0,0,0,228.8,572.0,40.0,228.8,Importato dallo storico EVRA
+H-C-116,H-20250404-Comber,2025-04-04,,Comber,S25/0086,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,378.0,0,0,37.0,0.0,0.0,56.699999999999996,Importato dallo storico EVRA
+H-S-117,H-20250407-Spray,2025-04-07,,Spray Dryer,S25/0086,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,44.800000000000004,112.0,40.0,44.800000000000004,Importato dallo storico EVRA
+H-C-118,H-20250407-Comber,2025-04-07,,Comber,S25/0087,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,1500.0,0,0,155.0,0.0,0.0,225.0,Importato dallo storico EVRA
+H-C-119,H-20250408-Comber,2025-04-08,,Comber,S25/0088,,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,250.0,0,0,37.0,0.0,0.0,37.5,Importato dallo storico EVRA
+H-S-120,H-20250409-Spray,2025-04-09,,Spray Dryer,S25/0087,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,0.0,0,0,186.0,465.0,40.0,186.0,Importato dallo storico EVRA
+H-S-121,H-20250409-Spray,2025-04-09,,Spray Dryer,S25/0088,,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,0.0,0,0,22.8,57.0,40.0,22.8,Importato dallo storico EVRA
+H-C-122,H-20250409-Comber,2025-04-09,,Comber,S25/0089,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,1034.0,0,0,117.60000000000002,0.0,0.0,155.1,Importato dallo storico EVRA
+H-S-123,H-20250410-Spray,2025-04-10,,Spray Dryer,S25/0089,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,133.04000000000002,332.6,40.0,133.04000000000002,Importato dallo storico EVRA
+H-C-124,H-20250410-Comber,2025-04-10,,Comber,S25/0090,,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,750.0,0,0,92.4,0.0,0.0,112.5,Importato dallo storico EVRA
+H-S-125,H-20250411-Spray,2025-04-11,,Spray Dryer,S25/0090,,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,0.0,0,0,56.96000000000001,142.4,40.0,56.96000000000001,Importato dallo storico EVRA
+H-C-126,H-20250411-Comber,2025-04-11,,Comber,S25/0091,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,100.0,0,0,13.3,0.0,0.0,15.0,Importato dallo storico EVRA
+H-S-127,H-20250411-Spray,2025-04-11,,Spray Dryer,S25/0091,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,11.32,28.3,40.0,11.32,Importato dallo storico EVRA
+H-C-128,H-20250411-Comber,2025-04-11,,Comber,S25/0092,,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,280.0,0,0,72.0,0.0,0.0,72.0,Importato dallo storico EVRA
+H-S-129,H-20250414-Spray,2025-04-14,,Spray Dryer,S25/0092,,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,0.0,0,0,66.8,167.0,40.0,66.8,Importato dallo storico EVRA
+H-C-130,H-20250415-Comber,2025-04-15,,Comber,S25/0093,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,1380.0,0,0,453.0,0.0,0.0,453.0,Importato dallo storico EVRA
+H-S-131,H-20250416-Spray,2025-04-16,,Spray Dryer,S25/0093,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,0.0,0,0,225.20000000000002,563.0,40.0,225.20000000000002,Importato dallo storico EVRA
+H-C-132,H-20250416-Comber,2025-04-16,,Comber,S25/0094,,WSDCRCLC15R0300A,Semilavorato Curcuma rizoma e.s.,980.0,0,0,85.0,0.0,0.0,147.0,Importato dallo storico EVRA
+H-S-133,H-20250417-Spray,2025-04-17,,Spray Dryer,S25/0094,,WSDCRCLC15R0300A,Semilavorato Curcuma rizoma e.s.,0.0,0,0,76.80000000000001,192.0,40.00000000000001,76.80000000000001,Importato dallo storico EVRA
+H-C-134,H-20250417-Comber,2025-04-17,,Comber,S25/0095T,,WSDESCCF07R0200A,Semilavorato Escolzia erba e.s.          da Filiera Certificata ISO 22005,1508.0,0,0,198.0,0.0,0.0,226.2,Importato dallo storico EVRA
+H-S-135,H-20250423-Spray,2025-04-23,,Spray Dryer,S25/0095T,,WSDESCCF07R0200A,Semilavorato Escolzia erba e.s.          da Filiera Certificata ISO 22005,0.0,0,0,175.20000000000002,438.0,40.0,175.20000000000002,Importato dallo storico EVRA
+H-C-136,H-20250423-Comber,2025-04-23,,Comber,S25/0096,,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,500.0,0,0,71.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-137,H-20250423-Spray,2025-04-23,,Spray Dryer,S25/0096,,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,0.0,0,0,48.400000000000006,121.0,40.0,48.400000000000006,Importato dallo storico EVRA
+H-C-138,H-20250423-Comber,2025-04-23,,Comber,S25/0097,,WSDALTOC14R0200A,Semilavorato Altea radice estratto secco,500.0,0,0,64.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-139,H-20250424-Spray,2025-04-24,,Spray Dryer,S25/0097,,WSDALTOC14R0200A,Semilavorato Altea radice estratto secco,0.0,0,0,59.6,149.0,40.0,59.6,Importato dallo storico EVRA
+H-C-140,H-20250424-Comber,2025-04-24,,Comber,S25/0098,,WSDPSSIC07R0400A,Semilavorato Passiflora erba fiorita e.s D/E 4:1,519.0,0,0,63.69999999999999,0.0,0.0,77.85,Importato dallo storico EVRA
+H-S-141,H-20250424-Spray,2025-04-24,,Spray Dryer,S25/0098,,WSDPSSIC07R0400A,Semilavorato Passiflora erba fiorita e.s D/E 4:1,0.0,0,0,69.48,173.7,40.0,69.48,Importato dallo storico EVRA
+H-C-142,H-20250424-Comber,2025-04-24,,Comber,S25/0099,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,114.5,0,0,12.600000000000001,0.0,0.0,17.175,Importato dallo storico EVRA
+H-S-143,H-20250428-Spray,2025-04-28,,Spray Dryer,S25/0099,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,15.040000000000001,37.6,40.0,15.040000000000001,Importato dallo storico EVRA
+H-C-144,H-20250428-Comber,2025-04-28,,Comber,S25/0101,,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,184.0,0,0,42.2,0.0,0.0,42.2,Importato dallo storico EVRA
+H-S-145,H-20250429-Spray,2025-04-29,,Spray Dryer,S25/0101,,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,0.0,0,0,36.88,92.2,40.0,36.88,Importato dallo storico EVRA
+H-C-146,H-20250430-Comber,2025-04-30,,Comber,S25/0102,,WSDLVNAC34R0400A,Semilavorato Lavanda fiore e.s. acquoso   D/E 4:1,500.0,0,0,62.5,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-147,H-20250430-Spray,2025-04-30,,Spray Dryer,S25/0102,,WSDLVNAC34R0400A,Semilavorato Lavanda fiore e.s. acquoso   D/E 4:1,0.0,0,0,57.0,142.5,40.0,57.0,Importato dallo storico EVRA
+H-C-148,H-20250430-Comber,2025-04-30,,Comber,S25/0103,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,114.5,0,0,7.5,0.0,0.0,17.175,Importato dallo storico EVRA
+H-S-149,H-20250505-Spray,2025-05-05,,Spray Dryer,S25/0103,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,12.0,30.0,40.0,12.0,Importato dallo storico EVRA
+H-C-150,H-20250505-Comber,2025-05-05,,Comber,S25/0104,,WSDMLLOC2202000A,Semilavorato Meliloto erba fiorita e.s.,500.0,0,0,55.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-151,H-20250505-Spray,2025-05-05,,Spray Dryer,S25/0104,,WSDMLLOC2202000A,Semilavorato Meliloto erba fiorita e.s.,0.0,0,0,54.0,135.0,40.0,54.0,Importato dallo storico EVRA
+H-C-152,H-20250505-Comber,2025-05-05,,Comber,S25/0105,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,500.0,0,0,192.0,0.0,0.0,192.0,Importato dallo storico EVRA
+H-C-153,H-20250506-Comber,2025-05-06,,Comber,S25/0109,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,571.0,0,0,34.0,0.0,0.0,85.64999999999999,Importato dallo storico EVRA
+H-C-154,H-20250506-Comber,2025-05-06,,Comber,S25/0110,,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,506.5,0,0,117.0,0.0,0.0,117.0,Importato dallo storico EVRA
+H-S-155,H-20250507-Spray,2025-05-07,,Spray Dryer,S25/0105,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,0.0,0,0,184.8,462.0,40.0,184.8,Importato dallo storico EVRA
+H-S-156,H-20250509-Spray,2025-05-09,,Spray Dryer,S25/0110,,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,0.0,0,0,96.80000000000001,242.0,40.0,96.80000000000001,Importato dallo storico EVRA
+H-C-157,H-20250513-Comber,2025-05-13,,Comber,S25/0111,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,1500.0,0,0,245.5,0.0,0.0,245.5,Importato dallo storico EVRA
+H-S-158,H-20250514-Spray,2025-05-14,,Spray Dryer,S25/0111,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,110.2,275.5,40.0,110.2,Importato dallo storico EVRA
+H-S-159,H-20250515-Spray,2025-05-15,,Spray Dryer,S25/0106,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,122.80000000000001,307.0,40.0,122.80000000000001,Importato dallo storico EVRA
+H-S-160,H-20250516-Spray,2025-05-16,,Spray Dryer,S25/0107,,WSDTRXOC08R0200A,Semilavorato Tarassaco foglia estratto   secco,0.0,0,0,97.60000000000001,244.0,40.0,97.60000000000001,Importato dallo storico EVRA
+H-S-161,H-20250516-Spray,2025-05-16,,Spray Dryer,S25/0109,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,43.6,109.0,40.0,43.6,Importato dallo storico EVRA
+H-C-162,H-20250516-Comber,2025-05-16,,Comber,S25/0112,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,365.0,0,0,33.0,0.0,0.0,54.75,Importato dallo storico EVRA
+H-C-163,H-20250516-Comber,2025-05-16,,Comber,S25/0113,,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,500.0,0,0,57.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-C-164,H-20250516-Comber,2025-05-16,,Comber,S25/0114,,WSDORTSC08R0300A,Semilavorato Ortosiphon foglia e.s.,945.0,0,0,92.0,0.0,0.0,141.75,Importato dallo storico EVRA
+H-S-165,H-20250517-Spray,2025-05-17,,Spray Dryer,S25/0112,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,41.2,103.0,40.0,41.2,Importato dallo storico EVRA
+H-S-166,H-20250517-Spray,2025-05-17,,Spray Dryer,S25/0113,,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,0.0,0,0,48.800000000000004,122.0,40.0,48.800000000000004,Importato dallo storico EVRA
+H-C-167,H-20250517-Comber,2025-05-17,,Comber,S25/0115,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,1080.5,0,0,212.0,0.0,0.0,212.0,Importato dallo storico EVRA
+H-S-168,H-20250519-Spray,2025-05-19,,Spray Dryer,S25/0114,,WSDORTSC08R0300A,Semilavorato Ortosiphon foglia e.s.,0.0,0,0,86.80000000000001,217.0,40.00000000000001,86.80000000000001,Importato dallo storico EVRA
+H-C-169,H-20250519-Comber,2025-05-19,,Comber,S25/0116,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,501.0,0,0,57.5,0.0,0.0,75.14999999999999,Importato dallo storico EVRA
+H-S-170,H-20250520-Spray,2025-05-20,,Spray Dryer,S25/0116,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,63.0,157.5,40.0,63.0,Importato dallo storico EVRA
+H-C-171,H-20250521-Comber,2025-05-21,,Comber,S25/0118,,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,1209.0,0,0,119.0,0.0,0.0,181.35,Importato dallo storico EVRA
+H-S-172,H-20250522-Spray,2025-05-22,,Spray Dryer,S25/0115,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,240.8,602.0,40.0,240.8,Importato dallo storico EVRA
+H-C-173,H-20250522-Comber,2025-05-22,,Comber,S25/0119,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,500.0,0,0,53.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-174,H-20250523-Spray,2025-05-23,,Spray Dryer,S25/0118,,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,0.0,0,0,107.60000000000001,269.0,40.0,107.60000000000001,Importato dallo storico EVRA
+H-C-175,H-20250523-Comber,2025-05-23,,Comber,S25/0121,,WSDCLNTC17R0200A,Semilavorato Cola noci seme e.s. solubil D/E 2:1 2 % caffeina,1000.0,0,0,77.75,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-176,H-20250524-Spray,2025-05-24,,Spray Dryer,S25/0119,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,49.2,123.0,40.0,49.2,Importato dallo storico EVRA
+H-C-177,H-20250524-Comber,2025-05-24,,Comber,S25/0122,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,500.0,0,0,81.3,0.0,0.0,81.3,Importato dallo storico EVRA
+H-S-178,H-20250524-Spray,2025-05-24,,Spray Dryer,S25/0122,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,36.72,91.8,40.0,36.72,Importato dallo storico EVRA
+H-C-179,H-20250524-Comber,2025-05-24,,Comber,S25/0123,,YSDBTLAC08R0400A,Semilavorato Betulla foglie estratto sec,250.0,0,0,25.5,0.0,0.0,37.5,Importato dallo storico EVRA
+H-S-180,H-20250524-Spray,2025-05-24,,Spray Dryer,S25/0123,,YSDBTLAC08R0400A,Semilavorato Betulla foglie estratto sec,0.0,0,0,32.6,81.5,40.0,32.6,Importato dallo storico EVRA
+H-S-181,H-20250527-Spray,2025-05-27,,Spray Dryer,S25/0121,,WSDCLNTC17R0200A,Semilavorato Cola noci seme e.s. solubil D/E 2:1 2 % caffeina,0.0,0,0,95.10000000000001,237.75,40.0,95.10000000000001,Importato dallo storico EVRA
+H-C-182,H-20250527-Comber,2025-05-27,,Comber,S25/0125,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,999.0,0,0,88.5,0.0,0.0,149.85,Importato dallo storico EVRA
+H-C-183,H-20250527-Comber,2025-05-27,,Comber,S25/0126,,WSDCTRGC1700000A,Semilavorato Pompelmo seme e.s.,700.0,0,0,54.5,0.0,0.0,105.0,Importato dallo storico EVRA
+H-S-184,H-20250528-Spray,2025-05-28,,Spray Dryer,S25/0125,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,99.4,248.5,40.0,99.4,Importato dallo storico EVRA
+H-C-185,H-20250528-Comber,2025-05-28,,Comber,S25/0127,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,1000.0,0,0,283.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-186,H-20250529-Spray,2025-05-29,,Spray Dryer,S25/0126,,WSDCTRGC1700000A,Semilavorato Pompelmo seme e.s.,0.0,0,0,67.8,169.5,40.0,67.8,Importato dallo storico EVRA
+H-C-187,H-20250529-Comber,2025-05-29,,Comber,S25/0128,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,900.0,0,0,304.29999999999995,0.0,0.0,135.0,Importato dallo storico EVRA
+H-S-188,H-20250603-Spray,2025-06-03,,Spray Dryer,S25/0127,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,0.0,0,0,283.0,383.0,73.89033942558747,283.0,Importato dallo storico EVRA
+H-S-189,H-20250603-Spray,2025-06-03,,Spray Dryer,S25/0128,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,0.0,0,0,304.29999999999995,419.7,72.5041696449845,304.29999999999995,Importato dallo storico EVRA
+H-C-190,H-20250603-Comber,2025-06-03,,Comber,S25/0129,,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,506.5,0,0,48.150000000000006,0.0,0.0,75.975,Importato dallo storico EVRA
+H-S-191,H-20250604-Spray,2025-06-04,,Spray Dryer,S25/0129,,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,0.0,0,0,72.0,180.0,40.0,72.0,Importato dallo storico EVRA
+H-C-192,H-20250604-Comber,2025-06-04,,Comber,S25/0130,,WSDRBSNC08R0300A,Semilavorato Ribes nero foglia e.s.,1000.0,0,0,176.96000000000004,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-193,H-20250604-Comber,2025-06-04,,Comber,S25/0131,,WSDVLTRC22R0200A,Semilavorato Viola tricolor erba fiorita estr.secco,1000.0,0,0,92.5,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-194,H-20250605-Spray,2025-06-05,,Spray Dryer,S25/0130,,WSDRBSNC08R0300A,Semilavorato Ribes nero foglia e.s.,0.0,0,0,178.8,447.0,40.0,178.8,Importato dallo storico EVRA
+H-C-195,H-20250605-Comber,2025-06-05,,Comber,S25/0132,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,750.0,0,0,144.2,0.0,0.0,112.5,Importato dallo storico EVRA
+H-S-196,H-20250606-Spray,2025-06-06,,Spray Dryer,S25/0132,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,144.2,164.2,87.81973203410475,144.2,Importato dallo storico EVRA
+H-C-197,H-20250606-Comber,2025-06-06,,Comber,S25/0133,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,750.0,0,0,128.2,0.0,0.0,112.5,Importato dallo storico EVRA
+H-S-198,H-20250609-Spray,2025-06-09,,Spray Dryer,S25/0131,,WSDVLTRC22R0200A,Semilavorato Viola tricolor erba fiorita estr.secco,0.0,0,0,117.0,292.5,40.0,117.0,Importato dallo storico EVRA
+H-S-199,H-20250609-Spray,2025-06-09,,Spray Dryer,S25/0133,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,128.2,148.2,86.5047233468286,128.2,Importato dallo storico EVRA
+H-C-200,H-20250610-Comber,2025-06-10,,Comber,S25/0135,,WSDMTRCC03R0400A,Semilavorato Camomilla fiore estratto     D/E 4:1,785.0,0,0,90.0,0.0,0.0,117.75,Importato dallo storico EVRA
+H-S-201,H-20250611-Spray,2025-06-11,,Spray Dryer,S25/0134,,WSDMDBAC05R1000A,Semilavorato Mela annurca e.s. acquoso   frutto D/E 10:1,0.0,0,0,104.60000000000001,261.5,40.0,104.60000000000001,Importato dallo storico EVRA
+H-C-202,H-20250611-Comber,2025-06-11,,Comber,S25/0136,,YSDBTLAC08R0400A,Semilavorato Betulla foglie estratto sec,72.0,0,0,9.099999999999994,0.0,0.0,10.799999999999999,Importato dallo storico EVRA
+H-C-203,H-20250611-Comber,2025-06-11,,Comber,S25/0137,,WSDARCLC1400000A,Semilavorato Bardana radice estratto sec,202.8,0,0,39.19999999999999,0.0,0.0,30.42,Importato dallo storico EVRA
+H-S-204,H-20250612-Spray,2025-06-12,,Spray Dryer,S25/0135,,WSDMTRCC03R0400A,Semilavorato Camomilla fiore estratto     D/E 4:1,0.0,0,0,106.0,265.0,40.0,106.0,Importato dallo storico EVRA
+H-S-205,H-20250612-Spray,2025-06-12,,Spray Dryer,S25/0136,,YSDBTLAC08R0400A,Semilavorato Betulla foglie estratto sec,0.0,0,0,51.64,129.1,40.0,51.64,Importato dallo storico EVRA
+H-S-206,H-20250613-Spray,2025-06-13,,Spray Dryer,S25/0137,,WSDARCLC1400000A,Semilavorato Bardana radice estratto sec,0.0,0,0,109.68,274.2,40.0,109.68,Importato dallo storico EVRA
+H-C-207,H-20250613-Comber,2025-06-13,,Comber,S25/0138,,WSDTRGFC1700000A,Semilavorato Fieno greco seme es,2000.0,0,0,69.30000000000001,0.0,0.0,300.0,Importato dallo storico EVRA
+H-S-208,H-20250617-Spray,2025-06-17,,Spray Dryer,S25/0138,,WSDTRGFC1700000A,Semilavorato Fieno greco seme es,0.0,0,0,137.72,344.3,40.0,137.72,Importato dallo storico EVRA
+H-S-209,H-20250618-Spray,2025-06-18,,Spray Dryer,S25/0139,,WSDMDBAC05R1000A,Semilavorato Mela annurca e.s. acquoso   frutto D/E 10:1,0.0,0,0,86.80000000000001,217.0,40.00000000000001,86.80000000000001,Importato dallo storico EVRA
+H-C-210,H-20250618-Comber,2025-06-18,,Comber,S25/0140,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,2016.0,0,0,224.5,0.0,0.0,302.4,Importato dallo storico EVRA
+H-C-211,H-20250620-Comber,2025-06-20,,Comber,S25/0141,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,111.2,0,0,7.0,0.0,0.0,16.68,Importato dallo storico EVRA
+H-S-212,H-20250623-Spray,2025-06-23,,Spray Dryer,S25/0140,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,283.8,709.5,40.0,283.8,Importato dallo storico EVRA
+H-S-213,H-20250623-Spray,2025-06-23,,Spray Dryer,S25/0141,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,0.0,0,0,18.8,47.0,40.0,18.8,Importato dallo storico EVRA
+H-C-214,H-20250625-Comber,2025-06-25,,Comber,S25/0143,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,778.8,0,0,46.0,0.0,0.0,116.82,Importato dallo storico EVRA
+H-C-215,H-20250625-Comber,2025-06-25,,Comber,S25/0145,,WSDHMLLC09R0200A,Semilavorato Luppolo infioresc. e.s.,410.0,0,0,58.0,0.0,0.0,61.5,Importato dallo storico EVRA
+H-S-216,H-20250626-Spray,2025-06-26,,Spray Dryer,S25/0143,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,0.0,0,0,94.4,236.0,40.0,94.4,Importato dallo storico EVRA
+H-C-217,H-20250626-Comber,2025-06-26,,Comber,S25/0146,,WSDPSSIC07R0400A,Semilavorato Passiflora erba fiorita e.s D/E 4:1,527.0,0,0,106.0,0.0,0.0,79.05,Importato dallo storico EVRA
+H-S-218,H-20250627-Spray,2025-06-27,,Spray Dryer,S25/0145,,WSDHMLLC09R0200A,Semilavorato Luppolo infioresc. e.s.,0.0,0,0,83.2,208.0,40.0,83.2,Importato dallo storico EVRA
+H-S-219,H-20250627-Spray,2025-06-27,,Spray Dryer,S25/0146,,WSDPSSIC07R0400A,Semilavorato Passiflora erba fiorita e.s D/E 4:1,0.0,0,0,114.4,286.0,40.0,114.4,Importato dallo storico EVRA
+H-C-220,H-20250627-Comber,2025-06-27,,Comber,S25/0148,,WSDRSMOC08R0400A,Semilavorato Rosmarino foglia e.s.       D/E 4:1,2000.0,0,0,181.5,0.0,0.0,300.0,Importato dallo storico EVRA
+H-S-221,H-20250701-Spray,2025-07-01,,Spray Dryer,S25/0150,,WSDLYCBC05R0400A,Semilavorato Goji frutto e.s. solubile    D/E 4:1,0.0,0,0,69.4,173.5,40.0,69.4,Importato dallo storico EVRA
+H-S-222,H-20250703-Spray,2025-07-03,,Spray Dryer,S25/0148,,WSDRSMOC08R0400A,Semilavorato Rosmarino foglia e.s.       D/E 4:1,0.0,0,0,181.5,249.5,72.74549098196393,181.5,Importato dallo storico EVRA
+H-C-223,H-20250703-Comber,2025-07-03,,Comber,S25/0152,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,1135.125,0,0,205.2,0.0,0.0,170.26874999999998,Importato dallo storico EVRA
+H-S-224,H-20250703-Spray,2025-07-03,,Spray Dryer,S25/0152,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,205.2,231.7,88.56279671989643,205.2,Importato dallo storico EVRA
+H-C-225,H-20250707-Comber,2025-07-07,,Comber,S25/0154,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,882.875,0,0,102.0,0.0,0.0,132.43125,Importato dallo storico EVRA
+H-S-226,H-20250708-Spray,2025-07-08,,Spray Dryer,S25/0154,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,102.0,113.0,90.2654867256637,102.0,Importato dallo storico EVRA
+H-C-227,H-20250708-Comber,2025-07-08,,Comber,S25/0155,,WSDTLSPC04R0200A,Semilavorato Tiglio fiore estratto secco 2:1,2140.0,0,0,182.5,0.0,0.0,321.0,Importato dallo storico EVRA
+H-C-228,H-20250716-Comber,2025-07-16,,Comber,S25/0158,,WSDACHMC34R0200A,Semilavorato Achillea sommità erba fior  estratto secco D/E 2:1,1200.0,0,0,103.89999999999998,0.0,0.0,180.0,Importato dallo storico EVRA
+H-C-229,H-20250716-Comber,2025-07-16,,Comber,S25/0159,,WSDORTSC08R0300A,Semilavorato Ortosiphon foglia e.s.,255.0,0,0,18.400000000000006,0.0,0.0,38.25,Importato dallo storico EVRA
+H-S-230,H-20250725-Spray,2025-07-25,,Spray Dryer,S25/0155,,WSDTLSPC04R0200A,Semilavorato Tiglio fiore estratto secco 2:1,0.0,0,0,185.0,462.5,40.0,185.0,Importato dallo storico EVRA
+H-C-231,H-20250725-Comber,2025-07-25,,Comber,S25/0162,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,500.0,0,0,51.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-C-232,H-20250725-Comber,2025-07-25,,Comber,S25/0163T,,WSDTNCPF08R0400A,Semilavorato Tanaceto Partenio erba fior e.s. D/E 4:1 da Filiera Certificata ISO 22005,949.0,0,0,76.5,0.0,0.0,142.35,Importato dallo storico EVRA
+H-S-233,H-20250729-Spray,2025-07-29,,Spray Dryer,S25/0162,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,0.0,0,0,90.4,226.0,40.0,90.4,Importato dallo storico EVRA
+H-S-234,H-20250729-Spray,2025-07-29,,Spray Dryer,S25/0163T,,WSDTNCPF08R0400A,Semilavorato Tanaceto Partenio erba fior e.s. D/E 4:1 da Filiera Certificata ISO 22005,0.0,0,0,106.60000000000001,266.5,40.0,106.60000000000001,Importato dallo storico EVRA
+H-C-235,H-20250729-Comber,2025-07-29,,Comber,S25/0164,,WSDALTOC14R0200A,Semilavorato Altea radice estratto secco,805.0,0,0,70.4,0.0,0.0,120.75,Importato dallo storico EVRA
+H-C-236,H-20250729-Comber,2025-07-29,,Comber,S25/0165,,YSDBTLAC08R0400A,Semilavorato Betulla foglie estratto sec,686.0,0,0,46.10000000000002,0.0,0.0,102.89999999999999,Importato dallo storico EVRA
+H-S-237,H-20250730-Spray,2025-07-30,,Spray Dryer,S25/0164,,WSDALTOC14R0200A,Semilavorato Altea radice estratto secco,0.0,0,0,92.16000000000001,230.4,40.0,92.16000000000001,Importato dallo storico EVRA
+H-C-238,H-20250730-Comber,2025-07-30,,Comber,S25/0166,,YSDVLROB1400200A,"Semilavorato Valeriana radice estratto    secco >=0,20% acidi sesquiterpenici tot. calc. come acido valerenico bio spray",610.0,0,0,74.4,0.0,0.0,91.5,Importato dallo storico EVRA
+H-S-239,H-20250730-Spray,2025-07-30,,Spray Dryer,S25/0166,,YSDVLROB1400200A,"Semilavorato Valeriana radice estratto    secco >=0,20% acidi sesquiterpenici tot. calc. come acido valerenico bio spray",0.0,0,0,61.760000000000005,154.4,40.0,61.760000000000005,Importato dallo storico EVRA
+H-C-240,H-20250730-Comber,2025-07-30,,Comber,S25/0167,,WSDDSMAC08R0400A,Semilavorato Desmodio foglia e.s.        solubile D/E 4:1,1020.0,0,0,52.400000000000006,0.0,0.0,153.0,Importato dallo storico EVRA
+H-S-241,H-20250731-Spray,2025-07-31,,Spray Dryer,S25/0165,,YSDBTLAC08R0400A,Semilavorato Betulla foglie estratto sec,0.0,0,0,128.44000000000003,321.1,40.00000000000001,128.44000000000003,Importato dallo storico EVRA
+H-S-242,H-20250731-Spray,2025-07-31,,Spray Dryer,S25/0167,,WSDDSMAC08R0400A,Semilavorato Desmodio foglia e.s.        solubile D/E 4:1,0.0,0,0,64.96000000000001,162.4,40.0,64.96000000000001,Importato dallo storico EVRA
+H-C-243,H-20250731-Comber,2025-07-31,,Comber,S25/0169,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,1500.0,0,0,216.60000000000002,0.0,0.0,225.0,Importato dallo storico EVRA
+H-C-244,H-20250804-Comber,2025-08-04,,Comber,S25/0170,,WSDILLVC05R0200A,Semilavorato Anice stellato frutto e.s.,516.6,0,0,39.5,0.0,0.0,77.49,Importato dallo storico EVRA
+H-C-245,H-20250804-Comber,2025-08-04,,Comber,S25/0171,,WSDHDRHC08R0400A,Semilavorato Edera foglia e.s. D/E 4:1,1500.0,0,0,163.0,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-246,H-20250805-Spray,2025-08-05,,Spray Dryer,S25/0169,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,224.64000000000001,561.6,40.0,224.64000000000001,Importato dallo storico EVRA
+H-S-247,H-20250806-Spray,2025-08-06,,Spray Dryer,S25/0170,,WSDILLVC05R0200A,Semilavorato Anice stellato frutto e.s.,0.0,0,0,55.800000000000004,139.5,40.0,55.800000000000004,Importato dallo storico EVRA
+H-S-248,H-20250806-Spray,2025-08-06,,Spray Dryer,S25/0171,,WSDHDRHC08R0400A,Semilavorato Edera foglia e.s. D/E 4:1,0.0,0,0,135.20000000000002,338.0,40.00000000000001,135.20000000000002,Importato dallo storico EVRA
+H-C-249,H-20250806-Comber,2025-08-06,,Comber,S25/0172,,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,1138.0,0,0,40.0,0.0,0.0,170.7,Importato dallo storico EVRA
+H-C-250,H-20250806-Comber,2025-08-06,,Comber,S25/0173,,WSDORTSC08R0300A,Semilavorato Ortosiphon foglia e.s.,1785.0,0,0,192.3,0.0,0.0,267.75,Importato dallo storico EVRA
+H-S-251,H-20250807-Spray,2025-08-07,,Spray Dryer,S25/0172,,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,0.0,0,0,40.0,100.0,40.0,40.0,Importato dallo storico EVRA
+H-S-252,H-20250808-Spray,2025-08-08,,Spray Dryer,S25/0173,,WSDORTSC08R0300A,Semilavorato Ortosiphon foglia e.s.,0.0,0,0,172.92000000000002,432.3,40.0,172.92000000000002,Importato dallo storico EVRA
+H-C-253,H-20250808-Comber,2025-08-08,,Comber,S25/0174,,WSDCNNZC02R0200A,Semilavorato Cannella corteccia e.s.      D/E 2:1,1190.4,0,0,55.0,0.0,0.0,178.56,Importato dallo storico EVRA
+H-S-254,H-20250825-Spray,2025-08-25,,Spray Dryer,S25/0174,,WSDCNNZC02R0200A,Semilavorato Cannella corteccia e.s.      D/E 2:1,0.0,0,0,102.0,255.0,40.0,102.0,Importato dallo storico EVRA
+H-C-255,H-20250825-Comber,2025-08-25,,Comber,S25/0175,,WSDSSYOC34R0400A,Semilavorato Erisimo sommita' fiorita    estratto secco  D/E 4:1,1000.0,0,0,99.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-256,H-20250825-Spray,2025-08-25,,Spray Dryer,S25/0175,,WSDSSYOC34R0400A,Semilavorato Erisimo sommita' fiorita    estratto secco  D/E 4:1,0.0,0,0,129.6,324.0,40.0,129.6,Importato dallo storico EVRA
+H-C-257,H-20250825-Comber,2025-08-25,,Comber,S25/0176,,WSDGLGOC07R0400A,Semilavorato Galega erba fiorita e.s.     D/E 4:1,875.0,0,0,105.0,0.0,0.0,131.25,Importato dallo storico EVRA
+H-S-258,H-20250825-Spray,2025-08-25,,Spray Dryer,S25/0176,,WSDGLGOC07R0400A,Semilavorato Galega erba fiorita e.s.     D/E 4:1,0.0,0,0,118.0,295.0,40.0,118.0,Importato dallo storico EVRA
+H-C-259,H-20250825-Comber,2025-08-25,,Comber,S25/0177,,WSDVTXAC05R0300A,Semilavorato Agnocasto frutto e.s.,1000.0,0,0,58.5,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-260,H-20250825-Spray,2025-08-25,,Spray Dryer,S25/0177,,WSDVTXAC05R0300A,Semilavorato Agnocasto frutto e.s.,0.0,0,0,50.400000000000006,126.0,40.0,50.400000000000006,Importato dallo storico EVRA
+H-C-261,H-20250825-Comber,2025-08-25,,Comber,S25/0178,,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,1000.0,0,0,129.60000000000002,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-262,H-20250825-Spray,2025-08-25,,Spray Dryer,S25/0178,,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,0.0,0,0,121.84000000000002,304.6,40.0,121.84000000000002,Importato dallo storico EVRA
+H-C-263,H-20250825-Comber,2025-08-25,,Comber,S25/0179,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,1032.0,0,0,147.2,0.0,0.0,154.79999999999998,Importato dallo storico EVRA
+H-C-264,H-20250825-Comber,2025-08-25,,Comber,S25/0180,,WSDARCLC1400000A,Semilavorato Bardana radice estratto sec,304.2,0,0,81.75,0.0,0.0,81.75,Importato dallo storico EVRA
+H-S-265,H-20250826-Spray,2025-08-26,,Spray Dryer,S25/0179,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,142.08,355.2,40.0,142.08,Importato dallo storico EVRA
+H-C-266,H-20250826-Comber,2025-08-26,,Comber,S25/0181,,YSDCLNOC04R1000A,Semilavorato Calendula fiori e.s. D/E 10,537.0,0,0,122.5,0.0,0.0,122.5,Importato dallo storico EVRA
+H-C-267,H-20250827-Comber,2025-08-27,,Comber,S25/0182,,WSDGRFSC1718000A,Semilavorato Griffonia seme e.s.         18-23% 5-HTP,200.0,0,0,23.9,0.0,0.0,30.0,Importato dallo storico EVRA
+H-S-268,H-20250828-Spray,2025-08-28,,Spray Dryer,S25/0181,,YSDCLNOC04R1000A,Semilavorato Calendula fiori e.s. D/E 10,0.0,0,0,153.0,382.5,40.0,153.0,Importato dallo storico EVRA
+H-C-269,H-20250828-Comber,2025-08-28,,Comber,S25/0183,,WSDCRNSC05R0400A,Semilavorato Coriandolo frutto e.s.      D/E 4:1,2000.0,0,0,102.39999999999998,0.0,0.0,300.0,Importato dallo storico EVRA
+H-S-270,H-20250829-Spray,2025-08-29,,Spray Dryer,S25/0180,,WSDARCLC1400000A,Semilavorato Bardana radice estratto sec,0.0,0,0,132.70000000000002,331.75,40.00000000000001,132.70000000000002,Importato dallo storico EVRA
+H-C-271,H-20250829-Comber,2025-08-29,,Comber,S25/0184,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,1500.0,0,0,142.0,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-272,H-20250901-Spray,2025-09-01,,Spray Dryer,S25/0182,,WSDGRFSC1718000A,Semilavorato Griffonia seme e.s.         18-23% 5-HTP,0.0,0,0,10.76,26.9,40.0,10.76,Importato dallo storico EVRA
+H-S-273,H-20250901-Spray,2025-09-01,,Spray Dryer,S25/0183,,WSDCRNSC05R0400A,Semilavorato Coriandolo frutto e.s.      D/E 4:1,0.0,0,0,120.96,302.4,40.0,120.96,Importato dallo storico EVRA
+H-C-274,H-20250901-Comber,2025-09-01,,Comber,S25/0185,,WSDANGAC14R0200A,Semilavorato Angelica Archangelica radic e.s.,1000.0,0,0,254.5,0.0,0.0,254.5,Importato dallo storico EVRA
+H-S-275,H-20250902-Spray,2025-09-02,,Spray Dryer,S25/0184,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,0.0,0,0,174.8,437.0,40.0,174.8,Importato dallo storico EVRA
+H-C-276,H-20250903-Comber,2025-09-03,,Comber,S25/0187,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,600.0,0,0,155.4,0.0,0.0,155.4,Importato dallo storico EVRA
+H-S-277,H-20250904-Spray,2025-09-04,,Spray Dryer,S25/0185,,WSDANGAC14R0200A,Semilavorato Angelica Archangelica radic e.s.,0.0,0,0,221.8,554.5,40.0,221.8,Importato dallo storico EVRA
+H-S-278,H-20250904-Spray,2025-09-04,,Spray Dryer,S25/0186,,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,0.0,0,0,25.6,64.0,40.0,25.6,Importato dallo storico EVRA
+H-C-279,H-20250904-Comber,2025-09-04,,Comber,S25/0188,,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,793.0,0,0,69.6,0.0,0.0,118.94999999999999,Importato dallo storico EVRA
+H-S-280,H-20250905-Spray,2025-09-05,,Spray Dryer,S25/0187,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,0.0,0,0,86.16000000000001,215.4,40.0,86.16000000000001,Importato dallo storico EVRA
+H-C-281,H-20250905-Comber,2025-09-05,,Comber,S25/0189,,WSDRBSNC08R0300A,Semilavorato Ribes nero foglia e.s.,1500.0,0,0,206.70000000000005,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-282,H-20250908-Spray,2025-09-08,,Spray Dryer,S25/0188,,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,0.0,0,0,67.84,169.6,40.0,67.84,Importato dallo storico EVRA
+H-C-283,H-20250909-Comber,2025-09-09,,Comber,S25/0190,,WSDPHSVL12R0200A,Semilavorato Fagiolo baccello e.s. Local,150.0,0,0,8.2,0.0,0.0,22.5,Importato dallo storico EVRA
+H-C-284,H-20250909-Comber,2025-09-09,,Comber,S25/0191,,WSDVTSTC08R0200A,Semilavorato Vite rossa foglia e.s.,925.4,0,0,132.0,0.0,0.0,138.81,Importato dallo storico EVRA
+H-S-285,H-20250910-Spray,2025-09-10,,Spray Dryer,S25/0189,,WSDRBSNC08R0300A,Semilavorato Ribes nero foglia e.s.,0.0,0,0,218.68000000000004,546.7,40.0,218.68000000000004,Importato dallo storico EVRA
+H-S-286,H-20250910-Spray,2025-09-10,,Spray Dryer,S25/0190,,WSDPHSVL12R0200A,Semilavorato Fagiolo baccello e.s. Local,0.0,0,0,11.280000000000001,28.2,40.00000000000001,11.280000000000001,Importato dallo storico EVRA
+H-C-287,H-20250910-Comber,2025-09-10,,Comber,S25/0192,,WSDASPLC08R0400A,Semilavorato Rooibos foglia estratto sec D/E 4:1,504.0,0,0,44.0,0.0,0.0,75.6,Importato dallo storico EVRA
+H-S-288,H-20250912-Spray,2025-09-12,,Spray Dryer,S25/0191,,WSDVTSTC08R0200A,Semilavorato Vite rossa foglia e.s.,0.0,0,0,144.8,362.0,40.0,144.8,Importato dallo storico EVRA
+H-S-289,H-20250915-Spray,2025-09-15,,Spray Dryer,S25/0192,,WSDASPLC08R0400A,Semilavorato Rooibos foglia estratto sec D/E 4:1,0.0,0,0,57.6,144.0,40.0,57.6,Importato dallo storico EVRA
+H-C-290,H-20250915-Comber,2025-09-15,,Comber,S25/0194,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,1000.0,0,0,76.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-291,H-20250915-Comber,2025-09-15,,Comber,S25/0195,,WSDCRMCC05R0400A,Semilavorato Carvi frutti e.s. D/E 4:1,1000.0,0,0,21.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-292,H-20250915-Comber,2025-09-15,,Comber,S25/0196,,WSDVTSTC08R0200A,Semilavorato Vite rossa foglia e.s.,1058.6,0,0,194.0,0.0,0.0,158.79,Importato dallo storico EVRA
+H-S-293,H-20250916-Spray,2025-09-16,,Spray Dryer,S25/0194,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,76.4,191.0,40.0,76.4,Importato dallo storico EVRA
+H-S-294,H-20250916-Spray,2025-09-16,,Spray Dryer,S25/0195,,WSDCRMCC05R0400A,Semilavorato Carvi frutti e.s. D/E 4:1,0.0,0,0,22.400000000000002,56.0,40.0,22.400000000000002,Importato dallo storico EVRA
+H-S-295,H-20250917-Spray,2025-09-17,,Spray Dryer,S25/0196,,WSDVTSTC08R0200A,Semilavorato Vite rossa foglia e.s.,0.0,0,0,194.0,474.0,40.92827004219409,194.0,Importato dallo storico EVRA
+H-C-296,H-20250917-Comber,2025-09-17,,Comber,S25/0197,,WSDADNCC07R0400A,Semilavorato Capelvenere erba e.s.       D/E 4:1,600.0,0,0,53.5,0.0,0.0,90.0,Importato dallo storico EVRA
+H-C-297,H-20250917-Comber,2025-09-17,,Comber,S25/0198,,WSDMLLOC2202000A,Semilavorato Meliloto erba fiorita e.s.,830.0,0,0,89.0,0.0,0.0,124.5,Importato dallo storico EVRA
+H-S-298,H-20250918-Spray,2025-09-18,,Spray Dryer,S25/0197,,WSDADNCC07R0400A,Semilavorato Capelvenere erba e.s.       D/E 4:1,0.0,0,0,59.400000000000006,148.5,40.0,59.400000000000006,Importato dallo storico EVRA
+H-S-299,H-20250918-Spray,2025-09-18,,Spray Dryer,S25/0198,,WSDMLLOC2202000A,Semilavorato Meliloto erba fiorita e.s.,0.0,0,0,111.60000000000001,279.0,40.0,111.60000000000001,Importato dallo storico EVRA
+H-C-300,H-20250918-Comber,2025-09-18,,Comber,S25/0199,,WSDCLNTC17R0200A,Semilavorato Cola noci seme e.s. solubil D/E 2:1 2 % caffeina,854.0,0,0,62.5,0.0,0.0,128.1,Importato dallo storico EVRA
+H-S-301,H-20250919-Spray,2025-09-19,,Spray Dryer,S25/0199,,WSDCLNTC17R0200A,Semilavorato Cola noci seme e.s. solubil D/E 2:1 2 % caffeina,0.0,0,0,69.0,172.5,40.0,69.0,Importato dallo storico EVRA
+H-C-302,H-20250919-Comber,2025-09-19,,Comber,S25/0200,,WSDPMPAC05R0400A,Semilavorato Anice verde frutto e.s. D/E 4:1,800.0,0,0,41.69999999999999,0.0,0.0,120.0,Importato dallo storico EVRA
+H-S-303,H-20250922-Spray,2025-09-22,,Spray Dryer,S25/0200,,WSDPMPAC05R0400A,Semilavorato Anice verde frutto e.s. D/E 4:1,0.0,0,0,52.68,131.7,40.0,52.68,Importato dallo storico EVRA
+H-C-304,H-20250922-Comber,2025-09-22,,Comber,S25/0201,,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,500.0,0,0,70.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-C-305,H-20250922-Comber,2025-09-22,,Comber,S25/0202,,WSDMLLOC2202000A,Semilavorato Meliloto erba fiorita e.s.,830.0,0,0,99.0,0.0,0.0,124.5,Importato dallo storico EVRA
+H-S-306,H-20250923-Spray,2025-09-23,,Spray Dryer,S25/0201,,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,0.0,0,0,70.0,115.0,60.86956521739131,70.0,Importato dallo storico EVRA
+H-S-307,H-20250924-Spray,2025-09-24,,Spray Dryer,S25/0202,,WSDMLLOC2202000A,Semilavorato Meliloto erba fiorita e.s.,0.0,0,0,123.60000000000001,309.0,40.0,123.60000000000001,Importato dallo storico EVRA
+H-C-308,H-20250924-Comber,2025-09-24,,Comber,S25/0205,,WSDGRFSC1718000A,Semilavorato Griffonia seme e.s.         18-23% 5-HTP,100.0,0,0,18.95,0.0,0.0,15.0,Importato dallo storico EVRA
+H-S-309,H-20250924-Spray,2025-09-24,,Spray Dryer,S25/0205,,WSDGRFSC1718000A,Semilavorato Griffonia seme e.s.         18-23% 5-HTP,0.0,0,0,18.95,20.95,90.45346062052506,18.95,Importato dallo storico EVRA
+H-C-310,H-20250924-Comber,2025-09-24,,Comber,S25/0206,,WSDGRFSC1718000A,Semilavorato Griffonia seme e.s.         18-23% 5-HTP,100.0,0,0,24.0,0.0,0.0,15.0,Importato dallo storico EVRA
+H-S-311,H-20250924-Spray,2025-09-24,,Spray Dryer,S25/0206,,WSDGRFSC1718000A,Semilavorato Griffonia seme e.s.         18-23% 5-HTP,0.0,0,0,24.0,27.0,88.88888888888889,24.0,Importato dallo storico EVRA
+H-C-312,H-20250925-Comber,2025-09-25,,Comber,S25/0207,,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,102.0,0,0,20.0,0.0,0.0,15.299999999999999,Importato dallo storico EVRA
+H-C-313,H-20250925-Comber,2025-09-25,,Comber,S25/0208,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,1000.0,0,0,97.5,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-314,H-20250926-Spray,2025-09-26,,Spray Dryer,S25/0207,,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,0.0,0,0,20.0,40.0,50.0,20.0,Importato dallo storico EVRA
+H-S-315,H-20250929-Spray,2025-09-29,,Spray Dryer,S25/0208,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,0.0,0,0,97.5,222.5,43.82022471910113,97.5,Importato dallo storico EVRA
+H-C-316,H-20250929-Comber,2025-09-29,,Comber,S25/0209T,,WSDGRNRF2200000A,Semilavorato GRINDELIA ERBA FIORITA E.S.  FILIERA CERTIFICATA ISO 22005,534.0,0,0,68.19999999999999,0.0,0.0,80.1,Importato dallo storico EVRA
+H-C-317,H-20250929-Comber,2025-09-29,,Comber,S25/0210,,WSDPLNMC08R0400A,Semilavorato Piantaggine foglia e.s.,1504.0,0,0,228.0,0.0,0.0,225.6,Importato dallo storico EVRA
+H-S-318,H-20250930-Spray,2025-09-30,,Spray Dryer,S25/0209T,,WSDGRNRF2200000A,Semilavorato GRINDELIA ERBA FIORITA E.S.  FILIERA CERTIFICATA ISO 22005,0.0,0,0,91.28,228.2,40.0,91.28,Importato dallo storico EVRA
+H-C-319,H-20250930-Comber,2025-09-30,,Comber,S25/0211T,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,756.0,0,0,95.0,0.0,0.0,113.39999999999999,Importato dallo storico EVRA
+H-S-320,H-20251001-Spray,2025-10-01,,Spray Dryer,S25/0210,,WSDPLNMC08R0400A,Semilavorato Piantaggine foglia e.s.,0.0,0,0,228.0,528.0,43.18181818181818,228.0,Importato dallo storico EVRA
+H-S-321,H-20251001-Spray,2025-10-01,,Spray Dryer,S25/0211T,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,95.0,105.0,90.47619047619048,95.0,Importato dallo storico EVRA
+H-S-322,H-20251002-Spray,2025-10-02,,Spray Dryer,S25/0212,,WSDHDRHC08R0400A,Semilavorato Edera foglia e.s. D/E 4:1,0.0,0,0,108.0,270.0,40.0,108.0,Importato dallo storico EVRA
+H-S-323,H-20251002-Spray,2025-10-02,,Spray Dryer,S25/0213,,WSDPHSVL12R0200A,Semilavorato Fagiolo baccello e.s. Local,0.0,0,0,10.68,26.7,40.0,10.68,Importato dallo storico EVRA
+H-S-324,H-20251002-Spray,2025-10-02,,Spray Dryer,S25/0215,,WSDADNCC07R0400A,Semilavorato Capelvenere erba e.s.       D/E 4:1,0.0,0,0,18.0,45.0,40.0,18.0,Importato dallo storico EVRA
+H-C-325,H-20251002-Comber,2025-10-02,,Comber,S25/0216,,WSDECHUC14R0200A,Semilavorato Echinacea purpurea radice   estratto secco,1500.0,0,0,310.0,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-326,H-20251007-Spray,2025-10-07,,Spray Dryer,S25/0214,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,0.0,0,0,75.44,188.6,40.0,75.44,Importato dallo storico EVRA
+H-S-327,H-20251010-Spray,2025-10-10,,Spray Dryer,S25/0216,,WSDECHUC14R0200A,Semilavorato Echinacea purpurea radice   estratto secco,0.0,0,0,352.0,880.0,40.0,352.0,Importato dallo storico EVRA
+H-S-328,H-20251013-Spray,2025-10-13,,Spray Dryer,S25/0220,,WSDVCCMC3601000A,Semilavorato Mirtillo  succo essiccato,0.0,0,0,129.0,322.5,40.0,129.0,Importato dallo storico EVRA
+H-C-329,H-20251013-Comber,2025-10-13,,Comber,S25/0221,,WSDTRXOC08R0200A,Semilavorato Tarassaco foglia estratto   secco,1500.0,0,0,173.39999999999998,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-330,H-20251014-Spray,2025-10-14,,Spray Dryer,S25/0221,,WSDTRXOC08R0200A,Semilavorato Tarassaco foglia estratto   secco,0.0,0,0,173.39999999999998,393.4,44.07727503812913,173.39999999999998,Importato dallo storico EVRA
+H-C-331,H-20251014-Comber,2025-10-14,,Comber,S25/0223,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,1500.0,0,0,494.20000000000005,0.0,0.0,225.0,Importato dallo storico EVRA
+H-C-332,H-20251015-Comber,2025-10-15,,Comber,S25/0224,,WSDHMLLC09R0400A,Semilavorato Luppolo infiorescenze       (strobili) estr.  secco D/E 4:1,1000.0,0,0,153.5,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-333,H-20251016-Spray,2025-10-16,,Spray Dryer,S25/0223,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,0.0,0,0,494.20000000000005,695.2,71.08745684695053,494.20000000000005,Importato dallo storico EVRA
+H-C-334,H-20251016-Comber,2025-10-16,,Comber,S25/0225,,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,1508.0,0,0,231.79999999999995,0.0,0.0,226.2,Importato dallo storico EVRA
+H-S-335,H-20251017-Spray,2025-10-17,,Spray Dryer,S25/0224,,WSDHMLLC09R0400A,Semilavorato Luppolo infiorescenze       (strobili) estr.  secco D/E 4:1,0.0,0,0,211.4,528.5,40.0,211.4,Importato dallo storico EVRA
+H-S-336,H-20251021-Spray,2025-10-21,,Spray Dryer,S25/0225,,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,0.0,0,0,231.79999999999995,521.8,44.423150632426214,231.79999999999995,Importato dallo storico EVRA
+H-S-337,H-20251021-Spray,2025-10-21,,Spray Dryer,S25/0226,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,23.200000000000003,58.0,40.0,23.200000000000003,Importato dallo storico EVRA
+H-C-338,H-20251021-Comber,2025-10-21,,Comber,S25/0229,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,1288.0,0,0,109.0,0.0,0.0,193.2,Importato dallo storico EVRA
+H-S-339,H-20251022-Spray,2025-10-22,,Spray Dryer,S25/0227,,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,0.0,0,0,136.64000000000001,341.6,40.0,136.64000000000001,Importato dallo storico EVRA
+H-S-340,H-20251023-Spray,2025-10-23,,Spray Dryer,S25/0229,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,109.0,234.0,46.58119658119658,109.0,Importato dallo storico EVRA
+H-C-341,H-20251023-Comber,2025-10-23,,Comber,S25/0231,,WSDSLDVC22R0400A,Semilavorato Verga d' oro parti aeree     (erba fiorita) estratto secco D/E 4:1,500.0,0,0,19.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-C-342,H-20251023-Comber,2025-10-23,,Comber,S25/0232,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,1288.0,0,0,117.5,0.0,0.0,193.2,Importato dallo storico EVRA
+H-S-343,H-20251024-Spray,2025-10-24,,Spray Dryer,S25/0228,,WSDTRXOC08R0200A,Semilavorato Tarassaco foglia estratto   secco,0.0,0,0,123.0,307.5,40.0,123.0,Importato dallo storico EVRA
+H-S-344,H-20251027-Spray,2025-10-27,,Spray Dryer,S25/0231,,WSDSLDVC22R0400A,Semilavorato Verga d' oro parti aeree     (erba fiorita) estratto secco D/E 4:1,0.0,0,0,47.6,119.0,40.0,47.6,Importato dallo storico EVRA
+H-S-345,H-20251027-Spray,2025-10-27,,Spray Dryer,S25/0232,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,123.0,307.5,40.0,123.0,Importato dallo storico EVRA
+H-C-346,H-20251027-Comber,2025-10-27,,Comber,S25/0233,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,1000.0,0,0,117.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-347,H-20251027-Comber,2025-10-27,,Comber,S25/0234,,WSDTRNAC08R0400A,Semilavorato Damiana foglia estratto     secco D/E 4:1,1000.0,0,0,67.5,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-348,H-20251028-Comber,2025-10-28,,Comber,S25/0236,,WSDTMRIC05R0200A,Semilavorato Tamarindo frutto estratto   secco acquoso,500.0,0,0,71.75,0.0,0.0,75.0,Importato dallo storico EVRA
+H-C-349,H-20251028-Comber,2025-10-28,,Comber,S25/0237,,WSDCRCLC15R0300A,Semilavorato Curcuma rizoma e.s.,540.0,0,0,13.150000000000006,0.0,0.0,81.0,Importato dallo storico EVRA
+H-S-350,H-20251029-Spray,2025-10-29,,Spray Dryer,S25/0235,,WSDCHCIC14R0200A,Semilavorato Cicoria radice e.s.         D/E 2:1,0.0,0,0,108.0,270.0,40.0,108.0,Importato dallo storico EVRA
+H-S-351,H-20251030-Spray,2025-10-30,,Spray Dryer,S25/0234,,WSDTRNAC08R0400A,Semilavorato Damiana foglia estratto     secco D/E 4:1,0.0,0,0,81.0,202.5,40.0,81.0,Importato dallo storico EVRA
+H-S-352,H-20251030-Spray,2025-10-30,,Spray Dryer,S25/0236,,WSDTMRIC05R0200A,Semilavorato Tamarindo frutto estratto   secco acquoso,0.0,0,0,108.7,271.75,40.0,108.7,Importato dallo storico EVRA
+H-C-353,H-20251030-Comber,2025-10-30,,Comber,S25/0238,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,1134.0,0,0,128.0,0.0,0.0,170.1,Importato dallo storico EVRA
+H-C-354,H-20251030-Comber,2025-10-30,,Comber,S25/0239,,WSDEPLAC07R0400A,Semilavorato Epilobio (angustifolium)    erba estratto secco D/E 4:1,504.0,0,0,75.0,0.0,0.0,75.6,Importato dallo storico EVRA
+H-S-355,H-20251031-Spray,2025-10-31,,Spray Dryer,S25/0237,,WSDCRCLC15R0300A,Semilavorato Curcuma rizoma e.s.,0.0,0,0,45.260000000000005,113.15,40.0,45.260000000000005,Importato dallo storico EVRA
+H-S-356,H-20251031-Spray,2025-10-31,,Spray Dryer,S25/0238,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,128.0,148.0,86.48648648648648,128.0,Importato dallo storico EVRA
+H-S-357,H-20251103-Spray,2025-11-03,,Spray Dryer,S25/0239,,WSDEPLAC07R0400A,Semilavorato Epilobio (angustifolium)    erba estratto secco D/E 4:1,0.0,0,0,90.0,225.0,40.0,90.0,Importato dallo storico EVRA
+H-C-358,H-20251103-Comber,2025-11-03,,Comber,S25/0242,,YSDVLROC14R0400A,Semilavorato Valeriana radice estratto s  D/E 4:1,400.0,0,0,2.0,0.0,0.0,60.0,Importato dallo storico EVRA
+H-S-359,H-20251105-Spray,2025-11-05,,Spray Dryer,S25/0233,,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,0.0,0,0,174.8,437.0,40.0,174.8,Importato dallo storico EVRA
+H-S-360,H-20251105-Spray,2025-11-05,,Spray Dryer,S25/0240,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,58.800000000000004,147.0,40.0,58.800000000000004,Importato dallo storico EVRA
+H-S-361,H-20251105-Spray,2025-11-05,,Spray Dryer,S25/0242,,YSDVLROC14R0400A,Semilavorato Valeriana radice estratto s  D/E 4:1,0.0,0,0,4.800000000000001,12.0,40.00000000000001,4.800000000000001,Importato dallo storico EVRA
+H-C-362,H-20251105-Comber,2025-11-05,,Comber,S25/0243,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,160.0,0,0,40.0,0.0,0.0,24.0,Importato dallo storico EVRA
+H-S-363,H-20251106-Spray,2025-11-06,,Spray Dryer,S25/0241,,WSDTRXOC08R0200A,Semilavorato Tarassaco foglia estratto   secco,0.0,0,0,46.0,115.0,40.0,46.0,Importato dallo storico EVRA
+H-C-364,H-20251106-Comber,2025-11-06,,Comber,S25/0244,,WSDPNCMC17R0200A,Semilavorato Miglio semi e.s.,1000.0,0,0,0.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-365,H-20251107-Comber,2025-11-07,,Comber,S25/0245,,WSDGRFSC1725000A,Semilavorato Griffonia seme e.s. >=25%   5-HTP,100.0,0,0,22.5,0.0,0.0,15.0,Importato dallo storico EVRA
+H-S-366,H-20251107-Spray,2025-11-07,,Spray Dryer,S25/0245,,WSDGRFSC1725000A,Semilavorato Griffonia seme e.s. >=25%   5-HTP,0.0,0,0,22.5,25.0,90.0,22.5,Importato dallo storico EVRA
+H-S-367,H-20251110-Spray,2025-11-10,,Spray Dryer,S25/0244,,WSDPNCMC17R0200A,Semilavorato Miglio semi e.s.,0.0,0,0,147.4,368.5,40.0,147.4,Importato dallo storico EVRA
+H-C-368,H-20251110-Comber,2025-11-10,,Comber,S25/0246,,WSDPHSVC17R1000A,Semilavorato Fagiolo seme e.s. D/E 10:1,243.0,0,0,13.0,0.0,0.0,36.449999999999996,Importato dallo storico EVRA
+H-C-369,H-20251110-Comber,2025-11-10,,Comber,S25/0247,,WSDRHMFC0206000A,Semilavorato Frangula corteccia e.s.>=   6.0% glucofranguline calcolate come glucofrangulina A,1500.0,0,0,181.0,0.0,0.0,225.0,Importato dallo storico EVRA
+H-C-370,H-20251111-Comber,2025-11-11,,Comber,S25/0248,,WSDHDRHC08R0400A,Semilavorato Edera foglia e.s. D/E 4:1,500.0,0,0,68.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-371,H-20251112-Spray,2025-11-12,,Spray Dryer,S25/0246,,WSDPHSVC17R1000A,Semilavorato Fagiolo seme e.s. D/E 10:1,0.0,0,0,57.2,143.0,40.0,57.2,Importato dallo storico EVRA
+H-S-372,H-20251113-Spray,2025-11-13,,Spray Dryer,S25/0247,,WSDRHMFC0206000A,Semilavorato Frangula corteccia e.s.>=   6.0% glucofranguline calcolate come glucofrangulina A,0.0,0,0,181.0,251.0,72.11155378486056,181.0,Importato dallo storico EVRA
+H-S-373,H-20251113-Spray,2025-11-13,,Spray Dryer,S25/0248,,WSDHDRHC08R0400A,Semilavorato Edera foglia e.s. D/E 4:1,0.0,0,0,68.0,148.0,45.94594594594595,68.0,Importato dallo storico EVRA
+H-C-374,H-20251113-Comber,2025-11-13,,Comber,S25/0249,,WSDCNCSC02R0400A,Semilavorato China (Cinchona Succirubra) corteccia  e. s.,600.0,0,0,45.0,0.0,0.0,90.0,Importato dallo storico EVRA
+H-S-375,H-20251114-Spray,2025-11-14,,Spray Dryer,S25/0243,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,0.0,0,0,72.0,180.0,40.0,72.0,Importato dallo storico EVRA
+H-S-376,H-20251114-Spray,2025-11-14,,Spray Dryer,S25/0249,,WSDCNCSC02R0400A,Semilavorato China (Cinchona Succirubra) corteccia  e. s.,0.0,0,0,126.0,315.0,40.0,126.0,Importato dallo storico EVRA
+H-C-377,H-20251114-Comber,2025-11-14,,Comber,S25/0250,,WSDHLCIL04R0200A,Semilavorato Elicriso erba fiorita       e. secco Locale,812.0,0,0,83.0,0.0,0.0,121.8,Importato dallo storico EVRA
+H-C-378,H-20251117-Comber,2025-11-17,,Comber,S25/0252,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,465.0,0,0,219.495,0.0,0.0,69.75,Importato dallo storico EVRA
+H-C-379,H-20251117-Comber,2025-11-17,,Comber,S25/0253,,WSDPPVRC04R0400A,Semilavorato Papavero fiore e.s.         Polvere micronizzato,74.5,0,0,18.0,0.0,0.0,11.174999999999999,Importato dallo storico EVRA
+H-S-380,H-20251118-Spray,2025-11-18,,Spray Dryer,S25/0250,,WSDHLCIL04R0200A,Semilavorato Elicriso erba fiorita       e. secco Locale,0.0,0,0,133.20000000000002,333.0,40.00000000000001,133.20000000000002,Importato dallo storico EVRA
+H-C-381,H-20251118-Comber,2025-11-18,,Comber,S25/0254,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,1000.0,0,0,100.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-382,H-20251119-Spray,2025-11-19,,Spray Dryer,S25/0253,,WSDPPVRC04R0400A,Semilavorato Papavero fiore e.s.         Polvere micronizzato,0.0,0,0,57.2,143.0,40.0,57.2,Importato dallo storico EVRA
+H-S-383,H-20251119-Spray,2025-11-19,,Spray Dryer,S25/0255,,WSDVLROC14R0400A,Semilavorato Valeriana radice estratto    secco acquoso D/E 4:1,0.0,0,0,30.0,45.0,66.66666666666666,30.0,Importato dallo storico EVRA
+H-C-384,H-20251119-Comber,2025-11-19,,Comber,S25/0256,,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,984.0,0,0,142.2,0.0,0.0,147.6,Importato dallo storico EVRA
+H-S-385,H-20251120-Spray,2025-11-20,,Spray Dryer,S25/0254,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,0.0,0,0,114.0,285.0,40.0,114.0,Importato dallo storico EVRA
+H-S-386,H-20251121-Spray,2025-11-21,,Spray Dryer,S25/0256,,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,0.0,0,0,176.88,442.2,40.0,176.88,Importato dallo storico EVRA
+H-S-387,H-20251125-Spray,2025-11-25,,Spray Dryer,S25/0252,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,0.0,0,0,355.8,889.5,40.0,355.8,Importato dallo storico EVRA
+H-C-388,H-20251125-Comber,2025-11-25,,Comber,S25/0257T,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,1725.0,0,0,264.2,0.0,0.0,258.75,Importato dallo storico EVRA
+H-C-389,H-20251125-Comber,2025-11-25,,Comber,S25/0258,,WSDRSMOC08R0400A,Semilavorato Rosmarino foglia e.s.       D/E 4:1,570.0,0,0,39.8,0.0,0.0,85.5,Importato dallo storico EVRA
+H-S-390,H-20251126-Spray,2025-11-26,,Spray Dryer,S25/0257T,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,264.2,294.2,89.80285520054385,264.2,Importato dallo storico EVRA
+H-C-391,H-20251126-Comber,2025-11-26,,Comber,S25/0259T,,WSDTNCPF08R0400A,Semilavorato Tanaceto Partenio erba fior e.s. D/E 4:1 da Filiera Certificata ISO 22005,753.0,0,0,112.0,0.0,0.0,112.95,Importato dallo storico EVRA
+H-C-392,H-20251126-Comber,2025-11-26,,Comber,S25/0260,,WSDVRBTC04R0300A,Semilavorato Verbasco fiore estr.secco,504.0,0,0,66.0,0.0,0.0,75.6,Importato dallo storico EVRA
+H-S-393,H-20251127-Spray,2025-11-27,,Spray Dryer,S25/0258,,WSDRSMOC08R0400A,Semilavorato Rosmarino foglia e.s.       D/E 4:1,0.0,0,0,39.8,54.8,72.62773722627736,39.8,Importato dallo storico EVRA
+H-S-394,H-20251127-Spray,2025-11-27,,Spray Dryer,S25/0259T,,WSDTNCPF08R0400A,Semilavorato Tanaceto Partenio erba fior e.s. D/E 4:1 da Filiera Certificata ISO 22005,0.0,0,0,132.8,332.0,40.0,132.8,Importato dallo storico EVRA
+H-C-395,H-20251127-Comber,2025-11-27,,Comber,S25/0261,,WSDRSMOC08R0400A,Semilavorato Rosmarino foglia e.s.       D/E 4:1,1000.0,0,0,51.599999999999994,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-396,H-20251128-Spray,2025-11-28,,Spray Dryer,S25/0262,,WSDMLSPC05R0400A,Semilavorato Mela frutto e.s. D/E 4:1,0.0,0,0,37.0,92.5,40.0,37.0,Importato dallo storico EVRA
+H-S-397,H-20251201-Spray,2025-12-01,,Spray Dryer,S25/0260,,WSDVRBTC04R0300A,Semilavorato Verbasco fiore estr.secco,0.0,0,0,86.4,216.0,40.0,86.4,Importato dallo storico EVRA
+H-S-398,H-20251201-Spray,2025-12-01,,Spray Dryer,S25/0261,,WSDRSMOC08R0400A,Semilavorato Rosmarino foglia e.s.       D/E 4:1,0.0,0,0,51.599999999999994,76.6,67.36292428198432,51.599999999999994,Importato dallo storico EVRA
+H-C-399,H-20251201-Comber,2025-12-01,,Comber,S25/0265,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,165.0,0,0,20.0,0.0,0.0,24.75,Importato dallo storico EVRA
+H-C-400,H-20251201-Comber,2025-12-01,,Comber,S25/0266,,WSDCTRGC1700000A,Semilavorato Pompelmo seme e.s.,1300.0,0,0,108.19999999999999,0.0,0.0,195.0,Importato dallo storico EVRA
+H-C-401,H-20251201-Comber,2025-12-01,,Comber,S25/0267,,WSDPHSVC17R1000A,Semilavorato Fagiolo seme e.s. D/E 10:1,250.0,0,0,11.800000000000011,0.0,0.0,37.5,Importato dallo storico EVRA
+H-S-402,H-20251202-Spray,2025-12-02,,Spray Dryer,S25/0265,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,48.0,120.0,40.0,48.0,Importato dallo storico EVRA
+H-C-403,H-20251202-Comber,2025-12-02,,Comber,S25/0268,,WSDALTOC14R0400A,Semilavorato Altea radice estratto secco D/E 4:1,1500.0,0,0,187.39999999999998,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-404,H-20251203-Spray,2025-12-03,,Spray Dryer,S25/0266,,WSDCTRGC1700000A,Semilavorato Pompelmo seme e.s.,0.0,0,0,143.28,358.2,40.0,143.28,Importato dallo storico EVRA
+H-C-405,H-20251203-Comber,2025-12-03,,Comber,S25/0269,,WSDMRRVC10R0200A,Semilavorato Marrubio bianco parti aeree  estratto secco D/ 2:1,1010.0,0,0,91.0,0.0,0.0,151.5,Importato dallo storico EVRA
+H-S-406,H-20251204-Spray,2025-12-04,,Spray Dryer,S25/0267,,WSDPHSVC17R1000A,Semilavorato Fagiolo seme e.s. D/E 10:1,0.0,0,0,104.72000000000001,261.8,40.0,104.72000000000001,Importato dallo storico EVRA
+H-S-407,H-20251204-Spray,2025-12-04,,Spray Dryer,S25/0269,,WSDMRRVC10R0200A,Semilavorato Marrubio bianco parti aeree  estratto secco D/ 2:1,0.0,0,0,100.4,251.0,40.0,100.4,Importato dallo storico EVRA
+H-C-408,H-20251209-Comber,2025-12-09,,Comber,S25/0270,,WSDHMLLC09R0400A,Semilavorato Luppolo infiorescenze       (strobili) estr.  secco D/E 4:1,876.0,0,0,96.39999999999998,0.0,0.0,131.4,Importato dallo storico EVRA
+H-C-409,H-20251209-Comber,2025-12-09,,Comber,S25/0271,,WSDGNTNC14R0400A,Semilavorato Genziana radice e.s.        D/E 4:1,2.0,0,0,0.0,0.0,0.0,0.3,Importato dallo storico EVRA
+H-S-410,H-20251209-Spray,2025-12-09,,Spray Dryer,S25/0271,,WSDGNTNC14R0400A,Semilavorato Genziana radice e.s.        D/E 4:1,0.0,0,0,0.12,0.3,40.0,0.12,Importato dallo storico EVRA
+H-C-411,H-20251209-Comber,2025-12-09,,Comber,S25/0272,,WSDCRCLC15R0300A,Semilavorato Curcuma rizoma e.s.,1400.0,0,0,86.19999999999999,0.0,0.0,210.0,Importato dallo storico EVRA
+H-S-412,H-20251210-Spray,2025-12-10,,Spray Dryer,S25/0268,,WSDALTOC14R0400A,Semilavorato Altea radice estratto secco D/E 4:1,0.0,0,0,244.96,612.4,40.0,244.96,Importato dallo storico EVRA
+H-C-413,H-20251210-Comber,2025-12-10,,Comber,S25/0273,,WSDPSSIC07R0400A,Semilavorato Passiflora erba fiorita e.s D/E 4:1,1000.0,0,0,147.60000000000002,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-414,H-20251210-Comber,2025-12-10,,Comber,S25/0274,,WSDRBSNC08R0300A,Semilavorato Ribes nero foglia e.s.,733.0,0,0,111.0,0.0,0.0,109.95,Importato dallo storico EVRA
+H-C-415,H-20251210-Comber,2025-12-10,,Comber,S25/0275,,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,592.0,0,0,100.0,0.0,0.0,88.8,Importato dallo storico EVRA
+H-C-416,H-20251210-Comber,2025-12-10,,Comber,S25/0276,,WSDTHYVC08R0200A,Semilavorato Timo pianta (parte aerea)   estratto seccoD/E 2:1,331.0,0,0,31.799999999999997,0.0,0.0,49.65,Importato dallo storico EVRA
+H-C-417,H-20251210-Comber,2025-12-10,,Comber,S25/0277T,,WSDGRNRF2200000A,Semilavorato GRINDELIA ERBA FIORITA E.S.  FILIERA CERTIFICATA ISO 22005,852.0,0,0,107.30000000000001,0.0,0.0,127.8,Importato dallo storico EVRA
+H-C-418,H-20251210-Comber,2025-12-10,,Comber,S25/0278,,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,500.0,0,0,65.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-C-419,H-20251210-Comber,2025-12-10,,Comber,S25/0279T,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,1103.0,0,0,160.0,0.0,0.0,165.45,Importato dallo storico EVRA
+H-C-420,H-20251210-Comber,2025-12-10,,Comber,S25/0280,,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,396.0,0,0,47.5,0.0,0.0,59.4,Importato dallo storico EVRA
+H-S-421,H-20251217-Spray,2025-12-17,,Spray Dryer,S25/0270,,WSDHMLLC09R0400A,Semilavorato Luppolo infiorescenze       (strobili) estr.  secco D/E 4:1,0.0,0,0,158.56,396.4,40.0,158.56,Importato dallo storico EVRA
+H-S-422,H-20251217-Spray,2025-12-17,,Spray Dryer,S25/0272,,WSDCRCLC15R0300A,Semilavorato Curcuma rizoma e.s.,0.0,0,0,96.48,241.2,40.0,96.48,Importato dallo storico EVRA
+H-S-423,H-20251217-Spray,2025-12-17,,Spray Dryer,S25/0273,,WSDPSSIC07R0400A,Semilavorato Passiflora erba fiorita e.s D/E 4:1,0.0,0,0,155.04000000000002,387.6,40.0,155.04000000000002,Importato dallo storico EVRA
+H-S-424,H-20251217-Spray,2025-12-17,,Spray Dryer,S25/0274,,WSDRBSNC08R0300A,Semilavorato Ribes nero foglia e.s.,0.0,0,0,124.4,311.0,40.0,124.4,Importato dallo storico EVRA
+H-S-425,H-20251217-Spray,2025-12-17,,Spray Dryer,S25/0275,,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,0.0,0,0,100.0,210.0,47.61904761904761,100.0,Importato dallo storico EVRA
+H-S-426,H-20251217-Spray,2025-12-17,,Spray Dryer,S25/0277T,,WSDGRNRF2200000A,Semilavorato GRINDELIA ERBA FIORITA E.S.  FILIERA CERTIFICATA ISO 22005,0.0,0,0,118.52000000000001,296.3,40.0,118.52000000000001,Importato dallo storico EVRA
+H-S-427,H-20251218-Spray,2025-12-18,,Spray Dryer,S25/0276,,WSDTHYVC08R0200A,Semilavorato Timo pianta (parte aerea)   estratto seccoD/E 2:1,0.0,0,0,32.32,80.8,40.0,32.32,Importato dallo storico EVRA
+H-S-428,H-20251218-Spray,2025-12-18,,Spray Dryer,S25/0278,,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,0.0,0,0,65.0,150.0,43.333333333333336,65.0,Importato dallo storico EVRA
+H-C-429,H-20251218-Comber,2025-12-18,,Comber,S25/0281,,YSDVLROC14R0400A,Semilavorato Valeriana radice estratto s  D/E 4:1,200.0,0,0,16.0,0.0,0.0,30.0,Importato dallo storico EVRA
+H-S-430,H-20251219-Spray,2025-12-19,,Spray Dryer,S25/0279T,,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,0.0,0,0,160.0,185.0,86.48648648648648,160.0,Importato dallo storico EVRA
+H-S-431,H-20251219-Spray,2025-12-19,,Spray Dryer,S25/0280,,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,0.0,0,0,47.5,77.5,61.29032258064516,47.5,Importato dallo storico EVRA
+H-S-432,H-20251219-Spray,2025-12-19,,Spray Dryer,S25/0281,,YSDVLROC14R0400A,Semilavorato Valeriana radice estratto s  D/E 4:1,0.0,0,0,16.0,23.0,69.56521739130434,16.0,Importato dallo storico EVRA
+H-C-433,H-20260108-Comber,2026-01-08,,Comber,S26/0001,,WSDCHRAC07R0400A,Semilavorato Crisantello erba e.s.       D/E 4:1,1040.0,0,0,139.8,0.0,0.0,156.0,Importato dallo storico EVRA
+H-C-434,H-20260109-Comber,2026-01-09,,Comber,S26/0002,,WSDSLVOC0800500A,Semilavorato Salvia foglie e.s.          acquoso 0.5%-1% tot. idross. come ac. rosmarinico,636.0,0,0,83.6,0.0,0.0,95.39999999999999,Importato dallo storico EVRA
+H-S-435,H-20260112-Spray,2026-01-12,,Spray Dryer,S26/0001,,WSDCHRAC07R0400A,Semilavorato Crisantello erba e.s.       D/E 4:1,0.0,0,0,139.8,309.8,45.12588766946417,139.8,Importato dallo storico EVRA
+H-S-436,H-20260113-Spray,2026-01-13,,Spray Dryer,S26/0002,,WSDSLVOC0800500A,Semilavorato Salvia foglie e.s.          acquoso 0.5%-1% tot. idross. come ac. rosmarinico,0.0,0,0,83.6,143.6,58.21727019498607,83.6,Importato dallo storico EVRA
+H-C-437,H-20260113-Comber,2026-01-13,,Comber,S26/0004,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,1500.0,0,0,613.5,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-438,H-20260115-Spray,2026-01-15,,Spray Dryer,S26/0004,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,0.0,0,0,613.5,843.5,72.73266152934202,613.5,Importato dallo storico EVRA
+H-C-439,H-20260115-Comber,2026-01-15,,Comber,S26/0006,,WSDCLNTC17R0200A,Semilavorato Cola noci seme e.s. solubil D/E 2:1 2 % caffeina,1500.0,0,0,128.5,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-440,H-20260119-Spray,2026-01-19,,Spray Dryer,S26/0006,,WSDCLNTC17R0200A,Semilavorato Cola noci seme e.s. solubil D/E 2:1 2 % caffeina,0.0,0,0,155.4,388.5,40.0,155.4,Importato dallo storico EVRA
+H-C-441,H-20260119-Comber,2026-01-19,,Comber,S26/0007,,WSDACHMC34R0200A,Semilavorato Achillea sommità erba fior  estratto secco D/E 2:1,800.0,0,0,86.4,0.0,0.0,120.0,Importato dallo storico EVRA
+H-C-442,H-20260119-Comber,2026-01-19,,Comber,S26/0009,,WSDORGVC08R0400A,Semilavorato Origano foglia e.s. D/E 4:1,460.0,0,0,70.0,0.0,0.0,69.0,Importato dallo storico EVRA
+H-S-443,H-20260120-Spray,2026-01-20,,Spray Dryer,S26/0007,,WSDACHMC34R0200A,Semilavorato Achillea sommità erba fior  estratto secco D/E 2:1,0.0,0,0,98.56,246.4,40.0,98.56,Importato dallo storico EVRA
+H-C-444,H-20260120-Comber,2026-01-20,,Comber,S26/0010,,WSDESCCC0702000A,"Semilavorato Escolzia erba e.s.           >=2,0% flavonoidi tot. calc.come rutina",1500.0,0,0,228.60000000000002,0.0,0.0,225.0,Importato dallo storico EVRA
+H-C-445,H-20260120-Comber,2026-01-20,,Comber,S26/0012,,WSDPLLNC31R0300A,Semilavorato Polline naturale granuli es,200.0,0,0,165.0,0.0,0.0,30.0,Importato dallo storico EVRA
+H-S-446,H-20260121-Spray,2026-01-21,,Spray Dryer,S26/0009,,WSDORGVC08R0400A,Semilavorato Origano foglia e.s. D/E 4:1,0.0,0,0,70.0,155.0,45.16129032258064,70.0,Importato dallo storico EVRA
+H-S-447,H-20260122-Spray,2026-01-22,,Spray Dryer,S26/0010,,WSDESCCC0702000A,"Semilavorato Escolzia erba e.s.           >=2,0% flavonoidi tot. calc.come rutina",0.0,0,0,228.60000000000002,568.6,40.20400984875132,228.60000000000002,Importato dallo storico EVRA
+H-S-448,H-20260122-Spray,2026-01-22,,Spray Dryer,S26/0011,,WSDMLSPC05R0400A,Semilavorato Mela frutto e.s. D/E 4:1,0.0,0,0,24.0,60.0,40.0,24.0,Importato dallo storico EVRA
+H-S-449,H-20260123-Spray,2026-01-23,,Spray Dryer,S26/0012,,WSDPLLNC31R0300A,Semilavorato Polline naturale granuli es,0.0,0,0,165.0,335.0,49.25373134328358,165.0,Importato dallo storico EVRA
+H-S-450,H-20260127-Spray,2026-01-27,,Spray Dryer,S26/0013,,WSDCCRMC17R0400A,Semilavorato Zucca seme e.s.              4:1 (indicativo),0.0,0,0,93.12,232.8,40.0,93.12,Importato dallo storico EVRA
+H-C-451,H-20260127-Comber,2026-01-27,,Comber,S26/0018T,,WSDMLSOF0804000A,"Semilavorato Melissa foglia e.s.>= 4,0%   ac. rosmarinico (HPLC) da Filiera Certificata ISO 22005",1500.0,0,0,196.5,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-452,H-20260128-Spray,2026-01-28,,Spray Dryer,S26/0018T,,WSDMLSOF0804000A,"Semilavorato Melissa foglia e.s.>= 4,0%   ac. rosmarinico (HPLC) da Filiera Certificata ISO 22005",0.0,0,0,196.5,220.0,89.31818181818181,196.5,Importato dallo storico EVRA
+H-C-453,H-20260128-Comber,2026-01-28,,Comber,S26/0019,,WSDARNMC04R0400A,Semilavorato Arnica Montana fiori E.S.,20.0,0,0,11.5,0.0,0.0,3.0,Importato dallo storico EVRA
+H-S-454,H-20260128-Spray,2026-01-28,,Spray Dryer,S26/0019,,WSDARNMC04R0400A,Semilavorato Arnica Montana fiori E.S.,0.0,0,0,84.60000000000001,211.5,40.0,84.60000000000001,Importato dallo storico EVRA
+H-C-455,H-20260128-Comber,2026-01-28,,Comber,S26/0020,,WSDPPVRC04R0400A,Semilavorato Papavero fiore e.s.         Polvere micronizzato,146.0,0,0,30.0,0.0,0.0,21.9,Importato dallo storico EVRA
+H-S-456,H-20260128-Spray,2026-01-28,,Spray Dryer,S26/0020,,WSDPPVRC04R0400A,Semilavorato Papavero fiore e.s.         Polvere micronizzato,0.0,0,0,30.0,70.0,42.857142857142854,30.0,Importato dallo storico EVRA
+H-C-457,H-20260128-Comber,2026-01-28,,Comber,S26/0021,,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,1560.0,0,0,205.8,0.0,0.0,234.0,Importato dallo storico EVRA
+H-C-458,H-20260129-Comber,2026-01-29,,Comber,S26/0022,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,2000.0,0,0,205.5,0.0,0.0,300.0,Importato dallo storico EVRA
+H-S-459,H-20260130-Spray,2026-01-30,,Spray Dryer,S26/0021,,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,0.0,0,0,205.8,455.8,45.151382185168934,205.8,Importato dallo storico EVRA
+H-S-460,H-20260202-Spray,2026-02-02,,Spray Dryer,S26/0022,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,0.0,0,0,226.20000000000002,565.5,40.0,226.20000000000002,Importato dallo storico EVRA
+H-C-461,H-20260202-Comber,2026-02-02,,Comber,S26/0025,,YSDHDRHC0801000A,"Semilavorato Edera foglia estratto       secco >=1,0% ederacoside C",1050.0,0,0,148.0,0.0,0.0,157.5,Importato dallo storico EVRA
+H-S-462,H-20260203-Spray,2026-02-03,,Spray Dryer,S26/0024,,WSDCHRAC07R0400A,Semilavorato Crisantello erba e.s.       D/E 4:1,0.0,0,0,60.0,150.0,40.0,60.0,Importato dallo storico EVRA
+H-S-463,H-20260204-Spray,2026-02-04,,Spray Dryer,S26/0025,,YSDHDRHC0801000A,"Semilavorato Edera foglia estratto       secco >=1,0% ederacoside C",0.0,0,0,148.0,313.0,47.284345047923324,148.0,Importato dallo storico EVRA
+H-C-464,H-20260204-Comber,2026-02-04,,Comber,S26/0026,,WSDTHYVC08R0200A,Semilavorato Timo pianta (parte aerea)   estratto seccoD/E 2:1,634.0,0,0,42.0,0.0,0.0,95.1,Importato dallo storico EVRA
+H-S-465,H-20260205-Spray,2026-02-05,,Spray Dryer,S26/0026,,WSDTHYVC08R0200A,Semilavorato Timo pianta (parte aerea)   estratto seccoD/E 2:1,0.0,0,0,58.800000000000004,147.0,40.0,58.800000000000004,Importato dallo storico EVRA
+H-C-466,H-20260205-Comber,2026-02-05,,Comber,S26/0027,,WSDTRGFC1700000A,Semilavorato Fieno greco seme es,2000.0,0,0,96.14999999999998,0.0,0.0,300.0,Importato dallo storico EVRA
+H-S-467,H-20260206-Spray,2026-02-06,,Spray Dryer,S26/0027,,WSDTRGFC1700000A,Semilavorato Fieno greco seme es,0.0,0,0,114.46,286.15,40.0,114.46,Importato dallo storico EVRA
+H-C-468,H-20260209-Comber,2026-02-09,,Comber,S26/0028,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,840.0,0,0,80.6,0.0,0.0,126.0,Importato dallo storico EVRA
+H-S-469,H-20260210-Spray,2026-02-10,,Spray Dryer,S26/0028,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,80.6,165.6,48.671497584541065,80.6,Importato dallo storico EVRA
+H-C-470,H-20260210-Comber,2026-02-10,,Comber,S26/0029,,YSDORTSC2200200A,"Semilavorato Ortosifon erba con fiori    estratto secco >=0,2% flavonoidi totali come sinensetina",800.0,0,0,85.0,0.0,0.0,120.0,Importato dallo storico EVRA
+H-S-471,H-20260211-Spray,2026-02-11,,Spray Dryer,S26/0029,,YSDORTSC2200200A,"Semilavorato Ortosifon erba con fiori    estratto secco >=0,2% flavonoidi totali come sinensetina",0.0,0,0,94.0,235.0,40.0,94.0,Importato dallo storico EVRA
+H-C-472,H-20260211-Comber,2026-02-11,,Comber,S26/0031,,WSDRHMFC0207000A,Semilavorato Frangula corteccia e.s.>=7% glucofranguline calcolate come glucofrangulina A,480.0,0,0,83.5,0.0,0.0,72.0,Importato dallo storico EVRA
+H-S-473,H-20260212-Spray,2026-02-12,,Spray Dryer,S26/0031,,WSDRHMFC0207000A,Semilavorato Frangula corteccia e.s.>=7% glucofranguline calcolate come glucofrangulina A,0.0,0,0,83.5,114.0,73.24561403508771,83.5,Importato dallo storico EVRA
+H-C-474,H-20260212-Comber,2026-02-12,,Comber,S26/0032,,WSDECLGC08R0200A,Semilavorato Eucalipto foglia e.s.,1000.0,0,0,117.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-475,H-20260213-Spray,2026-02-13,,Spray Dryer,S26/0032,,WSDECLGC08R0200A,Semilavorato Eucalipto foglia e.s.,0.0,0,0,122.80000000000001,307.0,40.0,122.80000000000001,Importato dallo storico EVRA
+H-C-476,H-20260213-Comber,2026-02-13,,Comber,S26/0033,,YSDMTRCC0400300A,"Semilavorato Camomilla (Matricaria)      fiori estratto   secco >= 0,3% apigenine totali",1040.0,0,0,86.0,0.0,0.0,156.0,Importato dallo storico EVRA
+H-S-477,H-20260219-Spray,2026-02-19,,Spray Dryer,S26/0033,,YSDMTRCC0400300A,"Semilavorato Camomilla (Matricaria)      fiori estratto   secco >= 0,3% apigenine totali",0.0,0,0,120.4,301.0,40.0,120.4,Importato dallo storico EVRA
+H-C-478,H-20260219-Comber,2026-02-19,,Comber,S26/0034,,WSDHLCIL04R0200A,Semilavorato Elicriso erba fiorita       e. secco Locale,1500.0,0,0,185.70000000000005,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-479,H-20260219-Spray,2026-02-19,,Spray Dryer,S26/0034,,WSDHLCIL04R0200A,Semilavorato Elicriso erba fiorita       e. secco Locale,0.0,0,0,284.28000000000003,710.7,40.0,284.28000000000003,Importato dallo storico EVRA
+H-C-480,H-20260219-Comber,2026-02-19,,Comber,S26/0035,,WSDPTYOC02R0400A,Semilavorato Muira Puama corteccia e.s.  D/E 4:1,1000.0,0,0,22.399999999999977,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-481,H-20260220-Spray,2026-02-20,,Spray Dryer,S26/0035,,WSDPTYOC02R0400A,Semilavorato Muira Puama corteccia e.s.  D/E 4:1,0.0,0,0,104.96,262.4,40.0,104.96,Importato dallo storico EVRA
+H-C-482,H-20260220-Comber,2026-02-20,,Comber,S26/0036,,YSDPLLCC1722000N,"Semilavorato Guarana' seme               estratto secco 22,0%      caffeina naturale - >=3,0% caffeina nativa",200.0,0,0,29.099999999999994,0.0,0.0,30.0,Importato dallo storico EVRA
+H-S-483,H-20260223-Spray,2026-02-23,,Spray Dryer,S26/0036,,YSDPLLCC1722000N,"Semilavorato Guarana' seme               estratto secco 22,0%      caffeina naturale - >=3,0% caffeina nativa",0.0,0,0,31.64,79.1,40.0,31.64,Importato dallo storico EVRA
+H-C-484,H-20260223-Comber,2026-02-23,,Comber,S26/0037,,WSDPHSVC17R1000A,Semilavorato Fagiolo seme e.s. D/E 10:1,1000.0,0,0,65.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-485,H-20260224-Spray,2026-02-24,,Spray Dryer,S26/0037,,WSDPHSVC17R1000A,Semilavorato Fagiolo seme e.s. D/E 10:1,0.0,0,0,106.0,265.0,40.0,106.0,Importato dallo storico EVRA
+H-C-486,H-20260224-Comber,2026-02-24,,Comber,S26/0038T,,WSDMLSOF0804000A,"Semilavorato Melissa foglia e.s.>= 4,0%   ac. rosmarinico (HPLC) da Filiera Certificata ISO 22005",1762.0,0,0,214.3,0.0,0.0,264.3,Importato dallo storico EVRA
+H-S-487,H-20260227-Spray,2026-02-27,,Spray Dryer,S26/0038T,,WSDMLSOF0804000A,"Semilavorato Melissa foglia e.s.>= 4,0%   ac. rosmarinico (HPLC) da Filiera Certificata ISO 22005",0.0,0,0,214.3,244.3,87.72001637331151,214.3,Importato dallo storico EVRA
+H-C-488,H-20260227-Comber,2026-02-27,,Comber,S26/0042,,WSDORGML10R0200A,Semilavorato Maggiorana parti aeree      e.s. Locale D/E 2:1,600.0,0,0,85.5,0.0,0.0,90.0,Importato dallo storico EVRA
+H-S-489,H-20260302-Spray,2026-03-02,,Spray Dryer,S26/0042,,WSDORGML10R0200A,Semilavorato Maggiorana parti aeree      e.s. Locale D/E 2:1,0.0,0,0,98.2,245.5,40.0,98.2,Importato dallo storico EVRA
+H-C-490,H-20260302-Comber,2026-03-02,,Comber,S26/0046,,WSDVTXAC05R0300A,Semilavorato Agnocasto frutto e.s.,1000.0,0,0,57.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-491,H-20260303-Spray,2026-03-03,,Spray Dryer,S26/0046,,WSDVTXAC05R0300A,Semilavorato Agnocasto frutto e.s.,0.0,0,0,57.0,137.0,41.605839416058394,57.0,Importato dallo storico EVRA
+H-C-492,H-20260303-Comber,2026-03-03,,Comber,S26/0047,,WSDSMBNC0400300A,"Semilavorato Sambuco fiore e.s. solubile  >=0,3% flavonoidi tot. calc. come iperoside",1036.0,0,0,146.60000000000002,0.0,0.0,155.4,Importato dallo storico EVRA
+H-S-493,H-20260305-Spray,2026-03-05,,Spray Dryer,S26/0047,,WSDSMBNC0400300A,"Semilavorato Sambuco fiore e.s. solubile  >=0,3% flavonoidi tot. calc. come iperoside",0.0,0,0,188.64000000000001,471.6,40.0,188.64000000000001,Importato dallo storico EVRA
+H-C-494,H-20260305-Comber,2026-03-05,,Comber,S26/0048,,WSDJNPCC01R0300A,Semilavorato Ginepro bacche              e.s.,300.0,0,0,27.0,0.0,0.0,45.0,Importato dallo storico EVRA
+H-S-495,H-20260305-Spray,2026-03-05,,Spray Dryer,S26/0048,,WSDJNPCC01R0300A,Semilavorato Ginepro bacche              e.s.,0.0,0,0,30.8,77.0,40.0,30.8,Importato dallo storico EVRA
+H-C-496,H-20260310-Comber,2026-03-10,,Comber,S26/0049,,WSDMLSOC0805000A,"Semilavorato Melissa foglia e.s.acquoso  >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC) >= 10%  derivati idrossici",2000.0,0,0,150.0,0.0,0.0,300.0,Importato dallo storico EVRA
+H-S-497,H-20260311-Spray,2026-03-11,,Spray Dryer,S26/0049,,WSDMLSOC0805000A,"Semilavorato Melissa foglia e.s.acquoso  >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC) >= 10%  derivati idrossici",0.0,0,0,150.0,167.0,89.82035928143712,150.0,Importato dallo storico EVRA
+H-C-498,H-20260311-Comber,2026-03-11,,Comber,S26/0050,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,840.0,0,0,151.60000000000002,0.0,0.0,126.0,Importato dallo storico EVRA
+H-S-499,H-20260312-Spray,2026-03-12,,Spray Dryer,S26/0050,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,151.60000000000002,346.6,43.739180611656096,151.60000000000002,Importato dallo storico EVRA
+H-C-500,H-20260312-Comber,2026-03-12,,Comber,S26/0052,,YSDGRNRC2200200A,"Semilavorato Grindelia erba fiorita estr secco >= 0,25% flavonoidi tot. calc. come iperoside",1735.0,0,0,71.80000000000001,0.0,0.0,260.25,Importato dallo storico EVRA
+H-C-501,H-20260312-Comber,2026-03-12,,Comber,S26/0053,,WSDEQSAC0707000N,"Semilavorato Equiseto erba e.s.          >=7,0% silice",1000.0,0,0,113.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-502,H-20260313-Spray,2026-03-13,,Spray Dryer,S26/0052,,YSDGRNRC2200200A,"Semilavorato Grindelia erba fiorita estr secco >= 0,25% flavonoidi tot. calc. come iperoside",0.0,0,0,84.72000000000001,211.8,40.0,84.72000000000001,Importato dallo storico EVRA
+H-S-503,H-20260316-Spray,2026-03-16,,Spray Dryer,S26/0053,,WSDEQSAC0707000N,"Semilavorato Equiseto erba e.s.          >=7,0% silice",0.0,0,0,157.20000000000002,393.0,40.0,157.20000000000002,Importato dallo storico EVRA
+H-C-504,H-20260316-Comber,2026-03-16,,Comber,S26/0058,,WSDARMRC13R0400A,Semilavorato Rafano radice e.s.          D/E 4:1,300.0,0,0,70.0,0.0,0.0,45.0,Importato dallo storico EVRA
+H-C-505,H-20260317-Comber,2026-03-17,,Comber,S26/0059,,WSDMRNOC08R0400A,Semilavorato Moringa oleifera foglie e.s  4:1,500.0,0,0,94.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-506,H-20260318-Spray,2026-03-18,,Spray Dryer,S26/0058,,WSDARMRC13R0400A,Semilavorato Rafano radice e.s.          D/E 4:1,0.0,0,0,108.0,270.0,40.0,108.0,Importato dallo storico EVRA
+H-S-507,H-20260318-Spray,2026-03-18,,Spray Dryer,S26/0059,,WSDMRNOC08R0400A,Semilavorato Moringa oleifera foglie e.s  4:1,0.0,0,0,94.0,224.0,41.964285714285715,94.0,Importato dallo storico EVRA
+H-C-508,H-20260318-Comber,2026-03-18,,Comber,S26/0060,,WSDRBSNC08R1000A,Semilavorato Ribes nero foglia e.s.       D/E 10:1,1500.0,0,0,262.0,0.0,0.0,225.0,Importato dallo storico EVRA
+H-C-509,H-20260319-Comber,2026-03-19,,Comber,S26/0062,,YSDORTSC2200200A,"Semilavorato Ortosifon erba con fiori    estratto secco >=0,2% flavonoidi totali come sinensetina",1750.0,0,0,175.0,0.0,0.0,262.5,Importato dallo storico EVRA
+H-S-510,H-20260320-Spray,2026-03-20,,Spray Dryer,S26/0060,,WSDRBSNC08R1000A,Semilavorato Ribes nero foglia e.s.       D/E 10:1,0.0,0,0,312.8,782.0,40.0,312.8,Importato dallo storico EVRA
+H-C-511,H-20260320-Comber,2026-03-20,,Comber,S26/0063,,WSDCRNSC05R0400A,Semilavorato Coriandolo frutto e.s.      D/E 4:1,2000.0,0,0,52.5,0.0,0.0,300.0,Importato dallo storico EVRA
+H-S-512,H-20260323-Spray,2026-03-23,,Spray Dryer,S26/0062,,YSDORTSC2200200A,"Semilavorato Ortosifon erba con fiori    estratto secco >=0,2% flavonoidi totali come sinensetina",0.0,0,0,175.0,415.0,42.168674698795186,175.0,Importato dallo storico EVRA
+H-S-513,H-20260324-Spray,2026-03-24,,Spray Dryer,S26/0063,,WSDCRNSC05R0400A,Semilavorato Coriandolo frutto e.s.      D/E 4:1,0.0,0,0,65.0,162.5,40.0,65.0,Importato dallo storico EVRA
+H-C-514,H-20260324-Comber,2026-03-24,,Comber,S26/0065,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,600.0,0,0,134.0,0.0,0.0,90.0,Importato dallo storico EVRA
+H-C-515,H-20260325-Comber,2026-03-25,,Comber,S26/0066,,WSDONNSC14R0400A,Semilavorato Ononide radice e.s. D/E 4:1,500.0,0,0,72.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-516,H-20260327-Spray,2026-03-27,,Spray Dryer,S26/0065,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,0.0,0,0,293.6,734.0,40.0,293.6,Importato dallo storico EVRA
+H-S-517,H-20260327-Spray,2026-03-27,,Spray Dryer,S26/0067,,WSDANGAC14R0200A,Semilavorato Angelica Archangelica radic e.s.,0.0,0,0,11.0,27.5,40.0,11.0,Importato dallo storico EVRA
+H-C-518,H-20260327-Comber,2026-03-27,,Comber,S26/0068,,YSDPLLCC1722000N,"Semilavorato Guarana' seme               estratto secco 22,0%      caffeina naturale - >=3,0% caffeina nativa",2000.0,0,0,150.0,0.0,0.0,300.0,Importato dallo storico EVRA
+H-S-519,H-20260330-Spray,2026-03-30,,Spray Dryer,S26/0066,,WSDONNSC14R0400A,Semilavorato Ononide radice e.s. D/E 4:1,0.0,0,0,84.80000000000001,212.0,40.00000000000001,84.80000000000001,Importato dallo storico EVRA
+H-S-520,H-20260331-Spray,2026-03-31,,Spray Dryer,S26/0068,,YSDPLLCC1722000N,"Semilavorato Guarana' seme               estratto secco 22,0%      caffeina naturale - >=3,0% caffeina nativa",0.0,0,0,200.0,500.0,40.0,200.0,Importato dallo storico EVRA
+H-C-521,H-20260331-Comber,2026-03-31,,Comber,S26/0070,,WSDPMPAC05R0400A,Semilavorato Anice verde frutto e.s. D/E 4:1,1000.0,0,0,87.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-522,H-20260401-Comber,2026-04-01,,Comber,S26/0071,,WSDSSYOC34R0400A,Semilavorato Erisimo sommita' fiorita    estratto secco  D/E 4:1,1000.0,0,0,112.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-523,H-20260401-Comber,2026-04-01,,Comber,S26/0072,,WSDARCLC14R0400A,Semilavorato Bardana radice estratto sec D/E 4:1,292.0,0,0,68.0,0.0,0.0,43.8,Importato dallo storico EVRA
+H-S-524,H-20260402-Spray,2026-04-02,,Spray Dryer,S26/0070,,WSDPMPAC05R0400A,Semilavorato Anice verde frutto e.s. D/E 4:1,0.0,0,0,122.80000000000001,307.0,40.0,122.80000000000001,Importato dallo storico EVRA
+H-S-525,H-20260403-Spray,2026-04-03,,Spray Dryer,S26/0071,,WSDSSYOC34R0400A,Semilavorato Erisimo sommita' fiorita    estratto secco  D/E 4:1,0.0,0,0,132.8,332.0,40.0,132.8,Importato dallo storico EVRA
+H-C-526,H-20260403-Comber,2026-04-03,,Comber,S26/0073,,WSDCMNMC05R0400A,Semilavorato Cumino seme (frutto)        estratto secco D/E 4:1,500.0,0,0,56.75,0.0,0.0,75.0,Importato dallo storico EVRA
+H-C-527,H-20260403-Comber,2026-04-03,,Comber,S26/0074,,WSDMLSOC0805000A,"Semilavorato Melissa foglia e.s.acquoso  >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC) >= 10%  derivati idrossici",1485.0,0,0,253.0,0.0,0.0,222.75,Importato dallo storico EVRA
+H-S-528,H-20260408-Spray,2026-04-08,,Spray Dryer,S26/0072,,WSDARCLC14R0400A,Semilavorato Bardana radice estratto sec D/E 4:1,0.0,0,0,107.2,268.0,40.0,107.2,Importato dallo storico EVRA
+H-S-529,H-20260408-Spray,2026-04-08,,Spray Dryer,S26/0073,,WSDCMNMC05R0400A,Semilavorato Cumino seme (frutto)        estratto secco D/E 4:1,0.0,0,0,66.7,166.75,40.0,66.7,Importato dallo storico EVRA
+H-C-530,H-20260408-Comber,2026-04-08,,Comber,S26/0076,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,1300.0,0,0,460.0,0.0,0.0,195.0,Importato dallo storico EVRA
+H-S-531,H-20260409-Spray,2026-04-09,,Spray Dryer,S26/0074,,WSDMLSOC0805000A,"Semilavorato Melissa foglia e.s.acquoso  >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC) >= 10%  derivati idrossici",0.0,0,0,253.0,288.0,87.84722222222221,253.0,Importato dallo storico EVRA
+H-S-532,H-20260410-Spray,2026-04-10,,Spray Dryer,S26/0075,,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,0.0,0,0,57.0,142.5,40.0,57.0,Importato dallo storico EVRA
+H-C-533,H-20260413-Comber,2026-04-13,,Comber,S26/0078,,WSDMLLOC2202000A,Semilavorato Meliloto erba fiorita e.s.,540.0,0,0,40.0,0.0,0.0,81.0,Importato dallo storico EVRA
+H-S-534,H-20260413-Spray,2026-04-13,,Spray Dryer,S26/0076,,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,0.0,0,0,252.0,630.0,40.0,252.0,Importato dallo storico EVRA
+H-C-535,H-20260413-Comber,2026-04-13,,Comber,S26/0077,,WSDCRMCC05R0400A,Semilavorato Carvi frutti e.s. D/E 4:1,1000.0,0,0,59.599999999999994,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-536,H-20260414-Spray,2026-04-14,,Spray Dryer,S26/0077,,WSDCRMCC05R0400A,Semilavorato Carvi frutti e.s. D/E 4:1,0.0,0,0,59.84,149.6,40.0,59.84,Importato dallo storico EVRA
+H-S-537,H-20260415-Spray,2026-04-15,,Spray Dryer,S26/0079,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,230.16,575.4,40.0,230.16,Importato dallo storico EVRA
+H-C-538,H-20260415-Comber,2026-04-15,,Comber,S26/0081,,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,500.0,0,0,78.5,0.0,0.0,78.5,Importato dallo storico EVRA
+H-C-539,H-20260415-Comber,2026-04-15,,Comber,S26/0082,,WSDPPVRC04R0400A,Semilavorato Papavero fiore e.s.         Polvere micronizzato,300.0,0,0,62.30000000000001,0.0,0.0,62.30000000000001,Importato dallo storico EVRA
+H-S-540,H-20260416-Spray,2026-04-16,,Spray Dryer,S26/0078,,WSDMLLOC2202000A,Semilavorato Meliloto erba fiorita e.s.,0.0,0,0,52.0,130.0,40.0,52.0,Importato dallo storico EVRA
+H-S-541,H-20260416-Spray,2026-04-16,,Spray Dryer,S26/0081,,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,0.0,0,0,77.4,193.5,40.0,77.4,Importato dallo storico EVRA
+H-S-542,H-20260417-Spray,2026-04-17,,Spray Dryer,S26/0082,,WSDPPVRC04R0400A,Semilavorato Papavero fiore e.s.         Polvere micronizzato,0.0,0,0,52.92000000000001,132.3,40.0,52.92000000000001,Importato dallo storico EVRA
+H-C-543,H-20260417-Comber,2026-04-17,,Comber,S26/0084,,WSDRSMOC08R0400A,Semilavorato Rosmarino foglia e.s.       D/E 4:1,1111.5,0,0,59.0,0.0,0.0,166.725,Importato dallo storico EVRA
+H-S-544,H-20260420-Spray,2026-04-20,,Spray Dryer,S26/0080,,WSDSSYOC34R0400A,Semilavorato Erisimo sommita' fiorita    estratto secco  D/E 4:1,0.0,0,0,122.25999999999999,305.65,40.0,122.25999999999999,Importato dallo storico EVRA
+H-S-545,H-20260420-Spray,2026-04-20,,Spray Dryer,S26/0084,,WSDRSMOC08R0400A,Semilavorato Rosmarino foglia e.s.       D/E 4:1,0.0,0,0,35.6,89.0,40.0,35.6,Importato dallo storico EVRA
+H-C-546,H-20260420-Comber,2026-04-20,,Comber,S26/0085,,WSDARCLC14R0400A,Semilavorato Bardana radice estratto sec D/E 4:1,583.0,0,0,110.80000000000001,0.0,0.0,110.80000000000001,Importato dallo storico EVRA
+H-C-547,H-20260420-Comber,2026-04-20,,Comber,S26/0086,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,1520.0,0,0,147.0,0.0,0.0,228.0,Importato dallo storico EVRA
+H-C-548,H-20260422-Comber,2026-04-22,,Comber,S26/0087,,YSDPLLCC1722000N,"Semilavorato Guarana' seme               estratto secco 22,0%      caffeina naturale - >=3,0% caffeina nativa",2000.0,0,0,213.39999999999998,0.0,0.0,300.0,Importato dallo storico EVRA
+H-S-549,H-20260423-Spray,2026-04-23,,Spray Dryer,S26/0085,,WSDARCLC14R0400A,Semilavorato Bardana radice estratto sec D/E 4:1,0.0,0,0,204.32000000000002,510.8,40.0,204.32000000000002,Importato dallo storico EVRA
+H-S-550,H-20260427-Spray,2026-04-27,,Spray Dryer,S26/0087,,YSDPLLCC1722000N,"Semilavorato Guarana' seme               estratto secco 22,0%      caffeina naturale - >=3,0% caffeina nativa",0.0,0,0,229.36,573.4,40.0,229.36,Importato dallo storico EVRA
+H-S-551,H-20260427-Spray,2026-04-27,,Spray Dryer,S26/0090,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,10.96,27.4,40.00000000000001,10.96,Importato dallo storico EVRA
+H-C-552,H-20260427-Comber,2026-04-27,,Comber,S26/0091,,WSDRSCNC05R0400A,Semilavorato Rosa canina frutto e.s. D/E 4:1,245.0,0,0,125.30000000000001,0.0,0.0,125.30000000000001,Importato dallo storico EVRA
+H-C-553,H-20260427-Comber,2026-04-27,,Comber,S26/0094,,WSDEQSAC0707000N,"Semilavorato Equiseto erba e.s.          >=7,0% silice",256.0,0,0,49.5,0.0,0.0,49.5,Importato dallo storico EVRA
+H-S-554,H-20260429-Spray,2026-04-29,,Spray Dryer,S26/0091,,WSDRSCNC05R0400A,Semilavorato Rosa canina frutto e.s. D/E 4:1,0.0,0,0,178.12,445.3,40.0,178.12,Importato dallo storico EVRA
+H-S-555,H-20260429-Spray,2026-04-29,,Spray Dryer,S26/0094,,WSDEQSAC0707000N,"Semilavorato Equiseto erba e.s.          >=7,0% silice",0.0,0,0,41.800000000000004,104.5,40.0,41.800000000000004,Importato dallo storico EVRA
+H-S-556,H-20260504-Spray,2026-05-04,,Spray Dryer,S26/0086,,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,0.0,0,0,150.8,377.0,40.0,150.8,Importato dallo storico EVRA
+H-C-557,H-20260504-Comber,2026-05-04,,Comber,S26/0095,,WSDEQSAC0707000N,"Semilavorato Equiseto erba e.s.          >=7,0% silice",1254.0,0,0,162.0,0.0,0.0,188.1,Importato dallo storico EVRA
+H-C-558,H-20260505-Comber,2026-05-05,,Comber,S26/0097,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,1000.0,0,0,84.5,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-559,H-20260506-Spray,2026-05-06,,Spray Dryer,S26/0095,,WSDEQSAC0707000N,"Semilavorato Equiseto erba e.s.          >=7,0% silice",0.0,0,0,148.8,372.0,40.0,148.8,Importato dallo storico EVRA
+H-S-560,H-20260506-Spray,2026-05-06,,Spray Dryer,S26/0096,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,72.0,180.0,40.0,72.0,Importato dallo storico EVRA
+H-C-561,H-20260506-Comber,2026-05-06,,Comber,S26/0098,,WSDSLDVC22R0400A,Semilavorato Verga d' oro parti aeree     (erba fiorita) estratto secco D/E 4:1,1160.0,0,0,92.5,0.0,0.0,174.0,Importato dallo storico EVRA
+H-S-562,H-20260507-Spray,2026-05-07,,Spray Dryer,S26/0097,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,0.0,0,0,101.80000000000001,254.5,40.0,101.80000000000001,Importato dallo storico EVRA
+H-C-563,H-20260507-Comber,2026-05-07,,Comber,S26/0099,,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,300.0,0,0,44.400000000000006,0.0,0.0,45.0,Importato dallo storico EVRA
+H-S-564,H-20260508-Spray,2026-05-08,,Spray Dryer,S26/0098,,WSDSLDVC22R0400A,Semilavorato Verga d' oro parti aeree     (erba fiorita) estratto secco D/E 4:1,0.0,0,0,157.0,392.5,40.0,157.0,Importato dallo storico EVRA
+H-C-565,H-20260508-Comber,2026-05-08,,Comber,S26/0100,,YSDVLROC1400400A,"Semilavorato Valeriana radice            est.secco >=0,42% acidi sesquiterpenici tot. calc. come valerenico",600.0,0,0,123.0,0.0,0.0,123.0,Importato dallo storico EVRA
+H-S-566,H-20260511-Spray,2026-05-11,,Spray Dryer,S26/0099,,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,0.0,0,0,37.760000000000005,94.4,40.0,37.760000000000005,Importato dallo storico EVRA
+H-S-567,H-20260511-Spray,2026-05-11,,Spray Dryer,S26/0100,,YSDVLROC1400400A,"Semilavorato Valeriana radice            est.secco >=0,42% acidi sesquiterpenici tot. calc. come valerenico",0.0,0,0,85.2,213.0,40.0,85.2,Importato dallo storico EVRA
+H-C-568,H-20260511-Comber,2026-05-11,,Comber,S26/0101,,WSDPSSIC07R0400A,Semilavorato Passiflora erba fiorita e.s D/E 4:1,575.0,0,0,92.155,0.0,0.0,92.155,Importato dallo storico EVRA
+H-C-569,H-20260512-Comber,2026-05-12,,Comber,S26/0102,,WSDCLNTC17R0200A,Semilavorato Cola noci seme e.s. solubil D/E 2:1 2 % caffeina,1500.0,0,0,126.72300000000001,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-570,H-20260513-Spray,2026-05-13,,Spray Dryer,S26/0101,,WSDPSSIC07R0400A,Semilavorato Passiflora erba fiorita e.s D/E 4:1,0.0,0,0,131.20000000000002,328.0,40.00000000000001,131.20000000000002,Importato dallo storico EVRA
+H-C-571,H-20260513-Comber,2026-05-13,,Comber,S26/0104,,WSDESCCC0702000A,"Semilavorato Escolzia erba e.s.           >=2,0% flavonoidi tot. calc.come rutina",1226.0,0,0,171.5,0.0,0.0,183.9,Importato dallo storico EVRA
+H-C-572,H-20260513-Comber,2026-05-13,,Comber,S26/0105,,WSDPMSBC0802100A,Semilavorato Boldo foglia e.s.>= 0.02%   alcaloidi totali espressi come  boldina,882.0,0,0,136.0,0.0,0.0,136.0,Importato dallo storico EVRA
+H-S-573,H-20260514-Spray,2026-05-14,,Spray Dryer,S26/0102,,WSDCLNTC17R0200A,Semilavorato Cola noci seme e.s. solubil D/E 2:1 2 % caffeina,0.0,0,0,147.0,367.5,40.0,147.0,Importato dallo storico EVRA
+H-S-574,H-20260515-Spray,2026-05-15,,Spray Dryer,S26/0104,,WSDESCCC0702000A,"Semilavorato Escolzia erba e.s.           >=2,0% flavonoidi tot. calc.come rutina",0.0,0,0,158.60000000000002,396.5,40.00000000000001,158.60000000000002,Importato dallo storico EVRA
+H-C-575,H-20260518-Comber,2026-05-18,,Comber,S26/0107,,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,500.0,0,0,70.0,0.0,0.0,75.0,Importato dallo storico EVRA
+H-S-576,H-20260519-Spray,2026-05-19,,Spray Dryer,S26/0105,,WSDPMSBC0802100A,Semilavorato Boldo foglia e.s.>= 0.02%   alcaloidi totali espressi come  boldina,0.0,0,0,162.4,406.0,40.0,162.4,Importato dallo storico EVRA
+H-C-577,H-20260519-Comber,2026-05-19,,Comber,S26/0108,,WSDDSMAC08R0400A,Semilavorato Desmodio foglia e.s.        solubile D/E 4:1,1000.0,0,0,34.69999999999999,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-578,H-20260519-Comber,2026-05-19,,Comber,S26/0109,,WSDILXPB0803000A,"Semilavorato Matè foglia Bio e. secco     >=3,0% caffeina PRODUCT FROM BIOLOGICAL AGRICOLTURE     
+
+Cod ODC ITBIO005 Cod AzT501",500.0,0,0,96.5,0.0,0.0,96.5,Importato dallo storico EVRA
+H-S-579,H-20260520-Spray,2026-05-20,,Spray Dryer,S26/0107,,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,0.0,0,0,92.0,230.0,40.0,92.0,Importato dallo storico EVRA
+H-C-580,H-20260521-Comber,2026-05-21,,Comber,S26/0111,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,1216.0,0,0,128.0,0.0,0.0,182.4,Importato dallo storico EVRA
+H-C-581,H-20260522-Comber,2026-05-22,,Comber,S26/0112,,WSDAVNSC17R0200A,Semilavorato Avena seme estratto secco   D/E 2:1,1500.0,0,0,71.0,0.0,0.0,225.0,Importato dallo storico EVRA
+H-S-582,H-20260525-Spray,2026-05-25,,Spray Dryer,S26/0108,,WSDDSMAC08R0400A,Semilavorato Desmodio foglia e.s.        solubile D/E 4:1,0.0,0,0,67.88,169.7,40.0,67.88,Importato dallo storico EVRA
+H-S-583,H-20260525-Spray,2026-05-25,,Spray Dryer,S26/0109,,WSDILXPB0803000A,"Semilavorato Matè foglia Bio e. secco     >=3,0% caffeina PRODUCT FROM BIOLOGICAL AGRICOLTURE     
+
+Cod ODC ITBIO005 Cod AzT501",0.0,0,0,57.0,142.5,40.0,57.0,Importato dallo storico EVRA
+H-S-584,H-20260525-Spray,2026-05-25,,Spray Dryer,S26/0111,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,109.60000000000001,274.0,40.0,109.60000000000001,Importato dallo storico EVRA
+H-S-585,H-20260525-Spray,2026-05-25,,Spray Dryer,S26/0112,,WSDAVNSC17R0200A,Semilavorato Avena seme estratto secco   D/E 2:1,0.0,0,0,76.4,191.0,40.0,76.4,Importato dallo storico EVRA
+H-C-586,H-20260525-Comber,2026-05-25,,Comber,S26/0114,,WSDTNCPF08R0400A,Semilavorato Tanaceto Partenio erba fior e.s. D/E 4:1 da Filiera Certificata ISO 22005,509.0,0,0,63.0,0.0,0.0,76.35,Importato dallo storico EVRA
+H-S-587,H-20260526-Spray,2026-05-26,,Spray Dryer,S26/0114,,WSDTNCPF08R0400A,Semilavorato Tanaceto Partenio erba fior e.s. D/E 4:1 da Filiera Certificata ISO 22005,0.0,0,0,73.2,183.0,40.0,73.2,Importato dallo storico EVRA
+H-C-588,H-20260526-Comber,2026-05-26,,Comber,S26/0115,,WSDASPOC14R0500A,Semilavorato Asparago radice e.s.,340.0,0,0,23.299999999999997,0.0,0.0,51.0,Importato dallo storico EVRA
+H-S-589,H-20260528-Spray,2026-05-28,,Spray Dryer,S26/0113,,WSDECHUC14R0400A,Semilavorato Echinacea purpurea radice   e.s. D/E 4:1,0.0,0,0,277.08000000000004,692.7,40.0,277.08000000000004,Importato dallo storico EVRA
+H-S-590,H-20260528-Spray,2026-05-28,,Spray Dryer,S26/0115,,WSDASPOC14R0500A,Semilavorato Asparago radice e.s.,0.0,0,0,37.32,93.3,40.0,37.32,Importato dallo storico EVRA
+H-C-591,H-20260528-Comber,2026-05-28,,Comber,S26/0117,,WSDPNCMC17R0200A,Semilavorato Miglio semi e.s.,750.0,0,0,83.5,0.0,0.0,112.5,Importato dallo storico EVRA
+H-C-592,H-20260528-Comber,2026-05-28,,Comber,S26/0118,,WSDSLVOC0800500A,Semilavorato Salvia foglie e.s.          acquoso 0.5%-1% tot. idross. come ac. rosmarinico,91.0,0,0,7.5,0.0,0.0,13.65,Importato dallo storico EVRA
+H-S-593,H-20260529-Spray,2026-05-29,,Spray Dryer,S26/0118,,WSDSLVOC0800500A,Semilavorato Salvia foglie e.s.          acquoso 0.5%-1% tot. idross. come ac. rosmarinico,0.0,0,0,13.0,32.5,40.0,13.0,Importato dallo storico EVRA
+H-S-594,H-20260603-Spray,2026-06-03,,Spray Dryer,S26/0117,,WSDPNCMC17R0200A,Semilavorato Miglio semi e.s.,0.0,0,0,141.4,353.5,40.0,141.4,Importato dallo storico EVRA
+H-C-595,H-20260603-Comber,2026-06-03,,Comber,S26/0121,,WSDPNCMC17R0200A,Semilavorato Miglio semi e.s.,750.0,0,0,27.0,0.0,0.0,112.5,Importato dallo storico EVRA
+H-S-596,H-20260604-Spray,2026-06-04,,Spray Dryer,S26/0119,,WSDDSMAC08R0400A,Semilavorato Desmodio foglia e.s.        solubile D/E 4:1,0.0,0,0,19.840000000000003,49.6,40.00000000000001,19.840000000000003,Importato dallo storico EVRA
+H-S-597,H-20260604-Spray,2026-06-04,,Spray Dryer,S26/0120,,WSDDSMAC08R0400A,Semilavorato Desmodio foglia e.s.        solubile D/E 4:1,0.0,0,0,109.92000000000002,274.8,40.0,109.92000000000002,Importato dallo storico EVRA
+H-C-598,H-20260604-Comber,2026-06-04,,Comber,S26/0123,,YSDSUMC0800000A,Semilavorato Rhus coriaria L. fg e.s.    SUMAC,400.0,0,0,133.9,0.0,0.0,133.9,Importato dallo storico EVRA
+H-S-599,H-20260605-Spray,2026-06-05,,Spray Dryer,S26/0123,,YSDSUMC0800000A,Semilavorato Rhus coriaria L. fg e.s.    SUMAC,0.0,0,0,59.96000000000001,149.9,40.0,59.96000000000001,Importato dallo storico EVRA
+H-S-600,H-20260608-Spray,2026-06-08,,Spray Dryer,S26/0121,,WSDPNCMC17R0200A,Semilavorato Miglio semi e.s.,0.0,0,0,98.80000000000001,247.0,40.0,98.80000000000001,Importato dallo storico EVRA
+H-C-601,H-20260608-Comber,2026-06-08,,Comber,S26/0124,,YSDORTSC2200200A,"Semilavorato Ortosifon erba con fiori    estratto secco >=0,2% flavonoidi totali come sinensetina",250.0,0,0,33.7,0.0,0.0,37.5,Importato dallo storico EVRA
+H-C-602,H-20260608-Comber,2026-06-08,,Comber,S26/0125,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,1000.0,0,0,70.69999999999999,0.0,0.0,150.0,Importato dallo storico EVRA
+H-C-603,H-20260608-Comber,2026-06-08,,Comber,S26/0126,,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,1338.0,0,0,125.30000000000001,0.0,0.0,200.7,Importato dallo storico EVRA
+H-S-604,H-20260609-Spray,2026-06-09,,Spray Dryer,S26/0126,,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,0.0,0,0,118.12,295.3,40.0,118.12,Importato dallo storico EVRA
+H-C-605,H-20260609-Comber,2026-06-09,,Comber,S26/0128,,WSDERCSC07R0400A,Semilavorato Rucola erba e.s. D/E 4:1,256.0,0,0,54.69999999999999,0.0,0.0,54.69999999999999,Importato dallo storico EVRA
+H-S-606,H-20260610-Spray,2026-06-10,,Spray Dryer,S26/0124,,YSDORTSC2200200A,"Semilavorato Ortosifon erba con fiori    estratto secco >=0,2% flavonoidi totali come sinensetina",0.0,0,0,37.480000000000004,93.7,40.0,37.480000000000004,Importato dallo storico EVRA
+H-S-607,H-20260610-Spray,2026-06-10,,Spray Dryer,S26/0125,,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,0.0,0,0,76.28,190.7,40.0,76.28,Importato dallo storico EVRA
+H-C-608,H-20260610-Comber,2026-06-10,,Comber,S26/0129,,YSDGRNRC2200200A,"Semilavorato Grindelia erba fiorita estr secco >= 0,25% flavonoidi tot. calc. come iperoside",1344.0,0,0,201.5,0.0,0.0,201.6,Importato dallo storico EVRA
+H-C-609,H-20260610-Comber,2026-06-10,,Comber,S26/0130,,WSDCNNZC02R0200A,Semilavorato Cannella corteccia e.s.      D/E 2:1,256.8,0,0,13.5,0.0,0.0,38.52,Importato dallo storico EVRA
+H-S-610,H-20260611-Spray,2026-06-11,,Spray Dryer,S26/0128,,WSDERCSC07R0400A,Semilavorato Rucola erba e.s. D/E 4:1,0.0,0,0,61.879999999999995,154.7,40.0,61.879999999999995,Importato dallo storico EVRA
+H-C-611,H-20260611-Comber,2026-06-11,,Comber,S26/0131,,WSDMLSOC0805000A,"Semilavorato Melissa foglia e.s.acquoso  >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC) >= 10%  derivati idrossici",1372.0,0,0,244.0,0.0,0.0,244.0,Importato dallo storico EVRA
+H-S-612,H-20260612-Spray,2026-06-12,,Spray Dryer,S26/0129,,YSDGRNRC2200200A,"Semilavorato Grindelia erba fiorita estr secco >= 0,25% flavonoidi tot. calc. come iperoside",0.0,0,0,212.60000000000002,531.5,40.0,212.60000000000002,Importato dallo storico EVRA
+H-S-613,H-20260612-Spray,2026-06-12,,Spray Dryer,S26/0130,,WSDCNNZC02R0200A,Semilavorato Cannella corteccia e.s.      D/E 2:1,0.0,0,0,39.400000000000006,98.5,40.00000000000001,39.400000000000006,Importato dallo storico EVRA
+H-C-614,H-20260612-Comber,2026-06-12,,Comber,S26/0132,,WSDVRBTC04R0300A,Semilavorato Verbasco fiore estr.secco,1000.0,0,0,114.39999999999998,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-615,H-20260615-Spray,2026-06-15,,Spray Dryer,S26/0131,,WSDMLSOC0805000A,"Semilavorato Melissa foglia e.s.acquoso  >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC) >= 10%  derivati idrossici",0.0,0,0,111.60000000000001,279.0,40.0,111.60000000000001,Importato dallo storico EVRA
+H-C-616,H-20260615-Comber,2026-06-15,,Comber,S26/0134,,WSDTRXOC08R0200A,Semilavorato Tarassaco foglia estratto   secco,1000.0,0,0,110.80000000000001,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-617,H-20260616-Spray,2026-06-16,,Spray Dryer,S26/0133,,WSDDSMAC08R0400A,Semilavorato Desmodio foglia e.s.        solubile D/E 4:1,0.0,0,0,99.44,248.6,40.0,99.44,Importato dallo storico EVRA
+H-S-618,H-20260617-Spray,2026-06-17,,Spray Dryer,S26/0132,,WSDVRBTC04R0300A,Semilavorato Verbasco fiore estr.secco,0.0,0,0,117.75999999999999,294.4,40.0,117.75999999999999,Importato dallo storico EVRA
+H-C-619,H-20260617-Comber,2026-06-17,,Comber,S26/0135,,WSDTHYVC08R0200A,Semilavorato Timo pianta (parte aerea)   estratto seccoD/E 2:1,112.0,0,0,16.0,0.0,0.0,16.8,Importato dallo storico EVRA
+H-S-620,H-20260617-Spray,2026-06-17,,Spray Dryer,S26/0135,,WSDTHYVC08R0200A,Semilavorato Timo pianta (parte aerea)   estratto seccoD/E 2:1,0.0,0,0,22.400000000000002,56.0,40.0,22.400000000000002,Importato dallo storico EVRA
+H-C-621,H-20260617-Comber,2026-06-17,,Comber,S26/0136,,WSDGNTNC14R0400A,Semilavorato Genziana radice e.s.        D/E 4:1,473.0,0,0,135.0,0.0,0.0,135.0,Importato dallo storico EVRA
+H-S-622,H-20260618-Spray,2026-06-18,,Spray Dryer,S26/0134,,WSDTRXOC08R0200A,Semilavorato Tarassaco foglia estratto   secco,0.0,0,0,106.32000000000001,265.8,40.0,106.32000000000001,Importato dallo storico EVRA
+H-C-623,H-20260618-Comber,2026-06-18,,Comber,S26/0139,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,750.0,0,0,82.0,0.0,0.0,112.5,Importato dallo storico EVRA
+H-S-624,H-20260618-Spray,2026-06-18,,Spray Dryer,S26/0140,,WSDGRFSC1725000A,Semilavorato Griffonia seme e.s. >=25%   5-HTP,0.0,0,0,0.12,0.3,40.0,0.12,Importato dallo storico EVRA
+H-S-625,H-20260619-Spray,2026-06-19,,Spray Dryer,S26/0139,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,0.0,0,0,62.800000000000004,157.0,40.0,62.800000000000004,Importato dallo storico EVRA
+H-C-626,H-20260619-Comber,2026-06-19,,Comber,S26/0142,,WSDTHYVC08R0200A,Semilavorato Timo pianta (parte aerea)   estratto seccoD/E 2:1,1000.0,0,0,157.0,0.0,0.0,157.0,Importato dallo storico EVRA
+H-S-627,H-20260623-Spray,2026-06-23,,Spray Dryer,S26/0136,,WSDGNTNC14R0400A,Semilavorato Genziana radice e.s.        D/E 4:1,0.0,0,0,130.0,325.0,40.0,130.0,Importato dallo storico EVRA
+H-S-628,H-20260623-Spray,2026-06-23,,Spray Dryer,S26/0142,,WSDTHYVC08R0200A,Semilavorato Timo pianta (parte aerea)   estratto seccoD/E 2:1,0.0,0,0,142.8,357.0,40.0,142.8,Importato dallo storico EVRA
+H-C-629,H-20260623-Comber,2026-06-23,,Comber,S26/0143,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,750.0,0,0,67.69999999999999,0.0,0.0,112.5,Importato dallo storico EVRA
+H-S-630,H-20260623-Spray,2026-06-23,,Spray Dryer,S26/0143,,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,0.0,0,0,67.08,167.7,40.0,67.08,Importato dallo storico EVRA
+H-C-631,H-20260623-Comber,2026-06-23,,Comber,S26/0144,,WSDALTOC14R0400A,Semilavorato Altea radice estratto secco D/E 4:1,500.0,0,0,43.5,0.0,0.0,75.0,Importato dallo storico EVRA
+H-C-632,H-20260623-Comber,2026-06-23,,Comber,S26/0146,,WSDCNNZC02R0200A,Semilavorato Cannella corteccia e.s.      D/E 2:1,512.0,0,0,23.19999999999999,0.0,0.0,76.8,Importato dallo storico EVRA
+H-S-633,H-20260624-Spray,2026-06-24,,Spray Dryer,S26/0144,,WSDALTOC14R0400A,Semilavorato Altea radice estratto secco D/E 4:1,0.0,0,0,61.400000000000006,153.5,40.0,61.400000000000006,Importato dallo storico EVRA
+H-S-634,H-20260624-Spray,2026-06-24,,Spray Dryer,S26/0146,,WSDCNNZC02R0200A,Semilavorato Cannella corteccia e.s.      D/E 2:1,0.0,0,0,57.28,143.2,40.0,57.28,Importato dallo storico EVRA
+H-C-635,H-20260624-Comber,2026-06-24,,Comber,S26/0148,,WSDMLSOC0805000A,"Semilavorato Melissa foglia e.s.acquoso  >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC) >= 10%  derivati idrossici",1000.0,0,0,161.8,0.0,0.0,161.8,Importato dallo storico EVRA
+H-S-636,H-20260625-Spray,2026-06-25,,Spray Dryer,S26/0148,,WSDMLSOC0805000A,"Semilavorato Melissa foglia e.s.acquoso  >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC) >= 10%  derivati idrossici",0.0,0,0,72.72000000000001,181.8,40.0,72.72000000000001,Importato dallo storico EVRA
+H-S-637,H-20260626-Spray,2026-06-26,,Spray Dryer,S26/0145,,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,0.0,0,0,95.68,239.2,40.0,95.68,Importato dallo storico EVRA
+H-S-638,H-20260626-Spray,2026-06-26,,Spray Dryer,S26/0149,,WSDADNCC07R0400A,Semilavorato Capelvenere erba e.s.       D/E 4:1,0.0,0,0,28.680000000000003,71.7,40.0,28.680000000000003,Importato dallo storico EVRA
+H-C-639,H-20260626-Comber,2026-06-26,,Comber,S26/0150,,WSDVTXAC05R0300A,Semilavorato Agnocasto frutto e.s.,1000.0,0,0,72.0,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-640,H-20260629-Spray,2026-06-29,,Spray Dryer,S26/0150,,WSDVTXAC05R0300A,Semilavorato Agnocasto frutto e.s.,0.0,0,0,76.80000000000001,192.0,40.00000000000001,76.80000000000001,Importato dallo storico EVRA
+H-C-641,H-20260629-Comber,2026-06-29,,Comber,S26/0152,,WSDCCRMC17R0400A,Semilavorato Zucca seme e.s.              4:1 (indicativo),1000.0,0,0,17.5,0.0,0.0,150.0,Importato dallo storico EVRA
+H-S-642,H-20260630-Spray,2026-06-30,,Spray Dryer,S26/0152,,WSDCCRMC17R0400A,Semilavorato Zucca seme e.s.              4:1 (indicativo),0.0,0,0,19.0,47.5,40.0,19.0,Importato dallo storico EVRA
+H-S-643,H-20260630-Spray,2026-06-30,,Spray Dryer,S26/0153,,WSDVRBOC07R0200A,Semilavorato Verbena parti aeree es,0.0,0,0,102.4,256.0,40.0,102.4,Importato dallo storico EVRA
+H-C-644,H-20260630-Comber,2026-06-30,,Comber,S26/0154,,WSDMLSOJ0804000A,"Semilavorato Melissa foglia e. s. bio    >= 4,0% acido rosmarinico (HPLC)",300.0,0,0,60.400000000000006,0.0,0.0,60.400000000000006,Importato dallo storico EVRA
