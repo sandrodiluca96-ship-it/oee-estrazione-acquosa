@@ -1,0 +1,309 @@
+tipo,codice,descrizione,pct_puro_standard,attivo
+Droga,MDRMDBAC0500000M,MELA ANNURCA FRUTTO,15,SI
+Droga,MDRMLSOC0800000M,Melissa foglie,15,SI
+Droga,MDRMDBAF5800000M,MELA ANNURCA FRUTTO FRESCO da filiera certificata,15,SI
+Droga,MDRPLLCC1700000M,Guaranà seme t.t.,15,SI
+Droga,MDRCRTOC08000,HARPAGO RADICE FETTE,15,SI
+Droga,MDRORTSC1000000M,ORTHOSIPHON SOMMITA',15,SI
+Droga,MDRFLPUC0700000M,Spirea Ulmaria,15,SI
+Droga,MDREQSAC0700000M,EQUISETO ERBA,15,SI
+Droga,MDRRBSNC0800000M,Ribes foglie t.t.,15,SI
+Droga,MDRTRGFC1700000M,Fieno greco seme taglio estrazione,15,SI
+Droga,MDRMLSOF0800000M,MELISSA FOGLIE DA Filiera certificata,15,SI
+Droga,MDRFNCVC1700000M,Finocchio,15,SI
+Droga,MDRCLACC1700000M,Cola noci T.T,15,SI
+Droga,MDRHRCPC2600000M,Pilosella erba t.t.,15,SI
+Droga,MDRALTOC1400000M,Altea radice t.t.,15,SI
+Droga,MDRGRNRF0700000M,GRINDELIA erba da Filiera Certificata 5,15,SI
+Droga,MDRTRXOC08000,Tarassaco foglie t.t.,15,SI
+Droga,MDRCRNSC1700000M,CORIANDOLO SEME,15,SI
+Droga,MDRECHSC0700000M,Echinacea Purpurea erba taglio estraz.,15,SI
+Droga,MDRPTYOC3700000M,Muira puama legno scaglie,15,SI
+Droga,MDRVTXAC0500000M,AGNOCASTO FRUTTO T.T.,15,SI
+Droga,MDRCRMCC1700000M,CARVI - KUMMEL SEMI,15,SI
+Droga,MDRMLVSC0800000M,Malva,15,SI
+Droga,MDRTRXOC14000,Tarassaco radice t.t.,15,SI
+Droga,MDRRSMOL08000,ROSMARINO,15,SI
+Droga,MDRPSSIC0800000M,PASSIFLORA Foglia,15,SI
+Droga,MDRRSMOC08000,ROSMARINO FOGLIE INTERE,15,SI
+Droga,MDRURTDC0800000M,Ortica foglia t.t.,15,SI
+Droga,MDRHMLLC04000,LUPPOLO FIORI CONTUSI (STROBILI),15,SI
+Droga,MDRSLDVC2600000M,VERGA D'ORO(SOLIDAGO) PIANTA T.T.,15,SI
+Droga,MDRGLYGC1400000M,LIQUIRIZIA RADICE,15,SI
+Droga,MDRTHYVC08000,TIMO VOLGARE FOGLIE,15,SI
+Droga,MDRMRRVC0700000M,MARRUBIO bianco erba tagliata,15,SI
+Droga,MDRCRCLC1400000M,CURCUMA RIZOMA,15,SI
+Droga,MDRMLSOB0800000M,MELISSA FOGLIE BIO,15,SI
+Droga,MDRMLSOL08000,MELISSA foglie locale,15,SI
+Droga,MDRHBSSC0400000M,Ibisco (Karkadè) fiori t.t.,15,SI
+Droga,MDRSSYOC07000,Erisimo ERBA TAGLIATA,15,SI
+Droga,MDRESCCF0700000M,ESCOLZIA ERBA DA FILIERA CERTIFICATA,15,SI
+Droga,MDRTLSPC0400000M,Tiglio fiori e foglie t.t.,15,SI
+Droga,MDRECLGC0800000M,Eucalipto foglie t.t. taglio estrazione,15,SI
+Droga,MDRMLSOL0800000M,Melissa foglia locale,15,SI
+Droga,MDRMLLOC0700000M,Meliloto,15,SI
+Droga,MDRHDRHC0800000M,Edera Helix foglie t.t. taglio estrazione,15,SI
+Droga,MDRCHMRC04000,CAMOMILLA FIORI,15,SI
+Droga,MDRRHMFC0200000M,Frangula C.,15,SI
+Droga,MDRSLVOC0800000M,Salvia,15,SI
+Droga,MDRCTRGC17000,Pompelmo semi contusi,15,SI
+Droga,MDRACHMC1000000M,Achillea sommità fiorite t.t.,15,SI
+Droga,MDRARNDC26000,CANNELLA REGINA CONTUSA,15,SI
+Droga,MDRURTDF0800000M,ORTICA foglia da Filiera Certificata ISO 22005,15,SI
+Droga,MDRGRNRF2200000M,Grindelia erba con fiore,15,SI
+Droga,MDRARCLC1400000M,Bardana radice t.t. taglio estrazione,15,SI
+Droga,MDRDSMAC0800000M,Desmodio foglia taglio estrazione estrazione,15,SI
+Droga,MDRCHRAC0700000M,Crisantello americano erba tagliata,15,SI
+Droga,MDRMDBAF0500000M,Melanzana rossa lucana da filiera certificata,15,SI
+Droga,MDRMNTPL0800000M,MENTA PIPERITA foglia locale,15,SI
+Droga,MDRHLCIC0400000M,Elicriso,15,SI
+Droga,MDRPMSBC0800000M,Boldo F.,15,SI
+Droga,MDRHRPPC1400000M,Harpago R.,15,SI
+Droga,MDRAVNSF1700000M,AVENA SEME T.T DA FILIERA,15,SI
+Droga,MDRILXPC0800000M,Matè foglia t.t.,15,SI
+Droga,MDRPLNLC0800000M,Piantaggine lanceolata foglie t.t.,15,SI
+Droga,MDRESCCC07000,Escolzia erba tagliata,15,SI
+Droga,MDRECHSC1000000M,Echinacea Purpurea p.a,15,SI
+Droga,MDRGLCHC0800000M,EDERA FOGLIA,15,SI
+Droga,MDRAVNSC0500000M,AVENA FRUTTI T.T,15,SI
+Droga,MDRPMPAC1700000M,Anice verde semi t.t. estrazione,15,SI
+Droga,MDRILXPB0800000M,Organic Mate leaf,15,SI
+Droga,MDRMLVSC2400000M,Malva fiori e foglie t.t,15,SI
+Droga,MDRSLVTB0800000M,Organic vine red leaf,15,SI
+Droga,MDRORTSC0800000M,ORTHOSIPHON foglie tagliate,15,SI
+Droga,MDRTNCPF2600000M,TANACETO PIANTA DA FILIERA,15,SI
+Droga,MDRSMBNC04000,Sambuco fiori interi t.t.,15,SI
+Droga,MDRCSSAC0800000M,SENNA FOGLIA,15,SI
+Droga,MDRURTDL0800000M,ORTICA foglia locale,15,SI
+Droga,MDRFLPUC1000000M,ULMARIA (SPIREA) SOMMITA',15,SI
+Droga,MDRVLROB1400000M,VALERIANA RADICE BIO,15,SI
+Droga,MDRCNCSC0200000M,China corteccia t.t,15,SI
+Droga,MDRONNSC1400000M,Ononide radice pulita taglio estrazione,15,SI
+Droga,MDRPPVRCPE00000M,PAPAVERO PETALI,15,SI
+Droga,MDREPLAC0700000M,Epilobio angustifolium erba t.t.,15,SI
+Droga,MDRVRBTC0400000M,Verbasco fiori,15,SI
+Droga,MDRECHUC1400000M,ECHINACEA PURPUREA RADICE,15,SI
+Droga,MDRBTLAC08000,BETULLA foglie,15,SI
+Droga,MDRCCRMC1700000M,Zucca di semi (cucurbita maxima),15,SI
+Droga,MDRGLGOC0700000M,Galega erba tagliata estrazione,15,SI
+Droga,MDRHLCIC0700000M,Elicrisio Italico erba fiorita taglio estrazione,15,SI
+Droga,MDRPNCMC1700000M,Miglio semi,15,SI
+Droga,MDRPLNMC08000,Piantaggine lanceolata foglie tagl.,15,SI
+Droga,MDRPHSVC1200000M,FAGIOLI Baccelli,15,SI
+Droga,MDRPLNML2200000M,Piantaggine erba con fiori locale,15,SI
+Droga,MDRCNNZC0200000M,CANNELLA CEYLON corteccia contusa,15,SI
+Droga,MDRMNTPL08000,MENTA PIPERITA foglia locale,15,SI
+Droga,MDRGRNRC07000,GRINDELIA erba fiorita tagliata,15,SI
+Droga,MDRSLVOL0800000M,SALVIA foglia locale,15,SI
+Droga,MDRVLROC1400000M,Valeriana radice t.t,15,SI
+Droga,MDRMLLOF1000000M,MELILOTO sommità da Filiera Certificata ISO 22005,15,SI
+Droga,MDRCMNMC1700000M,CUMINO (CARVI) DI MALTA SEMI INTERI,15,SI
+Droga,MDRBRSBF0800000M,BROCCOLI DA FILIERA,15,SI
+Droga,MDRPSSIL0700000M,PASSIFLORA INC. erba locale,15,SI
+Droga,MDRILLVC0500000M,ANICE STELLATO FRUTTI TAGLIATI,15,SI
+Droga,MDRTNCPF07000,TANACETO erba da Filiera Certificata ISO 22005,15,SI
+Droga,MDRFNCOC18000,FINOCCHIO DOLCE SEMI (frutti),15,SI
+Droga,MDRBTLAC0800000M,Betulla foglia taglio estrazione estrazione,15,SI
+Droga,MDRPMPAC18000,Anice VOLGARE SEMI (FRUTTI),15,SI
+Droga,MDRVLTRC0700000M,VIOLA TRICOLOR erba fiorita tagliata,15,SI
+Droga,MDRHRPPC14000,Artiglio del diavolo radice,15,SI
+Droga,MDRMLLOC1000000M,MELILOTO SOMMITA',15,SI
+Droga,MDRFRXEC0800000M,Frassino,15,SI
+Droga,MDRCHNCC23000,LICHENE ISLANDICO TAGLIATO,15,SI
+Droga,MDRANGAC1400000M,Angelica Archangelica radice t.t.,15,SI
+Droga,MDRTRNAC0800000M,Damiana Foglie,15,SI
+Droga,MDRRMNPC0200000M,CASCARA sagrada Corteccia,15,SI
+Droga,MDRVRBOZ0700000M,VERBENA OFFICINALE ERBA,15,SI
+Droga,MDRDRSIC0700000M,DROSERA ERBA,15,SI
+Droga,MDRFMROC1000000M,Fumaria parte aerea taglio estrazione,15,SI
+Droga,MDRCHCIC1400000M,Cicoria radice,15,SI
+Droga,MDRTHYVF0800000M,Timo foglia da filiera,15,SI
+Droga,MDRCCRPC1700000M,Zucca seme (curcubita pepo),15,SI
+Droga,MDRTMRIC0500000M,Tamarindo frutto,15,SI
+Droga,MDRASPOC14000,Asparago radice tagliata,15,SI
+Droga,MDRMNTPF0800000M,MENTA PIPERITA foglia da Filiera Certia ISO 22005,15,SI
+Droga,MDRHLCIL0400000M,ELICRISO ITALICUM LOCALE,15,SI
+Droga,MDRARCLL14000,Bardana radice LOCALE,15,SI
+Droga,MDRCRNSF0500000M,CORIANDOLO frutto da Filiera Certificat ISO 22005,15,SI
+Droga,MDRMLVSF0800000M,MALVA foglia da Filiera Certificata ISO 22005,15,SI
+Droga,MDRRSMOB0800000M,ROSMARINO BIO,15,SI
+Droga,MDRCLNOC04000,CALENDULA FIORI DA DROGA ESAUSTA,15,SI
+Droga,MDRCRCLC15000,CURCUMA RIZOMA DA DROGA ESAUSTA,15,SI
+Droga,MDRRSCNC05000,ROSA CANINA,15,SI
+Droga,MDRRSMOF1900000M,Rosmarino sommità con fiori,15,SI
+Droga,MDRGRFSC1700000M,Griffonia seme t.t.,15,SI
+Droga,MDRMLVSB2400000M,Malva foglie e fiori BIO,15,SI
+Droga,MDRMLVSL0800000M,MALVA foglia locale,15,SI
+Droga,MDRMLSOF2600000M,MELISSA PIANTA DA FILIERA,15,SI
+Droga,MDRECHSF1000000M,ECHINACEA purpurea p.a da Filiera Certi,15,SI
+Droga,MDRTRFPC0700000M,Trifoglio Rosso,15,SI
+Droga,MDRTHYVL0800000M,Timo foglie locale,15,SI
+Droga,MDRORGMC0800000M,MAGGIORANA foglie,15,SI
+Droga,MDREPHOC1000000M,Eufrasia sommità fiorita taglio estrazione,15,SI
+Droga,MDRADNCC0700000M,Capelvenere erba t.t,15,SI
+Droga,MDRLSPCC0700000M,LESPEDEZA CAPITATA erba t.,15,SI
+Droga,MDRPHSVL1200000M,Fagiolo Baccello Locale,15,SI
+Droga,MDRSLVOC08000,SALVIAOFFICINALIS,15,SI
+Droga,MDRSLVOL08000,SALVIA FOGLIE LOCALE,15,SI
+Droga,MDRMDBAL0500000M,Melanzana rossa,15,SI
+Droga,MDRMLSOB08000,MELISSA foglie locale bio,15,SI
+Droga,MDRPSSIJ0800000M,Passiflora foglia locale bio,15,SI
+Droga,MDRCLNOC2600000M,CALENDULA fiori selez t.t. sfusa,15,SI
+Droga,MDRHRCPC0800000M,Pilosella foglie t.t,15,SI
+Droga,MDRASPLC0800000M,Rooibos foglia,15,SI
+Droga,MDRLVNAC0400000M,Lavanda fiori,15,SI
+Droga,MDRMRNOC0800000M,Moringa oleifera foglie t.t.,15,SI
+Droga,MDRPLLNC31000,Polline naturale granuli,15,SI
+Droga,MDRURTDC1400000M,Ortica radice t.t.,15,SI
+Droga,MDRCMLLC08000,"""THE' VERDE """"gunpowder""""""",15,SI
+Droga,MDRSLVOF08000,SALVIA FOGLIA DA FILIERA CERTIFICATA ISO 22005,15,SI
+Droga,MDRORGVL08000,ORIGANO LOCALE,15,SI
+Droga,MDRGNTNC1400000M,Genziana radice t.t. estrazione,15,SI
+Droga,MDRHLCIB0400000M,ELICRISO BIO,15,SI
+Droga,MDRCYNSL08000,CARCIOFO FOGLIE LOCALE,15,SI
+Droga,MDRRSMOK0400000M,Rosmarino sommità con fiori bio filiera,15,SI
+Droga,MDRSUMC0800000M,Sumac (Rhus coriaria L.) foglia,15,SI
+Droga,MDRGLCHL0800000M,Edera foglia locale,15,SI
+Droga,MDRRSMOJ0800000M,Rosmarino foglia locale bio,15,SI
+Droga,MDRBRSIC2300000M,BROCCOLO,15,SI
+Droga,MDRRSMOL0800000M,ROSMARINO (rosmarinus officinalis),15,SI
+Droga,MDRARMRC1400000M,Rafano radice,15,SI
+Droga,MDRMDBAF3200000M,Melanzana rossa lunga da filiera,15,SI
+Droga,MDRJNPCC0100000M,GINEPRO BACCHE T.T.,15,SI
+Droga,MDRVSCAC0800000M,Vischio foglie t.t.,15,SI
+Droga,MDRTHYVK0800000M,Timo foglia bio da filiera,15,SI
+Droga,MDRSPRUF0700000M,SPIREA ULMARIA erba da Filiera Certific ISO 22005,15,SI
+Droga,MDRERCSC0700000M,Rucola erba (foglia),15,SI
+Droga,MDRHLCIK0800000M,Elicriso fiori bio da filiera,15,SI
+Droga,MDRURTML08000,ORTICA,15,SI
+Droga,MDRTHYSF1000000M,TIMO Sommità da Filiera Certificata ISO 22005,15,SI
+Droga,MDRTHYVL1000000M,TIMO sommità locale,15,SI
+Droga,MDRTHYVB10000,TIMO BIO locale,15,SI
+Droga,MDRALCVC0700000M,Alchemilla volgare erba tagliata,15,SI
+Droga,MDRRSCNL0100000M,ROSA CANINA LOCALE,15,SI
+Droga,MDRLYCBC0100000M,BACCHE DI GOJI,15,SI
+Droga,MDRTHYVL10000,TIMO locale,15,SI
+Droga,MDRGRNRB0700000M,Grindelia erba bio,15,SI
+Droga,MDRMTRCF0400000M,CAMOMILLA MATRECARIA fiore da Filiera ISO 22005,15,SI
+Droga,MDRSLVOF0800000M,Salvia foglie da filiera certificata,15,SI
+Droga,MDRMRNOF0800000M,MORINGA FOGLIE DA FILIERA,15,SI
+Droga,MDRCPSBC1000000M,Borsa del Pastore parte aerea taglio estrazione,15,SI
+Droga,MDRPPVRC1900000M,Papavero sommità fiorite,15,SI
+Droga,MDRECHSF1400000M,ECHINACEA purpurea rad da Filiera Certi,15,SI
+Droga,MDRHLCIF0400000M,ELICRISO fiori da Filiera Certificata ISO 22005,15,SI
+Droga,MDRMRNOL0800000M,MORINGA (MORINGA OLEIFERA),15,SI
+Droga,MDRARNMC0400000M,ARNICA Montana fiori,15,SI
+Droga,MDRMRNOC08000,MORINGA DA DROGA ESAUSTA,15,SI
+Semilavorato,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,40,SI
+Semilavorato,WSDZZZZC3200000A,Semilavorato Acido ascorbico             polvere micronizzata,40,SI
+Semilavorato,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,40,SI
+Semilavorato,WSDMDBAC05R1000A,Semilavorato Mela annurca e.s. acquoso   frutto D/E 10:1,40,SI
+Semilavorato,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,40,SI
+Semilavorato,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,40,SI
+Semilavorato,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,40,SI
+Semilavorato,YSDPLLCC1722000N,"Semilavorato Guarana' seme               estratto secco 22,0%      caffeina naturale - >=3,0% caffeina nativa",40,SI
+Semilavorato,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,40,SI
+Semilavorato,YLCPROPC2700000A,Semilavorato Propoli granulato solubile  1000 microns,40,SI
+Semilavorato,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,40,SI
+Semilavorato,WSDRBSNC08R0300A,Semilavorato Ribes nero foglia e.s.,40,SI
+Semilavorato,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,40,SI
+Semilavorato,WSDACHMC34R0200A,Semilavorato Achillea sommità erba fior  estratto secco D/E 2:1,40,SI
+Semilavorato,WSDTRXOC08R0200A,Semilavorato Tarassaco foglia estratto   secco,40,SI
+Semilavorato,WSDHLCIL04R0200A,Semilavorato Elicriso erba fiorita       e. secco Locale,40,SI
+Semilavorato,WSDPSSIC07R0400A,Semilavorato Passiflora erba fiorita e.s D/E 4:1,40,SI
+Semilavorato,WSDSSYOC34R0400A,Semilavorato Erisimo sommita' fiorita    estratto secco  D/E 4:1,40,SI
+Semilavorato,WSDHMLLC09R0400A,Semilavorato Luppolo infiorescenze       (strobili) estr.  secco D/E 4:1,40,SI
+Semilavorato,WSDECHUC14R0200A,Semilavorato Echinacea purpurea radice   estratto secco,40,SI
+Semilavorato,WSDEQSAC0707000N,"Semilavorato Equiseto erba e.s.          >=7,0% silice",40,SI
+Semilavorato,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,40,SI
+Semilavorato,WGLANNCC05R4100A,Semilavorato Ananas HRD,40,SI
+Semilavorato,WSDMLLOC2202000A,Semilavorato Meliloto erba fiorita e.s.,40,SI
+Semilavorato,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,40,SI
+Semilavorato,WSDVTSTC08R0200A,Semilavorato Vite rossa foglia e.s.,40,SI
+Semilavorato,WSDCLNTC17R0200A,Semilavorato Cola noci seme e.s. solubil D/E 2:1 2 % caffeina,40,SI
+Semilavorato,WSDRBSNC08R1000A,Semilavorato Ribes nero foglia e.s.       D/E 10:1,40,SI
+Semilavorato,WSDARCLC14R0400A,Semilavorato Bardana radice estratto sec D/E 4:1,40,SI
+Semilavorato,WSDORTSC08R0300A,Semilavorato Ortosiphon foglia e.s.,40,SI
+Semilavorato,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,40,SI
+Semilavorato,WSDHDRHC08R0400A,Semilavorato Edera foglia e.s. D/E 4:1,40,SI
+Semilavorato,WSDLYCBC05R0400A,Semilavorato Goji frutto e.s. solubile    D/E 4:1,40,SI
+Semilavorato,YGLBSWSC2765000A,"Semilavorato Boswellia resina estr. secc >=65,0% acidi boswellici",40,SI
+Semilavorato,WSDPHSVC17R1000A,Semilavorato Fagiolo seme e.s. D/E 10:1,40,SI
+Semilavorato,YSDORTSC2200200A,"Semilavorato Ortosifon erba con fiori    estratto secco >=0,2% flavonoidi totali come sinensetina",40,SI
+Semilavorato,WSDTRGFC1700000A,Semilavorato Fieno greco seme es,40,SI
+Semilavorato,WSDALTOC14R0400A,Semilavorato Altea radice estratto secco D/E 4:1,40,SI
+Semilavorato,WSDARCLC1400000A,Semilavorato Bardana radice estratto sec,40,SI
+Semilavorato,WSDTNCPF08R0400A,Semilavorato Tanaceto Partenio erba fior e.s. D/E 4:1 da Filiera Certificata ISO 22005,40,SI
+Semilavorato,WSDANGAC14R0200A,Semilavorato Angelica Archangelica radic e.s.,40,SI
+Semilavorato,WSDESCCC0702000A,"Semilavorato Escolzia erba e.s.           >=2,0% flavonoidi tot. calc.come rutina",40,SI
+Semilavorato,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,40,SI
+Semilavorato,WSDMTRCC03R0400A,Semilavorato Camomilla fiore estratto     D/E 4:1,40,SI
+Semilavorato,YSDBTLAC08R0400A,Semilavorato Betulla foglie estratto sec,40,SI
+Semilavorato,WSDPLNMC08R0400A,Semilavorato Piantaggine foglia e.s.,40,SI
+Semilavorato,WSDCTRGC1700000A,Semilavorato Pompelmo seme e.s.,40,SI
+Semilavorato,WSDGRNRF2200000A,Semilavorato GRINDELIA ERBA FIORITA E.S.  FILIERA CERTIFICATA ISO 22005,40,SI
+Semilavorato,WSDSLDVC22R0400A,Semilavorato Verga d' oro parti aeree     (erba fiorita) estratto secco D/E 4:1,40,SI
+Semilavorato,WSDSMBNC0400300A,"Semilavorato Sambuco fiore e.s. solubile  >=0,3% flavonoidi tot. calc. come iperoside",40,SI
+Semilavorato,WSDRSMOC08R0400A,Semilavorato Rosmarino foglia e.s.       D/E 4:1,40,SI
+Semilavorato,WSDCRNSC05R0400A,Semilavorato Coriandolo frutto e.s.      D/E 4:1,40,SI
+Semilavorato,WSDMLSOF0804000A,"Semilavorato Melissa foglia e.s.>= 4,0%   ac. rosmarinico (HPLC) da Filiera Certificata ISO 22005",40,SI
+Semilavorato,WSDTLSPC04R0200A,Semilavorato Tiglio fiore estratto secco 2:1,40,SI
+Semilavorato,WSDCHRAC07R0400A,Semilavorato Crisantello erba e.s.       D/E 4:1,40,SI
+Semilavorato,WSDMLSOC0805000A,"Semilavorato Melissa foglia e.s.acquoso  >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC)",40,SI
+Semilavorato,WSDRSCNC05R0400A,Semilavorato Rosa canina frutto e.s. D/E 4:1,40,SI
+Semilavorato,WSDPMPAC05R0400A,Semilavorato Anice verde frutto e.s. D/E 4:1,40,SI
+Semilavorato,YSDCLNOC04R1000A,Semilavorato Calendula fiori e.s. D/E 10,40,SI
+Semilavorato,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,40,SI
+Semilavorato,WSDPNCMC17R0200A,Semilavorato Miglio semi e.s.,40,SI
+Semilavorato,WSDCRCLC15R0300A,Semilavorato Curcuma rizoma e.s.,40,SI
+Semilavorato,WSDPPVRC04R0400A,Semilavorato Papavero fiore e.s.         Polvere micronizzato,40,SI
+Semilavorato,WSDPLLNC31R0300A,Semilavorato Polline naturale granuli es,40,SI
+Semilavorato,WSDVCCMC3601000A,Semilavorato Mirtillo  succo essiccato,40,SI
+Semilavorato,WSDCNCSC02R0400A,Semilavorato China (Cinchona Succirubra) corteccia  e. s.,40,SI
+Semilavorato,WSDCFFTC3220000A,"Semilavorato CAFFTOP® HRD -Miscela solub granulata >=20,0% caffeina",40,SI
+Semilavorato,YSDHDRHC0801000A,"Semilavorato Edera foglia estratto       secco >=1,0% ederacoside C",40,SI
+Semilavorato,WSDECLGC08R0200A,Semilavorato Eucalipto foglia e.s.,40,SI
+Semilavorato,YSDMTRCC0400300A,"Semilavorato Camomilla (Matricaria)      fiori estratto   secco >= 0,3% apigenine totali",40,SI
+Semilavorato,WGLBRSIC0800500A,"Semilavorato BROCCOX® Broccoli parte aer con fiori  estratto solubile granulato 0,3% - 0,5% sulforafano",40,SI
+Semilavorato,WSDGLGOC07R0400A,Semilavorato Galega erba fiorita e.s.     D/E 4:1,40,SI
+Semilavorato,WSDVLTRC22R0200A,Semilavorato Viola tricolor erba fiorita estr.secco,40,SI
+Semilavorato,WSDTMRIC05R0200A,Semilavorato Tamarindo frutto estratto   secco acquoso,40,SI
+Semilavorato,WSDARMRC13R0400A,Semilavorato Rafano radice e.s.          D/E 4:1,40,SI
+Semilavorato,WSDCHCIC14R0200A,Semilavorato Cicoria radice e.s.         D/E 2:1,40,SI
+Semilavorato,WSDVTXAC05R0300A,Semilavorato Agnocasto frutto e.s.,40,SI
+Semilavorato,WSDPTYOC02R0400A,Semilavorato Muira Puama corteccia e.s.  D/E 4:1,40,SI
+Semilavorato,WSDCNNZC02R0200A,Semilavorato Cannella corteccia e.s.      D/E 2:1,40,SI
+Semilavorato,WSDMRRVC10R0200A,Semilavorato Marrubio bianco parti aeree  estratto secco D/ 2:1,40,SI
+Semilavorato,WSDRHMFC0206000A,Semilavorato Frangula corteccia e.s.>=   6.0% glucofranguline calcolate come glucofrangulina A,40,SI
+Semilavorato,WSDORGML10R0200A,Semilavorato Maggiorana parti aeree      e.s. Locale D/E 2:1,40,SI
+Semilavorato,WSDCCRMC17R0400A,Semilavorato Zucca seme e.s.              4:1 (indicativo),40,SI
+Semilavorato,WSDALTOC14R0200A,Semilavorato Altea radice estratto secco,40,SI
+Semilavorato,WSDTHYVC08R0200A,Semilavorato Timo pianta (parte aerea)   estratto seccoD/E 2:1,40,SI
+Semilavorato,WSDEPLAC07R0400A,Semilavorato Epilobio (angustifolium)    erba estratto secco D/E 4:1,40,SI
+Semilavorato,WSDMRNOC08R0400A,Semilavorato Moringa oleifera foglie e.s  4:1,40,SI
+Semilavorato,WSDVRBTC04R0300A,Semilavorato Verbasco fiore estr.secco,40,SI
+Semilavorato,WSDONNSC14R0400A,Semilavorato Ononide radice e.s. D/E 4:1,40,SI
+Semilavorato,YSDGRNRC2200200A,"Semilavorato Grindelia erba fiorita estr secco >= 0,25% flavonoidi tot. calc. come iperoside",40,SI
+Semilavorato,WSDARNMC04R0400A,Semilavorato Arnica Montana fiori E.S.,40,SI
+Semilavorato,WSDHMLLC09R0200A,Semilavorato Luppolo infioresc. e.s.,40,SI
+Semilavorato,WSDCRMCC05R0400A,Semilavorato Carvi frutti e.s. D/E 4:1,40,SI
+Semilavorato,YGLMDBAC05R1000A,Semilavorato Mela annurca e.s. frutto    D/E 10:1,40,SI
+Semilavorato,WSDTRNAC08R0400A,Semilavorato Damiana foglia estratto     secco D/E 4:1,40,SI
+Semilavorato,WSDADNCC07R0400A,Semilavorato Capelvenere erba e.s.       D/E 4:1,40,SI
+Semilavorato,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,40,SI
+Semilavorato,WSDCMNMC05R0400A,Semilavorato Cumino seme (frutto)        estratto secco D/E 4:1,40,SI
+Semilavorato,WSDDSMAC08R0400A,Semilavorato Desmodio foglia e.s.        solubile D/E 4:1,40,SI
+Semilavorato,WSDORGVC08R0400A,Semilavorato Origano foglia e.s. D/E 4:1,40,SI
+Semilavorato,WSDMLSPC05R0400A,Semilavorato Mela frutto e.s. D/E 4:1,40,SI
+Semilavorato,WSDASPLC08R0400A,Semilavorato Rooibos foglia estratto sec D/E 4:1,40,SI
+Semilavorato,WSDSLVOC0800500A,Semilavorato Salvia foglie e.s.          acquoso 0.5%-1% tot. idross. come ac. rosmarinico,40,SI
+Semilavorato,WSDILLVC05R0200A,Semilavorato Anice stellato frutto e.s.,40,SI
+Semilavorato,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,40,SI
+Semilavorato,WSDRHMFC0207000A,Semilavorato Frangula corteccia e.s.>=7% glucofranguline calcolate come glucofrangulina A,40,SI
+Semilavorato,WSDJNPCC01R0300A,Semilavorato Ginepro bacche              e.s.,40,SI
+Semilavorato,WSDGRFSC1718000A,Semilavorato Griffonia seme e.s.         18-23% 5-HTP,40,SI
+Semilavorato,WSDPHSVL12R0200A,Semilavorato Fagiolo baccello e.s. Local,40,SI
+Semilavorato,WSDARCLC14R0400N,Semilavorato Bardana radice e.s.         D/E 4:1,40,SI
+Semilavorato,WSDVLROC14R0400A,Semilavorato Valeriana radice estratto    secco acquoso D/E 4:1,40,SI
+Semilavorato,WSDGRFSC1725000A,Semilavorato Griffonia seme e.s. >=25%   5-HTP,40,SI
+Semilavorato,WSDGNTNC14R0400A,Semilavorato Genziana radice e.s.        D/E 4:1,40,SI
