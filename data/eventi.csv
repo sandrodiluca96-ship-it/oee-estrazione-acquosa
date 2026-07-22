@@ -1,1 +1,0 @@
-id_evento,id_turno,data_turno,turno,macchina,tipo_evento,tipo_produzione,lotto,codice,descrizione,ora_inizio,ora_fine,durata_h,kg_droga,kg_liquido,rs_liquido_pct,kg_liquido_alimentato,rs_iniziale_pct,kg_concentrato,rs_finale_pct,kg_molle,rs_molle_pct,kg_maltodestrina,kg_polvere_finale,lotti_comber,piano_id,note
