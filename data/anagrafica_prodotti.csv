@@ -1,0 +1,690 @@
+tipo,codice,descrizione,pct_puro_standard,attivo
+Droga,MDRMDBAC0500000M,MELA ANNURCA FRUTTO,15,SI
+Droga,MDRMLSOC0800000M,Melissa foglie,15,SI
+Droga,MDRMDBAF5800000M,MELA ANNURCA FRUTTO FRESCO da filiera certificata,15,SI
+Droga,MDRPLLCC1700000M,Guaranà seme t.t.,15,SI
+Droga,MDRCRTOC08000,HARPAGO RADICE FETTE,15,SI
+Droga,MDRORTSC1000000M,ORTHOSIPHON SOMMITA',15,SI
+Droga,MDRFLPUC0700000M,Spirea Ulmaria,15,SI
+Droga,MDREQSAC0700000M,EQUISETO ERBA,15,SI
+Droga,MDRRBSNC0800000M,Ribes foglie t.t.,15,SI
+Droga,MDRTRGFC1700000M,Fieno greco seme taglio estrazione,15,SI
+Droga,MDRMLSOF0800000M,MELISSA FOGLIE DA Filiera certificata,15,SI
+Droga,MDRFNCVC1700000M,Finocchio,15,SI
+Droga,MDRCLACC1700000M,Cola noci T.T,15,SI
+Droga,MDRHRCPC2600000M,Pilosella erba t.t.,15,SI
+Droga,MDRALTOC1400000M,Altea radice t.t.,15,SI
+Droga,MDRGRNRF0700000M,GRINDELIA erba da Filiera Certificata 5,15,SI
+Droga,MDRTRXOC08000,Tarassaco foglie t.t.,15,SI
+Droga,MDRCRNSC1700000M,CORIANDOLO SEME,15,SI
+Droga,MDRECHSC0700000M,Echinacea Purpurea erba taglio estraz.,15,SI
+Droga,MDRPTYOC3700000M,Muira puama legno scaglie,15,SI
+Droga,MDRVTXAC0500000M,AGNOCASTO FRUTTO T.T.,15,SI
+Droga,MDRCRMCC1700000M,CARVI - KUMMEL SEMI,15,SI
+Droga,MDRMLVSC0800000M,Malva,15,SI
+Droga,MDRTRXOC14000,Tarassaco radice t.t.,15,SI
+Droga,MDRRSMOL08000,ROSMARINO,15,SI
+Droga,MDRPSSIC0800000M,PASSIFLORA Foglia,15,SI
+Droga,MDRRSMOC08000,ROSMARINO FOGLIE INTERE,15,SI
+Droga,MDRURTDC0800000M,Ortica foglia t.t.,15,SI
+Droga,MDRHMLLC04000,LUPPOLO FIORI CONTUSI (STROBILI),15,SI
+Droga,MDRSLDVC2600000M,VERGA D'ORO(SOLIDAGO) PIANTA T.T.,15,SI
+Droga,MDRGLYGC1400000M,LIQUIRIZIA RADICE,15,SI
+Droga,MDRTHYVC08000,TIMO VOLGARE FOGLIE,15,SI
+Droga,MDRMRRVC0700000M,MARRUBIO bianco erba tagliata,15,SI
+Droga,MDRCRCLC1400000M,CURCUMA RIZOMA,15,SI
+Droga,MDRMLSOB0800000M,MELISSA FOGLIE BIO,15,SI
+Droga,MDRMLSOL08000,MELISSA foglie locale,15,SI
+Droga,MDRHBSSC0400000M,Ibisco (Karkadè) fiori t.t.,15,SI
+Droga,MDRSSYOC07000,Erisimo ERBA TAGLIATA,15,SI
+Droga,MDRESCCF0700000M,ESCOLZIA ERBA DA FILIERA CERTIFICATA,15,SI
+Droga,MDRTLSPC0400000M,Tiglio fiori e foglie t.t.,15,SI
+Droga,MDRECLGC0800000M,Eucalipto foglie t.t. taglio estrazione,15,SI
+Droga,MDRMLSOL0800000M,Melissa foglia locale,15,SI
+Droga,MDRMLLOC0700000M,Meliloto,15,SI
+Droga,MDRHDRHC0800000M,Edera Helix foglie t.t. taglio estrazione,15,SI
+Droga,MDRCHMRC04000,CAMOMILLA FIORI,15,SI
+Droga,MDRRHMFC0200000M,Frangula C.,15,SI
+Droga,MDRSLVOC0800000M,Salvia,15,SI
+Droga,MDRCTRGC17000,Pompelmo semi contusi,15,SI
+Droga,MDRACHMC1000000M,Achillea sommità fiorite t.t.,15,SI
+Droga,MDRARNDC26000,CANNELLA REGINA CONTUSA,15,SI
+Droga,MDRURTDF0800000M,ORTICA foglia da Filiera Certificata ISO 22005,15,SI
+Droga,MDRGRNRF2200000M,Grindelia erba con fiore,15,SI
+Droga,MDRARCLC1400000M,Bardana radice t.t. taglio estrazione,15,SI
+Droga,MDRDSMAC0800000M,Desmodio foglia taglio estrazione estrazione,15,SI
+Droga,MDRCHRAC0700000M,Crisantello americano erba tagliata,15,SI
+Droga,MDRMDBAF0500000M,Melanzana rossa lucana da filiera certificata,15,SI
+Droga,MDRMNTPL0800000M,MENTA PIPERITA foglia locale,15,SI
+Droga,MDRHLCIC0400000M,Elicriso,15,SI
+Droga,MDRPMSBC0800000M,Boldo F.,15,SI
+Droga,MDRHRPPC1400000M,Harpago R.,15,SI
+Droga,MDRAVNSF1700000M,AVENA SEME T.T DA FILIERA,15,SI
+Droga,MDRILXPC0800000M,Matè foglia t.t.,15,SI
+Droga,MDRPLNLC0800000M,Piantaggine lanceolata foglie t.t.,15,SI
+Droga,MDRESCCC07000,Escolzia erba tagliata,15,SI
+Droga,MDRECHSC1000000M,Echinacea Purpurea p.a,15,SI
+Droga,MDRGLCHC0800000M,EDERA FOGLIA,15,SI
+Droga,MDRAVNSC0500000M,AVENA FRUTTI T.T,15,SI
+Droga,MDRPMPAC1700000M,Anice verde semi t.t. estrazione,15,SI
+Droga,MDRILXPB0800000M,Organic Mate leaf,15,SI
+Droga,MDRMLVSC2400000M,Malva fiori e foglie t.t,15,SI
+Droga,MDRSLVTB0800000M,Organic vine red leaf,15,SI
+Droga,MDRORTSC0800000M,ORTHOSIPHON foglie tagliate,15,SI
+Droga,MDRTNCPF2600000M,TANACETO PIANTA DA FILIERA,15,SI
+Droga,MDRSMBNC04000,Sambuco fiori interi t.t.,15,SI
+Droga,MDRCSSAC0800000M,SENNA FOGLIA,15,SI
+Droga,MDRURTDL0800000M,ORTICA foglia locale,15,SI
+Droga,MDRFLPUC1000000M,ULMARIA (SPIREA) SOMMITA',15,SI
+Droga,MDRVLROB1400000M,VALERIANA RADICE BIO,15,SI
+Droga,MDRCNCSC0200000M,China corteccia t.t,15,SI
+Droga,MDRONNSC1400000M,Ononide radice pulita taglio estrazione,15,SI
+Droga,MDRPPVRCPE00000M,PAPAVERO PETALI,15,SI
+Droga,MDREPLAC0700000M,Epilobio angustifolium erba t.t.,15,SI
+Droga,MDRVRBTC0400000M,Verbasco fiori,15,SI
+Droga,MDRECHUC1400000M,ECHINACEA PURPUREA RADICE,15,SI
+Droga,MDRBTLAC08000,BETULLA foglie,15,SI
+Droga,MDRCCRMC1700000M,Zucca di semi (cucurbita maxima),15,SI
+Droga,MDRGLGOC0700000M,Galega erba tagliata estrazione,15,SI
+Droga,MDRHLCIC0700000M,Elicrisio Italico erba fiorita taglio estrazione,15,SI
+Droga,MDRPNCMC1700000M,Miglio semi,15,SI
+Droga,MDRPLNMC08000,Piantaggine lanceolata foglie tagl.,15,SI
+Droga,MDRPHSVC1200000M,FAGIOLI Baccelli,15,SI
+Droga,MDRPLNML2200000M,Piantaggine erba con fiori locale,15,SI
+Droga,MDRCNNZC0200000M,CANNELLA CEYLON corteccia contusa,15,SI
+Droga,MDRMNTPL08000,MENTA PIPERITA foglia locale,15,SI
+Droga,MDRGRNRC07000,GRINDELIA erba fiorita tagliata,15,SI
+Droga,MDRSLVOL0800000M,SALVIA foglia locale,15,SI
+Droga,MDRVLROC1400000M,Valeriana radice t.t,15,SI
+Droga,MDRMLLOF1000000M,MELILOTO sommità da Filiera Certificata ISO 22005,15,SI
+Droga,MDRCMNMC1700000M,CUMINO (CARVI) DI MALTA SEMI INTERI,15,SI
+Droga,MDRBRSBF0800000M,BROCCOLI DA FILIERA,15,SI
+Droga,MDRPSSIL0700000M,PASSIFLORA INC. erba locale,15,SI
+Droga,MDRILLVC0500000M,ANICE STELLATO FRUTTI TAGLIATI,15,SI
+Droga,MDRTNCPF07000,TANACETO erba da Filiera Certificata ISO 22005,15,SI
+Droga,MDRFNCOC18000,FINOCCHIO DOLCE SEMI (frutti),15,SI
+Droga,MDRBTLAC0800000M,Betulla foglia taglio estrazione estrazione,15,SI
+Droga,MDRPMPAC18000,Anice VOLGARE SEMI (FRUTTI),15,SI
+Droga,MDRVLTRC0700000M,VIOLA TRICOLOR erba fiorita tagliata,15,SI
+Droga,MDRHRPPC14000,Artiglio del diavolo radice,15,SI
+Droga,MDRMLLOC1000000M,MELILOTO SOMMITA',15,SI
+Droga,MDRFRXEC0800000M,Frassino,15,SI
+Droga,MDRCHNCC23000,LICHENE ISLANDICO TAGLIATO,15,SI
+Droga,MDRANGAC1400000M,Angelica Archangelica radice t.t.,15,SI
+Droga,MDRTRNAC0800000M,Damiana Foglie,15,SI
+Droga,MDRRMNPC0200000M,CASCARA sagrada Corteccia,15,SI
+Droga,MDRVRBOZ0700000M,VERBENA OFFICINALE ERBA,15,SI
+Droga,MDRDRSIC0700000M,DROSERA ERBA,15,SI
+Droga,MDRFMROC1000000M,Fumaria parte aerea taglio estrazione,15,SI
+Droga,MDRCHCIC1400000M,Cicoria radice,15,SI
+Droga,MDRTHYVF0800000M,Timo foglia da filiera,15,SI
+Droga,MDRCCRPC1700000M,Zucca seme (curcubita pepo),15,SI
+Droga,MDRTMRIC0500000M,Tamarindo frutto,15,SI
+Droga,MDRASPOC14000,Asparago radice tagliata,15,SI
+Droga,MDRMNTPF0800000M,MENTA PIPERITA foglia da Filiera Certia ISO 22005,15,SI
+Droga,MDRHLCIL0400000M,ELICRISO ITALICUM LOCALE,15,SI
+Droga,MDRARCLL14000,Bardana radice LOCALE,15,SI
+Droga,MDRCRNSF0500000M,CORIANDOLO frutto da Filiera Certificat ISO 22005,15,SI
+Droga,MDRMLVSF0800000M,MALVA foglia da Filiera Certificata ISO 22005,15,SI
+Droga,MDRRSMOB0800000M,ROSMARINO BIO,15,SI
+Droga,MDRCLNOC04000,CALENDULA FIORI DA DROGA ESAUSTA,15,SI
+Droga,MDRCRCLC15000,CURCUMA RIZOMA DA DROGA ESAUSTA,15,SI
+Droga,MDRRSCNC05000,ROSA CANINA,15,SI
+Droga,MDRRSMOF1900000M,Rosmarino sommità con fiori,15,SI
+Droga,MDRGRFSC1700000M,Griffonia seme t.t.,15,SI
+Droga,MDRMLVSB2400000M,Malva foglie e fiori BIO,15,SI
+Droga,MDRMLVSL0800000M,MALVA foglia locale,15,SI
+Droga,MDRMLSOF2600000M,MELISSA PIANTA DA FILIERA,15,SI
+Droga,MDRECHSF1000000M,ECHINACEA purpurea p.a da Filiera Certi,15,SI
+Droga,MDRTRFPC0700000M,Trifoglio Rosso,15,SI
+Droga,MDRTHYVL0800000M,Timo foglie locale,15,SI
+Droga,MDRORGMC0800000M,MAGGIORANA foglie,15,SI
+Droga,MDREPHOC1000000M,Eufrasia sommità fiorita taglio estrazione,15,SI
+Droga,MDRADNCC0700000M,Capelvenere erba t.t,15,SI
+Droga,MDRLSPCC0700000M,LESPEDEZA CAPITATA erba t.,15,SI
+Droga,MDRPHSVL1200000M,Fagiolo Baccello Locale,15,SI
+Droga,MDRSLVOC08000,SALVIAOFFICINALIS,15,SI
+Droga,MDRSLVOL08000,SALVIA FOGLIE LOCALE,15,SI
+Droga,MDRMDBAL0500000M,Melanzana rossa,15,SI
+Droga,MDRMLSOB08000,MELISSA foglie locale bio,15,SI
+Droga,MDRPSSIJ0800000M,Passiflora foglia locale bio,15,SI
+Droga,MDRCLNOC2600000M,CALENDULA fiori selez t.t. sfusa,15,SI
+Droga,MDRHRCPC0800000M,Pilosella foglie t.t,15,SI
+Droga,MDRASPLC0800000M,Rooibos foglia,15,SI
+Droga,MDRLVNAC0400000M,Lavanda fiori,15,SI
+Droga,MDRMRNOC0800000M,Moringa oleifera foglie t.t.,15,SI
+Droga,MDRPLLNC31000,Polline naturale granuli,15,SI
+Droga,MDRURTDC1400000M,Ortica radice t.t.,15,SI
+Droga,MDRCMLLC08000,"""THE' VERDE """"gunpowder""""""",15,SI
+Droga,MDRSLVOF08000,SALVIA FOGLIA DA FILIERA CERTIFICATA ISO 22005,15,SI
+Droga,MDRORGVL08000,ORIGANO LOCALE,15,SI
+Droga,MDRGNTNC1400000M,Genziana radice t.t. estrazione,15,SI
+Droga,MDRHLCIB0400000M,ELICRISO BIO,15,SI
+Droga,MDRCYNSL08000,CARCIOFO FOGLIE LOCALE,15,SI
+Droga,MDRRSMOK0400000M,Rosmarino sommità con fiori bio filiera,15,SI
+Droga,MDRSUMC0800000M,Sumac (Rhus coriaria L.) foglia,15,SI
+Droga,MDRGLCHL0800000M,Edera foglia locale,15,SI
+Droga,MDRRSMOJ0800000M,Rosmarino foglia locale bio,15,SI
+Droga,MDRBRSIC2300000M,BROCCOLO,15,SI
+Droga,MDRRSMOL0800000M,ROSMARINO (rosmarinus officinalis),15,SI
+Droga,MDRARMRC1400000M,Rafano radice,15,SI
+Droga,MDRMDBAF3200000M,Melanzana rossa lunga da filiera,15,SI
+Droga,MDRJNPCC0100000M,GINEPRO BACCHE T.T.,15,SI
+Droga,MDRVSCAC0800000M,Vischio foglie t.t.,15,SI
+Droga,MDRTHYVK0800000M,Timo foglia bio da filiera,15,SI
+Droga,MDRSPRUF0700000M,SPIREA ULMARIA erba da Filiera Certific ISO 22005,15,SI
+Droga,MDRERCSC0700000M,Rucola erba (foglia),15,SI
+Droga,MDRHLCIK0800000M,Elicriso fiori bio da filiera,15,SI
+Droga,MDRURTML08000,ORTICA,15,SI
+Droga,MDRTHYSF1000000M,TIMO Sommità da Filiera Certificata ISO 22005,15,SI
+Droga,MDRTHYVL1000000M,TIMO sommità locale,15,SI
+Droga,MDRTHYVB10000,TIMO BIO locale,15,SI
+Droga,MDRALCVC0700000M,Alchemilla volgare erba tagliata,15,SI
+Droga,MDRRSCNL0100000M,ROSA CANINA LOCALE,15,SI
+Droga,MDRLYCBC0100000M,BACCHE DI GOJI,15,SI
+Droga,MDRTHYVL10000,TIMO locale,15,SI
+Droga,MDRGRNRB0700000M,Grindelia erba bio,15,SI
+Droga,MDRMTRCF0400000M,CAMOMILLA MATRECARIA fiore da Filiera ISO 22005,15,SI
+Droga,MDRSLVOF0800000M,Salvia foglie da filiera certificata,15,SI
+Droga,MDRMRNOF0800000M,MORINGA FOGLIE DA FILIERA,15,SI
+Droga,MDRCPSBC1000000M,Borsa del Pastore parte aerea taglio estrazione,15,SI
+Droga,MDRPPVRC1900000M,Papavero sommità fiorite,15,SI
+Droga,MDRECHSF1400000M,ECHINACEA purpurea rad da Filiera Certi,15,SI
+Droga,MDRHLCIF0400000M,ELICRISO fiori da Filiera Certificata ISO 22005,15,SI
+Droga,MDRMRNOL0800000M,MORINGA (MORINGA OLEIFERA),15,SI
+Droga,MDRARNMC0400000M,ARNICA Montana fiori,15,SI
+Droga,MDRMRNOC08000,MORINGA DA DROGA ESAUSTA,15,SI
+Semilavorato,WSDHRPPC1400500A,Semilavorato Artiglio del diavolo radice e.s. >= 2.5% arpagodside,40,SI
+Semilavorato,WSDZZZZC3200000A,Semilavorato Acido ascorbico             polvere micronizzata,40,SI
+Semilavorato,WSDTRXOC14R0400A,Semilavorato Tarassaco radice estratto   secco D/E 4:1,40,SI
+Semilavorato,WSDMDBAC05R1000A,Semilavorato Mela annurca e.s. acquoso   frutto D/E 10:1,40,SI
+Semilavorato,WSDPLLCC17R0200A,Semilavorato Guarana' seme e.s.          D/E 2:1,40,SI
+Semilavorato,WSDMLVSC24R0400A,Semilavorato Malva fiori/foglie e.s.,40,SI
+Semilavorato,WSDFLPUC07R0400A,Semilavorato Spirea erba (sommita') e.s. D/E 4:1,40,SI
+Semilavorato,YSDPLLCC1722000N,"Semilavorato Guarana' seme               estratto secco 22,0%      caffeina naturale - >=3,0% caffeina nativa",40,SI
+Semilavorato,WSDMLSOC08R0400A,Semilavorato Melissa foglia e.s. D/E 4:1,40,SI
+Semilavorato,YLCPROPC2700000A,Semilavorato Propoli granulato solubile  1000 microns,40,SI
+Semilavorato,WSDECHUC07R0400A,Semilavorato Echinacea purpurea erba     estratto secco D/E 4:1,40,SI
+Semilavorato,WSDRBSNC08R0300A,Semilavorato Ribes nero foglia e.s.,40,SI
+Semilavorato,WSDFNCOC17R0200A,Semilavorato Finocchio dolce seme e.s.,40,SI
+Semilavorato,WSDACHMC34R0200A,Semilavorato Achillea sommità erba fior  estratto secco D/E 2:1,40,SI
+Semilavorato,WSDTRXOC08R0200A,Semilavorato Tarassaco foglia estratto   secco,40,SI
+Semilavorato,WSDHLCIL04R0200A,Semilavorato Elicriso erba fiorita       e. secco Locale,40,SI
+Semilavorato,WSDPSSIC07R0400A,Semilavorato Passiflora erba fiorita e.s D/E 4:1,40,SI
+Semilavorato,WSDSSYOC34R0400A,Semilavorato Erisimo sommita' fiorita    estratto secco  D/E 4:1,40,SI
+Semilavorato,WSDHMLLC09R0400A,Semilavorato Luppolo infiorescenze       (strobili) estr.  secco D/E 4:1,40,SI
+Semilavorato,WSDECHUC14R0200A,Semilavorato Echinacea purpurea radice   estratto secco,40,SI
+Semilavorato,WSDEQSAC0707000N,"Semilavorato Equiseto erba e.s.          >=7,0% silice",40,SI
+Semilavorato,WSDURTDC08R0200A,Semilavorato Ortica foglia estratto secc,40,SI
+Semilavorato,WGLANNCC05R4100A,Semilavorato Ananas HRD,40,SI
+Semilavorato,WSDMLLOC2202000A,Semilavorato Meliloto erba fiorita e.s.,40,SI
+Semilavorato,WSDEQSAC07R0300A,Semilavorato Equiseto erba e.s.,40,SI
+Semilavorato,WSDVTSTC08R0200A,Semilavorato Vite rossa foglia e.s.,40,SI
+Semilavorato,WSDCLNTC17R0200A,Semilavorato Cola noci seme e.s. solubil D/E 2:1 2 % caffeina,40,SI
+Semilavorato,WSDRBSNC08R1000A,Semilavorato Ribes nero foglia e.s.       D/E 10:1,40,SI
+Semilavorato,WSDARCLC14R0400A,Semilavorato Bardana radice estratto sec D/E 4:1,40,SI
+Semilavorato,WSDORTSC08R0300A,Semilavorato Ortosiphon foglia e.s.,40,SI
+Semilavorato,WSDGLYGC14R0400A,Semilavorato Liquirizia radice e.s.      D/E 4:1,40,SI
+Semilavorato,WSDHDRHC08R0400A,Semilavorato Edera foglia e.s. D/E 4:1,40,SI
+Semilavorato,WSDLYCBC05R0400A,Semilavorato Goji frutto e.s. solubile    D/E 4:1,40,SI
+Semilavorato,YGLBSWSC2765000A,"Semilavorato Boswellia resina estr. secc >=65,0% acidi boswellici",40,SI
+Semilavorato,WSDPHSVC17R1000A,Semilavorato Fagiolo seme e.s. D/E 10:1,40,SI
+Semilavorato,YSDORTSC2200200A,"Semilavorato Ortosifon erba con fiori    estratto secco >=0,2% flavonoidi totali come sinensetina",40,SI
+Semilavorato,WSDTRGFC1700000A,Semilavorato Fieno greco seme es,40,SI
+Semilavorato,WSDALTOC14R0400A,Semilavorato Altea radice estratto secco D/E 4:1,40,SI
+Semilavorato,WSDARCLC1400000A,Semilavorato Bardana radice estratto sec,40,SI
+Semilavorato,WSDTNCPF08R0400A,Semilavorato Tanaceto Partenio erba fior e.s. D/E 4:1 da Filiera Certificata ISO 22005,40,SI
+Semilavorato,WSDANGAC14R0200A,Semilavorato Angelica Archangelica radic e.s.,40,SI
+Semilavorato,WSDESCCC0702000A,"Semilavorato Escolzia erba e.s.           >=2,0% flavonoidi tot. calc.come rutina",40,SI
+Semilavorato,WSDHRCPC0700000A,Semilavorato Pilosella Erba e.s.,40,SI
+Semilavorato,WSDMTRCC03R0400A,Semilavorato Camomilla fiore estratto     D/E 4:1,40,SI
+Semilavorato,YSDBTLAC08R0400A,Semilavorato Betulla foglie estratto sec,40,SI
+Semilavorato,WSDPLNMC08R0400A,Semilavorato Piantaggine foglia e.s.,40,SI
+Semilavorato,WSDCTRGC1700000A,Semilavorato Pompelmo seme e.s.,40,SI
+Semilavorato,WSDGRNRF2200000A,Semilavorato GRINDELIA ERBA FIORITA E.S.  FILIERA CERTIFICATA ISO 22005,40,SI
+Semilavorato,WSDSLDVC22R0400A,Semilavorato Verga d' oro parti aeree     (erba fiorita) estratto secco D/E 4:1,40,SI
+Semilavorato,WSDSMBNC0400300A,"Semilavorato Sambuco fiore e.s. solubile  >=0,3% flavonoidi tot. calc. come iperoside",40,SI
+Semilavorato,WSDRSMOC08R0400A,Semilavorato Rosmarino foglia e.s.       D/E 4:1,40,SI
+Semilavorato,WSDCRNSC05R0400A,Semilavorato Coriandolo frutto e.s.      D/E 4:1,40,SI
+Semilavorato,WSDMLSOF0804000A,"Semilavorato Melissa foglia e.s.>= 4,0%   ac. rosmarinico (HPLC) da Filiera Certificata ISO 22005",40,SI
+Semilavorato,WSDTLSPC04R0200A,Semilavorato Tiglio fiore estratto secco 2:1,40,SI
+Semilavorato,WSDCHRAC07R0400A,Semilavorato Crisantello erba e.s.       D/E 4:1,40,SI
+Semilavorato,WSDMLSOC0805000A,"Semilavorato Melissa foglia e.s.acquoso  >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC)",40,SI
+Semilavorato,WSDRSCNC05R0400A,Semilavorato Rosa canina frutto e.s. D/E 4:1,40,SI
+Semilavorato,WSDPMPAC05R0400A,Semilavorato Anice verde frutto e.s. D/E 4:1,40,SI
+Semilavorato,YSDCLNOC04R1000A,Semilavorato Calendula fiori e.s. D/E 10,40,SI
+Semilavorato,YSDMNTPC08R0400A,Semilavorato Menta foglie estratto secco  D/E 4:1,40,SI
+Semilavorato,WSDPNCMC17R0200A,Semilavorato Miglio semi e.s.,40,SI
+Semilavorato,WSDCRCLC15R0300A,Semilavorato Curcuma rizoma e.s.,40,SI
+Semilavorato,WSDPPVRC04R0400A,Semilavorato Papavero fiore e.s.         Polvere micronizzato,40,SI
+Semilavorato,WSDPLLNC31R0300A,Semilavorato Polline naturale granuli es,40,SI
+Semilavorato,WSDVCCMC3601000A,Semilavorato Mirtillo  succo essiccato,40,SI
+Semilavorato,WSDCNCSC02R0400A,Semilavorato China (Cinchona Succirubra) corteccia  e. s.,40,SI
+Semilavorato,WSDCFFTC3220000A,"Semilavorato CAFFTOP® HRD -Miscela solub granulata >=20,0% caffeina",40,SI
+Semilavorato,YSDHDRHC0801000A,"Semilavorato Edera foglia estratto       secco >=1,0% ederacoside C",40,SI
+Semilavorato,WSDECLGC08R0200A,Semilavorato Eucalipto foglia e.s.,40,SI
+Semilavorato,YSDMTRCC0400300A,"Semilavorato Camomilla (Matricaria)      fiori estratto   secco >= 0,3% apigenine totali",40,SI
+Semilavorato,WGLBRSIC0800500A,"Semilavorato BROCCOX® Broccoli parte aer con fiori  estratto solubile granulato 0,3% - 0,5% sulforafano",40,SI
+Semilavorato,WSDGLGOC07R0400A,Semilavorato Galega erba fiorita e.s.     D/E 4:1,40,SI
+Semilavorato,WSDVLTRC22R0200A,Semilavorato Viola tricolor erba fiorita estr.secco,40,SI
+Semilavorato,WSDTMRIC05R0200A,Semilavorato Tamarindo frutto estratto   secco acquoso,40,SI
+Semilavorato,WSDARMRC13R0400A,Semilavorato Rafano radice e.s.          D/E 4:1,40,SI
+Semilavorato,WSDCHCIC14R0200A,Semilavorato Cicoria radice e.s.         D/E 2:1,40,SI
+Semilavorato,WSDVTXAC05R0300A,Semilavorato Agnocasto frutto e.s.,40,SI
+Semilavorato,WSDPTYOC02R0400A,Semilavorato Muira Puama corteccia e.s.  D/E 4:1,40,SI
+Semilavorato,WSDCNNZC02R0200A,Semilavorato Cannella corteccia e.s.      D/E 2:1,40,SI
+Semilavorato,WSDMRRVC10R0200A,Semilavorato Marrubio bianco parti aeree  estratto secco D/ 2:1,40,SI
+Semilavorato,WSDRHMFC0206000A,Semilavorato Frangula corteccia e.s.>=   6.0% glucofranguline calcolate come glucofrangulina A,40,SI
+Semilavorato,WSDORGML10R0200A,Semilavorato Maggiorana parti aeree      e.s. Locale D/E 2:1,40,SI
+Semilavorato,WSDCCRMC17R0400A,Semilavorato Zucca seme e.s.              4:1 (indicativo),40,SI
+Semilavorato,WSDALTOC14R0200A,Semilavorato Altea radice estratto secco,40,SI
+Semilavorato,WSDTHYVC08R0200A,Semilavorato Timo pianta (parte aerea)   estratto seccoD/E 2:1,40,SI
+Semilavorato,WSDEPLAC07R0400A,Semilavorato Epilobio (angustifolium)    erba estratto secco D/E 4:1,40,SI
+Semilavorato,WSDMRNOC08R0400A,Semilavorato Moringa oleifera foglie e.s  4:1,40,SI
+Semilavorato,WSDVRBTC04R0300A,Semilavorato Verbasco fiore estr.secco,40,SI
+Semilavorato,WSDONNSC14R0400A,Semilavorato Ononide radice e.s. D/E 4:1,40,SI
+Semilavorato,YSDGRNRC2200200A,"Semilavorato Grindelia erba fiorita estr secco >= 0,25% flavonoidi tot. calc. come iperoside",40,SI
+Semilavorato,WSDARNMC04R0400A,Semilavorato Arnica Montana fiori E.S.,40,SI
+Semilavorato,WSDHMLLC09R0200A,Semilavorato Luppolo infioresc. e.s.,40,SI
+Semilavorato,WSDCRMCC05R0400A,Semilavorato Carvi frutti e.s. D/E 4:1,40,SI
+Semilavorato,YGLMDBAC05R1000A,Semilavorato Mela annurca e.s. frutto    D/E 10:1,40,SI
+Semilavorato,WSDTRNAC08R0400A,Semilavorato Damiana foglia estratto     secco D/E 4:1,40,SI
+Semilavorato,WSDADNCC07R0400A,Semilavorato Capelvenere erba e.s.       D/E 4:1,40,SI
+Semilavorato,WSDSLVOC08R0400A,Semilavorato Salvia foglia e.s. D/E 4:1,40,SI
+Semilavorato,WSDCMNMC05R0400A,Semilavorato Cumino seme (frutto)        estratto secco D/E 4:1,40,SI
+Semilavorato,WSDDSMAC08R0400A,Semilavorato Desmodio foglia e.s.        solubile D/E 4:1,40,SI
+Semilavorato,WSDORGVC08R0400A,Semilavorato Origano foglia e.s. D/E 4:1,40,SI
+Semilavorato,WSDMLSPC05R0400A,Semilavorato Mela frutto e.s. D/E 4:1,40,SI
+Semilavorato,WSDASPLC08R0400A,Semilavorato Rooibos foglia estratto sec D/E 4:1,40,SI
+Semilavorato,WSDSLVOC0800500A,Semilavorato Salvia foglie e.s.          acquoso 0.5%-1% tot. idross. come ac. rosmarinico,40,SI
+Semilavorato,WSDILLVC05R0200A,Semilavorato Anice stellato frutto e.s.,40,SI
+Semilavorato,WSDPPVRC38R0200A,Semilavorato Papavero Rosso fiore e.s.   D/E 2:1,40,SI
+Semilavorato,WSDRHMFC0207000A,Semilavorato Frangula corteccia e.s.>=7% glucofranguline calcolate come glucofrangulina A,40,SI
+Semilavorato,WSDJNPCC01R0300A,Semilavorato Ginepro bacche              e.s.,40,SI
+Semilavorato,WSDGRFSC1718000A,Semilavorato Griffonia seme e.s.         18-23% 5-HTP,40,SI
+Semilavorato,WSDPHSVL12R0200A,Semilavorato Fagiolo baccello e.s. Local,40,SI
+Semilavorato,WSDARCLC14R0400N,Semilavorato Bardana radice e.s.         D/E 4:1,40,SI
+Semilavorato,WSDVLROC14R0400A,Semilavorato Valeriana radice estratto    secco acquoso D/E 4:1,40,SI
+Semilavorato,WSDGRFSC1725000A,Semilavorato Griffonia seme e.s. >=25%   5-HTP,40,SI
+Semilavorato,WSDGNTNC14R0400A,Semilavorato Genziana radice e.s.        D/E 4:1,40,SI
+Mescola,AGLCPSAC0502000A,"CAPSIRED® - Capsico frutto estratto rivestito granulato >=2,0% capsaicinoidi espr. come capsicina",0,SI
+Mescola,AGLCRTOC2401500A,Biancospino fiore e foglia estr. secco granulare 1.5%-2.0% flavonoidi tot. espr. come iperoside,0,SI
+Mescola,AGLMDBAC05R1000A,Mela annurca e.s. frutto D/E 10:1,0,SI
+Mescola,AGLMPMAC05R1000A,Mela annurca e.s. frutto D/E 10:1,0,SI
+Mescola,AGLPROPC2702500A,"Propoli HRD® e.s. solubile granulato >= 2,5% polifenoli calc.come galangina - >=0,5% flavoni calc.come quercetina",0,SI
+Mescola,AGLPROPC2710000A,"Propoli HRD® e.s. solubile granulato >= 10,0% polifenoli calc.come galangina - >=2,0% flavoni calc.come quercetina",0,SI
+Mescola,AGLRSMOC0810000A,Rosmarino foglia BindGran >=10.0% diterp eni totali,0,SI
+Mescola,ALCPROPC2700000A,Propoli granulato solubile 1000 microns,0,SI
+Mescola,ALCRSMOC0820000A,"RBE(R) - Rosemary Dry Extract - Estratto combinato e standardizzato >=20,0% diterpeni fenolici - >=10,0% acido carnosico",0,SI
+Mescola,ALCRSMOC0820000N,"Rosmarex® - Rosemary Dry Extract - estratto combinato e standardizzato >=20,0% diterpeni fenolici - >=10,0% acido carnosico",0,SI
+Mescola,ASDARNMC04R0400C,Arnica fiori estratto secco D/E 4:1 (USO COSMETICO),0,SI
+Mescola,ASDASTMC1416000A,"Astragalo radice estratto secco >=16,0% polisaccaridi",0,SI
+Mescola,ASDBSWSC2765000A,Boswellia gommo-resina estratto secco >= acidi boswellici,0,SI
+Mescola,ASDBTLAC0802500A,"Betulla foglia estratto secco >=2,5% flavonoidi tot. calc. come iperoside",0,SI
+Mescola,ASDBTLAC08R0400A,Betulla foglie estratto secco D/E 4:1,0,SI
+Mescola,ASDBTLAC27R0400A,Betulla RESINA e.s. per ESTRAZIONE IDROALCOLICA D/E 3-4:1,0,SI
+Mescola,ASDCCRMC17R1000A,Zucca seme estratto secco D/E 10:1,0,SI
+Mescola,ASDCCRPC17R0400A,Zucca seme e.s. D/E 4:1,0,SI
+Mescola,ASDCLACC1710000A,"Cola noci semi estratto secco >= 10,0% caffeina",0,SI
+Mescola,ASDCLNCC1710000A,"Cola nitida seme estratto secco >=10,0% caffeina (naturale)",0,SI
+Mescola,ASDCMLTC0850000P,"The verde foglia estr.secco >=50,0% polifenoli tot.- uso feed",0,SI
+Mescola,ASDCNCSC02R0400A,China (rossa) corteccia estratto secco D/E 4:1,0,SI
+Mescola,ASDCRTOC1001500A,"Biancospino fiori/foglie estratto secco >=1,5% flavonoidi totali calcolati come vitessina",0,SI
+Mescola,ASDCRTOC1900500A,"Biancospino fiori e foglie estratto secco >= 0,5% flavonoidi totali calc. come vitessina",0,SI
+Mescola,ASDCRTOC2403000A,"Biancospino fiore e foglia es. secco >= 3,0% flavonoidi totali calc.come vitessina",0,SI
+Mescola,ASDCRTOC24R0400A,Biancospino fiori/foglie estratto secco D/E 4:1,0,SI
+Mescola,ASDCTRGC05R0400A,Pompelmo seme estratto secco D/E 4:1,0,SI
+Mescola,ASDCTRMC0506000A,"Arancio amaro frutto estratto secco >= 6,0% sinefrina",0,SI
+Mescola,ASDCYNSC0806000A,"Carciofo foglia estratto secco >=5,0% acidi caffeolchinici totali calc.come cinarina",0,SI
+Mescola,ASDEQSAC0701000A,"Equiseto erba estratto secco >=1,0% silice",0,SI
+Mescola,ASDESCCC0700800A,"Escolzia erba estratto secco >=0,8% alcaloidi totali",0,SI
+Mescola,ASDESCCC07T3500A,"Escolzia erba estratto secco >=0,35% alcaloidi tot.calc. come protopina",0,SI
+Mescola,ASDGRFSC1725000A,"Grifogen® Griffonia seme estratto secco >= 25,0% 5-HTP",0,SI
+Mescola,ASDGRNRC2200200A,"Grindelia erba fiorita estratto secco >= 0,25% flavonoidi tot. calc. come iperoside",0,SI
+Mescola,ASDHDRHC0801000A,"Edera foglia estratto secco >=1,0% ederacoside C",0,SI
+Mescola,ASDHRCPC0700400N,"Pilosella erba estr. secco >=0,4% flavonoidi totali calc. come vitessina",0,SI
+Mescola,ASDHRPPC1400500N,"Artiglio del diavolo radice estr.secco >=0,5% arpagoside",0,SI
+Mescola,ASDHRPPC1401000N,"Artiglio del Diavolo radice estratto secco >=1,0% arpagoside",0,SI
+Mescola,ASDHRPPC1401500P,"Artiglio del diavolo radice estratto secco >=1,5% iridoidi totali calc. come arpagoside (uso feed)",0,SI
+Mescola,ASDHRPPC1402500P,"Artiglio del diavolo radici estratto secco >=2,5% arpagoside (HPLC)- USO FEED",0,SI
+Mescola,ASDILXPC0807500A,"Matè foglia estratto secco >= 8,0% caffeina",0,SI
+Mescola,ASDMDBAC05R1000C,Mela annurca e.s. frutto D/E 10:1 uso cosmetico,0,SI
+Mescola,ASDMLLOC0920000A,"Meliloto sommità fiorita estratto secco >= 20,0% cumarina (parzialmente aggiunta) 80 mesh",0,SI
+Mescola,ASDMLLOC1001000A,"Meliloto erba fiorita estratto secco >= 1,0% cumarina",0,SI
+Mescola,ASDMLLOC1017000A,"Meliloto erba fiorita estratto secco >= 17,0% cumarina (parzialmente aggiunta)",0,SI
+Mescola,ASDMLLOC2200500A,Meliloto sommità fiorita estratto secco >= 0.5% cumarina,0,SI
+Mescola,ASDMLLOC3402000A,"Meliloto sommità fiorita estratto secco >=2,0% cumarina",0,SI
+Mescola,ASDMLSOC0804000N,Melissa foglie e.s. >= 4% Ac. Rosmarinic (HPLC),0,SI
+Mescola,ASDMLSOC0804000P,"Melissa foglia estratto secco >= 4,0% acido rosmarinico (UV)",0,SI
+Mescola,ASDMLSOC0812000N,"Melissa foglia estratto secco >=12,0% derivati idrossicinnamici calc.come acido rosmarinico",0,SI
+Mescola,ASDMLSOC085UV00A,"Melissa foglia estratto secco >= 5,0% acido rosmarinico (UV)",0,SI
+Mescola,ASDMLSPC0570000A,Mela frutto e.s.>=70% polifenoli tot.,0,SI
+Mescola,ASDMNTPC08R0400A,Menta foglie estratto secco D/E 4:1,0,SI
+Mescola,ASDMRSAC08R0400A,Gelso bianco foglia estratto secco D/E 4:1,0,SI
+Mescola,ASDMTRCC0400200A,Camomilla fiore estratto secco >=0.2% apigenine totali,0,SI
+Mescola,ASDOLERC08R0400A,Olivo foglia estratto secco D/E 4:1,0,SI
+Mescola,ASDORTSC08M0500A,"Ortosiphon foglia estratto secco >=0,05% sinensetina",0,SI
+Mescola,ASDORTSC2200100A,Ortosifonide erba con fiori estratto secco >=0.1% flavonoidi totali come sinensetina,0,SI
+Mescola,ASDORTSC2200200A,"Ortosifon erba con fiori estratto secco >=0,2% flavonoidi totali come sinensetina",0,SI
+Mescola,ASDPLLCC1722000A,Guaranà seme estratto secco >=22% caffeina,0,SI
+Mescola,ASDPLNLC0801000A,Piantaggine 1% verbascoside,0,SI
+Mescola,ASDPROPC2712000A,"PROPOLI resina e.s. solubile 8,0%-12,0% flavonoidi tot. calc. come galangina",0,SI
+Mescola,ASDPROPC27R0400A,Propoli resina estratto secco D/E 4:1,0,SI
+Mescola,ASDPROPC27R3100A,Propoli resina estratto secco D/E 3:1,0,SI
+Mescola,ASDPRPSC2702500N,Propolis dry extract 2.5,0,SI
+Mescola,ASDPRPSC2703000N,Propolis dry extract 3,0,SI
+Mescola,ASDPRPSC2706000N,Propolis dry extract 6,0,SI
+Mescola,ASDPRPSC2708000N,Propolis dry extract 8-12,0,SI
+Mescola,ASDPRPSC2712000N,Propolis dry extract 12,0,SI
+Mescola,ASDPSSIC0902000N,Passiflora erba fiorita estratto secco >=2.0% flavonoidi totali calc.come vitexina,0,SI
+Mescola,ASDPSSIC1000500N,Passiflora erba fiorita estratto secco >=0.5% flavonoidi totali calc.come vitexina,0,SI
+Mescola,ASDPSSIC1003500A,Passiflora erba fiorita estratto secco >=3.5% flavonoidi totali calc.come vitexina,0,SI
+Mescola,ASDPSSIC1003500N,Passiflora erba fiorita estratto secco >=3.5% flavonoidi totali calc.come vitexina,0,SI
+Mescola,ASDPSSIC2204000P,"Passiflora erba fiorita estr. secco >= 4,0% flavonoidi totali calc. come vitessina - feed grade",0,SI
+Mescola,ASDRSCAC1410800A,"Rusco radice estr. secco >= 10,0% saponine (sapogenine) calc. come ruscogenina (UV) 80 mesh",0,SI
+Mescola,ASDSLYMC0502000A,"Cardo Mariano frutto estr. secco >= 2,0% silimarina calc. come silibinina",0,SI
+Mescola,ASDSLYMC0580000A,"Cardo Mariano frutto estratto secco purificato >= 80,0% silimarina",0,SI
+Mescola,ASDTBBAC0203000A,"Pau D'Arco (Tabebuia) corteccia estratto secco >=3,0% naftochinoni",0,SI
+Mescola,ASDTLPLC0400500A,"Tiglio fiore estratto secco >= 0,5% flavonoidi totali calc. come vitessina",0,SI
+Mescola,ASDTLPLC0401000A,"Tiglio fiore estratto secco >=1,0% flavonoidi tot. calcolati come rutina",0,SI
+Mescola,ASDTNCPC22R0200A,"Tanaceto erba fiorita estratto secco >=0,1% partenolidi",0,SI
+Mescola,ASDTNCPC22R0400A,Tanaceto erba fiorita estratto secco D/E 4:1,0,SI
+Mescola,ASDTRXDC1420000A,"Tarassaco radice estratto secco >=20,0% inulina (parzialmente aggiunta)",0,SI
+Mescola,ASDVCCMC0535000A,"Mirtillo nero frutto 32,4% - 39,6% antocianine (HPLC)",0,SI
+Mescola,ASDVLROC1400400A,"Valeriana radice est.secco >=0,42% acidi sesquiterpenici tot. calc. come valerenico",0,SI
+Mescola,ASDZNGOC13R0400A,Zenzero rizoma estratto secco D/E 4:1,0,SI
+Mescola,SGLANNCC05R4100A,Ananas HRD,0,SI
+Mescola,SGLBRSIC0800500A,BROCCOX® Broccoli parte aerea con fiori estratto solubile 0.3-0.5% sulforafano,0,SI
+Mescola,SGLBRSIC09R0400A,BROCCOX® Broccoli parte aerea con fiori D/E 4:1,0,SI
+Mescola,SGLCPPSC0500000A,Cappero frutto HRD® 4:1,0,SI
+Mescola,SGLCTRMC0504000A,Arancio amaro frutto HRD® e.solubile granulato >= 4.0% sinefrina,0,SI
+Mescola,SGLCYNSC0802500A,"Carciofo foglia estratto secco granulare >=2,5% acidi caffeoilchinici calc.come cinarina",0,SI
+Mescola,SGLFNCOC1700000A,Finocchio estratto granulato HRD®,0,SI
+Mescola,SGLSBAVC4600000A,Estratto secco di lumaca (food grade),0,SI
+Mescola,SGLTHYVC07R0400P,Timo erba (sommità) estratto secco solubile D/E 4:1- uso feed,0,SI
+Mescola,SGLTMRIC05R0400A,Tamarindo frutto estratto secco granulare,0,SI
+Mescola,SLCRCPC0500000A,Papaya Frutto e.s. NUTRACEUTICA,0,SI
+Mescola,SLRSCNC0570000A,Rosa canina frutto estratto secco >=70% acido ascorbico,0,SI
+Mescola,SSDACHMC34R0200A,Achillea sommità (erba) fiorita estratto secco D/E 2:1,0,SI
+Mescola,SSDADNCC07R0400A,Capelvenere erba estratto secco D/E 4:1,0,SI
+Mescola,SSDAGREC15R0200A,Agrimonia rizoma estratto secco,0,SI
+Mescola,SSDAGRRC14R0400A,Gramigna Rizoma e.s. D/E 4:1,0,SI
+Mescola,SSDALCVC07R0400A,Alchemilla erba estratto secco D/E 4:1,0,SI
+Mescola,SSDALLSC03R0400P,Aglio bulbo estratto secco D/E 4:1 - feed grade,0,SI
+Mescola,SSDALTOC1420000A,ALTEA RADICE E.S. >=20.0% POLISACCARIDI,0,SI
+Mescola,SSDALTOC1430000A,Altea radice estratto secco > 30% mucillagini,0,SI
+Mescola,SSDALTOC14R0200A,Altea radice estratto secco,0,SI
+Mescola,SSDALTOC14R0400A,Altea radice estratto secco D/E 4:1,0,SI
+Mescola,SSDARCLC1400000A,Bardana radice estratto secco,0,SI
+Mescola,SSDARCLC14R0400A,Bardana radice estratto secco D/E 4:1,0,SI
+Mescola,SSDARCLC14R0400N,Bardana radice estratto secco D/E 4:1,0,SI
+Mescola,SSDARMRC13R0400A,Rafano radice estratto secco D/E 4:1,0,SI
+Mescola,SSDARNMC04R0400A,Arnica Montana fiori E.S.,0,SI
+Mescola,SSDASPLC08R0400A,Rooibos foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDBRSBC08R0300A,Broccoli foglia e.s.,0,SI
+Mescola,SSDBRSBC08R0400A,Broccoli foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDBRSOC09R0400A,Cavolfiore infiorescenza estratto secco D/E 4:1,0,SI
+Mescola,SSDBTLAC08R0400A,Betulla FOGLIE e.s. solubile per DECOZIONE D/E 3-4:1,0,SI
+Mescola,SSDBTVLC14R0400A,Barbabietola radice e. s. acquoso D/E 4:1,0,SI
+Mescola,SSDCCRMC17R0400A,Zucca seme estratto secco 4:1,0,SI
+Mescola,SSDCFFTC3220000A,"CAFFTOP® HRD -Miscela solubile granulata >=20,0% caffeina",0,SI
+Mescola,SSDCHCIC14R0200A,Cicoria radice estratto secco D/E 2:1,0,SI
+Mescola,SSDCHCIC14R0400A,Cicoria radice estratto secco acquoso D/E 4:1,0,SI
+Mescola,SSDCHRAC07R0400A,Crisantello erba estratto secco D/E 4:1,0,SI
+Mescola,SSDCMNMC05R0400A,Cumino seme (frutto) estratto secco D/E 4:1,0,SI
+Mescola,SSDCNCSC02R0400A,China (Cinchona Succirubra) corteccia e. s.,0,SI
+Mescola,SSDCNNZC02R0200A,Cannella corteccia estr. secco D/E 2:1,0,SI
+Mescola,SSDCNNZC02R0400A,Cannella corteccia estratto secco D/E 4:1 acquoso,0,SI
+Mescola,SSDCNTEC34R0400A,Centaurea minore sommità estratto secco D/E 4:1,0,SI
+Mescola,SSDCPRSC0141800A,Cipresso bacche estratto secco acquoso D/E 4:1 80 mesh,0,SI
+Mescola,SSDCPRSC01R0400A,Cipresso bacche estratto secco acquoso D/E 4:1,0,SI
+Mescola,SSDCRCLC15R0300A,Curcuma rizoma estratto secco,0,SI
+Mescola,SSDCRCPC05R0400N,Papaya Frutto e.s. D/E 4:1,0,SI
+Mescola,SSDCRMCC05R0400A,Carvi frutti estratto secco D/E 4:1,0,SI
+Mescola,SSDCRNSC05R0400A,Coriandolo frutto estratto secco D/E 4:1,0,SI
+Mescola,SSDCTRBC0505000A,"CITRICOOS® - Bergamotto frutto e.s. >=5,0% flav. come naringina",0,SI
+Mescola,SSDCTRGC1700000A,Pompelmo seme estratto secco,0,SI
+Mescola,SSDCTRIC28R0400A,Lichene islandico tallo estratto secco D/E 4:1,0,SI
+Mescola,SSDCYNSC0813100A,"Carciofo foglia estratto secco 13,0% - 15,0% acidi caffeilchinici tot.calc come acido clorogenico",0,SI
+Mescola,SSDCYNSC0825C00A,"Carciofo foglia estratto secco >=2,5% acidi caffeoilchinici calc.come cinarina",0,SI
+Mescola,SSDCYNSC08R0400A,Carciofo foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDDCSCC14R0400A,Carota radice estratto secco acquoso D/E 4:1,0,SI
+Mescola,SSDDSMAC08R0200A,Desmodio foglia e.s.,0,SI
+Mescola,SSDDSMAC08R0400A,Desmodio foglia estratto secco solubile D/E 4:1,0,SI
+Mescola,SSDECHSC07R0200A,Echinacea purpurea erba estratto secco,0,SI
+Mescola,SSDECHUC07R0400A,Echinacea purpurea erba estratto secco D/E 4:1,0,SI
+Mescola,SSDECHUC14R0200A,Echinacea purpurea radice estratto secco,0,SI
+Mescola,SSDECHUC14R0400A,Echinacea purpurea radice estratto secco D/E 4:1,0,SI
+Mescola,SSDECLGC08R0200A,Eucalipto foglia estratto secco D/E 2:1,0,SI
+Mescola,SSDECLGC08R4S00A,Eucalipto foglie estratto secco solubile D/E 4:1,0,SI
+Mescola,SSDEPHOC22R0400A,Eufrasia parte aerea estratto secco D/E 4:1,0,SI
+Mescola,SSDEPLAC07R0400A,Epilobio (angustifolium) erba estratto secco D/E 4:1,0,SI
+Mescola,SSDEQSAC0701000N,"Equiseto erba estratto secco >=1,0% silice",0,SI
+Mescola,SSDEQSAC0702000A,"Equiseto erba estratto secco >= 2,0% silice",0,SI
+Mescola,SSDEQSAC0703000N,Equiseto erba estratto secco 2-3% silice,0,SI
+Mescola,SSDEQSAC0707000N,"Equiseto erba estratto secco >=7,0% silice",0,SI
+Mescola,SSDEQSAC07R0300A,Equiseto erba estratto secco,0,SI
+Mescola,SSDERCSC07R0400A,Rucola erba estratto secco D/E 4:1,0,SI
+Mescola,SSDESCCC0702000A,"Escolzia erba estratto secco >=2,0% flavonoidi tot. calc.come rutina",0,SI
+Mescola,SSDESCCC07S0400A,Escolzia erba estratto secco acquoso D/E 4:1,0,SI
+Mescola,SSDFCSCC05R0400A,Fico frutto estratto secco solubile D/E 4:1,0,SI
+Mescola,SSDFLPUC07R0400A,Spirea erba (sommita') estratto secco D/E 4:1,0,SI
+Mescola,SSDFMROC10R0400A,Fumaria erba fiorita estratto secco D/E 4:1,0,SI
+Mescola,SSDFNCOC0500500N,"Finocchio seme(frutto) estratto secco acquoso >=0,5% olio essenziale",0,SI
+Mescola,SSDFNCOC0501100N,Finocchio seme(frutto) estratto secco 0.9-1.1% olio essenziale,0,SI
+Mescola,SSDFNCOC05R0400N,Finocchio seme(frutto) estratto secco D/E 4:1,0,SI
+Mescola,SSDFNCOC17R0200A,Finocchio dolce seme estratto secco,0,SI
+Mescola,SSDFRXEC08R0200A,Frassino foglia estratto secco,0,SI
+Mescola,SSDFRXEC08R0400A,Frassino foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDGLGOC07R0400A,Galega erba fiorita estratto secco D/E 4:1,0,SI
+Mescola,SSDGLLGOC07R0400A,Galega erba estratto secco,0,SI
+Mescola,SSDGLYGC13R0400A,Liquopure® Liquirizia radice estratto secco D/E 4:1,0,SI
+Mescola,SSDGLYGC1402000A,"Liquirizia radice estratto secco < 3,0% acido glicirrizico",0,SI
+Mescola,SSDGLYGC14R0200P,"Liquirizia radice estratto secco < 3,0% acido glicirrizico",0,SI
+Mescola,SSDGNTNC14R0400A,Genziana radice estratto secco D/E 4:1,0,SI
+Mescola,SSDGRNRC10R0400A,Grindelia sommità estratto secco,0,SI
+Mescola,SSDHBSSC04R0400A,Ibisco (Karkadè) fiore estratto secco D/E 4:1,0,SI
+Mescola,SSDHDRHC08R0400A,Edera foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDHLCIC07R0400A,Elicriso erba fiorita estratto secco D/E 4:1 FINE FOODS,0,SI
+Mescola,SSDHMLLC0900400A,"Luppolo infiorescenza es. secco solubile >=0,4% flavonoidi tot. calc. come rutina",0,SI
+Mescola,SSDHMLLC0900500A,Luppolo infiorescenze estratto secco >= 0.5% flavonoidi totali calc.come rutina,0,SI
+Mescola,SSDHMLLC09R0400A,Luppolo infiorescenze (strobili) estr. secco D/E 4:1,0,SI
+Mescola,SSDHRCPC0700000A,Pilosella Erba estratto secco,0,SI
+Mescola,SSDHRPPC1400500A,Artiglio del diavolo radice estratto sec co >= 2.5% arpagodside,0,SI
+Mescola,SSDILXPB0803000A,"Matè foglia Bio e. secco >=3,0% caffeina PRODUCT FROM BIOLOGICAL AGRICOLTURE Cod ODC ITBIO005 Cod AzT501",0,SI
+Mescola,SSDILXPC0804000N,"Matè foglia estratto secco >= 4,0% caffeina",0,SI
+Mescola,SSDILXPC08R0400A,Matè foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDLNRCC22R0400A,Cardiaca erba fiorita estratto secco D/E 4:1,0,SI
+Mescola,SSDLVNAC34R0400A,Lavanda fiore estratto secco acquoso D/E 4:1,0,SI
+Mescola,SSDLVNAC34R0400N,Lavanda sommità fiorite estratto secco acquoso D/E 4:1,0,SI
+Mescola,SSDLYCBC05R0400A,Goji frutto estratto secco solubile D/E 4:1,0,SI
+Mescola,SSDLYESC05R0400A,Pomodoro estratto secco D/E 4:1,0,SI
+Mescola,SSDMDBAC0500000A,Mela annurca frutto e.s. da purea,0,SI
+Mescola,SSDMDBAC05R0400A,Mela annurca frutto e.s. D/E 4:1,0,SI
+Mescola,SSDMDCSC22R0400A,Erba medica erba fiorita estratto secco D/E 4:1,0,SI
+Mescola,SSDMLLOC07R0300A,Meliloto erba estratto secco D/E 3:1,0,SI
+Mescola,SSDMLLOC22R0400A,Meliloto sommità fiorita estratto secco acquoso D/E 4:1,0,SI
+Mescola,SSDMLSOC0800800A,"Melissa foglia estratto secco >=0,8% tot. idross. come acido rosmarinico (HPLC)",0,SI
+Mescola,SSDMLSOC0802000A,"Melissa foglia estratto secco >= 2,0% acido rosmarinico",0,SI
+Mescola,SSDMLSOC0805000A,"Melissa foglia e. s. acquoso >= 5,0% derivati idrossicinnamici tot. calc.come acido rosmarinico (HPLC)",0,SI
+Mescola,SSDMLSOC0812000A,"Melissa foglia estratto secco >=12,0% derivati idrossicinnamici calc.come acido rosmarinico",0,SI
+Mescola,SSDMLSOC08R0400A,Melissa foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDMLSOF0804000A,"Melissa foglia e. s. >= 4,0% ac. rosmarinico (HPLC) da Filiera Certificata ISO 22005",0,SI
+Mescola,SSDMLVSC24R0400A,Malva fiori/foglie estratto secco,0,SI
+Mescola,SSDMNTPC08R0400A,Menta foglia estratto secco acquoso D/E 4:1,0,SI
+Mescola,SSDMNTPC08R4S00A,Menta foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDMPMAC0500900A,Annurtrofil® mela annurca frutto estratto secco,0,SI
+Mescola,SSDMPMAC0500900U,Annurtrofil® mela annurca frutto estratto secco- Pyrus malus L. (Sin.: Malus domestica Borkh.),0,SI
+Mescola,SSDMPMAC0506I00A,Annurtrofil® mela annurca frutto estratto secco,0,SI
+Mescola,SSDMPMAC05D0500A,Annurtrofil® mela annurca frutto estratto secco- high density,0,SI
+Mescola,SSDMPMAC05R0400A,Mela annurca e.s. frutto D/E 4:1,0,SI
+Mescola,SSDMRNOC0800200N,Moringa oleifera foglie estratto secco 0.2% min. alcaloidi,0,SI
+Mescola,SSDMTRCC04R0500A,Camomilla fiore estratto secco D/E 5:1,0,SI
+Mescola,SSDNSTOC07R0400A,Nasturzio erba estratto secco D/E 4:1,0,SI
+Mescola,SSDONNSC14R0400A,Ononide radice estratto secco D/E 4:1,0,SI
+Mescola,SSDORGVC08R0400A,Origano foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDORTSC08R0300A,Ortosiphon foglia estratto secco,0,SI
+Mescola,SSDORTSC08R0400A,Ortosiphon foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDPHSVC17R1000A,Fagiolo seme estratto secco D/E 10:1,0,SI
+Mescola,SSDPLLCC1710000H,"Guaranà seme estratto secco solubile >= 10,0% caffeina (natural)",0,SI
+Mescola,SSDPLLCC1710100A,"Guarana' seme estratto secco 10,0% - 12,0% caffeina",0,SI
+Mescola,SSDPLLCC1710S00A,"Guaranà seme estr. sec. solubile >=10,0% caffeina (naturale)",0,SI
+Mescola,SSDPLLCC17R0400A,Guarana' seme estratto secco D/E 4:1,0,SI
+Mescola,SSDPLLNC31R0300A,Polline naturale granuli estratto secco,0,SI
+Mescola,SSDPLLNC31R0400A,Polline estratto secco D/E 4:1,0,SI
+Mescola,SSDPLNMC08R0400A,Piantaggine foglia estratto secco,0,SI
+Mescola,SSDPMPAC05R0400A,Anice verde frutto estratto secco D/E 4:1,0,SI
+Mescola,SSDPMPAC05S0400A,Anice verde frutto estratto secco D/E 4:1,0,SI
+Mescola,SSDPMSBC08R0300A,Boldo foglie estratto secco,0,SI
+Mescola,SSDPNCMC17R0200A,Miglio semi estratto secco,0,SI
+Mescola,SSDPPVRC38R0200A,Papavero Rosso fiore estratto secco,0,SI
+Mescola,SSDPRNAL29R0400A,Ciliegio peduncoli e. s. 4:1 da Filiera Locale,0,SI
+Mescola,SSDPRNCC05R0400A,Ciliegio frutto estratto secco D/E 4:1,0,SI
+Mescola,SSDPRndC05R0400A,Prugna frutto estratto secco D/E 4:1,0,SI
+Mescola,SSDPSSIC0704000A,"Passiflora erba fiorita estr. secco >= 4,0 % flavonoidi tot. calc. come vitessina",0,SI
+Mescola,SSDPSSIC07R0400A,Passiflora erba fiorita estratto secco D/E 4:1,0,SI
+Mescola,SSDPSSIC2200000A,Passiflora erba fiorita estratto secco D/E 5:1,0,SI
+Mescola,SSDPTRCC08R0400A,Prezzemolo foglie estratto secco D/E 4:1,0,SI
+Mescola,SSDPTRCC14R0400A,Prezzemolo radice estratto secco D/E 4:1,0,SI
+Mescola,SSDPTYOC02R0400A,Muira Puama corteccia estratto secco D/E 4:1,0,SI
+Mescola,SSDRBSIC05R0400A,Lampone frutto estratto secco D/E 4:1,0,SI
+Mescola,SSDRBSNC08R0300A,Ribes nero foglia estratto secco,0,SI
+Mescola,SSDRBSNC08R0400A,Ribes nero foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDRBSNC08R0400N,Ribes nero foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDRHMFC0200000A,Frangula corteccia estratto secco,0,SI
+Mescola,SSDRHMFC02R0400A,Frangula corteccia estratto secco D/E 4:1,0,SI
+Mescola,SSDRMNPC0218000A,"Cascara corteccia estratto secco 18,0% - 20,0% glicosidi idrossiantracenici calc. come cascaroside A",0,SI
+Mescola,SSDRMXCC14R0400A,Romice radice estratto secco,0,SI
+Mescola,SSDRPHSC14R0400A,Rafano sativo (Cren) estratto secco,0,SI
+Mescola,SSDRSCNC0510000N,"Rosa canina frutto estr. secco >=10,0% acido ascorbico",0,SI
+Mescola,SSDRSCNC0550000A,"Rosa canina frutto estr. secco >=50,0% acido ascorbico",0,SI
+Mescola,SSDRSCNC05R0400A,Rosa canina frutto estratto secco D/E 4:1,0,SI
+Mescola,SSDRSMOC0805000A,"Rosmarino foglia estratto secco >=5,0% derivati idrocinnamici calc.come acido rosmarinico",0,SI
+Mescola,SSDRSMOC08R0200A,Rosmarino foglia estratto secco,0,SI
+Mescola,SSDRSMOC08R0400A,Rosmarino foglia estratto secco acquoso D/E 4:1,0,SI
+Mescola,SSDSLDVC22R0400A,Verga d' oro parti aeree (erba fiorita) estratto secco D/E 4:1,0,SI
+Mescola,SSDSLVOC0801000A,SDE- Salvia fg es >=1.5% tot. idross. come ac. rosmarinico 0.5-1% ac. rosmarinico,0,SI
+Mescola,SSDSLVOC08R0400A,Salvia foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDSMBNC0400300A,"Sambuco fiore estratto secco solubile >=0,3% flavonoidi tot. calc. come iperoside",0,SI
+Mescola,SSDSMBNC24R0200A,Sambuco fiore e foglia e. s. D/E 2:1,0,SI
+Mescola,SSDSMLMC14R0400A,Salsapariglia radice estratto secco acquoso D/E 4:1,0,SI
+Mescola,SSDSPNLC08R0400A,Spinacio foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDSPRUC1000200A,Spirea sommità estr.secc. >=0.2% acido salicilico,0,SI
+Mescola,SSDSPRUC34R0200A,Spirea erba estratto secco D/E 2:1,0,SI
+Mescola,SSDSSYOC34R0200A,Erisimo sommità estratto secco,0,SI
+Mescola,SSDSSYOC34R0400A,Erisimo sommita' fiorita estratto secco D/E 4:1,0,SI
+Mescola,SSDTBBAC02R0400A,Pau d'Arco (Tabebuia) corteccia estratto secco D/E 4:1,0,SI
+Mescola,SSDTHYVC07R0200A,Timo vulgare foglia estr.secco,0,SI
+Mescola,SSDTLPLC04R0400A,Tiglio fiore estratto secco D/E 4:1,0,SI
+Mescola,SSDTLPLC04R4S00A,Tiglio fiore estratto secco solubile D/E 4:1,0,SI
+Mescola,SSDTLSPC04R0200A,Tiglio fiore estratto secco 2:1,0,SI
+Mescola,SSDTMRIC05R0200A,Tamarindo frutto estratto secco acquoso,0,SI
+Mescola,SSDTRGFC1700000A,Fieno greco seme estratto secco,0,SI
+Mescola,SSDTRGFC17R0400A,Fieno greco seme estratto secco D/E 4:1,0,SI
+Mescola,SSDTRNAC08R0400A,Damiana foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDTRXOC08R4S00A,Tarassaco foglia es. secco solubile acquoso D/E 4:1,0,SI
+Mescola,SSDTRXOC08S0400A,Tarassaco foglia estratto secco D/E 4:1,0,SI
+Mescola,SSDTRXOC1402000A,"Tarassaco radice estratto secco >= 2,0% inulina",0,SI
+Mescola,SSDTRXOC14R0200A,Tarassaco radice estratto secco,0,SI
+Mescola,SSDTRXOC14R0400A,Tarassaco radice estratto secco D/E 4:1,0,SI
+Mescola,SSDURTDC08R0200A,Ortica foglia estratto secco,0,SI
+Mescola,SSDVCCCC05R0400A,Mirtillo americano (Cranberry) frutto estratto secco D/E 4:1,0,SI
+Mescola,SSDVLROC14R0600N,Valeriana radice estratto secco D/E 5-6:1,0,SI
+Mescola,SSDVLTRC22R0200A,Viola tricolor erba fiorita estr.secco,0,SI
+Mescola,SSDVRBTC04R0300A,Verbasco fiore estr.secco,0,SI
+Mescola,SSDVSCAC0800000A,Vischio foglie estratto secco D/E 4:1,0,SI
+Mescola,SSDVTSTC08R0200A,Vite rossa foglia e.s. D/E 4:1,0,SI
+Mescola,SSDVTXAC05R0300A,Agnocasto frutto e.s.,0,SI
+Mescola,SSDZZZZC3200000A,Acido ascorbico polvere micronizzata,0,SI
+Mescola,TGLSLNAL05R0500A,Solanred® - Melanzana Rossa Lucana frutto D/E 5/6:1,0,SI
+Mescola,TSAGREC10R0400A,Agrimonia sommita' estratto secco 4:1,0,SI
+Mescola,TSDACHMC07R0400A,Achillea sommità (erba) fiorita estratto secco D/E 4:1,0,SI
+Mescola,TSDANGAC14R0400A,Angelica radice estratto secco D/E 4:1,0,SI
+Mescola,TSDARCLC1400100A,"Bardana radice estratto secco >=0,1% acidi caffeolchinici tot. calc. come acido clorogenico",0,SI
+Mescola,TSDASCHC1722000A,"Ippocastano seme estratto secco 18,0%- 22.0% saponine triterpeniche calc. come escina (uso alimentare)",0,SI
+Mescola,TSDASPOC14R0400A,Asparago radice estratto secco D/E 4:1,0,SI
+Mescola,TSDAVNSC17R0400A,Avena semi (frutto) estratto secco D/E 4:1,0,SI
+Mescola,TSDBRSBC08R2500A,Broccoli foglia estratto secco D/E 25:1,0,SI
+Mescola,TSDCCRMC17R0400A,Zucca seme estratto secco D/E 4:1,0,SI
+Mescola,TSDCCRPC17R0400A,Zucchino seme estratto secco D/E 4:1 (senza conservante),0,SI
+Mescola,TSDCHCIC14R0400A,Cicoria radice estratto secco acquoso D/E 4:1,0,SI
+Mescola,TSDCLNOC04R0400A,Calendula fiori estratto secco D/E 4:1,0,SI
+Mescola,TSDCNNZC02R0400A,Cannella corteccia estratto secco D/E 4:1,0,SI
+Mescola,TSDCRCLC15R0400A,Curcuma longa rizoma estratto secco D/E 4:1,0,SI
+Mescola,TSDCRCPC0500000A,Papaia frutto granulare fermentata,0,SI
+Mescola,TSDECHSC0706000A,"Echinacea purpurea erba estratto secco >=6,0% polifenoli totali",0,SI
+Mescola,TSDECLGC08R0400A,Eucalipto foglie estratto secco D/E 4:1,0,SI
+Mescola,TSDFMROC10M0400A,"Fumaria parte aerea estratto secco >= 0,04% alcaloidi tot.espr.come protopina",0,SI
+Mescola,TSDFRXEC0802000A,"Frassino foglia estratto secco >=2,0% acidi fenolici calc.come acido clorogenico",0,SI
+Mescola,TSDGRNRC22R0400A,Grindelia erba fiorita estratto secco D/E 4:1,0,SI
+Mescola,TSDHDRHC0801000A,"Edera foglia estratto secco >=1,0% ederagenina",0,SI
+Mescola,TSDHLCIC22R0400A,Elicriso erba fiorita estratto secco D/E 4:1,0,SI
+Mescola,TSDHRCPC0701000A,"Pilosella erba (parte aerea) estr. secco >=1,0% flavonoidi totali calc. come vitessina",0,SI
+Mescola,TSDHRCPC07R0400A,Pilosella erba estratto secco D/E 4:1,0,SI
+Mescola,TSDHRCPC2700400A,"Pilosella erba estr. secco >=0,4% flavonoidi totali calc. come vitessina",0,SI
+Mescola,TSDILLVC05R0400A,Anice stellato frutti estratto secco D/E 4:1,0,SI
+Mescola,TSDJNPCC01R0400A,Ginepro bacche (seme) estratto secco D/E 4:1,0,SI
+Mescola,TSDLSPCC1004000A,"Lespedeza parti aeree estr.s. >= 4,0% flavonoidi totali calc. come rutina",0,SI
+Mescola,TSDLYCBC0500000A,Goji frutto estratto secco >= 50.0% polisaccaridi,0,SI
+Mescola,TSDLYCBC0540000A,"Goji frutto estratto secco >=40,0% polisaccaridi",0,SI
+Mescola,TSDMLLOC0720000A,"Meliloto sommità fiorita estratto secco >= 20,0% cumarina (parzialmente aggiunta)",0,SI
+Mescola,TSDMLSOC0802000A,"Melissa foglia estratto secco >=2,0% acido rosmarinico (HPLC); >= 4,0% tot. idross. come ac. rosmarinico (UV)",0,SI
+Mescola,TSDMLSOC0804000A,"Melissa foglia estratto secco >= 4,0% acido rosmarinico (UV)",0,SI
+Mescola,TSDMLVSC08R04A,Malva foglia estratto secco D/E 4:1,0,SI
+Mescola,TSDMLVSC2430000A,Malva foglie estratto secco 25-30% polisaccaridi,0,SI
+Mescola,TSDMLVSC24R0400A,Malva fiori e foglia estratto secco D/E 4:1,0,SI
+Mescola,TSDMRRVC10R0400A,Marrubio bianco parti aeree (erba fiorita) estratto secco,0,SI
+Mescola,TSDMTRCC04R0400A,Camomilla fiore estratto secco D/E 4:1,0,SI
+Mescola,TSDORGMC10R0400A,Maggiorana parti aeree estratto secco D/E 4:1,0,SI
+Mescola,TSDORTSC2200100A,Ortosifonide erba con fiori estratto secco >=0.1%sinensetina,0,SI
+Mescola,TSDORTSC2200200A,"Ortosifon erba con fiori estratto secco >=0,2% sinensetina",0,SI
+Mescola,TSDPHSVC12R0400A,Fagiolo baccello (frutto) estr.secco D/E 4:1,0,SI
+Mescola,TSDPLNMC07R0400A,Piantaggine erba estratto secco D/E 4:1,0,SI
+Mescola,TSDPMSBC08R0400A,Boldo foglia estratto secco D/E 4:1,0,SI
+Mescola,TSDPNCMC17R0400A,Miglio seme (frutto) estratto secco D/E 4:1,0,SI
+Mescola,TSDPPVRC04R0400A,Papavero Rosso fiore estratto secco D/E 4:1,0,SI
+Mescola,TSDPSSIC0740000A,"Passiflora erba fiorita estr. secco >= 4,0% flavonoidi totali calc. come vitessina",0,SI
+Mescola,TSDPTYOC02R0400A,Muira Puama corteccia estratto secco D/E 4:1,0,SI
+Mescola,TSDRHDRC1403000A,"Rhodiola radice estratto secco >=3,0% salidrosidi",0,SI
+Mescola,TSDRSMOC08R0400A,Rosmarino foglie estratto secco D/E 4:1,0,SI
+Mescola,TSDSMBNC24R0400A,Sambuco fiore e foglia estratto secco D/E 4:1,0,SI
+Mescola,TSDSPRUC0700200A,"Spirea ulmaria erba estratto secco >= 0,2% acido salicilico",0,SI
+Mescola,TSDSRSRC22R0400A,Drosera erba fiorita estratto secco D/E 4:1,0,SI
+Mescola,TSDTHYVC26R0400A,Timo sommità estratto secco D/E 4:1,0,SI
+Mescola,TSDTNCPC2200500A,"Tanaceto erba fiorita e.secco >=0,5% partenolidi",0,SI
+Mescola,TSDTRXOC08R0400A,Tarassaco foglia estratto secco D/E 4:1,0,SI
+Mescola,TSDURTDC08R0400A,Ortica foglia estratto secco D/E 4:1,0,SI
+Mescola,TSDVCCMC0501000N,"Mirtillo nero frutto estr.secco >=1,0% antocianosidi (antocianine) calc. come cianidin 3-O-glucoside (HPLC)",0,SI
+Mescola,TSDVLROC1400800A,"Valeriana radice estratto secco >= 0,8% acidi sesquiterpenici totali",0,SI
+Mescola,TSDVRBOC22R0400A,Verbena erba fiorita estratto secco D/E 4:1,0,SI
+Mescola,TSDVRBTC10R0400A,Verbasco parti aeree (erba fiorita) estratto secco D/E 4:1,0,SI
+Mescola,TSDVTSTC0805000A,"Vite Rossa foglia estratto secco >= 5,0% polifenoli totali",0,SI
+Mescola,TSDVTXAC0500500A,"Agnocasto frutto estratto secco >=0,5% agnusidi calc. come agnuside",0,SI
+Mescola,TSDZMYSC30R0400A,Mais stigmi estratto secco D/E 4:1 (uso alimentare),0,SI
+Mescola,VGL10ERC3200000A,10 Erbe lassativo mix granulare,0,SI
+Mescola,VGLBSWSC2770000A,"Boswellia resina estratto secco >=70,0% acidi boswellici",0,SI
+Mescola,VGLCACAC3235000N,Calcio corallo granulare,0,SI
+Mescola,VGLCRCLC1430000A,Curcuma Longa radice BindGran >= 30.0% curcumina e sostanze simili calc come curcumina,0,SI
+Mescola,VGLCRCPC05R0400A,Papaya fermentata frutto plv granulata 4:1,0,SI
+Mescola,VGLDIOSC3290000A,"Diosmina polvere >=90,0% granulare",0,SI
+Mescola,VGLGLUDC3200000A,GLUCOSAMINA D-SOLFATO DA CROSTACEI GRANULARE,0,SI
+Mescola,VGLGYMSC0875000A,"Gymnema foglia estratto secco >=75,0% acidi gymemici",0,SI
+Mescola,VGLHONYC3200000A,Miele polvere 40-50,0,SI
+Mescola,VGLMLSPC0535000A,Mela aceto disidratato polvere,0,SI
+Mescola,VGLMRNCC0500000A,Noni succo del frutto polvere,0,SI
+Mescola,VGLMYTOC3200000A,Miscela Mythoxan compresse granulazione,0,SI
+Mescola,VGLQRCNZ3298000A,Quercetina Granulare 90.0 - 92.0%,0,SI
+Mescola,VLCCAFEC3260000A,"CAFFEINA 60,0% con Malt.Caramellata 40,%",0,SI
+Mescola,VLCCAFEC3295000A,"Caffeina naturale >=95,0%",0,SI
+Mescola,VLCCMRNC3200000A,Cumarina micronizzata 80%,0,SI
+Mescola,VLCL5HYC3200000A,TRIPTOFANO polvere granulare 98%,0,SI
+Mescola,VLCSOSEC3201000A,Sodio selenite 1% p/p,0,SI
+Mescola,VLCZZZZC3200000C,Complesso Barriera,0,SI
+Mescola,VSDCRCPC05R9900A,PAPAYA FERMENTATA FRUTTO POLVERE,0,SI
+Mescola,VSDCSSAC0820000A,"Senna foglia estratto secco >= 20,0% idrossiantracen derivati calc. come sennoside B",0,SI
+Mescola,VSDCTRBC32R0400A,Bergamotto succo del frutto e.s. D/E 4:1,0,SI
+Mescola,VSDCTRBC36R0400A,Bergamotto frutto estr.secco D/E 4:1,0,SI
+Mescola,VSDCTREC4300000A,RED ORANGE EXTRACT,0,SI
+Mescola,VSDOLERC0504000A,Acqua di vegetazione olivo,0,SI
+Mescola,VSDTROXC3200000A,Troxerutina,0,SI
+Mescola,VSDVTSTC1795000A,"Vite rossa semi estratto secco puri- ficato >=95,0% proantocianidine",0,SI
