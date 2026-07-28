@@ -88,11 +88,20 @@ if not persistence_configured():
     st.stop()
 try:
     verify_connection()
-except Exception:
+except Exception as database_error:
     st.error(
         "Database persistente non raggiungibile. Nessun dato è stato salvato. "
         "Verifica i Secrets di Streamlit e riprova."
     )
+    diagnostic=f"{type(database_error).__name__}: {database_error}"
+    try:
+        for secret_name in ["SUPABASE_SERVICE_ROLE_KEY","APP_PASSWORD"]:
+            secret_value=str(st.secrets.get(secret_name,""))
+            if secret_value:
+                diagnostic=diagnostic.replace(secret_value,"[DATO RISERVATO]")
+    except Exception:
+        pass
+    st.code(diagnostic[:1000],language=None)
     st.stop()
 
 
