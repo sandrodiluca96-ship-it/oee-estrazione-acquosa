@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
+from persistence import read_dataframe, write_dataframe
 
 
 DATA = Path("data")
@@ -16,6 +17,7 @@ MESCOLE_PLANNING_FILE = DATA / "pianificazione_mescole.csv"
 
 TURNI = {"1": (time(6), time(14)), "2": (time(14), time(22)), "3": (time(22), time(6))}
 TIPI_PRODUZIONE = ["Apertura lotto", "Prosecuzione lotto", "Chiusura lotto"]
+FASI_COMBER = ["Apertura lotto", "Prosecuzione lotto", "Scarico estrattore", "Chiusura lotto"]
 
 COL_EVENTI = [
     "id_evento", "id_turno", "data_turno", "turno", "macchina", "tipo_evento",
@@ -41,16 +43,11 @@ COL_MESCOLE_PLANNING = ["piano_id","settimana","data_inizio_settimana","data_fin
 def _read(path, columns):
     DATA.mkdir(exist_ok=True)
     if not path.exists(): pd.DataFrame(columns=columns).to_csv(path, index=False)
-    df = pd.read_csv(path, dtype=str).fillna("")
-    for c in columns:
-        if c not in df.columns: df[c] = ""
-    return df[columns]
+    return read_dataframe(path, columns)
 
 
 def _save(df, path, columns):
-    for c in columns:
-        if c not in df.columns: df[c] = ""
-    df[columns].to_csv(path, index=False)
+    write_dataframe(path, df, columns)
 
 
 def _number(v):
@@ -323,7 +320,15 @@ def render_machine_workflow(machine):
             action=st.radio("Lavorazione",actions,index=actions.index(default_action),horizontal=True,key=f"stage_{state}_{s['reset']}")
             stage="Prosecuzione lotto" if action=="Riprendi lotto in corso" else "Apertura lotto"
         else:
-            stage=st.selectbox("Tipo produzione",TIPI_PRODUZIONE,index=TIPI_PRODUZIONE.index(default_stage),key=f"stage_{state}_{s['reset']}")
+            production_stages=FASI_COMBER if machine=="Comber" else TIPI_PRODUZIONE
+            if default_stage not in production_stages:
+                default_stage=production_stages[0]
+            stage=st.selectbox(
+                "Fase di produzione" if machine=="Comber" else "Tipo produzione",
+                production_stages,
+                index=production_stages.index(default_stage),
+                key=f"stage_{state}_{s['reset']}",
+            )
         row["tipo_produzione"]=stage
         if stage=="Apertura lotto":
             if machine=="EV200":
@@ -405,12 +410,15 @@ def render_machine_workflow(machine):
                 key=f"drug_{state}_{s['reset']}",
             )
             x,y=st.columns(2)
-            with x: row["kg_liquido"]=st.number_input("Liquido della singola estrazione (kg)",min_value=0.0,value=_number(current.get("kg_liquido")) if current else 0.0,help="Lascia 0 se lo scarico non è ancora avvenuto.",key=f"liq_{state}_{s['reset']}")
+            with x: row["kg_liquido"]=st.number_input("Estratto liquido ottenuto (kg)",min_value=0.0,value=_number(current.get("kg_liquido")) if current else 0.0,help="Lascia 0 se lo scarico non è ancora avvenuto.",key=f"liq_{state}_{s['reset']}")
             with y: row["rs_liquido_pct"]=st.number_input("Residuo secco estrazione (%)",min_value=0.0,max_value=100.0,value=_number(current.get("rs_liquido_pct")) if current else 0.0,help="Lascia 0 finché il dato non è disponibile.",key=f"rs_{state}_{s['reset']}")
             has_liquid=_number(row["kg_liquido"])>0
             has_residue=_number(row["rs_liquido_pct"])>0
             row["stato_estrazione"]="Completata" if has_liquid and has_residue else "In corso"
-            row["fase_lavorazione"]="Scarico completato" if row["stato_estrazione"]=="Completata" else "Lavorazione in corso"
+            if stage=="Scarico estrattore":
+                row["fase_lavorazione"]="Scarico estrattore completato" if row["stato_estrazione"]=="Completata" else "Scarico estrattore in corso"
+            else:
+                row["fase_lavorazione"]="Scarico completato" if row["stato_estrazione"]=="Completata" else "Lavorazione in corso"
             row["stato_lotto"]="Completato" if stage=="Chiusura lotto" and row["stato_estrazione"]=="Completata" else "In corso"
             st.caption(f"Stato lotto: {row['stato_lotto']} · Stato lavorazione: {row['stato_estrazione']}")
             if row["stato_estrazione"]=="Completata":
@@ -418,7 +426,10 @@ def render_machine_workflow(machine):
             elif has_liquid or has_residue:
                 st.warning("Per completare l'estrazione devono essere valorizzati sia il liquido sia il residuo secco.")
             else:
-                st.info("Lavorazione registrata come in corso. Liquido e residuo secco potranno essere inseriti dopo lo scarico, anche nel turno successivo.")
+                if stage=="Scarico estrattore":
+                    st.info("Scarico registrato come in corso. Potrà essere ripreso nel turno successivo e completato inserendo estratto liquido ottenuto e residuo secco.")
+                else:
+                    st.info("Lavorazione registrata come in corso. Estratto liquido ottenuto e residuo secco potranno essere inseriti dopo lo scarico, anche nel turno successivo.")
         elif machine=="EV200":
             if stage=="Chiusura lotto":
                 x,y=st.columns(2)

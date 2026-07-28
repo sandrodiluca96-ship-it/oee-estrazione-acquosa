@@ -11,12 +11,16 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 from event_workflow import COL_EVENTI, EVENTI_FILE, _create_production, _validate, render_machine_workflow
+from persistence import audit_dataframe
+from persistence import configured as persistence_configured
+from persistence import read_dataframe, verify_connection, write_dataframe
+from persistence import soft_delete_ids
 
-# RELEASE OEE LAURIA 3.10.1 — storico gestionale consolidato al 24/07/2026
+# RELEASE OEE LAURIA 3.11.0 — persistenza Supabase e audit
 
 st.set_page_config(page_title="OEE Produzione Lauria", page_icon="🏭", layout="wide")
 
-VERSIONE = "3.10.1"
+VERSIONE = "3.11.0"
 QUALITA = 0.95
 PROCESS_MACHINES = ["Comber", "EV200", "Spray Dryer"]
 MACCHINE = PROCESS_MACHINES + ["Mescole"]
@@ -75,6 +79,21 @@ def require_password():
 
 
 require_password()
+
+if not persistence_configured():
+    st.error(
+        "Database persistente non configurato. L’app è bloccata per evitare "
+        "salvataggi temporanei e perdita di dati."
+    )
+    st.stop()
+try:
+    verify_connection()
+except Exception:
+    st.error(
+        "Database persistente non raggiungibile. Nessun dato è stato salvato. "
+        "Verifica i Secrets di Streamlit e riprova."
+    )
+    st.stop()
 
 
 st.markdown("""
@@ -145,21 +164,21 @@ def init_data():
 
 def read_csv(path, columns):
     init_data()
-    df = pd.read_csv(path, dtype=str).fillna("")
-    for c in columns:
-        if c not in df.columns: df[c] = ""
-    return df[columns]
+    return read_dataframe(path, columns)
 
 
 def save_csv(df, path, columns):
-    for c in columns:
-        if c not in df.columns: df[c] = ""
-    df[columns].to_csv(path, index=False)
+    write_dataframe(path, df, columns)
 
 
 def _normalizza_intestazione(value):
     text=unicodedata.normalize("NFKD",str(value)).encode("ascii","ignore").decode("ascii")
     return re.sub(r"[^A-Z0-9]+","",text.upper())
+
+
+def _normalizza_testo(value):
+    text=unicodedata.normalize("NFKD",str(value)).encode("ascii","ignore").decode("ascii")
+    return re.sub(r"[^A-Z0-9]+"," ",text.upper()).strip()
 
 
 def _colonna_excel(frame,*aliases):
@@ -465,21 +484,17 @@ def comber_weekly_status(plans, as_of=None):
         start_day=pd.to_datetime(p["data_inizio"],errors="coerce").date()
         end_day=pd.to_datetime(p["data_fine"],errors="coerce").date()
         plan_id=str(p["piano_id"]).strip()
+        planned_product=_normalizza_testo(p["prodotto"])
         explicit=comber[comber["piano_id"].astype(str).str.strip()==plan_id]
         candidates=comber[
             (comber["_data"]>=start_day)&(comber["_data"]<=end_day)&
             (comber["piano_id"].astype(str).str.strip()=="")
-        ]
-        # Le registrazioni precedenti prive di piano_id vengono riconciliate solo
-        # quando in quella data esiste una sola campagna Comber.
-        inferred_indexes=[]
-        for idx,event in candidates.iterrows():
-            active_count=sum(
-                pd.to_datetime(q["data_inizio"],errors="coerce").date()<=event["_data"]<=pd.to_datetime(q["data_fine"],errors="coerce").date()
-                for q in plan_records
-            )
-            if active_count==1: inferred_indexes.append(idx)
-        linked=pd.concat([explicit,comber.loc[inferred_indexes]],ignore_index=False).drop_duplicates()
+        ].copy()
+        # La riconciliazione del piano Comber avviene sul nome della droga/prodotto
+        # previsto, non sulla quantità caricata.
+        candidates["_prodotto_norm"]=candidates["descrizione"].map(_normalizza_testo)
+        same_product=candidates[candidates["_prodotto_norm"]==planned_product]
+        linked=pd.concat([explicit,same_product],ignore_index=False).drop_duplicates()
         assigned.update(linked.index.tolist())
         extractions=_comber_extractions(linked)
         completed=extractions[extractions["completata"]] if not extractions.empty else extractions
@@ -488,7 +503,10 @@ def comber_weekly_status(plans, as_of=None):
         in_progress=int((~extractions["completata"]).sum()) if not extractions.empty else 0
         planned_kg=float(pd.to_numeric(pd.Series([p["kg_pianificati"]]),errors="coerce").fillna(0).iloc[0])
         planned_count=float(pd.to_numeric(pd.Series([p["estrazioni_pianificate"]]),errors="coerce").fillna(0).iloc[0])
-        actual_pct=max(pct(actual_kg,planned_kg),pct(completed_count,planned_count))
+        # Lo stato del piano misura l'avanzamento delle estrazioni previste per
+        # quella droga. I kg restano disponibili per le analisi di resa, ma non
+        # determinano il semaforo della pianificazione.
+        actual_pct=pct(completed_count,planned_count) if planned_count>0 else (100.0 if completed_count>0 else 0.0)
         start_dt=datetime.combine(start_day,_clock(p["ora_inizio"],time(6)))
         end_dt=datetime.combine(end_day,_clock(p["ora_fine"],time(22),use_end=True))
         if end_dt<=start_dt: end_dt+=timedelta(days=1)
@@ -818,6 +836,7 @@ def delete_history_events(event_ids):
     if removed.empty:
         return False,"Nessun evento selezionato."
     updated=all_events[~all_events["id_evento"].isin(event_ids)].copy()
+    soft_delete_ids(EVENTI_FILE,event_ids)
     save_csv(updated,EVENTI_FILE,COL_EVENTI)
 
     productions=read_csv(LOTTI_FILE,COL_LOTTI)
@@ -839,6 +858,8 @@ def delete_history_events(event_ids):
             last=eligible.iloc[-1]
             production=_create_production(machine,lot,last["id_turno"],last["data_turno"],str(last["turno"]),[])
             productions=pd.concat([productions,pd.DataFrame([production])],ignore_index=True)
+        else:
+            soft_delete_ids(LOTTI_FILE,[f"LOT-{machine}-{lot}"])
     save_csv(productions,LOTTI_FILE,COL_LOTTI)
 
     turns=read_csv(TURNI_FILE,COL_TURNI)
@@ -846,6 +867,7 @@ def delete_history_events(event_ids):
         remaining=updated[updated["id_turno"].astype(str)==shift_id]
         if remaining.empty:
             turns=turns[turns["id_turno"].astype(str)!=shift_id]
+            soft_delete_ids(TURNI_FILE,[shift_id])
             continue
         production_hours=pd.to_numeric(
             remaining.loc[remaining["tipo_evento"]=="Produzione","durata_h"],errors="coerce"
@@ -934,6 +956,12 @@ def xlsx_export(machine=None):
         events.to_excel(w,"Eventi",index=False)
         read_csv(PRODOTTI_FILE,COL_PRODOTTI).to_excel(w,"Anagrafica prodotti",index=False)
         read_csv(CAUSALI_FILE,COL_CAUSALI).to_excel(w,"Causali",index=False)
+        if not machine:
+            read_csv(PLANNING_FILE,COL_PLANNING).to_excel(w,"Piano Comber",index=False)
+            read_csv(MESCOLE_PLANNING_FILE,COL_MESCOLE_PLANNING).to_excel(w,"Piano Mescole",index=False)
+            read_csv(TARGET_FILE,COL_TARGET).to_excel(w,"Target",index=False)
+            read_csv(MESCOLE_TARGET_FILE,COL_MESCOLE_TARGET).to_excel(w,"Target Mescole",index=False)
+            audit_dataframe().to_excel(w,"Audit modifiche",index=False)
     out.seek(0); return out
 
 
@@ -985,7 +1013,9 @@ def render_oee_unified(turns, prod):
     for col,r in zip(cols,results):
         with col:
             st.plotly_chart(gauge(r["OEE"],f'OEE {r["Macchina"]}'),use_container_width=True)
-            indicator=process_indicator(prod,r["Macchina"],turns)
+            # Gli indicatori tecnici usano tutto lo storico produttivo valido.
+            # L'OEE, invece, resta calcolato esclusivamente sui turni completi.
+            indicator=process_indicator(prod,r["Macchina"])
             metric_cols=st.columns(3 if indicator is not None else 2)
             a,b=metric_cols[0],metric_cols[1]
             a.metric("Availability",f'{r["Disponibilità"]:.1%}')
@@ -1002,6 +1032,22 @@ def render_oee_unified(turns, prod):
 
 
 init_data()
+if not st.session_state.get("persistent_data_bootstrapped"):
+    # Migrazione iniziale completa: ogni CSV viene importato soltanto se il
+    # relativo dataset Supabase non contiene ancora alcun record.
+    for _path, _columns in [
+        (TURNI_FILE,COL_TURNI),
+        (LOTTI_FILE,COL_LOTTI),
+        (EVENTI_FILE,COL_EVENTI),
+        (PRODOTTI_FILE,COL_PRODOTTI),
+        (CAUSALI_FILE,COL_CAUSALI),
+        (TARGET_FILE,COL_TARGET),
+        (PLANNING_FILE,COL_PLANNING),
+        (MESCOLE_PLANNING_FILE,COL_MESCOLE_PLANNING),
+        (MESCOLE_TARGET_FILE,COL_MESCOLE_TARGET),
+    ]:
+        read_csv(_path,_columns)
+    st.session_state["persistent_data_bootstrapped"]=True
 if LOGO_FILE.exists(): st.sidebar.image(str(LOGO_FILE),width=170)
 st.sidebar.markdown("### Produzione Lauria")
 area=st.sidebar.radio("Area",[
@@ -1049,12 +1095,10 @@ if page=="Pianificazione Comber":
         k5.metric("In ritardo",int((progress["stato"]=="IN RITARDO").sum()))
 
         progress["stato_visuale"]=progress["semaforo"]+" "+progress["stato"]
-        view=progress[["stato_visuale","data_inizio","prodotto","lotto_droga","ora_inizio","ora_fine","kg_pianificati","kg_effettivi","estrazioni_pianificate","estrazioni_completate","estrazioni_in_corso","avanzamento_pct","avanzamento_atteso_pct"]]
+        view=progress[["stato_visuale","data_inizio","prodotto","lotto_droga","ora_inizio","ora_fine","estrazioni_pianificate","estrazioni_completate","estrazioni_in_corso","avanzamento_pct","avanzamento_atteso_pct"]]
         st.dataframe(view,use_container_width=True,hide_index=True,column_config={
             "stato_visuale":"Stato","data_inizio":"Giorno previsto","prodotto":"Prodotto",
             "lotto_droga":"Lotto droga","ora_inizio":"Inizio previsto","ora_fine":"Fine prevista",
-            "kg_pianificati":st.column_config.NumberColumn("Kg pianificati",format="%.1f"),
-            "kg_effettivi":st.column_config.NumberColumn("Kg completati",format="%.1f"),
             "estrazioni_pianificate":"Estrazioni pianificate",
             "estrazioni_completate":"Estrazioni completate","estrazioni_in_corso":"In corso",
             "avanzamento_pct":st.column_config.ProgressColumn("Avanzamento reale",min_value=0,max_value=100,format="%.0f%%"),
@@ -1379,6 +1423,7 @@ elif page in ["Turno Comber", "Turno EV200", "Turno Spray Dryer", "Turno Mescole
         delete_id=st.selectbox("Dato da eliminare",[""]+list(labels),format_func=lambda x:"-- Seleziona --" if not x else labels[x],key=f"delete_{machine}")
         confirm_delete=st.checkbox("Confermo l’eliminazione del dato selezionato",key=f"confirm_delete_{machine}")
         if st.button("Elimina dato",disabled=not(delete_id and confirm_delete),key=f"delete_btn_{machine}"):
+            soft_delete_ids(LOTTI_FILE,[delete_id])
             save_csv(all_rows[all_rows["id"]!=delete_id],LOTTI_FILE,COL_LOTTI)
             st.success("Dato eliminato."); st.rerun()
 
@@ -1490,6 +1535,21 @@ elif page=="Anagrafiche e causali":
 
 elif page=="Excel":
     st.title("Excel per macchina")
+    st.subheader("Backup completo database")
+    backup_name=f"backup_completo_oee_evra_{date.today():%Y-%m-%d}.xlsx"
+    st.caption(
+        "Contiene tutti i reparti, le pianificazioni, i target, le anagrafiche "
+        "e il registro delle modifiche."
+    )
+    st.download_button(
+        "Scarica backup completo",
+        xlsx_export(),
+        backup_name,
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        type="primary",
+    )
+    st.divider()
+    st.subheader("Backup per macchina")
     machine=st.selectbox("Seleziona la macchina",MACCHINE)
     safe_name=machine.lower().replace(" ","_")
     st.caption(f"Il file contiene esclusivamente turni e produzioni della macchina {machine}.")
@@ -1504,12 +1564,20 @@ elif page=="Excel":
             new_t=pd.read_excel(xl,"Turni",dtype=str).fillna(""); new_p=pd.read_excel(xl,"Produzioni",dtype=str).fillna("")
             for frame in [new_t,new_p]: frame["macchina"]=machine
             old_t=read_csv(TURNI_FILE,COL_TURNI); old_p=read_csv(LOTTI_FILE,COL_LOTTI)
+            soft_delete_ids(TURNI_FILE,old_t.loc[old_t["macchina"]==machine,"id_turno"])
+            soft_delete_ids(LOTTI_FILE,old_p.loc[old_p["macchina"]==machine,"id"])
             old_t=old_t[old_t["macchina"]!=machine]; old_p=old_p[old_p["macchina"]!=machine]
             save_csv(pd.concat([old_t,new_t],ignore_index=True),TURNI_FILE,COL_TURNI)
             save_csv(pd.concat([old_p,new_p],ignore_index=True),LOTTI_FILE,COL_LOTTI)
             if "Eventi" in xl.sheet_names:
                 new_e=pd.read_excel(xl,"Eventi",dtype=str).fillna(""); new_e["macchina"]=machine
                 old_e=read_csv(EVENTI_FILE,COL_EVENTI); old_e=old_e[old_e["macchina"]!=machine]
+                soft_delete_ids(
+                    EVENTI_FILE,
+                    read_csv(EVENTI_FILE,COL_EVENTI).loc[
+                        lambda frame: frame["macchina"]==machine,"id_evento"
+                    ],
+                )
                 save_csv(pd.concat([old_e,new_e],ignore_index=True),EVENTI_FILE,COL_EVENTI)
             st.success(f"Dati {machine} sostituiti. Le altre macchine non sono state modificate.")
         except Exception as exc: st.error(f"Impossibile importare: {exc}")
