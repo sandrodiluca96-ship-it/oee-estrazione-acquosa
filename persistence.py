@@ -41,11 +41,25 @@ def configured() -> bool:
     return bool(_secret("SUPABASE_URL") and _secret("SUPABASE_SERVICE_ROLE_KEY"))
 
 
+def safe_error_message(error: Exception) -> str:
+    """Restituisce diagnostica utile senza esporre credenziali."""
+    message = f"{type(error).__name__}: {error}"
+    for value in [
+        _secret("SUPABASE_SERVICE_ROLE_KEY"),
+        _secret("APP_PASSWORD"),
+    ]:
+        if value:
+            message = message.replace(value, "[DATO RISERVATO]")
+    return message[:1000]
+
+
 @st.cache_resource
 def client():
     from supabase import create_client
 
-    url = _secret("SUPABASE_URL")
+    url = _secret("SUPABASE_URL").rstrip("/")
+    if url.endswith("/rest/v1"):
+        url = url[: -len("/rest/v1")]
     key = _secret("SUPABASE_SERVICE_ROLE_KEY")
     if not url or not key:
         raise RuntimeError("Connessione al database persistente non configurata.")
@@ -54,7 +68,7 @@ def client():
 
 def verify_connection() -> None:
     """Fallisce in modo esplicito se il database non è raggiungibile."""
-    client().table("app_records").select("dataset", count="exact").limit(1).execute()
+    client().table("app_records").select("dataset").limit(1).execute()
 
 
 def audit_dataframe() -> pd.DataFrame:
