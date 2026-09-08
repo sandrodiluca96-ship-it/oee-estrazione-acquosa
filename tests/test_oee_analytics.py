@@ -3,7 +3,7 @@ import unittest
 
 import pandas as pd
 
-from oee_analytics import calculate_effectiveness, comber_planning_view, open_productions
+from oee_analytics import calculate_effectiveness, comber_planning_view, latest_machine_productions, open_productions
 
 
 def _event(event_id, day, kind, hours, description="", lot="", extraction=0, kg=0, completed="", cause_id=""):
@@ -16,6 +16,18 @@ def _event(event_id, day, kind, hours, description="", lot="", extraction=0, kg=
 
 
 class AnalyticsTests(unittest.TestCase):
+ def test_latest_machine_production_returns_one_row_per_machine(self):
+    rows=[
+        {**_event("1","2026-09-07","Produzione",2,"RAFANO","C-OLD"),"tipo_produzione":"Apertura lotto","stato_lotto":"In corso"},
+        {**_event("2","2026-09-08","Produzione",2,"FINOCCHIO","C-NEW"),"tipo_produzione":"Prosecuzione lotto","stato_lotto":"In corso"},
+        {**_event("3","2026-09-08","Produzione",2,"MELISSA","S-NEW"),"macchina":"Spray Dryer","tipo_produzione":"Chiusura lotto","stato_lotto":"Completato"},
+    ]
+    result=latest_machine_productions(pd.DataFrame(rows))
+    self.assertEqual(len(result),2)
+    self.assertEqual(result[result["Macchina"]=="Comber"].iloc[0]["Lotto"],"C-NEW")
+    self.assertEqual(result[result["Macchina"]=="Comber"].iloc[0]["Stato"],"🟢 IN CORSO")
+    self.assertEqual(result[result["Macchina"]=="Spray Dryer"].iloc[0]["Stato"],"🔵 ULTIMA REGISTRATA")
+
  def test_open_productions_are_carried_until_closure(self):
     rows=[
         {**_event("1","2026-09-07","Produzione",2,"TIMO","C-01",1,100,"Completata"),"tipo_produzione":"Apertura lotto","stato_lotto":"In corso","fase_lavorazione":"Scarico estrattore completato"},
