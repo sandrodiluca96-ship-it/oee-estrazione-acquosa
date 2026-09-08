@@ -1,0 +1,92 @@
+# OEE/OOE Produzione Lauria – versione 4.0.3
+
+Unica applicazione Streamlit Poka-Yoke per:
+
+- Comber – estrazione acquosa;
+- EV200 – concentrazione;
+- Spray Dryer – essiccazione;
+- Mescole – gestione dei lotti e produttività di reparto;
+- navigazione laterale separata per Comber, EV200, Spray Dryer e Mescole;
+- ultimi dati visibili e correggibili dentro ogni macchina;
+- gestione completa a eventi: apertura, prosecuzione e chiusura lotto, modifica, duplicazione ed eliminazione;
+- copertura obbligatoria delle otto ore e corretta gestione del terzo turno;
+- sezioni centralizzate Excel e Storico con filtro per macchina;
+- target giornalieri e giorni produttivi modificabili dall'app;
+- dashboard Production vs Target per Comber e Spray Dryer;
+- dashboard OEE separata con i tre cruscotti;
+- selettore OEE, OOE e Confronto per Comber e Spray Dryer; EV200 resta disponibile come pagina operativa ma è escluso dalla dashboard;
+- produzioni attualmente in corso sotto OEE/OOE, con lotto, descrizione, fase e ultimo aggiornamento; sono mostrate soltanto le lavorazioni aggiornate nella giornata corrente;
+- OEE calcolato sul solo tempo pianificato per produrre e OOE su tutto il tempo operativo registrato;
+- classificazione causali retroattiva tramite identificativo stabile, con anteprima dell'impatto prima del salvataggio;
+- filtro temporale, dettaglio del calcolo e Pareto delle perdite;
+- indicatori di processo OEE: mass yield media Comber e taglio medio Spray Dryer;
+- nel cruscotto Comber la Mass Yield media del periodo sostituisce la Quality come indicatore visibile; la Quality standard resta applicata al calcolo OEE/OOE;
+- sezione Production vs Target separata, posizionata dopo le tre macchine;
+- modalità ingrandita per visualizzare il report produttivo a tutta pagina;
+- logo EVRA nella barra laterale;
+- anagrafiche modificabili di codici droga, semilavorati, prodotti finiti da miscelare e causali;
+- backup e ripristino Excel.
+- pianificazione Comber con vista settimanale di tutti i prodotti e semaforo per singola campagna: Programmato, In linea, Sotto ritmo, In ritardo o Completato;
+- chiusura della pianificazione Comber al raggiungimento dei kg pianificati; il numero di estrazioni rimane informativo;
+- riconciliazione piano/consuntivo tramite nome normalizzato della droga, senza dipendere dal lotto;
+- pianificazione settimanale indipendente, senza riporto del backlog delle settimane precedenti;
+- separazione tra piano della settimana, residui, extra e produzioni fuori piano;
+- confronto Comber per prodotto tra kg ed estrazioni pianificate, kg ed estrazioni completate, avanzamento reale/atteso e lotti fuori pianificazione;
+- EV200 collegato a uno o più lotti Comber dello stesso prodotto, con inserimento del solo concentrato finale e residuo secco finale.
+- gestione Comber per singola estrazione, con numero estrazione e droga caricata;
+- stato della lavorazione determinato automaticamente: in corso senza liquido/residuo, completata quando entrambi i dati sono presenti;
+- prosecuzione delle estrazioni tra turni senza duplicare la droga caricata.
+- pianificazione Mescole importabile dal gestionale (`CODART`, `DESART`, `QUANTITA`, `DATEVA`) con avanzamento Plan vs Actual;
+- 381 codici di prodotto finito precaricati come suggerimenti e possibilità di aggiungere nuovi codici e descrizioni;
+- lotto Mescole automaticamente in corso senza quantità finale e automaticamente chiuso quando la quantità viene inserita, anche nel turno successivo;
+- calcolo di durata, ore-uomo e produttività in kg/ora-uomo; Mescole resta separato dall'OEE delle tre macchine di processo.
+- dashboard dedicata Mescole con kg prodotti e pianificati, lotti completati/in corso, ore di lavorazione, ore-uomo, kg/ora-uomo e analisi giornaliera/per prodotto.
+- target Mescole configurabili per kg/giorno e kg/ora-uomo, con raggiungimento calcolato sul periodo selezionato.
+- pianificazione Mescole aggregata per settimana, con avanzamento reale vs atteso, stato In anticipo/In linea/In ritardo e identificazione dei lotti fuori pianificazione.
+- importazione dello storico gestionale da Carico Produzione ed Esplosione commessa;
+- storico Spray Dryer ricostruito dalle sole righe `ATOM`, utilizzando data, lotto, articolo e quantità caricata;
+- storico Comber ricostruito dai lotti semilavorati `WSD` e `YSD` contenenti componenti `MDR`, con puro reale ottenuto sottraendo la maltodestrina dal prodotto secco;
+- importazioni ripetibili senza duplicazioni: lo storico gestionale precedente viene sostituito e i dati manuali hanno priorità.
+
+## Pubblicazione su Streamlit Community Cloud
+
+1. Creare o aprire un repository GitHub.
+2. Caricare **il contenuto della cartella**, mantenendo anche `.streamlit/config.toml`.
+3. In Streamlit Cloud selezionare il repository, il ramo `main` e `app.py`.
+4. Fare clic su Deploy.
+
+## Formule principali
+
+- Comber: se la resa è inferiore al 15%, equivalente = kg droga × 15%; altrimenti equivalente = puro reale.
+- Spray Dryer: equivalente 40% = minore tra semilavorato fisico e puro/40%; con tagli inferiori al 60% resta il dato fisico reale.
+- Qualità OEE standard temporanea: 95%.
+- Availability OEE = tempo operativo / (tempo operativo + fermi avvenuti nel tempo pianificato per produrre).
+- Availability OOE = tempo operativo / intero tempo operativo registrato rilevante per l'OOE.
+- Performance = output equivalente / output teorico nel tempo effettivo di produzione.
+- OEE/OOE = Availability × Performance × Quality.
+
+## Aggiornamento dalla versione 3.11
+
+1. Conservare il backup Excel dell'app e le esportazioni Supabase di `app_records` e `app_audit_log`.
+2. Sostituire i file applicativi con il contenuto di questo pacchetto, lasciando invariati i Secrets Streamlit.
+3. Avviare l'app: i record esistenti restano validi; i nuovi campi JSON vengono completati senza cancellare lo storico.
+4. Controllare **Anagrafiche e causali**. La prima migrazione imposta attesa prodotto, attesa analisi, cambio lotto, inventario, lavaggio, pulizia e manutenzione programmata fuori dal tempo pianificato OEE e penalizzanti per l'OOE.
+5. Verificare un periodo noto nella nuova pagina **Dashboard OEE e OOE** prima di utilizzare i risultati ufficialmente.
+
+La data produttiva coincide con la data assegnata al turno. Non viene applicata una chiusura convenzionale alle 03:00.
+
+## Test
+
+Eseguire dalla cartella del progetto:
+
+```bash
+PYTHONPATH=. python -m unittest discover -s tests -v
+```
+
+## Target
+
+- Comber: 150 kg/giorno, 220 giorni/anno.
+- EV200: 168,75 kg/giorno, 220 giorni/anno.
+- Spray Dryer: 321,6 kg semilavorato/giorno e 128,64 kg equivalenti/giorno.
+
+Scaricare regolarmente il backup Excel dalla pagina **Import / Export**.
