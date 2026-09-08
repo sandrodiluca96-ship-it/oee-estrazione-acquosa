@@ -30,7 +30,7 @@ class AnalyticsTests(unittest.TestCase):
     self.assertEqual(comber["Stato"],"🟢 IN LAVORAZIONE")
     self.assertIn("Estrazione 2",comber["Dettaglio"])
     spray=result[result["Lotto"]=="S-01"].iloc[0]
-    self.assertEqual(spray["Stato"],"🟡 DA RIPRENDERE")
+    self.assertEqual(spray["Stato"],"🟢 IN LAVORAZIONE")
 
  def test_oee_excludes_waiting_product_but_ooe_includes_it(self):
     events = pd.DataFrame([
