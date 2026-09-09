@@ -3,7 +3,7 @@ import unittest
 
 import pandas as pd
 
-from oee_analytics import calculate_effectiveness, comber_planning_view, latest_machine_productions, open_productions
+from oee_analytics import calculate_effectiveness, comber_planning_view, latest_machine_productions, open_productions, ordered_open_lots
 
 
 def _event(event_id, day, kind, hours, description="", lot="", extraction=0, kg=0, completed="", cause_id=""):
@@ -16,6 +16,14 @@ def _event(event_id, day, kind, hours, description="", lot="", extraction=0, kg=
 
 
 class AnalyticsTests(unittest.TestCase):
+ def test_open_lots_are_ordered_by_latest_activity(self):
+    rows=[
+        {**_event("1","2026-09-07","Produzione",2,"RAFANO","M26/0132"),"tipo_produzione":"Apertura lotto","stato_lotto":"In corso"},
+        {**_event("2","2026-09-08","Produzione",2,"GUARANA","M26/0138"),"tipo_produzione":"Apertura lotto","stato_lotto":"In corso"},
+        {**_event("3","2026-09-09","Produzione",2,"GUARANA","m26/0138"),"tipo_produzione":"Prosecuzione lotto","stato_lotto":"In corso"},
+    ]
+    self.assertEqual(ordered_open_lots(pd.DataFrame(rows),"Comber"),["m26/0138","M26/0132"])
+
  def test_latest_machine_production_returns_one_row_per_machine(self):
     rows=[
         {**_event("1","2026-09-07","Produzione",2,"RAFANO","C-OLD"),"tipo_produzione":"Apertura lotto","stato_lotto":"In corso"},
@@ -94,6 +102,23 @@ class AnalyticsTests(unittest.TestCase):
     self.assertEqual(progress.iloc[0]["stato"],"IN LAVORAZIONE")
     self.assertEqual(progress.iloc[0]["lotto_in_lavorazione"],"M26/0137")
     self.assertTrue(unplanned.empty)
+
+ def test_planning_uses_only_latest_live_comber_product(self):
+    plans=pd.DataFrame([{
+        "piano_id":"P37-T","settimana":"37","data_inizio":"2026-09-07","data_fine":"2026-09-12",
+        "ora_inizio":"06:00","ora_fine":"22:00","prodotto":"TIMO","lotto_droga":"",
+        "estrazioni_pianificate":8,"kg_per_estrazione":120,"kg_pianificati":960,"impianto":"Comber","caricato_il":"",
+    }])
+    events=pd.DataFrame([
+        {**_event("T1","2026-09-07","Produzione",2,"Timo","M26/0136",1,120,"Completata"),
+         "tipo_produzione":"Apertura lotto","stato_lotto":"In corso"},
+        {**_event("G1","2026-09-09","Produzione",2,"Guaranà seme t.t.","M26/0138",1,190,"Completata"),
+         "tipo_produzione":"Apertura lotto","stato_lotto":"In corso"},
+    ])
+    progress,_,unplanned=comber_planning_view(plans,events,plans,datetime(2026,9,9,12))
+    self.assertNotEqual(progress.iloc[0]["stato"],"IN LAVORAZIONE")
+    self.assertEqual(progress.iloc[0]["lotto_in_lavorazione"],"")
+    self.assertEqual(unplanned.iloc[0]["lotto"],"M26/0138")
 
 
 if __name__ == "__main__":
