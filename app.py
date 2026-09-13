@@ -10,6 +10,7 @@ from pathlib import Path
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
+from i18n import configure_streamlit_translation, language_selector, machine_name, translate
 from event_workflow import COL_EVENTI, EVENTI_FILE, _create_production, _validate, render_machine_workflow
 from persistence import audit_dataframe
 from persistence import configured as persistence_configured
@@ -24,11 +25,11 @@ from oee_analytics import (
     open_productions,
 )
 
-# RELEASE OEE LAURIA 4.0.7 — lotto live e pianificazione Comber allineati
+# RELEASE OEE LAURIA 4.1.0 — interfaccia bilingue e nomi macchina visuali
 
 st.set_page_config(page_title="OEE Produzione Lauria", page_icon="🏭", layout="wide")
 
-VERSIONE = "4.0.7"
+VERSIONE = "4.1.0"
 QUALITA = 0.95
 PROCESS_MACHINES = ["Comber", "EV200", "Spray Dryer"]
 EFFECTIVENESS_MACHINES = ["Comber", "Spray Dryer"]
@@ -62,6 +63,10 @@ COL_TARGET = ["macchina", "target_fisico_giorno", "target_equivalente_giorno", "
 COL_PLANNING = ["piano_id","settimana","data_inizio","data_fine","ora_inizio","ora_fine","prodotto","lotto_droga","estrazioni_pianificate","kg_per_estrazione","kg_pianificati","impianto","caricato_il"]
 COL_MESCOLE_PLANNING = ["piano_id","settimana","data_inizio_settimana","data_fine_settimana","data_documento","data_prevista","riferimento","codice","descrizione","quantita_pianificata","quantita_evasa","stato_origine","caricato_il"]
 COL_MESCOLE_TARGET = ["target_kg_giorno","target_kg_ora_uomo"]
+
+
+language_selector(st)
+configure_streamlit_translation(st)
 
 
 def require_password():
@@ -1019,16 +1024,16 @@ def dashboard_table(df, today):
         aa = period_value(df,machine,metric,year_start,today); at=target_period(machine,metric,year_start,year_end,True)
         ly = period_value(df,machine,metric,ly_start,ly_end)
         vals=[ya,yt,pct(ya,yt),wa,wt,pct(wa,wt),ma,mt,pct(ma,mt),aa,at,pct(aa,at),ly]
-        tds=[f"<td>{html.escape(label)}</td>"]
+        tds=[f"<td>{html.escape(translate(label))}</td>"]
         for i,v in enumerate(vals):
             is_ach=i in (2,5,8,11); cls=f' class="{ach_class(v)}"' if is_ach else ""
             tds.append(f"<td{cls}>{v:.0f}%</td>" if is_ach else f"<td>{fmt(v)}</td>")
         body.append("<tr>"+"".join(tds)+"</tr>")
-    return '<div class="table-wrap"><h3>Production (kg) by line</h3><table class="prod-table"><thead><tr>'+"".join(f"<th>{h}</th>" for h in heads)+"</tr></thead><tbody>"+"".join(body)+"</tbody></table></div>"
+    return '<div class="table-wrap"><h3>'+translate('Production (kg) by line')+'</h3><table class="prod-table"><thead><tr>'+"".join(f"<th>{translate(h)}</th>" for h in heads)+"</tr></thead><tbody>"+"".join(body)+"</tbody></table></div>"
 
 
 def gauge(value, title):
-    fig=go.Figure(go.Indicator(mode="gauge+number",value=value*100,number={"suffix":"%"},title={"text":title},gauge={"axis":{"range":[0,100]},"bar":{"color":"#238B73"},"steps":[{"range":[0,60],"color":"#F3B5B5"},{"range":[60,80],"color":"#F7D98A"},{"range":[80,100],"color":"#8DDBBE"}]}))
+    fig=go.Figure(go.Indicator(mode="gauge+number",value=value*100,number={"suffix":"%"},title={"text":translate(title)},gauge={"axis":{"range":[0,100]},"bar":{"color":"#238B73"},"steps":[{"range":[0,60],"color":"#F3B5B5"},{"range":[60,80],"color":"#F7D98A"},{"range":[80,100],"color":"#8DDBBE"}]}))
     fig.update_layout(height=290,margin=dict(l=25,r=25,t=55,b=15),paper_bgcolor="white",font_color="#24313A")
     return fig
 
@@ -1215,8 +1220,8 @@ def render_effectiveness_dashboard(events,productions,causes,start,end,mode):
     st.subheader(f"Principali perdite {pareto_mode}")
     if losses.empty: st.info("Nessuna perdita registrata nel periodo.")
     else:
-        fig=go.Figure(go.Bar(x=losses["Ore"],y=losses["Causale"],orientation="h",marker_color="#C27700"))
-        fig.update_layout(height=max(280,55*len(losses)),margin=dict(l=20,r=20,t=20,b=20),xaxis_title="Ore",yaxis_title="",paper_bgcolor="white",plot_bgcolor="white")
+        fig=go.Figure(go.Bar(x=losses["Ore"],y=losses["Causale"].map(translate),orientation="h",marker_color="#C27700"))
+        fig.update_layout(height=max(280,55*len(losses)),margin=dict(l=20,r=20,t=20,b=20),xaxis_title=translate("Ore"),yaxis_title="",paper_bgcolor="white",plot_bgcolor="white")
         st.plotly_chart(fig,use_container_width=True)
 
 
@@ -1302,13 +1307,14 @@ if page=="Pianificazione Comber":
         k4.metric("Fuori piano/extra",f"{fmt_it(unplanned['kg_droga'].sum() if not unplanned.empty else 0)} kg")
         st.subheader("Piano della settimana")
         progress["stato_visuale"]=progress["semaforo"]+" "+progress["stato"]
-        view=progress[["stato_visuale","data_inizio","prodotto","lotto_in_lavorazione","lotto_droga","kg_pianificati","kg_effettivi","kg_residui","estrazioni_pianificate","estrazioni_completate","avanzamento_grafico_pct","avanzamento_atteso_pct"]]
+        view=progress[["stato_visuale","data_inizio","prodotto","lotto_in_lavorazione","lotto_droga","kg_pianificati","kg_effettivi","kg_residui","scostamento_kg","estrazioni_pianificate","estrazioni_completate","avanzamento_grafico_pct","avanzamento_atteso_pct"]]
         st.dataframe(view,use_container_width=True,hide_index=True,column_config={
             "stato_visuale":"Stato","data_inizio":"Inizio previsto","prodotto":"Droga",
             "lotto_in_lavorazione":"Lotto attualmente in lavorazione",
             "lotto_droga":"Lotto (informativo)","kg_pianificati":st.column_config.NumberColumn("Piano kg",format="%.2f"),
             "kg_effettivi":st.column_config.NumberColumn("Completati kg",format="%.2f"),
             "kg_residui":st.column_config.NumberColumn("Residuo kg",format="%.2f"),
+            "scostamento_kg":st.column_config.NumberColumn("Scostamento kg",format="%.2f"),
             "estrazioni_pianificate":"Estrazioni previste","estrazioni_completate":"Estrazioni completate",
             "avanzamento_grafico_pct":st.column_config.ProgressColumn("Avanzamento kg",min_value=0,max_value=100,format="%.0f%%"),
             "avanzamento_atteso_pct":st.column_config.ProgressColumn("Avanzamento atteso",min_value=0,max_value=100,format="%.0f%%"),
@@ -1473,7 +1479,7 @@ elif page=="Dashboard Mescole":
         else:
             daily=closures.groupby(closures["data_evento"].dt.date)["quantita_finale"].sum().reset_index()
             fig=go.Figure(go.Bar(x=daily["data_evento"],y=daily["quantita_finale"],marker_color="#6F4E8C"))
-            fig.update_layout(height=330,margin=dict(l=20,r=20,t=20,b=20),xaxis_title="Data",yaxis_title="Kg prodotti",paper_bgcolor="white",plot_bgcolor="white")
+            fig.update_layout(height=330,margin=dict(l=20,r=20,t=20,b=20),xaxis_title=translate("Data"),yaxis_title=translate("Kg prodotti"),paper_bgcolor="white",plot_bgcolor="white")
             st.plotly_chart(fig,use_container_width=True)
     with right:
         st.subheader("Produzione per prodotto")
@@ -1481,7 +1487,7 @@ elif page=="Dashboard Mescole":
         else:
             by_product=closures.groupby("descrizione",dropna=False)["quantita_finale"].sum().sort_values(ascending=True).tail(10)
             fig=go.Figure(go.Bar(x=by_product.values,y=by_product.index,orientation="h",marker_color="#238B73"))
-            fig.update_layout(height=330,margin=dict(l=20,r=20,t=20,b=20),xaxis_title="Kg prodotti",yaxis_title="",paper_bgcolor="white",plot_bgcolor="white")
+            fig.update_layout(height=330,margin=dict(l=20,r=20,t=20,b=20),xaxis_title=translate("Kg prodotti"),yaxis_title="",paper_bgcolor="white",plot_bgcolor="white")
             st.plotly_chart(fig,use_container_width=True)
 
     st.subheader("Dettaglio lotti completati")
@@ -1497,7 +1503,7 @@ elif page=="Dashboard Mescole":
 
 elif page=="Dashboard OEE/OOE":
     st.title("Dashboard OEE e OOE")
-    st.caption("Comber e Spray Dryer · qualità standard temporanea 95% · classificazione causali retroattiva.")
+    st.caption("Estrazione acquosa ed Essiccazione Spray Dryer · qualità standard temporanea 95% · classificazione causali retroattiva.")
     today=date.today(); default_start=today.replace(day=1)
     f1,f2,f3=st.columns([1,1,1.4])
     with f1: start=st.date_input("Dal",value=default_start,format="DD/MM/YYYY",key="eff_start")
@@ -1542,8 +1548,8 @@ elif page=="Production vs Target":
     periods={"Yesterday":(yesterday,yesterday),"Week":(week_start,today),"Month":(month_start,today),"Previous Month":(prev_start,prev_end),"YTD Production":(today.replace(month=1,day=1),today),"Last year YTD":(ly.replace(month=1,day=1),ly)}
     # Base KPI esplicita: estrazione in puro equivalente, essiccazione in
     # semilavorato fisico totale. La tabella distingue entrambe le letture.
-    summary_band("Comber – Aqueous extraction","Pure equivalent output (15% minimum basis)","navy",df,"Comber","equivalente",periods)
-    summary_band("Spray Dryer – Drying","Total semi-finished product output","green",df,"Spray Dryer","fisico",periods)
+    summary_band("Estrazione acquosa","Pure equivalent output (15% minimum basis)","navy",df,"Comber","equivalente",periods)
+    summary_band("Essiccazione Spray Dryer","Total semi-finished product output","green",df,"Spray Dryer","fisico",periods)
     st.markdown(dashboard_table(df,today),unsafe_allow_html=True)
     cfg=target_config()
     target_txt=" · ".join(
@@ -1815,7 +1821,7 @@ elif page=="Excel":
     st.divider()
     st.subheader("Backup per macchina")
     machine=st.selectbox("Seleziona la macchina",MACCHINE)
-    safe_name=machine.lower().replace(" ","_")
+    safe_name=machine_name(machine).lower().replace(" ","_")
     st.caption(f"Il file contiene esclusivamente turni e produzioni della macchina {machine}.")
     st.download_button(f"Scarica Excel {machine}",xlsx_export(machine),f"oee_{safe_name}.xlsx","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",type="primary")
     up=st.file_uploader(f"Ricarica Excel {machine}",type=["xlsx"],key=f"upload_{safe_name}")

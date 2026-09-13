@@ -5,6 +5,7 @@ import pandas as pd
 import streamlit as st
 from persistence import read_dataframe, write_dataframe
 from oee_analytics import cause_id_for_name, normalize_text, ordered_open_lots
+from i18n import machine_name
 
 
 DATA = Path("data")
@@ -299,7 +300,7 @@ def render_machine_workflow(machine):
     s=st.session_state[state]; buffer=s["buffer"]
     css={"Comber":"comber","EV200":"ev200","Spray Dryer":"spray","Mescole":"mix"}[machine]
     desc={"Comber":"Estrazione acquosa per singola estrazione","EV200":"Concentrazione dei lotti estratti","Spray Dryer":"Essiccazione semilavorati","Mescole":"Produzione e produttività dei lotti di mescola"}[machine]
-    st.markdown(f'<div class="machine-head {css}">{machine}<div class="machine-note">{desc}</div></div>',unsafe_allow_html=True)
+    st.markdown(f'<div class="machine-head {css}">{machine_name(machine)}<div class="machine-note">{desc}</div></div>',unsafe_allow_html=True)
     locked=bool(buffer); header=s.get("header")
     c1,c2=st.columns(2)
     with c1: day=st.date_input("Data turno",value=datetime.strptime(header[0],"%Y-%m-%d").date() if header else None,format="DD/MM/YYYY",disabled=locked,key=f"day_{state}_{s['reset']}")

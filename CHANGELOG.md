@@ -1,3 +1,22 @@
+# Versione 4.1.0
+
+## Interfaccia bilingue
+
+- Aggiunto nella barra laterale il selettore `Italiano / English` valido per tutta l'applicazione.
+- `Comber` viene mostrato come `Estrazione acquosa` in italiano e `Aqueous Extraction` in inglese.
+- `Spray Dryer` viene mostrato come `Essiccazione Spray Dryer` in italiano e `Spray Dryer Drying` in inglese.
+- Navigazione, maschere, pulsanti, messaggi, colonne e dashboard vengono tradotti senza cambiare gli identificativi salvati in Supabase.
+- La lingua selezionata resta attiva durante la sessione.
+
+# Versione 4.0.8
+
+## Chiusura del piano Comber
+
+- Un prodotto è completato quando raggiunge i kg pianificati oppure tutte le estrazioni previste.
+- A estrazioni terminate, una piccola differenza tra kg pianificati e consuntivi è trattata come scostamento e non come residuo da produrre.
+- Aggiunta in tabella la colonna `Scostamento kg`; il residuo diventa zero per i piani operativamente conclusi.
+- Il Finocchio con 10/10 estrazioni e 1.990 kg su 1.991 kg viene quindi classificato correttamente come completato.
+
 # Versione 4.0.7
 
 ## Lotto live e pianificazione Comber

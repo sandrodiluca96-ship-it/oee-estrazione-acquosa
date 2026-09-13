@@ -359,7 +359,17 @@ def comber_planning_view(plans: pd.DataFrame, events: pd.DataFrame, selected_wee
         plan_id = str(row["piano_id"])
         planned = float(row["_planned"])
         allocated = float(row["_allocated"])
-        residual = max(planned - allocated, 0.0)
+        raw_residual = max(planned - allocated, 0.0)
+        planned_extractions = int(number(row.get("estrazioni_pianificate", 0)))
+        completed_extractions = int(row["_completed_extractions"])
+        extractions_complete = planned_extractions > 0 and completed_extractions >= planned_extractions
+        quantity_complete = raw_residual <= 1e-6
+        plan_complete = quantity_complete or extractions_complete
+        # Se tutti i cicli previsti sono terminati, l'eventuale differenza di
+        # pesata è uno scostamento consuntivo e non una quantità ancora da
+        # produrre. Evita, ad esempio, che 1.990/1.991 kg con 10/10 estrazioni
+        # venga classificato come ritardo.
+        residual = 0.0 if plan_complete else raw_residual
         start = row["_start"]
         end = row["_end"]
         if as_of.date() < start:
@@ -373,7 +383,7 @@ def comber_planning_view(plans: pd.DataFrame, events: pd.DataFrame, selected_wee
         active_lots = active_comber[
             active_comber["Descrizione"].map(lambda value: same_drug(row["prodotto"], value))
         ]["Lotto"].astype(str).tolist() if not active_comber.empty else []
-        if residual <= 1e-6:
+        if plan_complete:
             status = "COMPLETATO CON EXTRA" if progress > 100.01 else "COMPLETATO"
             light = "🟢"
         elif as_of.date() > end:
@@ -390,10 +400,11 @@ def comber_planning_view(plans: pd.DataFrame, events: pd.DataFrame, selected_wee
             **{column: row[column] for column in plans.columns},
             "kg_effettivi": allocated,
             "kg_residui": residual,
+            "scostamento_kg": allocated - planned,
             "kg_residui_inizio_settimana": planned,
             "kg_recuperati_settimana": 0.0,
             "lotto_in_lavorazione": "; ".join(dict.fromkeys(active_lots)),
-            "estrazioni_completate": int(row["_completed_extractions"]),
+            "estrazioni_completate": completed_extractions,
             "avanzamento_pct": progress,
             "avanzamento_grafico_pct": min(progress, 100.0),
             "avanzamento_atteso_pct": expected,
