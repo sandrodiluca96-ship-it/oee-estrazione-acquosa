@@ -1,4 +1,4 @@
-Estrarre e sostituire app.py e monthly_dashboard.py su GitHub, poi riavviare Streamlit. Versione 4.2.7.
-Sostituiti confronti e dettaglio lotti con Produzione vs obiettivo riusando summary_band e dashboard_table esistenti, alla data finale del periodo selezionato. YTD/LYTD in tale sezione alla stessa data.
-Grafici quantita cumulativi del mese da zero; tooltip lotto, contributo e totale progressivo. Grafici annuali quantita cumulativi; Mass Yield per lotto nel mese e media mensile nell anno.
-Verificati sintassi e grafici Plotly IT/EN con UI simulata. Verifica visiva finale in Streamlit.
+Versione 4.2.9. Sostituire app.py e monthly_dashboard.py nella radice GitHub, quindi riavviare Streamlit.
+Mass Yield annuale senza linea LY; resa storica per prodotto mantenuta nella vista del mese. Quantita mensili con linea cumulativa giornaliera nello stesso stile dell annuale, senza barre. Tooltip con incrementi e lotti.
+Intestazioni espandibili chiare e testo scuro. Production vs Target sempre in inglese. Caselle OEE e OOE distinte.
+Verificate sintassi e configurazioni grafici Plotly con interfaccia simulata IT/EN. Verifica visiva finale in Streamlit.

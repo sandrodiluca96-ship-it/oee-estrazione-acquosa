@@ -31,7 +31,7 @@ from oee_analytics import (
 
 st.set_page_config(page_title="OEE Produzione Lauria", page_icon="🏭", layout="wide")
 
-VERSIONE = "4.2.7"
+VERSIONE = "4.2.9"
 QUALITA = 0.95
 PROCESS_MACHINES = ["Comber", "EV200", "Spray Dryer"]
 EFFECTIVENESS_MACHINES = ["Comber", "Spray Dryer"]
@@ -136,6 +136,10 @@ h1,h2,h3,h4{color:#17324D!important}.block-container{padding-top:1.4rem;max-widt
 .stButton>button[kind="primary"],.stFormSubmitButton>button[kind="primary"]{background:#238B73;color:#FFF;border:0;font-weight:700}
 [data-testid="stSidebar"] .stButton>button{background:#176a79!important;color:#fff!important;border:none;width:100%}
 [data-testid="stSidebar"] .stButton>button p{color:#fff!important}
+[data-testid="stExpander"]{background:#fff!important;border:1px solid #d9e1e8!important;border-radius:8px}
+[data-testid="stExpander"] summary{background:#eef3f7!important;color:#17324d!important}
+[data-testid="stExpander"] summary p,[data-testid="stExpander"] summary span{color:#17324d!important;font-weight:600}
+[data-testid="stExpander"] summary svg{color:#17324d!important;fill:currentColor}
 .report-head{background:#FFF;border:1px solid var(--line);border-radius:10px 10px 0 0;padding:18px 22px}
 .report-title{font-size:30px;font-weight:800;color:#2D3339}.report-sub{color:#5C6770}
 .summary{display:grid;grid-template-columns:2fr repeat(6,1fr);color:#FFF;padding:11px 16px;align-items:center}
@@ -995,17 +999,19 @@ def fmt_it(v,decimals=1):
     return f"{v:,.{decimals}f}".replace(",","_").replace(".",",").replace("_",".")
 
 
-def summary_band(name, basis, css, df, machine, metric, periods):
+def summary_band(name, basis, css, df, machine, metric, periods,english=False):
     cells = [f'<div><div class="name">{html.escape(name)} (kg)</div><div class="basis">{html.escape(basis)}</div></div>']
     for label, (start, end) in periods.items():
         cells.append(f'<div><div class="value">{fmt(period_value(df,machine,metric,start,end))}</div><div class="label">{label}</div></div>')
-    st.markdown(f'<div class="summary {css}">{"".join(cells)}</div>', unsafe_allow_html=True)
+    markup=f'<div class="summary {css}">{"".join(cells)}</div>'
+    if english:st.html(markup)
+    else:st.markdown(markup,unsafe_allow_html=True)
 
 
 def ach_class(v): return "ach-good" if v >= 100 else ("ach-mid" if v >= 75 else "ach-low")
 
 
-def dashboard_table(df, today):
+def dashboard_table(df, today,language=None):
     yesterday = previous_workday(today)
     week_start = today - timedelta(days=today.weekday()); week_end = week_start + timedelta(days=6)
     month_start = today.replace(day=1); month_end = (pd.Timestamp(month_start) + pd.offsets.MonthEnd()).date()
@@ -1028,12 +1034,12 @@ def dashboard_table(df, today):
         aa = period_value(df,machine,metric,year_start,today); at=target_period(machine,metric,year_start,year_end,True)
         ly = period_value(df,machine,metric,ly_start,ly_end)
         vals=[ya,yt,pct(ya,yt),wa,wt,pct(wa,wt),ma,mt,pct(ma,mt),aa,at,pct(aa,at),ly]
-        tds=[f"<td>{html.escape(translate(label))}</td>"]
+        tds=[f"<td>{html.escape(translate(label,language))}</td>"]
         for i,v in enumerate(vals):
             is_ach=i in (2,5,8,11); cls=f' class="{ach_class(v)}"' if is_ach else ""
             tds.append(f"<td{cls}>{v:.0f}%</td>" if is_ach else f"<td>{fmt(v)}</td>")
         body.append("<tr>"+"".join(tds)+"</tr>")
-    return '<div class="table-wrap"><h3>'+translate('Production (kg) by line')+'</h3><table class="prod-table"><thead><tr>'+"".join(f"<th>{translate(h)}</th>" for h in heads)+"</tr></thead><tbody>"+"".join(body)+"</tbody></table></div>"
+    return '<div class="table-wrap"><h3>'+translate('Production (kg) by line',language)+'</h3><table class="prod-table"><thead><tr>'+"".join(f"<th>{translate(h,language)}</th>" for h in heads)+"</tr></thead><tbody>"+"".join(body)+"</tbody></table></div>"
 
 
 def render_monthly_production_target(df,report_date):
@@ -1044,11 +1050,11 @@ def render_monthly_production_target(df,report_date):
     except ValueError:ly=report_date.replace(year=report_date.year-1,day=28)
     yesterday=previous_workday(report_date)
     periods={"Yesterday":(yesterday,yesterday),"Week":(week_start,report_date),"Month":(month_start,report_date),"Previous Month":(previous_end.replace(day=1),previous_end),"YTD Production":(report_date.replace(month=1,day=1),report_date),"Last year YTD":(ly.replace(month=1,day=1),ly)}
-    st.subheader("Produzione vs obiettivo")
-    st.caption(f"Data report: {report_date:%d/%m/%Y}. YTD e LYTD di questa sezione sono riferiti alla stessa data; gli obiettivi mensili e annuali sono quelli del periodo completo.")
-    summary_band("Estrazione acquosa","Pure equivalent output (15% minimum basis)","navy",df,"Comber","equivalente",periods)
-    summary_band("Essiccazione Spray Dryer","Total semi-finished product output","green",df,"Spray Dryer","fisico",periods)
-    st.markdown(dashboard_table(df,report_date),unsafe_allow_html=True)
+    st.html("<h3>Production vs Target</h3>")
+    st.html(f"<p>Report date: {report_date:%d/%m/%Y}. YTD and LYTD use the same reporting date; monthly and annual targets cover the full period.</p>")
+    summary_band("Aqueous extraction","Pure equivalent output (15% minimum basis)","navy",df,"Comber","equivalente",periods,english=True)
+    summary_band("Spray Dryer","Total semi-finished product output","green",df,"Spray Dryer","fisico",periods,english=True)
+    st.html(dashboard_table(df,report_date,language="English"))
 
 
 def gauge(value, title):

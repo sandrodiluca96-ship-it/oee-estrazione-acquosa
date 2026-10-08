@@ -8,6 +8,7 @@ import math
 import html
 import pandas as pd
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 import streamlit as st
 from persistence import read_dataframe, read_optional_dataframe, write_dataframe
 from oee_analytics import calculate_effectiveness
@@ -194,27 +195,26 @@ def fixed_batch_chart(frame,metric,title,accent,start,end):
         elif metric=='kg_droga':lines += [tr('Materia prima lavorata: ','Raw material processed: ')+chart_number(r.kg_droga,'kg')]
         else:lines += [tr('Semilavorato reale: ','Actual semi-finished: ')+chart_number(r.kg_semilavorato,'kg'),tr('Semilavorato equivalente: ','Equivalent semi-finished: ')+chart_number(r.semi_equivalent,'kg'),tr('Taglio: ','Excipient cut: ')+chart_number(r.cut_pct,'%')]
         texts.append('<br>'.join(lines))
-    plotted=z[metric] if metric=='yield_pct' else z[metric].cumsum()
-    if metric!='yield_pct':
-        texts=[text+'<br>'+tr('Totale cumulato: ','Cumulative total: ')+chart_number(value,'kg') for text,value in zip(texts,plotted)]
-    fig=go.Figure(go.Scatter(x=z.date,y=plotted,mode='lines+markers',line=dict(color=accent,width=2),marker=dict(size=7),text=texts,name=tr('Reale','Actual'),hovertemplate='%{text}<extra></extra>',connectgaps=False))
-    if metric=='yield_pct':fig.add_trace(go.Scatter(x=z.date,y=z.reference_pct,mode='lines+markers',line=dict(color='#8997a3',dash='dash'),name=tr('Resa storica','Historical yield'),text=texts,hovertemplate='%{text}<extra></extra>',connectgaps=False))
-    if metric!='yield_pct':
-        valid=plotted.dropna()
-        total=float(valid.iloc[-1]) if not valid.empty else float('nan')
-        trace=fig.data[0]
-        trace.x=[pd.Timestamp(start)]+list(z.date)+[pd.Timestamp(end)]
-        trace.y=[0]+list(plotted)+[total]
-        trace.text=[tr('Inizio mese · 0 kg','Month start · 0 kg')]+texts+[tr('Totale del periodo: ','Period total: ')+chart_number(total,'kg')]
-        fig.update_traces(line_shape='hv')
-    fig=style_report_chart(fig,title,unit)
-    if metric!='yield_pct':fig.update_yaxes(rangemode='tozero')
+    if metric=='yield_pct':
+        fig=go.Figure(go.Scatter(x=z.date,y=z[metric],mode='lines+markers',line=dict(color=accent,width=2),marker=dict(size=7),text=texts,name=tr('Reale','Actual'),hovertemplate='%{text}<extra></extra>',connectgaps=False))
+        fig.add_trace(go.Scatter(x=z.date,y=z.reference_pct,mode='lines+markers',line=dict(color='#8997a3',dash='dash'),name=tr('Resa storica','Historical yield'),text=texts,hovertemplate='%{text}<extra></extra>',connectgaps=False))
+        fig=style_report_chart(fig,title,unit)
+    else:
+        days=pd.date_range(start,end,freq='D')
+        daily=z.groupby(z.date.dt.normalize())[metric].sum(min_count=1).reindex(days,fill_value=0)
+        cumulative=daily.fillna(0).cumsum()
+        details=z.assign(tooltip=texts).groupby(z.date.dt.normalize()).tooltip.agg(lambda rows:'<br><br>'.join(rows)).reindex(days,fill_value='')
+        hover=[day.strftime('%d/%m/%Y')+'<br>'+tr('Incremento del giorno: ','Daily increase: ')+chart_number(qty,'kg')+'<br>'+tr('Totale cumulato: ','Cumulative total: ')+chart_number(total,'kg')+('<br><br>'+detail if detail else '<br>'+tr('Nessun incremento registrato','No recorded increase')) for day,qty,total,detail in zip(days,daily,cumulative,details)]
+        fig=go.Figure(go.Scatter(x=days,y=cumulative,mode='lines+markers',line=dict(color=accent,width=3),marker=dict(size=4),text=hover,name=tr('Cumulato','Cumulative'),hovertemplate='%{text}<extra></extra>'))
+        fig=style_report_chart(fig,title,unit)
+        fig.update_yaxes(rangemode='tozero')
     fig.update_xaxes(range=[pd.Timestamp(start)-pd.Timedelta(hours=12),pd.Timestamp(end)+pd.Timedelta(hours=12)])
     return fig
 
 def annual_chart(frame,metric,title,accent,year,month,end,partial):
     fig=go.Figure()
-    for report_year,color,dash in [(year,accent,'solid'),(year-1,'#8997a3','dot')]:
+    comparison_years=[(year,accent,'solid')] if metric=='yield_pct' else [(year,accent,'solid'),(year-1,'#8997a3','dot')]
+    for report_year,color,dash in comparison_years:
         xs=[];ys=[];texts=[]
         for m in range(1,month+1):
             a=date(report_year,m,1);b=(pd.Timestamp(a)+pd.offsets.MonthEnd()).date()
@@ -270,10 +270,10 @@ def render_monthly_dashboard(productions,events,causes,targets,quality,productio
         if c!='macchina':hist[c]=pd.to_numeric(hist[c],errors='coerce')
     cache={}
     report_tables=[]
-    def ooe(machine,a,b):
+    def ooe(machine,a,b,indicator="OOE"):
         if a>b:return float('nan')
         he=hist[(hist.anno==a.year)&(hist.macchina==machine)&hist.mese.between(a.month,b.month)]
-        if a.day==1 and b==(pd.Timestamp(b)+pd.offsets.MonthEnd()).date() and set(he.mese)==set(range(a.month,b.month+1)):
+        if indicator=="OOE" and a.day==1 and b==(pd.Timestamp(b)+pd.offsets.MonthEnd()).date() and set(he.mese)==set(range(a.month,b.month+1)):
             weights=he.ore_riferimento
             if he.ooe_pct.notna().all() and weights.notna().all() and weights.sum()>0:return float((he.ooe_pct*weights).sum()/weights.sum())
         key=(a,b)
@@ -282,9 +282,9 @@ def render_monthly_dashboard(productions,events,causes,targets,quality,productio
         # Do not pretend that July-onward operational records cover a full YTD.
         dates=pd.to_datetime(events.loc[events.macchina==machine,'data_turno'],errors='coerce').dropna()
         if dates.empty or a<dates.min().date():return float('nan')
-        return result['OOE']*100 if result and result['Ore totali']>0 else float('nan')
+        return result[indicator]*100 if result and result['Ore totali']>0 else float('nan')
     st.caption(tr('Calendario lunedì 06:00–sabato 06:00. Medie yield e taglio aritmetiche per lotto. OOE sui tempi registrati.','Calendar Monday 06:00–Saturday 06:00. Arithmetic batch averages for yield and cut. OOE uses recorded time.'))
-    labels={'ooe_pct':'OOE (%)','kg_droga':tr('Materia prima (kg)','Raw material (kg)'), 'kg_puro':tr('Secco reale (kg)','Actual dry solids (kg)'),
+    labels={'oee_pct':'OEE (%)','ooe_pct':'OOE (%)','kg_droga':tr('Materia prima (kg)','Raw material (kg)'), 'kg_puro':tr('Secco reale (kg)','Actual dry solids (kg)'),
       'kg_puro_equivalente':tr('Secco equivalente (kg)','Equivalent dry solids (kg)'), 'yield_pct':'Mass Yield (%)','equivalent_yield_pct':tr('Yield equivalente (%)','Equivalent yield (%)'),
       'kg_semilavorato':tr('Semilavorato reale (kg)','Actual semi-finished (kg)'), 'semi_equivalent':tr('Semilavorato equivalente (kg)','Equivalent semi-finished (kg)'), 'cut_pct':tr('Taglio medio (%)','Mean excipient cut (%)')}
     panels=st.columns(2,gap='large')
@@ -295,12 +295,12 @@ def render_monthly_dashboard(productions,events,causes,targets,quality,productio
             st.markdown(f'<div class="evra-section" style="border-color:{accent}">{section}</div>',unsafe_allow_html=True)
             md=d[d.macchina==machine]
             def values(a,b):
-                z=md[(md.date>=pd.Timestamp(a))&(md.date<=pd.Timestamp(b))];result=metrics(z);result['ooe_pct']=ooe(machine,a,b);return result
+                z=md[(md.date>=pd.Timestamp(a))&(md.date<=pd.Timestamp(b))];result=metrics(z);result['ooe_pct']=ooe(machine,a,b);result['oee_pct']=ooe(machine,a,b,'OEE');return result
             periods={tr('Mese','Month'):values(start,end),tr('Mese LY','Month LY'):values(date(year-1,month,1),prev_end),
                      'YTD':values(date(year,1,1),ytd_end),'LYTD':values(date(year-1,1,1),lytd_end),'LY':values(date(year-1,1,1),date(year-1,12,31))}
-            keys=['ooe_pct','kg_droga','kg_puro','kg_puro_equivalente','yield_pct','equivalent_yield_pct'] if machine=='Comber' else ['ooe_pct','kg_semilavorato','semi_equivalent','cut_pct']
-            main=['ooe_pct','kg_droga','kg_puro','yield_pct'] if machine=='Comber' else ['ooe_pct','kg_semilavorato','semi_equivalent','cut_pct']
-            for offset in (0,2):
+            keys=['oee_pct','ooe_pct','kg_droga','kg_puro','kg_puro_equivalente','yield_pct','equivalent_yield_pct'] if machine=='Comber' else ['oee_pct','ooe_pct','kg_semilavorato','semi_equivalent','cut_pct']
+            main=['oee_pct','ooe_pct','kg_droga','kg_puro','yield_pct'] if machine=='Comber' else ['oee_pct','ooe_pct','kg_semilavorato','semi_equivalent','cut_pct']
+            for offset in range(0,len(main),2):
                 cards=st.columns(2)
                 for col,key in zip(cards,main[offset:offset+2]):
                     with col:
@@ -319,7 +319,7 @@ def render_monthly_dashboard(productions,events,causes,targets,quality,productio
     st.subheader(tr('Andamento del mese selezionato','Selected month trends'))
     for col,(machine,metric,title,accent) in zip(st.columns(3),chart_specs):
         with col:st.plotly_chart(fixed_batch_chart(d[d.macchina==machine],metric,title,accent,start,end),use_container_width=True,theme=None)
-    with st.expander(tr('Andamento da inizio anno · confronto anno precedente','Year-to-date trends · prior-year comparison')):
+    with st.expander(tr('Andamento da inizio anno · confronto LY solo sulle quantità','Year-to-date trends · LY comparison for quantities only')):
         for col,(machine,metric,title,accent) in zip(st.columns(3),chart_specs):
             with col:st.plotly_chart(annual_chart(d[d.macchina==machine],metric,title,accent,year,month,end,partial),use_container_width=True,theme=None)
         st.caption(tr('Resa: media aritmetica dei lotti del mese. Quantità: cumulato delle somme mensili. Il mese in corso è parziale; il confronto LY di quel mese è sospeso.','Yield: arithmetic mean of monthly batch yields. Quantities: cumulative monthly totals. Current month is partial; its LY comparison is omitted.'))
