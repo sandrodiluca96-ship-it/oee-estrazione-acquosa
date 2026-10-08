@@ -13,6 +13,7 @@ import streamlit as st
 from monthly_dashboard import render_monthly_dashboard, render_late_completion
 from i18n import configure_streamlit_translation, language_selector, machine_name, translate
 from event_workflow import COL_EVENTI, EVENTI_FILE, _create_production, _validate, render_machine_workflow
+from persistence import invalidate_data_cache
 from persistence import audit_dataframe
 from persistence import configured as persistence_configured
 from persistence import read_dataframe, verify_connection, write_dataframe
@@ -30,7 +31,7 @@ from oee_analytics import (
 
 st.set_page_config(page_title="OEE Produzione Lauria", page_icon="🏭", layout="wide")
 
-VERSIONE = "4.2.1"
+VERSIONE = "4.2.3"
 QUALITA = 0.95
 PROCESS_MACHINES = ["Comber", "EV200", "Spray Dryer"]
 EFFECTIVENESS_MACHINES = ["Comber", "Spray Dryer"]
@@ -850,7 +851,7 @@ def sync_completed_comber_extractions():
 
 
 def prep_production():
-    sync_completed_comber_extractions()
+    # Consultation reads existing totals; workflow/history own production updates.
     df = read_csv(LOTTI_FILE, COL_LOTTI)
     if df.empty: return df
     df["data_turno"] = pd.to_datetime(df["data_turno"], errors="coerce")
@@ -1253,6 +1254,9 @@ area=st.sidebar.radio("Area",[
 ])
 page=f"Turno {area}" if area in MACCHINE else area
 st.sidebar.caption(f"Versione {VERSIONE} · Qualità standard {QUALITA:.0%}")
+if st.sidebar.button("Aggiorna dati", key="refresh_database"):
+    invalidate_data_cache()
+    st.rerun()
 
 if page=="Dashboard mensile Lauria":
     render_monthly_dashboard(prep_production(), read_csv(EVENTI_FILE, COL_EVENTI), cause_config(), _effectiveness_targets(), QUALITA)

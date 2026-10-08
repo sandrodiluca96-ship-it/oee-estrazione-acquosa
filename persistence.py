@@ -137,6 +137,15 @@ def _fetch_all(dataset: str, include_deleted: bool = False) -> list[dict]:
     return rows
 
 
+@st.cache_data(ttl=30, show_spinner=False)
+def _cached_fetch_all(dataset: str, include_deleted: bool = False) -> list[dict]:
+    return _fetch_all(dataset, include_deleted)
+
+
+def invalidate_data_cache():
+    _cached_fetch_all.clear()
+
+
 def _clean_payload(row: pd.Series, columns: list[str]) -> dict[str, str]:
     payload = {}
     for column in columns:
@@ -186,15 +195,20 @@ def write_dataframe(path: Path | str, frame: pd.DataFrame, columns: list[str]) -
                     "deleted_at": None,
                 }
             )
-    for batch in _chunks(upserts):
-        client().table("app_records").upsert(
-            batch, on_conflict="dataset,record_id"
-        ).execute()
+    try:
+        for batch in _chunks(upserts):
+            client().table("app_records").upsert(
+                batch, on_conflict="dataset,record_id"
+            ).execute()
+    finally:
+        if upserts:
+            invalidate_data_cache()
 
 
 def soft_delete_ids(path: Path | str, record_ids) -> None:
     """Eliminazione recuperabile di record esplicitamente selezionati."""
     dataset = _dataset(path)
+    invalidate_data_cache()
     deleted_at = datetime.now(timezone.utc).isoformat()
     for record_id in dict.fromkeys(str(value) for value in record_ids if str(value).strip()):
         (
@@ -209,11 +223,11 @@ def soft_delete_ids(path: Path | str, record_ids) -> None:
 
 def read_dataframe(path: Path | str, columns: list[str]) -> pd.DataFrame:
     dataset = _dataset(path)
-    active = _fetch_all(dataset)
+    active = _cached_fetch_all(dataset)
     if not active:
         # Importazione iniziale una sola volta. Se esistono record eliminati,
         # non si ripristina automaticamente il CSV di base.
-        all_rows = _fetch_all(dataset, include_deleted=True)
+        all_rows = _cached_fetch_all(dataset, include_deleted=True)
         local_path = Path(path)
         if not all_rows and local_path.exists():
             local = pd.read_csv(local_path, dtype=str).fillna("")
@@ -222,9 +236,26 @@ def read_dataframe(path: Path | str, columns: list[str]) -> pd.DataFrame:
                     local[column] = ""
             if not local.empty:
                 write_dataframe(local_path, local[columns], columns)
-                active = _fetch_all(dataset)
+                active = _cached_fetch_all(dataset)
     rows = [record.get("payload") or {} for record in active]
     frame = pd.DataFrame(rows)
+    for column in columns:
+        if column not in frame.columns:
+            frame[column] = ""
+    return frame[columns].fillna("")
+
+
+def read_optional_dataframe(path: Path | str, columns: list[str]) -> pd.DataFrame:
+    """Read optional reporting settings without automatic remote seed writes."""
+    dataset = _dataset(path)
+    active = _cached_fetch_all(dataset)
+    if active:
+        frame = pd.DataFrame([record.get("payload") or {} for record in active])
+    else:
+        # Do not restore local seeds after deliberate remote deletions.
+        existing = _cached_fetch_all(dataset, include_deleted=True)
+        local = Path(path)
+        frame = pd.read_csv(local, dtype=str).fillna("") if not existing and local.exists() else pd.DataFrame()
     for column in columns:
         if column not in frame.columns:
             frame[column] = ""

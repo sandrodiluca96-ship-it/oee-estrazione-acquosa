@@ -49,6 +49,7 @@ IT = {
 }
 
 EN = {
+    "Aggiorna dati": "Refresh data",
     "Dashboard mensile Lauria": "Lauria monthly dashboard",
     "Consuntivo e chiusura lotti": "Batch completion and final quantity",
     "Turno già salvato: correggi gli eventi dalla pagina Storico, senza salvarlo nuovamente.": "Shift already saved: correct events in History instead of saving it again.",

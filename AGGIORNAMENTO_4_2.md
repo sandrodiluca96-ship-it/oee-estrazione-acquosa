@@ -35,3 +35,9 @@ L'interfaccia nuova è bilingue; i valori tecnici restano interni. Eliminata la 
 
 ## 4.2.1 — Grafica
 Nuova dashboard con quattro schede principali per reparto, variazione rispetto allo stesso mese LY, colori distinti Comber/SD, confronti e filtri espandibili, grafici più compatti. Formule invariate. Grafica non verificata nell’interfaccia Streamlit completa.
+
+## 4.2.2 — Prestazioni
+Consultazione senza ricostruzione/salvataggio Comber. Letture database con cache 30 secondi, invalidata dopo scritture. Pulsante Aggiorna dati per aggiornamenti da altri utenti. Scritture leggono sempre lo stato corrente. Risultati OOE mensili/settimanali in cache in base a dati, cause, target e periodo. Nessun accesso al database aziendale effettuato nei test.
+
+## 4.2.3 — APIError apertura dashboard
+Riferimenti, associazioni e OOE storico non vengono più importati automaticamente su Supabase all’apertura. Lettura di dati remoti esistenti, altrimenti CSV locali; nessun CSV locale disponibile significa configurazione vuota, non errore. Le modifiche persistenti richiedono che i nuovi dataset siano consentiti dal database: gli errori vengono segnalati senza bloccare la pagina. Per conoscere la causa del precedente APIError è necessario il messaggio completo nei log.

@@ -9,7 +9,7 @@ import html
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
-from persistence import read_dataframe, write_dataframe
+from persistence import read_dataframe, read_optional_dataframe, write_dataframe
 from oee_analytics import calculate_effectiveness
 
 REF_PATH=Path('data/yield_references.csv')
@@ -102,7 +102,17 @@ def render_late_completion():
     ev=events[(events.macchina=='Spray Dryer')&(events.tipo_evento=='Produzione')&events.lotto.fillna('').ne('')].copy()
     if ev.empty:st.info(tr('Nessun lotto disponibile.','No batches available.'));return
     st.caption(tr('Aggiorna un solo consuntivo del lotto. Ore e turni restano invariati. La data deriva dall’evento di fine produzione selezionato.','Update one batch total. Hours and shifts remain unchanged. The production date comes from the selected final event.'))
-    lot=st.selectbox(tr('Lotto','Batch'),sorted(ev.lotto.unique()),key='late_lot')
+    show_closed=st.checkbox(tr('Mostra anche i lotti chiusi','Also show closed batches'),key='late_show_closed')
+    dates=pd.to_datetime(ev.data_turno,errors='coerce').dropna()
+    pending=pending_lots(events,productions,dates.min().date(),dates.max().date())
+    if not pending.empty:st.dataframe(pending,hide_index=True,use_container_width=True)
+    allowed=set(pending.lotto.astype(str)) if not pending.empty else set()
+    options=sorted(ev.lotto.unique()) if show_closed else sorted(v for v in ev.lotto.unique() if str(v).strip().upper() in allowed)
+    if not options:
+        st.success(tr('Nessun lotto aperto da completare.','No open batches to complete.'))
+        return
+    if st.session_state.get('late_lot') not in options:st.session_state['late_lot']=options[0]
+    lot=st.selectbox(tr('Lotto','Batch'),options,key='late_lot')
     rows=ev[ev.lotto==lot].sort_values(['data_turno','turno','ora_inizio'])
     st.dataframe(rows[['data_turno','turno','ora_inizio','ora_fine','descrizione','tipo_produzione','kg_polvere_finale']],hide_index=True)
     selected=st.selectbox(tr('Evento di fine produzione','Final production event'),rows.id_evento.tolist(),index=len(rows)-1,
@@ -140,6 +150,11 @@ def metric_card(label, value, unit, previous, accent):
     return f'<div class="evra-card" style="border-top:4px solid {accent}"><div class="evra-label">{html.escape(label)}</div><div class="evra-value">{fmt(value)} <span>{unit}</span></div><div class="evra-change">{html.escape(change)}</div></div>'
 
 
+@st.cache_data(ttl=30, show_spinner=False)
+def cached_effectiveness(events, productions, causes, targets, quality, start, end):
+    return calculate_effectiveness(events, productions, causes, targets, quality, start, end)
+
+
 def render_monthly_dashboard(productions,events,causes,targets,quality):
     st.markdown('''<style>
 .evra-banner{padding:20px 24px;background:linear-gradient(110deg,#12334b,#176a79);color:white;border-radius:14px;margin-bottom:20px}
@@ -150,7 +165,7 @@ def render_monthly_dashboard(productions,events,causes,targets,quality):
 </style>''',unsafe_allow_html=True)
     st.markdown('<div class="evra-banner"><h1>'+tr('Produzione Lauria','Lauria production')+'</h1><p>'+tr('Risultati del mese · confronti storici · trend settimanali','Monthly results · historical comparisons · weekly trends')+'</p></div>',unsafe_allow_html=True)
     d=prepare_lots(productions)
-    refs=read_dataframe(REF_PATH,REF_COLS);mapping=read_dataframe(MAP_PATH,MAP_COLS)
+    refs=read_optional_dataframe(REF_PATH,REF_COLS);mapping=read_optional_dataframe(MAP_PATH,MAP_COLS)
     refs.yield_pct=pd.to_numeric(refs.yield_pct,errors='coerce')
     d=attach_references(d,refs,mapping)
     today=(datetime.now(ZoneInfo('Europe/Rome'))-timedelta(hours=6)).date()
@@ -163,7 +178,7 @@ def render_monthly_dashboard(productions,events,causes,targets,quality):
     ytd_end=(pd.Timestamp(date(year,last_month,1))+pd.offsets.MonthEnd()).date() if last_month else date(year-1,12,31)
     lytd_end=(pd.Timestamp(date(year-1,last_month,1))+pd.offsets.MonthEnd()).date() if last_month else date(year-2,12,31)
     prev_end=(pd.Timestamp(date(year-1,month,1))+pd.offsets.MonthEnd()).date()
-    hist=read_dataframe(HIST_PATH,HIST_COLS)
+    hist=read_optional_dataframe(HIST_PATH,HIST_COLS)
     for c in HIST_COLS:
         if c!='macchina':hist[c]=pd.to_numeric(hist[c],errors='coerce')
     cache={}
@@ -175,7 +190,7 @@ def render_monthly_dashboard(productions,events,causes,targets,quality):
             weights=he.ore_riferimento
             if he.ooe_pct.notna().all() and weights.notna().all() and weights.sum()>0:return float((he.ooe_pct*weights).sum()/weights.sum())
         key=(a,b)
-        if key not in cache:cache[key]=calculate_effectiveness(events,productions,causes,targets,quality,a,b)
+        if key not in cache:cache[key]=cached_effectiveness(events,productions,causes,targets,quality,a,b)
         result=next((r for r in cache[key] if r['Macchina']==machine),None)
         # Do not pretend that July-onward operational records cover a full YTD.
         dates=pd.to_datetime(events.loc[events.macchina==machine,'data_turno'],errors='coerce').dropna()
@@ -269,7 +284,12 @@ def render_monthly_dashboard(productions,events,causes,targets,quality):
         if st.button(tr('Salva riferimenti e associazioni','Save references and mappings'),key='save_refs'):
             edited.yield_pct=pd.to_numeric(edited.yield_pct,errors='coerce')
             if edited.materia_prima.isna().any() or edited.materia_prima.duplicated().any() or not edited.yield_pct.between(0,100).all() or mapped.codice.duplicated().any() or not mapped.materia_prima.isin(edited.materia_prima).all():st.error(tr('Verifica descrizioni, codici univoci e percentuali 0–100.','Check descriptions, unique codes and percentages 0–100.'))
-            else:write_dataframe(REF_PATH,edited,REF_COLS);write_dataframe(MAP_PATH,mapped,MAP_COLS);st.rerun()
+            else:
+                try:
+                    write_dataframe(REF_PATH,edited,REF_COLS);write_dataframe(MAP_PATH,mapped,MAP_COLS)
+                except Exception:
+                    st.error(tr('Salvataggio configurazioni rifiutato dal database. I dati produttivi non sono stati modificati. Verifica i nuovi dataset nei log Supabase/Streamlit.', 'Database rejected configuration save. Production data were not modified. Check new datasets in Supabase/Streamlit logs.'))
+                else:st.rerun()
     with st.expander(tr('OOE storico mensile','Historical monthly OOE')):
         edited=st.data_editor(hist,num_rows='dynamic',key='ooe_history')
         st.caption(tr('OOE 0–100%; ore del denominatore OOE per ponderare i cumulati. Nessuna ricostruzione OOE dai soli kg.','OOE 0–100%; denominator hours for cumulative weighting. OOE cannot be reconstructed from kg alone.'))
@@ -277,5 +297,8 @@ def render_monthly_dashboard(productions,events,causes,targets,quality):
             for c in HIST_COLS:
                 if c!='macchina':edited[c]=pd.to_numeric(edited[c],errors='coerce')
             valid=not edited[HIST_COLS].isna().any().any() and not edited.duplicated(['anno','mese','macchina']).any() and edited.macchina.isin(['Comber','Spray Dryer']).all() and edited.mese.between(1,12).all() and edited.ooe_pct.between(0,100).all() and edited.ore_riferimento.gt(0).all() and (edited[['anno','mese']]%1==0).all().all()
-            if valid:write_dataframe(HIST_PATH,edited,HIST_COLS);st.rerun()
+            if valid:
+                try:write_dataframe(HIST_PATH,edited,HIST_COLS)
+                except Exception:st.error(tr('Salvataggio storico OOE rifiutato dal database: verifica il vincolo dataset nei log.', 'Database rejected OOE history save: check dataset constraints in logs.'))
+                else:st.rerun()
             else:st.error(tr('Verifica valori e duplicati.','Check values and duplicates.'))
