@@ -1,0 +1,11 @@
+cause_id,causale,categoria,esclusa_pianificato,penalizza_ooe,perdita_tecnica,nota_obbligatoria,attiva
+CAU-12657F7B7C,Altro,Operativa,NO,SI,NO,SI,SI
+CAU-14E117154E,Attesa analisi,Organizzativa/Qualità,SI,SI,NO,NO,SI
+CAU-FDE4D75F56,Attesa prodotto,Organizzativa,SI,SI,NO,NO,SI
+CAU-5ED127B3F1,Cambio lotto,Fermo programmato,SI,SI,SI,NO,SI
+CAU-183DD88448,Guasto,Tecnica,NO,SI,SI,SI,SI
+CAU-85F32B06D1,Inventario,Organizzativa programmata,SI,SI,NO,NO,SI
+CAU-3935DB7D7E,Lavaggio,Fermo programmato,SI,SI,SI,NO,SI
+CAU-1B9F27322C,Manutenzione programmata,Fermo programmato,SI,SI,NO,NO,SI
+CAU-83CC50E016,Manutenzione straordinaria,Tecnica,NO,SI,SI,SI,SI
+CAU-B3C02737FF,Pulizia,Fermo programmato,SI,SI,NO,NO,SI

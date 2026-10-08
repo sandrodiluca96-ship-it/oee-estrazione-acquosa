@@ -1,0 +1,428 @@
+id_turno,data_turno,turno,macchina,ore_pianificate,ore_produzione,ore_fermo,note
+20260727-1-Comber,2026-07-27,1,Comber,8,2.0,6.0,Salvato da timeline eventi
+20260727-2-Comber,2026-07-27,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260727-3-Comber,2026-07-27,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260728-1-Comber,2026-07-28,1,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260728-1-EV200,2026-07-28,1,EV200,8,8.0,0.0,Salvato da timeline eventi
+20260728-1-Mescole,2026-07-28,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260728-1-Spray_Dryer,2026-07-28,1,Spray Dryer,8,2.0,6.0,Salvato da timeline eventi
+20260728-2-Comber,2026-07-28,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260728-2-EV200,2026-07-28,2,EV200,8,3.0,5.0,Salvato da timeline eventi
+20260728-2-Mescole,2026-07-28,2,Mescole,8,4.0,4.0,Salvato da timeline eventi
+20260728-2-Spray_Dryer,2026-07-28,2,Spray Dryer,8,7.25,0.75,Salvato da timeline eventi
+20260728-3-Comber,2026-07-28,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260728-3-EV200,2026-07-28,3,EV200,8,8.0,0.0,Salvato da timeline eventi
+20260728-3-Mescole,2026-07-28,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260728-3-Spray_Dryer,2026-07-28,3,Spray Dryer,8,6.25,1.75,Salvato da timeline eventi
+20260729-1-Comber,2026-07-29,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260729-1-EV200,2026-07-29,1,EV200,8,8.0,0.0,Salvato da timeline eventi
+20260729-1-Mescole,2026-07-29,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260729-1-Spray_Dryer,2026-07-29,1,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260729-2-Comber,2026-07-29,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260729-2-EV200,2026-07-29,2,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260729-2-Mescole,2026-07-29,2,Mescole,8,2.0,6.0,Salvato da timeline eventi
+20260729-2-Spray_Dryer,2026-07-29,2,Spray Dryer,8,6.75,1.25,Salvato da timeline eventi
+20260729-3-Comber,2026-07-29,3,Comber,8,3.0,5.0,Salvato da timeline eventi
+20260729-3-EV200,2026-07-29,3,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260729-3-Mescole,2026-07-29,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260729-3-Spray_Dryer,2026-07-29,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260730-1-Comber,2026-07-30,1,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260730-1-EV200,2026-07-30,1,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260730-1-Mescole,2026-07-30,1,Mescole,8,2.0,6.0,Salvato da timeline eventi
+20260730-1-Spray_Dryer,2026-07-30,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260730-2-Comber,2026-07-30,2,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260730-2-Mescole,2026-07-30,2,Mescole,8,5.5,2.5,Salvato da timeline eventi
+20260730-2-Spray_Dryer,2026-07-30,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260730-3-Comber,2026-07-30,3,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260730-3-EV200,2026-07-30,3,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260730-3-Mescole,2026-07-30,3,Mescole,8,5.75,2.25,Salvato da timeline eventi
+20260730-3-Spray_Dryer,2026-07-30,3,Spray Dryer,8,7.25,0.75,Salvato da timeline eventi
+20260731-1-Comber,2026-07-31,1,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260731-1-EV200,2026-07-31,1,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260731-1-Mescole,2026-07-31,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260731-1-Spray_Dryer,2026-07-31,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260731-2-Comber,2026-07-31,2,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260731-2-EV200,2026-07-31,2,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260731-2-Mescole,2026-07-31,2,Mescole,8,3.25,4.75,Salvato da timeline eventi
+20260731-2-Spray_Dryer,2026-07-31,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260731-3-Mescole,2026-07-31,3,Mescole,8,2.75,5.25,Salvato da timeline eventi
+20260731-3-Spray_Dryer,2026-07-31,3,Spray Dryer,8,4.75,3.25,Salvato da timeline eventi
+20260803-1-Mescole,2026-08-03,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260803-1-Spray_Dryer,2026-08-03,1,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260803-2-Comber,2026-08-03,2,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260803-2-Mescole,2026-08-03,2,Mescole,8,6.25,1.75,Salvato da timeline eventi
+20260803-2-Spray_Dryer,2026-08-03,2,Spray Dryer,8,7.5,0.5,Salvato da timeline eventi
+20260803-3-Comber,2026-08-03,3,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260804-1-Mescole,2026-08-04,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260804-1-Spray_Dryer,2026-08-04,1,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260804-2-Comber,2026-08-04,2,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260804-2-Mescole,2026-08-04,2,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260804-2-Spray_Dryer,2026-08-04,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260804-3-Comber,2026-08-04,3,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260804-3-EV200,2026-08-04,3,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260804-3-Spray_Dryer,2026-08-04,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260805-1-Comber,2026-08-05,1,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260805-1-EV200,2026-08-05,1,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260805-1-Mescole,2026-08-05,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260805-1-Spray_Dryer,2026-08-05,1,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260805-2-Comber,2026-08-05,2,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260805-2-Mescole,2026-08-05,2,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260805-2-Spray_Dryer,2026-08-05,2,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260805-3-Comber,2026-08-05,3,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260805-3-EV200,2026-08-05,3,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260805-3-Mescole,2026-08-05,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260805-3-Spray_Dryer,2026-08-05,3,Spray Dryer,8,6.0,2.0,Salvato da timeline eventi
+20260806-1-Comber,2026-08-06,1,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260806-1-EV200,2026-08-06,1,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260806-1-Mescole,2026-08-06,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260806-1-Spray_Dryer,2026-08-06,1,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260806-3-Comber,2026-08-06,3,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260806-3-EV200,2026-08-06,3,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260806-3-Mescole,2026-08-06,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260806-3-Spray_Dryer,2026-08-06,3,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260807-3-Comber,2026-08-07,3,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260807-3-EV200,2026-08-07,3,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260807-3-Mescole,2026-08-07,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260807-3-Spray_Dryer,2026-08-07,3,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260824-1-Comber,2026-08-24,1,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260824-1-EV200,2026-08-24,1,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260824-1-Mescole,2026-08-24,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260824-1-Spray_Dryer,2026-08-24,1,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260824-2-Comber,2026-08-24,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260824-2-EV200,2026-08-24,2,EV200,8,5.5,2.5,Salvato da timeline eventi
+20260824-2-Mescole,2026-08-24,2,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260824-2-Spray_Dryer,2026-08-24,2,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260824-3-Comber,2026-08-24,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260824-3-EV200,2026-08-24,3,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260824-3-Mescole,2026-08-24,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260824-3-Spray_Dryer,2026-08-24,3,Spray Dryer,8,1.5,6.5,Salvato da timeline eventi
+20260825-1-Comber,2026-08-25,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260825-1-EV200,2026-08-25,1,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260825-1-Mescole,2026-08-25,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260825-1-Spray_Dryer,2026-08-25,1,Spray Dryer,8,6.5,1.5,Salvato da timeline eventi
+20260825-2-Comber,2026-08-25,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260825-2-Mescole,2026-08-25,2,Mescole,8,6.5,1.5,Salvato da timeline eventi
+20260825-2-Spray_Dryer,2026-08-25,2,Spray Dryer,8,5.5,2.5,Salvato da timeline eventi
+20260825-3-Comber,2026-08-25,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260825-3-EV200,2026-08-25,3,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260825-3-Mescole,2026-08-25,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260825-3-Spray_Dryer,2026-08-25,3,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260826-1-Comber,2026-08-26,1,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260826-1-EV200,2026-08-26,1,EV200,8,1.5,6.5,Salvato da timeline eventi
+20260826-1-Mescole,2026-08-26,1,Mescole,8,2.0,6.0,Salvato da timeline eventi
+20260826-1-Spray_Dryer,2026-08-26,1,Spray Dryer,8,5.5,2.5,Salvato da timeline eventi
+20260826-2-Comber,2026-08-26,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260826-2-EV200,2026-08-26,2,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260826-2-Mescole,2026-08-26,2,Mescole,8,6.0,2.0,Salvato da timeline eventi
+20260826-3-Comber,2026-08-26,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260826-3-EV200,2026-08-26,3,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260826-3-Mescole,2026-08-26,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260826-3-Spray_Dryer,2026-08-26,3,Spray Dryer,8,4.0,4.0,Salvato da timeline eventi
+20260827-1-Comber,2026-08-27,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260827-1-EV200,2026-08-27,1,EV200,8,4.5,3.5,Salvato da timeline eventi
+20260827-1-Mescole,2026-08-27,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260827-1-Spray_Dryer,2026-08-27,1,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260827-2-Comber,2026-08-27,2,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260827-2-EV200,2026-08-27,2,EV200,8,1.5,6.5,Salvato da timeline eventi
+20260827-2-Mescole,2026-08-27,2,Mescole,8,2.0,6.0,Salvato da timeline eventi
+20260827-2-Spray_Dryer,2026-08-27,2,Spray Dryer,8,3.0,5.0,Salvato da timeline eventi
+20260827-3-Comber,2026-08-27,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260827-3-EV200,2026-08-27,3,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260827-3-Mescole,2026-08-27,3,Mescole,8,6.0,2.0,Salvato da timeline eventi
+20260827-3-Spray_Dryer,2026-08-27,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260828-1-Comber,2026-08-28,1,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260828-1-EV200,2026-08-28,1,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260828-1-Spray_Dryer,2026-08-28,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260828-2-Comber,2026-08-28,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260828-2-EV200,2026-08-28,2,EV200,8,5.0,3.0,Salvato da timeline eventi
+20260828-3-Comber,2026-08-28,3,Comber,8,1.0,7.0,Salvato da timeline eventi
+20260828-3-EV200,2026-08-28,3,EV200,8,2.0,6.0,Salvato da timeline eventi
+20260828-3-Mescole,2026-08-28,3,Mescole,8,5.5,2.5,Salvato da timeline eventi
+20260828-3-Spray_Dryer,2026-08-28,3,Spray Dryer,8,6.5,1.5,Salvato da timeline eventi
+20260831-1-Comber,2026-08-31,1,Comber,8,7.5,0.5,Salvato da timeline eventi
+20260831-1-EV200,2026-08-31,1,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260831-2-Comber,2026-08-31,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260831-2-EV200,2026-08-31,2,EV200,8,4.75,3.25,Salvato da timeline eventi
+20260831-2-Mescole,2026-08-31,2,Mescole,8,4.5,3.5,Salvato da timeline eventi
+20260831-2-Spray_Dryer,2026-08-31,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260831-3-Comber,2026-08-31,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260831-3-EV200,2026-08-31,3,EV200,8,5.0,3.0,Salvato da timeline eventi
+20260831-3-Mescole,2026-08-31,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260831-3-Spray_Dryer,2026-08-31,3,Spray Dryer,8,7.5,0.5,Salvato da timeline eventi
+20260901-1-Comber,2026-09-01,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260901-1-EV200,2026-09-01,1,EV200,8,3.0,5.0,Salvato da timeline eventi
+20260901-1-Spray_Dryer,2026-09-01,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260901-2-Comber,2026-09-01,2,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260901-2-EV200,2026-09-01,2,EV200,8,2.0,6.0,Salvato da timeline eventi
+20260901-2-Mescole,2026-09-01,2,Mescole,8,4.5,3.5,Salvato da timeline eventi
+20260901-2-Spray_Dryer,2026-09-01,2,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260901-3-Comber,2026-09-01,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260901-3-EV200,2026-09-01,3,EV200,8,6.5,1.5,Salvato da timeline eventi
+20260901-3-Mescole,2026-09-01,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260901-3-Spray_Dryer,2026-09-01,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260902-1-Comber,2026-09-02,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260902-1-EV200,2026-09-02,1,EV200,8,3.5,4.5,Salvato da timeline eventi
+20260902-1-Spray_Dryer,2026-09-02,1,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260902-2-Comber,2026-09-02,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260902-2-EV200,2026-09-02,2,EV200,8,0.75,7.25,Salvato da timeline eventi
+20260902-2-Mescole,2026-09-02,2,Mescole,8,6.0,2.0,Salvato da timeline eventi
+20260902-2-Spray_Dryer,2026-09-02,2,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260902-3-Comber,2026-09-02,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260902-3-EV200,2026-09-02,3,EV200,8,8.0,0.0,Salvato da timeline eventi
+20260902-3-Mescole,2026-09-02,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260902-3-Spray_Dryer,2026-09-02,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260903-1-Comber,2026-09-03,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260903-1-EV200,2026-09-03,1,EV200,8,2.5,5.5,Salvato da timeline eventi
+20260903-1-Spray_Dryer,2026-09-03,1,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260903-2-Comber,2026-09-03,2,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260903-2-EV200,2026-09-03,2,EV200,8,1.5,6.5,Salvato da timeline eventi
+20260903-2-Mescole,2026-09-03,2,Mescole,8,5.0,3.0,Salvato da timeline eventi
+20260903-2-Spray_Dryer,2026-09-03,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260903-3-Comber,2026-09-03,3,Comber,8,6.0,2.0,Salvato da timeline eventi
+20260903-3-EV200,2026-09-03,3,EV200,8,7.0,1.0,Salvato da timeline eventi
+20260903-3-Spray_Dryer,2026-09-03,3,Spray Dryer,8,6.0,2.0,Salvato da timeline eventi
+20260904-1-Comber,2026-09-04,1,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260904-1-EV200,2026-09-04,1,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260904-1-Mescole,2026-09-04,1,Mescole,8,6.0,2.0,Salvato da timeline eventi
+20260904-1-Spray_Dryer,2026-09-04,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260904-2-Mescole,2026-09-04,2,Mescole,8,4.5,3.5,Salvato da timeline eventi
+20260904-2-Spray_Dryer,2026-09-04,2,Spray Dryer,8,5.0,3.0,Salvato da timeline eventi
+20260904-3-Comber,2026-09-04,3,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260904-3-EV200,2026-09-04,3,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260904-3-Mescole,2026-09-04,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260904-3-Spray_Dryer,2026-09-04,3,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260907-1-Comber,2026-09-07,1,Comber,8,6.0,2.0,Salvato da timeline eventi
+20260907-1-EV200,2026-09-07,1,EV200,8,1.5,6.5,Salvato da timeline eventi
+20260907-1-Mescole,2026-09-07,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260907-1-Spray_Dryer,2026-09-07,1,Spray Dryer,8,2.5,5.5,Salvato da timeline eventi
+20260907-2-Comber,2026-09-07,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260907-2-EV200,2026-09-07,2,EV200,8,5.5,2.5,Salvato da timeline eventi
+20260907-2-Spray_Dryer,2026-09-07,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260907-3-Comber,2026-09-07,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260907-3-EV200,2026-09-07,3,EV200,8,3.0,5.0,Salvato da timeline eventi
+20260907-3-Mescole,2026-09-07,3,Mescole,8,7.0,1.0,Salvato da timeline eventi
+20260907-3-Spray_Dryer,2026-09-07,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260908-1-Comber,2026-09-08,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260908-1-EV200,2026-09-08,1,EV200,8,3.0,5.0,Salvato da timeline eventi
+20260908-1-Spray_Dryer,2026-09-08,1,Spray Dryer,8,6.5,1.5,Salvato da timeline eventi
+20260908-2-Comber,2026-09-08,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260908-2-EV200,2026-09-08,2,EV200,8,6.0,2.0,Salvato da timeline eventi
+20260908-2-Mescole,2026-09-08,2,Mescole,8,8.0,0.0,Salvato da timeline eventi
+20260908-2-Spray_Dryer,2026-09-08,2,Spray Dryer,8,5.0,3.0,Salvato da timeline eventi
+20260908-3-Comber,2026-09-08,3,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260908-3-EV200,2026-09-08,3,EV200,8,1.5,6.5,Salvato da timeline eventi
+20260908-3-Mescole,2026-09-08,3,Mescole,8,8.0,0.0,Salvato da timeline eventi
+20260908-3-Spray_Dryer,2026-09-08,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260909-1-Comber,2026-09-09,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260909-1-EV200,2026-09-09,1,EV200,8,4.5,3.5,Salvato da timeline eventi
+20260909-1-Spray_Dryer,2026-09-09,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260909-2-Comber,2026-09-09,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260909-2-EV200,2026-09-09,2,EV200,8,8.0,0.0,Salvato da timeline eventi
+20260909-2-Mescole,2026-09-09,2,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260909-2-Spray_Dryer,2026-09-09,2,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260909-3-Comber,2026-09-09,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260909-3-EV200,2026-09-09,3,EV200,8,2.5,5.5,Salvato da timeline eventi
+20260909-3-Mescole,2026-09-09,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260909-3-Spray_Dryer,2026-09-09,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260910-1-Comber,2026-09-10,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260910-1-EV200,2026-09-10,1,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260910-1-Spray_Dryer,2026-09-10,1,Spray Dryer,8,2.0,6.0,Salvato da timeline eventi
+20260910-2-Comber,2026-09-10,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260910-2-EV200,2026-09-10,2,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260910-2-Mescole,2026-09-10,2,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260910-2-Spray_Dryer,2026-09-10,2,Spray Dryer,8,2.5,5.5,Salvato da timeline eventi
+20260910-3-Comber,2026-09-10,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260910-3-EV200,2026-09-10,3,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260910-3-Mescole,2026-09-10,3,Mescole,8,6.5,1.5,Salvato da timeline eventi
+20260910-3-Spray_Dryer,2026-09-10,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260911-1-Comber,2026-09-11,1,Comber,8,4.0,4.0,Salvato da timeline eventi
+20260911-1-EV200,2026-09-11,1,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260911-1-Spray_Dryer,2026-09-11,1,Spray Dryer,8,6.0,2.0,Salvato da timeline eventi
+20260911-2-Comber,2026-09-11,2,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260911-2-EV200,2026-09-11,2,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260911-2-Spray_Dryer,2026-09-11,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260911-3-Comber,2026-09-11,3,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260911-3-EV200,2026-09-11,3,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260911-3-Spray_Dryer,2026-09-11,3,Spray Dryer,8,4.0,4.0,Salvato da timeline eventi
+20260914-1-Comber,2026-09-14,1,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260914-1-EV200,2026-09-14,1,EV200,8,1.5,6.5,Salvato da timeline eventi
+20260914-1-Spray_Dryer,2026-09-14,1,Spray Dryer,8,4.0,4.0,Salvato da timeline eventi
+20260914-2-Comber,2026-09-14,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260914-2-EV200,2026-09-14,2,EV200,8,5.0,3.0,Salvato da timeline eventi
+20260914-2-Spray_Dryer,2026-09-14,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260914-3-Comber,2026-09-14,3,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260914-3-EV200,2026-09-14,3,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260914-3-Mescole,2026-09-14,3,Mescole,8,8.0,0.0,Salvato da timeline eventi
+20260915-1-Comber,2026-09-15,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260915-1-EV200,2026-09-15,1,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260915-1-Spray_Dryer,2026-09-15,1,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260915-2-Comber,2026-09-15,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260915-2-EV200,2026-09-15,2,EV200,8,5.5,2.5,Salvato da timeline eventi
+20260915-2-Mescole,2026-09-15,2,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260915-2-Spray_Dryer,2026-09-15,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260915-3-Comber,2026-09-15,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260915-3-EV200,2026-09-15,3,EV200,8,6.0,2.0,Salvato da timeline eventi
+20260915-3-Mescole,2026-09-15,3,Mescole,8,6.0,2.0,Salvato da timeline eventi
+20260915-3-Spray_Dryer,2026-09-15,3,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260916-1-Comber,2026-09-16,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260916-1-Mescole,2026-09-16,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260916-1-Spray_Dryer,2026-09-16,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260916-2-Comber,2026-09-16,2,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260916-2-EV200,2026-09-16,2,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260916-2-Mescole,2026-09-16,2,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260916-2-Spray_Dryer,2026-09-16,2,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260916-3-Comber,2026-09-16,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260916-3-EV200,2026-09-16,3,EV200,8,2.0,6.0,Salvato da timeline eventi
+20260916-3-Mescole,2026-09-16,3,Mescole,8,7.0,1.0,Salvato da timeline eventi
+20260917-1-Comber,2026-09-17,1,Comber,8,3.0,5.0,Salvato da timeline eventi
+20260917-1-EV200,2026-09-17,1,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260917-1-Spray_Dryer,2026-09-17,1,Spray Dryer,8,6.5,1.5,Salvato da timeline eventi
+20260917-2-Comber,2026-09-17,2,Comber,8,5.5,2.5,Salvato da timeline eventi
+20260917-2-EV200,2026-09-17,2,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260917-2-Mescole,2026-09-17,2,Mescole,8,7.75,0.25,Salvato da timeline eventi
+20260917-2-Spray_Dryer,2026-09-17,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260917-3-Comber,2026-09-17,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260917-3-EV200,2026-09-17,3,EV200,8,4.5,3.5,Salvato da timeline eventi
+20260917-3-Mescole,2026-09-17,3,Mescole,8,7.75,0.25,Salvato da timeline eventi
+20260917-3-Spray_Dryer,2026-09-17,3,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260918-1-Comber,2026-09-18,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260918-1-EV200,2026-09-18,1,EV200,8,5.5,2.5,Salvato da timeline eventi
+20260918-1-Mescole,2026-09-18,1,Mescole,8,8.0,0.0,Salvato da timeline eventi
+20260918-1-Spray_Dryer,2026-09-18,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260918-2-Spray_Dryer,2026-09-18,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260918-3-Mescole,2026-09-18,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260919-3-Spray_Dryer,2026-09-19,3,Spray Dryer,8,5.0,3.0,Salvato da timeline eventi
+20260921-1-Comber,2026-09-21,1,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260921-1-EV200,2026-09-21,1,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260921-1-Mescole,2026-09-21,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260921-1-Spray_Dryer,2026-09-21,1,Spray Dryer,8,5.0,3.0,Salvato da timeline eventi
+20260921-2-Comber,2026-09-21,2,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260921-2-EV200,2026-09-21,2,EV200,8,6.0,2.0,Salvato da timeline eventi
+20260921-2-Mescole,2026-09-21,2,Mescole,8,6.5,1.5,Salvato da timeline eventi
+20260921-2-Spray_Dryer,2026-09-21,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260921-3-Comber,2026-09-21,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260921-3-EV200,2026-09-21,3,EV200,8,3.5,4.5,Salvato da timeline eventi
+20260921-3-Mescole,2026-09-21,3,Mescole,8,6.75,1.25,Salvato da timeline eventi
+20260921-3-Spray_Dryer,2026-09-21,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260922-1-Comber,2026-09-22,1,Comber,8,1.5,6.5,Salvato da timeline eventi
+20260922-1-EV200,2026-09-22,1,EV200,8,2.0,6.0,Salvato da timeline eventi
+20260922-1-Spray_Dryer,2026-09-22,1,Spray Dryer,8,3.0,5.0,Salvato da timeline eventi
+20260922-2-Comber,2026-09-22,2,Comber,8,5.5,2.5,Salvato da timeline eventi
+20260922-2-EV200,2026-09-22,2,EV200,8,2.0,6.0,Salvato da timeline eventi
+20260922-2-Spray_Dryer,2026-09-22,2,Spray Dryer,8,6.5,1.5,Salvato da timeline eventi
+20260922-3-Comber,2026-09-22,3,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260922-3-EV200,2026-09-22,3,EV200,8,2.5,5.5,Salvato da timeline eventi
+20260922-3-Mescole,2026-09-22,3,Mescole,8,8.0,0.0,Salvato da timeline eventi
+20260922-3-Spray_Dryer,2026-09-22,3,Spray Dryer,8,7.5,0.5,Salvato da timeline eventi
+20260923-1-Comber,2026-09-23,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260923-1-EV200,2026-09-23,1,EV200,8,3.5,4.5,Salvato da timeline eventi
+20260923-1-Mescole,2026-09-23,1,Mescole,8,8.0,0.0,Salvato da timeline eventi
+20260923-1-Spray_Dryer,2026-09-23,1,Spray Dryer,8,6.0,2.0,Salvato da timeline eventi
+20260923-2-Comber,2026-09-23,2,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260923-2-EV200,2026-09-23,2,EV200,8,0.0,8.0,Salvato da timeline eventi
+20260923-2-Mescole,2026-09-23,2,Mescole,8,7.5,0.5,Salvato da timeline eventi
+20260923-2-Spray_Dryer,2026-09-23,2,Spray Dryer,8,6.5,1.5,Salvato da timeline eventi
+20260923-3-Comber,2026-09-23,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260923-3-EV200,2026-09-23,3,EV200,8,3.5,4.5,Salvato da timeline eventi
+20260923-3-Mescole,2026-09-23,3,Mescole,8,8.0,0.0,Salvato da timeline eventi
+20260923-3-Spray_Dryer,2026-09-23,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260924-1-Comber,2026-09-24,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260924-1-EV200,2026-09-24,1,EV200,8,4.5,3.5,Salvato da timeline eventi
+20260924-1-Mescole,2026-09-24,1,Mescole,8,1.0,7.0,Salvato da timeline eventi
+20260924-1-Spray_Dryer,2026-09-24,1,Spray Dryer,8,6.5,1.5,Salvato da timeline eventi
+20260924-2-Comber,2026-09-24,2,Comber,8,0.0,8.0,Salvato da timeline eventi
+20260924-2-EV200,2026-09-24,2,EV200,8,0.25,7.75,Salvato da timeline eventi
+20260924-2-Mescole,2026-09-24,2,Mescole,8,7.5,0.5,Salvato da timeline eventi
+20260924-2-Spray_Dryer,2026-09-24,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260924-3-Mescole,2026-09-24,3,Mescole,8,8.0,0.0,Salvato da timeline eventi
+20260924-3-Spray_Dryer,2026-09-24,3,Spray Dryer,8,3.5,4.5,Salvato da timeline eventi
+20260925-2-Mescole,2026-09-25,2,Mescole,8,8.0,0.0,Salvato da timeline eventi
+20260925-2-Spray_Dryer,2026-09-25,2,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260925-3-Mescole,2026-09-25,3,Mescole,8,4.75,3.25,Salvato da timeline eventi
+20260925-3-Spray_Dryer,2026-09-25,3,Spray Dryer,8,0.0,8.0,Salvato da timeline eventi
+20260928-1-Comber,2026-09-28,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260928-1-EV200,2026-09-28,1,EV200,8,2.0,6.0,Salvato da timeline eventi
+20260928-1-Mescole,2026-09-28,1,Mescole,8,1.0,7.0,Salvato da timeline eventi
+20260928-1-Spray_Dryer,2026-09-28,1,Spray Dryer,8,2.5,5.5,Salvato da timeline eventi
+20260928-2-Comber,2026-09-28,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260928-2-EV200,2026-09-28,2,EV200,8,3.0,5.0,Salvato da timeline eventi
+20260928-2-Mescole,2026-09-28,2,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260928-2-Spray_Dryer,2026-09-28,2,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260928-3-Comber,2026-09-28,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260928-3-EV200,2026-09-28,3,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260928-3-Mescole,2026-09-28,3,Mescole,8,5.75,2.25,Salvato da timeline eventi
+20260928-3-Spray_Dryer,2026-09-28,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260929-1-Comber,2026-09-29,1,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260929-1-EV200,2026-09-29,1,EV200,8,7.0,1.0,Salvato da timeline eventi
+20260929-1-Mescole,2026-09-29,1,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20260929-1-Spray_Dryer,2026-09-29,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260929-2-Comber,2026-09-29,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260929-2-EV200,2026-09-29,2,EV200,8,4.5,3.5,Salvato da timeline eventi
+20260929-2-Spray_Dryer,2026-09-29,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260929-3-Comber,2026-09-29,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260929-3-EV200,2026-09-29,3,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260929-3-Mescole,2026-09-29,3,Mescole,8,5.75,2.25,Salvato da timeline eventi
+20260929-3-Spray_Dryer,2026-09-29,3,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20260930-1-Comber,2026-09-30,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260930-1-EV200,2026-09-30,1,EV200,8,5.5,2.5,Salvato da timeline eventi
+20260930-1-Mescole,2026-09-30,1,Mescole,8,4.75,3.25,Salvato da timeline eventi
+20260930-1-Spray_Dryer,2026-09-30,1,Spray Dryer,8,7.5,0.5,Salvato da timeline eventi
+20260930-2-Comber,2026-09-30,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20260930-2-EV200,2026-09-30,2,EV200,8,7.0,1.0,Salvato da timeline eventi
+20260930-2-Spray_Dryer,2026-09-30,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20260930-3-Comber,2026-09-30,3,Comber,8,7.0,1.0,Salvato da timeline eventi
+20260930-3-EV200,2026-09-30,3,EV200,8,4.0,4.0,Salvato da timeline eventi
+20260930-3-Mescole,2026-09-30,3,Mescole,8,5.25,2.75,Salvato da timeline eventi
+20260930-3-Spray_Dryer,2026-09-30,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20261001-1-Comber,2026-10-01,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20261001-1-EV200,2026-10-01,1,EV200,8,6.0,2.0,Salvato da timeline eventi
+20261001-1-Mescole,2026-10-01,1,Mescole,8,1.0,7.0,Salvato da timeline eventi
+20261001-1-Spray_Dryer,2026-10-01,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20261001-2-Comber,2026-10-01,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20261001-2-EV200,2026-10-01,2,EV200,8,5.0,3.0,Salvato da timeline eventi
+20261001-2-Spray_Dryer,2026-10-01,2,Spray Dryer,8,6.0,2.0,Salvato da timeline eventi
+20261001-3-Comber,2026-10-01,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20261001-3-EV200,2026-10-01,3,EV200,8,3.0,5.0,Salvato da timeline eventi
+20261002-1-Comber,2026-10-02,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20261002-1-EV200,2026-10-02,1,EV200,8,4.0,4.0,Salvato da timeline eventi
+20261002-1-Mescole,2026-10-02,1,Mescole,8,6.25,1.75,Salvato da timeline eventi
+20261002-1-Spray_Dryer,2026-10-02,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20261002-2-Comber,2026-10-02,2,Comber,8,6.0,2.0,Salvato da timeline eventi
+20261002-2-EV200,2026-10-02,2,EV200,8,6.0,2.0,Salvato da timeline eventi
+20261002-2-Spray_Dryer,2026-10-02,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20261002-3-Comber,2026-10-02,3,Comber,8,0.0,8.0,Salvato da timeline eventi
+20261002-3-EV200,2026-10-02,3,EV200,8,0.0,8.0,Salvato da timeline eventi
+20261002-3-Spray_Dryer,2026-10-02,3,Spray Dryer,8,2.0,6.0,Salvato da timeline eventi
+20261005-1-Comber,2026-10-05,1,Comber,8,7.5,0.5,Salvato da timeline eventi
+20261005-1-EV200,2026-10-05,1,EV200,8,1.0,7.0,Salvato da timeline eventi
+20261005-1-Mescole,2026-10-05,1,Mescole,8,4.0,4.0,Salvato da timeline eventi
+20261005-1-Spray_Dryer,2026-10-05,1,Spray Dryer,8,4.0,4.0,Salvato da timeline eventi
+20261005-2-Comber,2026-10-05,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20261005-2-EV200,2026-10-05,2,EV200,8,5.0,3.0,Salvato da timeline eventi
+20261005-2-Mescole,2026-10-05,2,Mescole,8,6.25,1.75,Salvato da timeline eventi
+20261005-2-Spray_Dryer,2026-10-05,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20261005-3-Comber,2026-10-05,3,Comber,8,7.0,1.0,Salvato da timeline eventi
+20261005-3-EV200,2026-10-05,3,EV200,8,6.0,2.0,Salvato da timeline eventi
+20261005-3-Mescole,2026-10-05,3,Mescole,8,7.0,1.0,Salvato da timeline eventi
+20261006-1-Comber,2026-10-06,1,Comber,8,8.0,0.0,Salvato da timeline eventi
+20261006-1-EV200,2026-10-06,1,EV200,8,3.5,4.5,Salvato da timeline eventi
+20261006-1-Spray_Dryer,2026-10-06,1,Spray Dryer,8,7.0,1.0,Salvato da timeline eventi
+20261006-2-Comber,2026-10-06,2,Comber,8,8.0,0.0,Salvato da timeline eventi
+20261006-2-EV200,2026-10-06,2,EV200,8,6.0,2.0,Salvato da timeline eventi
+20261006-2-Spray_Dryer,2026-10-06,2,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20261006-3-Comber,2026-10-06,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20261006-3-EV200,2026-10-06,3,EV200,8,6.75,1.25,Salvato da timeline eventi
+20261006-3-Mescole,2026-10-06,3,Mescole,8,4.5,3.5,Salvato da timeline eventi
+20261006-3-Spray_Dryer,2026-10-06,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20261007-1-Comber,2026-10-07,1,Comber,8,6.5,1.5,Salvato da timeline eventi
+20261007-1-EV200,2026-10-07,1,EV200,8,8.0,0.0,Salvato da timeline eventi
+20261007-1-Mescole,2026-10-07,1,Mescole,8,5.25,2.75,Salvato da timeline eventi
+20261007-1-Spray_Dryer,2026-10-07,1,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20261007-2-Comber,2026-10-07,2,Comber,8,7.0,1.0,Salvato da timeline eventi
+20261007-2-EV200,2026-10-07,2,EV200,8,0.0,8.0,Salvato da timeline eventi
+20261007-2-Spray_Dryer,2026-10-07,2,Spray Dryer,8,6.0,2.0,Salvato da timeline eventi
+20261007-3-Comber,2026-10-07,3,Comber,8,8.0,0.0,Salvato da timeline eventi
+20261007-3-EV200,2026-10-07,3,EV200,8,7.0,1.0,Salvato da timeline eventi
+20261007-3-Mescole,2026-10-07,3,Mescole,8,0.0,8.0,Salvato da timeline eventi
+20261007-3-Spray_Dryer,2026-10-07,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
+20261008-3-Spray_Dryer,2026-10-08,3,Spray Dryer,8,8.0,0.0,Salvato da timeline eventi
