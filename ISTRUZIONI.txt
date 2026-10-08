@@ -1,3 +1,4 @@
-Estrarre lo ZIP e caricare app.py e monthly_dashboard.py nella radice del repository, sostituendo i file esistenti. Confermare Commit changes e riavviare Streamlit.
-Versione 4.2.5: dashboard compatta, unita esplicite, grafici Plotly verificati, nessun elenco lotti aperti o avviso duplicati nella dashboard mensile.
-Verifica effettuata con Plotly reale e interfaccia Streamlit simulata, nelle viste mensile, settimanale e lotto, IT/EN. OOE simulato nel controllo UI; formule di calcolo non modificate.
+Versione 4.2.6. Estrarre e sostituire app.py e monthly_dashboard.py nella radice del repository GitHub. Commit changes, poi riavvio Streamlit.
+Tre grafici fissi del solo mese selezionato: Mass Yield, materia prima lavorata, semilavorato prodotto. Un punto per lotto consuntivato nel mese; tooltip con prodotto, lotto, data e valori con unita. Storico resa solo se associato al prodotto.
+Andamenti da gennaio al mese selezionato, aggregati mensilmente, nel blocco espandibile. Confronti YTD/LYTD fino allo stesso ultimo mese chiuso.
+Verificati: sintassi, costruzione dei grafici con Plotly reale, selezione date del mese e tooltip lotti, IT/EN; interfaccia Streamlit simulata. Verifica visiva finale nell app.
