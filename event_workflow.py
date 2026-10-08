@@ -529,7 +529,10 @@ def render_machine_workflow(machine):
         valid,msg=_validate(buffer,shift,True)
         if valid: st.success("Turno completo e pronto per il salvataggio.")
         else: st.warning(msg)
-        if st.button("Salva turno",type="primary",disabled=not valid,key=f"save_{state}"):
+        shift_exists = (_read(TURNI_FILE, COL_TURNI)["id_turno"].astype(str) == f"{day:%Y%m%d}-{shift}-{machine.replace(' ','_')}").any()
+        if shift_exists:
+            st.warning("Turno già salvato: correggi gli eventi dalla pagina Storico, senza salvarlo nuovamente.")
+        if st.button("Salva turno",type="primary",disabled=not valid or shift_exists,key=f"save_{state}"):
             shift_id=f"{day:%Y%m%d}-{shift}-{machine.replace(' ','_')}"; stamp=datetime.now().strftime("%Y%m%d%H%M%S")
             saved=[]
             for i,r in enumerate(buffer,1):

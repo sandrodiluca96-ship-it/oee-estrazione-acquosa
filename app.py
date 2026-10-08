@@ -10,6 +10,7 @@ from pathlib import Path
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
+from monthly_dashboard import render_monthly_dashboard, render_late_completion
 from i18n import configure_streamlit_translation, language_selector, machine_name, translate
 from event_workflow import COL_EVENTI, EVENTI_FILE, _create_production, _validate, render_machine_workflow
 from persistence import audit_dataframe
@@ -29,7 +30,7 @@ from oee_analytics import (
 
 st.set_page_config(page_title="OEE Produzione Lauria", page_icon="🏭", layout="wide")
 
-VERSIONE = "4.1.0"
+VERSIONE = "4.2.1"
 QUALITA = 0.95
 PROCESS_MACHINES = ["Comber", "EV200", "Spray Dryer"]
 EFFECTIVENESS_MACHINES = ["Comber", "Spray Dryer"]
@@ -1247,13 +1248,17 @@ if LOGO_FILE.exists(): st.sidebar.image(str(LOGO_FILE),width=170)
 st.sidebar.markdown("### Produzione Lauria")
 area=st.sidebar.radio("Area",[
     "Comber","Pianificazione Comber","EV200","Spray Dryer","Mescole","Pianificazione Mescole","Dashboard Mescole",
-    "Dashboard OEE/OOE","Production vs Target",
+    "Dashboard OEE/OOE","Production vs Target","Dashboard mensile Lauria","Consuntivo e chiusura lotti",
     "Excel","Storico","Target","Anagrafiche e causali",
 ])
 page=f"Turno {area}" if area in MACCHINE else area
 st.sidebar.caption(f"Versione {VERSIONE} · Qualità standard {QUALITA:.0%}")
 
-if page=="Pianificazione Comber":
+if page=="Dashboard mensile Lauria":
+    render_monthly_dashboard(prep_production(), read_csv(EVENTI_FILE, COL_EVENTI), cause_config(), _effectiveness_targets(), QUALITA)
+elif page=="Consuntivo e chiusura lotti":
+    render_late_completion()
+elif page=="Pianificazione Comber":
     st.title("Pianificazione Comber")
     st.caption("Piano per droga e quantità: il lotto resta informativo. I residui vengono riportati e recuperati con priorità FIFO.")
     uploaded_plan=st.file_uploader("Pianificazione settimanale estrazione",type=["xls","xlsx"],key="comber_plan_upload")

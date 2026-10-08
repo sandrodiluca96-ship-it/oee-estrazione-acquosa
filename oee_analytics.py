@@ -428,7 +428,7 @@ def calculate_effectiveness(events: pd.DataFrame, productions: pd.DataFrame, cau
     La performance usa il tempo realmente operativo, evitando di penalizzare
     due volte le fermate.
     """
-    event_work = events.copy()
+    event_work = events.drop_duplicates(subset=[c for c in events.columns if c != "id_evento"]).copy()
     if event_work.empty:
         event_work = pd.DataFrame(columns=["id_turno", "data_turno", "macchina", "tipo_evento", "cause_id", "durata_h"])
     event_work["_date"] = pd.to_datetime(event_work["data_turno"], errors="coerce").dt.date

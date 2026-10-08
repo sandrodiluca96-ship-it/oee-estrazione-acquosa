@@ -1,3 +1,9 @@
+## 4.2.0
+- Dashboard mensile Lauria con trend settimanali e confronto rese storiche.
+- Consuntivo Spray Dryer a valle e chiusura lotto.
+- Protezione doppi salvataggi turno e copie identiche escluse dal calcolo OOE.
+- Editor bilingue senza trasformare i valori macchina.
+
 # Versione 4.1.0
 
 ## Interfaccia bilingue

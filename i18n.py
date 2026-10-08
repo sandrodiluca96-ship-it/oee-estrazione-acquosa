@@ -49,6 +49,9 @@ IT = {
 }
 
 EN = {
+    "Dashboard mensile Lauria": "Lauria monthly dashboard",
+    "Consuntivo e chiusura lotti": "Batch completion and final quantity",
+    "Turno già salvato: correggi gli eventi dalla pagina Storico, senza salvarlo nuovamente.": "Shift already saved: correct events in History instead of saving it again.",
     "Produzione Lauria": "Lauria Production", "Pianificazione Comber": "Aqueous Extraction Planning",
     "Pianificazione Mescole": "Blending Planning", "Dashboard Mescole": "Blending Dashboard",
     "Dashboard OEE e OOE": "OEE and OOE Dashboard", "Dashboard OEE/OOE": "OEE/OOE Dashboard",
@@ -359,11 +362,6 @@ def configure_streamlit_translation(st):
                     data = data.copy()
                     for column in data.select_dtypes(include=["object", "string"]).columns:
                         data[column] = data[column].map(lambda value: translate(value) if isinstance(value, str) else value)
-                elif __method == "data_editor" and "macchina" in data.columns:
-                    language = get_language(st)
-                    reverse_names = {display: internal for internal, display in MACHINE_NAMES[language].items()}
-                    data = data.copy()
-                    data["macchina"] = data["macchina"].map(lambda value: machine_name(value, language))
             except Exception:
                 pass
             result = __original(self, data, *args, **kwargs)

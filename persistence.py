@@ -17,6 +17,9 @@ import streamlit as st
 
 
 KEY_COLUMNS = {
+    "yield_references": ["materia_prima"],
+    "yield_mapping": ["codice"],
+    "ooe_monthly_history": ["anno", "mese", "macchina"],
     "eventi": ["id_evento"],
     "turni": ["id_turno"],
     "produzioni": ["id"],
