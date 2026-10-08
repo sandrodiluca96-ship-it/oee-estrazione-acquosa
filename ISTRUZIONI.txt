@@ -1,5 +1,3 @@
-Aggiornamento 4.2.4 per app 4.2.3.
-Estrarre lo ZIP. Caricare app.py e monthly_dashboard.py nella radice del repository GitHub, sostituendo quelli presenti.
-Non caricare lo ZIP sul repository. Gli altri moduli e i CSV restano quelli del pacchetto 4.2.3.
-Dashboard: due reparti affiancati, KPI 2x2, grafici di produzione visibili, filtri compatti, tabelle con unita. Correzione colore Plotly e contrasto Aggiorna dati.
-Controllo sintassi Python completato. Verifica visiva e runtime finale da eseguire in Streamlit.
+Estrarre lo ZIP e caricare app.py e monthly_dashboard.py nella radice del repository, sostituendo i file esistenti. Confermare Commit changes e riavviare Streamlit.
+Versione 4.2.5: dashboard compatta, unita esplicite, grafici Plotly verificati, nessun elenco lotti aperti o avviso duplicati nella dashboard mensile.
+Verifica effettuata con Plotly reale e interfaccia Streamlit simulata, nelle viste mensile, settimanale e lotto, IT/EN. OOE simulato nel controllo UI; formule di calcolo non modificate.

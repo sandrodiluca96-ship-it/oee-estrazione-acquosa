@@ -205,14 +205,7 @@ def render_monthly_dashboard(productions,events,causes,targets,quality):
         dates=pd.to_datetime(events.loc[events.macchina==machine,'data_turno'],errors='coerce').dropna()
         if dates.empty or a<dates.min().date():return float('nan')
         return result['OOE']*100 if result and result['Ore totali']>0 else float('nan')
-    st.caption(tr('Calendario lunedì 06:00–sabato 06:00. Medie yield e taglio aritmetiche per lotto. OOE sui tempi registrati; la completezza dei turni va verificata.','Calendar Monday 06:00–Saturday 06:00. Arithmetic batch averages for yield and cut. OOE uses recorded time; shift completeness must be checked.'))
-    ndup=events.drop(columns=['id_evento']).duplicated().sum()
-    if ndup:
-        with st.expander(tr('Qualità dati · eventi ripetuti','Data quality · repeated events')):st.caption(tr(f'{ndup} eventi ripetuti: copie identiche escluse dal calcolo OOE, dati originali conservati.',f'{ndup} repeated events: identical copies excluded from OOE calculations; original data retained.'))
-    pending=pending_lots(events,productions,start,end)
-    if not pending.empty:
-        st.markdown('<div class="evra-status">'+tr(f'● Dati da completare · {len(pending)} lotti da verificare nel mese',f'● Incomplete data · {len(pending)} batches to review this month')+'</div>',unsafe_allow_html=True)
-        with st.expander(tr('Lotti da verificare','Batches to review')):st.dataframe(pending,hide_index=True)
+    st.caption(tr('Calendario lunedì 06:00–sabato 06:00. Medie yield e taglio aritmetiche per lotto. OOE sui tempi registrati.','Calendar Monday 06:00–Saturday 06:00. Arithmetic batch averages for yield and cut. OOE uses recorded time.'))
     labels={'ooe_pct':'OOE (%)','kg_droga':tr('Materia prima (kg)','Raw material (kg)'), 'kg_puro':tr('Secco reale (kg)','Actual dry solids (kg)'),
       'kg_puro_equivalente':tr('Secco equivalente (kg)','Equivalent dry solids (kg)'), 'yield_pct':'Mass Yield (%)','equivalent_yield_pct':tr('Yield equivalente (%)','Equivalent yield (%)'),
       'kg_semilavorato':tr('Semilavorato reale (kg)','Actual semi-finished (kg)'), 'semi_equivalent':tr('Semilavorato equivalente (kg)','Equivalent semi-finished (kg)'), 'cut_pct':tr('Taglio medio (%)','Mean excipient cut (%)')}
@@ -277,7 +270,7 @@ def render_monthly_dashboard(productions,events,causes,targets,quality):
                 if metric=='yield_pct':fig.add_trace(go.Scatter(x=[p[0] for p in points],y=[p[4] for p in points],mode='lines',line_dash='dash',name=tr('Storico degli stessi lotti','Matched batch historical mean'),connectgaps=False))
             for index,trace in enumerate(fig.data):
                 if not (view=='batch' and index==0):trace.update(line_color=accent if index==0 else '#8997a3',line_width=3 if index==0 else 2)
-            fig.update_layout(title='Mass Yield (%)' if view=='batch' else labels[metric],height=380,hovermode='closest',margin=dict(l=20,r=20,t=55,b=20),legend=dict(orientation='h',y=1.12,x=0),font=dict(family='Arial',size=13,color='#24313a'),paper_bgcolor='#282d50',plot_bgcolor='#282d50',title_font_color='#24313a',legend_font_color='#425466')
+            fig.update_layout(title='Mass Yield (%)' if view=='batch' else labels[metric],height=380,hovermode='closest',margin=dict(l=20,r=20,t=55,b=20),legend=dict(orientation='h',y=1.12,x=0),font=dict(family='Arial',size=13,color='#24313a'),paper_bgcolor='#ffffff',plot_bgcolor='#ffffff',title_font_color='#24313a',legend_font_color='#425466')
             fig.update_xaxes(showgrid=False)
             chart_unit='%' if view=='batch' or metric.endswith('_pct') else 'kg'
             fig.update_yaxes(title_text=chart_unit,ticksuffix=' '+chart_unit,gridcolor='rgba(135,158,170,0.15)',zeroline=False)
@@ -285,7 +278,11 @@ def render_monthly_dashboard(productions,events,causes,targets,quality):
                 fig.add_annotation(text=tr('Dati non disponibili per il KPI selezionato','No data available for the selected KPI'),xref='paper',yref='paper',x=.5,y=.5,showarrow=False,font_color='#425466')
             st.plotly_chart(fig,use_container_width=True,theme=None)
             with st.expander(tr('Confronti completi · Mese, YTD, LYTD e LY','Full comparisons · Month, YTD, LYTD and LY')):
-                st.dataframe(summary.style.format({c:'{:,.2f}' for c in summary.columns if c not in ('Unità / Unit','Unità Δ / Δ unit')},na_rep=tr('N/D','N/A')),use_container_width=True)
+                display_summary=summary.copy()
+                for column in display_summary.columns:
+                    if column not in ('Unità / Unit','Unità Δ / Δ unit'):
+                        display_summary[column]=display_summary[column].map(lambda value:tr('N/D','N/A') if pd.isna(value) else (f'{value:,.2f}'.replace(',', 'X').replace('.', ',').replace('X','.') if st.session_state.get('ui_language')!='English' else f'{value:,.2f}'))
+                st.dataframe(display_summary,use_container_width=True)
             if partial:st.caption(tr('Mese in corso: il Mese LY riporta il mese intero dell’anno precedente; lo scostamento nelle schede è sospeso.','Month in progress: Month LY shows the entire prior-year month; card deltas are suspended.'))
             detail=filtered[(filtered.date>=pd.Timestamp(start))&(filtered.date<=pd.Timestamp(end))]
             with st.expander(tr('Dettaglio lotti del mese','Monthly batch details')):
