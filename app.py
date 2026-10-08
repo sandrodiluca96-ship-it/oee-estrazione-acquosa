@@ -31,7 +31,7 @@ from oee_analytics import (
 
 st.set_page_config(page_title="OEE Produzione Lauria", page_icon="🏭", layout="wide")
 
-VERSIONE = "4.2.6"
+VERSIONE = "4.2.7"
 QUALITA = 0.95
 PROCESS_MACHINES = ["Comber", "EV200", "Spray Dryer"]
 EFFECTIVENESS_MACHINES = ["Comber", "Spray Dryer"]
@@ -1036,6 +1036,21 @@ def dashboard_table(df, today):
     return '<div class="table-wrap"><h3>'+translate('Production (kg) by line')+'</h3><table class="prod-table"><thead><tr>'+"".join(f"<th>{translate(h)}</th>" for h in heads)+"</tr></thead><tbody>"+"".join(body)+"</tbody></table></div>"
 
 
+def render_monthly_production_target(df,report_date):
+    month_start=report_date.replace(day=1)
+    week_start=report_date-timedelta(days=report_date.weekday())
+    previous_end=month_start-timedelta(days=1)
+    try:ly=report_date.replace(year=report_date.year-1)
+    except ValueError:ly=report_date.replace(year=report_date.year-1,day=28)
+    yesterday=previous_workday(report_date)
+    periods={"Yesterday":(yesterday,yesterday),"Week":(week_start,report_date),"Month":(month_start,report_date),"Previous Month":(previous_end.replace(day=1),previous_end),"YTD Production":(report_date.replace(month=1,day=1),report_date),"Last year YTD":(ly.replace(month=1,day=1),ly)}
+    st.subheader("Produzione vs obiettivo")
+    st.caption(f"Data report: {report_date:%d/%m/%Y}. YTD e LYTD di questa sezione sono riferiti alla stessa data; gli obiettivi mensili e annuali sono quelli del periodo completo.")
+    summary_band("Estrazione acquosa","Pure equivalent output (15% minimum basis)","navy",df,"Comber","equivalente",periods)
+    summary_band("Essiccazione Spray Dryer","Total semi-finished product output","green",df,"Spray Dryer","fisico",periods)
+    st.markdown(dashboard_table(df,report_date),unsafe_allow_html=True)
+
+
 def gauge(value, title):
     fig=go.Figure(go.Indicator(mode="gauge+number",value=value*100,number={"suffix":"%"},title={"text":translate(title)},gauge={"axis":{"range":[0,100]},"bar":{"color":"#238B73"},"steps":[{"range":[0,60],"color":"#F3B5B5"},{"range":[60,80],"color":"#F7D98A"},{"range":[80,100],"color":"#8DDBBE"}]}))
     fig.update_layout(height=290,margin=dict(l=25,r=25,t=55,b=15),paper_bgcolor="white",font_color="#24313A")
@@ -1261,7 +1276,7 @@ if st.sidebar.button("Aggiorna dati", key="refresh_database"):
     st.rerun()
 
 if page=="Dashboard mensile Lauria":
-    render_monthly_dashboard(prep_production(), read_csv(EVENTI_FILE, COL_EVENTI), cause_config(), _effectiveness_targets(), QUALITA)
+    render_monthly_dashboard(prep_production(), read_csv(EVENTI_FILE, COL_EVENTI), cause_config(), _effectiveness_targets(), QUALITA, production_target_renderer=lambda report_date:render_monthly_production_target(prep_production(),report_date))
 elif page=="Consuntivo e chiusura lotti":
     render_late_completion()
 elif page=="Pianificazione Comber":

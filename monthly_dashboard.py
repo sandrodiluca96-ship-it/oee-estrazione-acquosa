@@ -194,9 +194,21 @@ def fixed_batch_chart(frame,metric,title,accent,start,end):
         elif metric=='kg_droga':lines += [tr('Materia prima lavorata: ','Raw material processed: ')+chart_number(r.kg_droga,'kg')]
         else:lines += [tr('Semilavorato reale: ','Actual semi-finished: ')+chart_number(r.kg_semilavorato,'kg'),tr('Semilavorato equivalente: ','Equivalent semi-finished: ')+chart_number(r.semi_equivalent,'kg'),tr('Taglio: ','Excipient cut: ')+chart_number(r.cut_pct,'%')]
         texts.append('<br>'.join(lines))
-    fig=go.Figure(go.Scatter(x=z.date,y=z[metric],mode='lines+markers',line=dict(color=accent,width=2),marker=dict(size=7),text=texts,name=tr('Reale','Actual'),hovertemplate='%{text}<extra></extra>',connectgaps=False))
+    plotted=z[metric] if metric=='yield_pct' else z[metric].cumsum()
+    if metric!='yield_pct':
+        texts=[text+'<br>'+tr('Totale cumulato: ','Cumulative total: ')+chart_number(value,'kg') for text,value in zip(texts,plotted)]
+    fig=go.Figure(go.Scatter(x=z.date,y=plotted,mode='lines+markers',line=dict(color=accent,width=2),marker=dict(size=7),text=texts,name=tr('Reale','Actual'),hovertemplate='%{text}<extra></extra>',connectgaps=False))
     if metric=='yield_pct':fig.add_trace(go.Scatter(x=z.date,y=z.reference_pct,mode='lines+markers',line=dict(color='#8997a3',dash='dash'),name=tr('Resa storica','Historical yield'),text=texts,hovertemplate='%{text}<extra></extra>',connectgaps=False))
+    if metric!='yield_pct':
+        valid=plotted.dropna()
+        total=float(valid.iloc[-1]) if not valid.empty else float('nan')
+        trace=fig.data[0]
+        trace.x=[pd.Timestamp(start)]+list(z.date)+[pd.Timestamp(end)]
+        trace.y=[0]+list(plotted)+[total]
+        trace.text=[tr('Inizio mese · 0 kg','Month start · 0 kg')]+texts+[tr('Totale del periodo: ','Period total: ')+chart_number(total,'kg')]
+        fig.update_traces(line_shape='hv')
     fig=style_report_chart(fig,title,unit)
+    if metric!='yield_pct':fig.update_yaxes(rangemode='tozero')
     fig.update_xaxes(range=[pd.Timestamp(start)-pd.Timedelta(hours=12),pd.Timestamp(end)+pd.Timedelta(hours=12)])
     return fig
 
@@ -213,12 +225,15 @@ def annual_chart(frame,metric,title,accent,year,month,end,partial):
             v=metrics(z)[metric];unit='%' if metric=='yield_pct' else 'kg'
             xs.append(date(year,m,1));ys.append(v)
             texts.append(f'{m:02d}/{report_year}<br>'+chart_number(v,unit)+'<br>'+tr('Lotti: ','Batches: ')+str(z.lotto.nunique())+(('<br>'+tr('Mese parziale','Partial month')) if partial and m==month else ''))
+        if metric!='yield_pct':
+            ys=pd.Series(ys,dtype=float).cumsum().tolist()
+            texts=[text+'<br>'+tr('Totale cumulato: ','Cumulative total: ')+chart_number(value,'kg') for text,value in zip(texts,ys)]
         fig.add_trace(go.Scatter(x=xs,y=ys,mode='lines+markers',line=dict(color=color,dash=dash),name=str(report_year),text=texts,hovertemplate='%{text}<extra></extra>',connectgaps=False))
     fig=style_report_chart(fig,title,'%' if metric=='yield_pct' else 'kg')
     fig.update_xaxes(tickformat='%m/%Y')
     return fig
 
-def render_monthly_dashboard(productions,events,causes,targets,quality):
+def render_monthly_dashboard(productions,events,causes,targets,quality,production_target_renderer=None):
     st.markdown('''<style>
 [data-testid="stSidebar"]{min-width:260px!important}
 [data-testid="stSidebar"] .stButton>button{background:#176a79!important;color:white!important;width:100%;border:none}
@@ -298,27 +313,16 @@ def render_monthly_dashboard(productions,events,causes,targets,quality):
                 records.append(row)
             summary=pd.DataFrame(records).set_index('KPI')
             report_tables.append('<h2>'+machine+'</h2>'+summary.to_html(float_format=lambda v:f'{v:,.2f}',na_rep='N/D'))
-            st.caption(tr('Δ delle percentuali in punti percentuali. YTD/LYTD fino all’ultimo mese chiuso selezionato.','Percentage differences are percentage points. YTD/LYTD end at the selected last closed month.'))
-            with st.expander(tr('Confronti completi · Mese, YTD, LYTD e LY','Full comparisons · Month, YTD, LYTD and LY')):
-                display_summary=summary.copy()
-                for column in display_summary.columns:
-                    if column not in ('Unità / Unit','Unità Δ / Δ unit'):
-                        display_summary[column]=display_summary[column].map(lambda value:tr('N/D','N/A') if pd.isna(value) else (f'{value:,.2f}'.replace(',', 'X').replace('.', ',').replace('X','.') if st.session_state.get('ui_language')!='English' else f'{value:,.2f}'))
-                st.dataframe(display_summary,use_container_width=True)
-            if partial:st.caption(tr('Mese in corso: il Mese LY riporta il mese intero dell’anno precedente; lo scostamento nelle schede è sospeso.','Month in progress: Month LY shows the entire prior-year month; card deltas are suspended.'))
-            detail=md[(md.date>=pd.Timestamp(start))&(md.date<=pd.Timestamp(end))]
-            with st.expander(tr('Dettaglio lotti del mese','Monthly batch details')):
-                cols=['data_turno','lotto','descrizione','kg_droga','kg_puro','yield_pct','reference_pct','delta_pp'] if machine=='Comber' else ['data_turno','lotto','descrizione','kg_semilavorato','pct_puro_semilavorato','cut_pct','semi_equivalent','note']
-                st.dataframe(detail[cols].rename(columns={'data_turno':tr('Data produzione','Production date'),'lotto':tr('Lotto','Batch'),'descrizione':tr('Prodotto','Product'),'kg_droga':tr('Materia prima (kg)','Raw material (kg)'),'kg_puro':tr('Secco reale (kg)','Actual dry solids (kg)'),'yield_pct':'Mass Yield (%)','reference_pct':tr('Resa storica (%)','Historical yield (%)'),'delta_pp':tr('Δ resa (p.p.)','Yield Δ (p.p.)'),'kg_semilavorato':tr('Semilavorato reale (kg)','Actual semi-finished (kg)'),'pct_puro_semilavorato':tr('Estratto puro (%)','Pure extract (%)'),'cut_pct':tr('Taglio (%)','Excipient cut (%)'),'semi_equivalent':tr('Semilavorato equivalente (kg)','Equivalent semi-finished (kg)'),'note':tr('Note','Notes')}),hide_index=True,use_container_width=True)
-            if machine=='Comber' and detail.reference_pct.isna().any():st.caption(tr('Alcuni prodotti non hanno un riferimento associato: nessun confronto automatico per questi lotti.','Some products have no mapped reference: no automatic comparison for those batches.'))
-    chart_specs=[('Comber','yield_pct','Mass Yield (%)','#187c92'),('Comber','kg_droga',tr('Materia prima lavorata (kg)','Raw material processed (kg)'),'#187c92'),('Spray Dryer','kg_semilavorato',tr('Semilavorato prodotto (kg)','Semi-finished produced (kg)'),'#b87523')]
+    if production_target_renderer is not None:
+        production_target_renderer(end)
+    chart_specs=[('Comber','yield_pct','Mass Yield (%)','#187c92'),('Comber','kg_droga',tr('Materia prima · cumulato (kg)','Raw material · cumulative (kg)'),'#187c92'),('Spray Dryer','kg_semilavorato',tr('Semilavorato · cumulato (kg)','Semi-finished · cumulative (kg)'),'#b87523')]
     st.subheader(tr('Andamento del mese selezionato','Selected month trends'))
     for col,(machine,metric,title,accent) in zip(st.columns(3),chart_specs):
         with col:st.plotly_chart(fixed_batch_chart(d[d.macchina==machine],metric,title,accent,start,end),use_container_width=True,theme=None)
     with st.expander(tr('Andamento da inizio anno · confronto anno precedente','Year-to-date trends · prior-year comparison')):
         for col,(machine,metric,title,accent) in zip(st.columns(3),chart_specs):
             with col:st.plotly_chart(annual_chart(d[d.macchina==machine],metric,title,accent,year,month,end,partial),use_container_width=True,theme=None)
-        st.caption(tr('Resa: media aritmetica dei lotti del mese. Quantità: somma mensile. Il mese in corso è parziale; il confronto LY di quel mese è sospeso.','Yield: arithmetic mean of monthly batch yields. Quantities: monthly totals. Current month is partial; its LY comparison is omitted.'))
+        st.caption(tr('Resa: media aritmetica dei lotti del mese. Quantità: cumulato delle somme mensili. Il mese in corso è parziale; il confronto LY di quel mese è sospeso.','Yield: arithmetic mean of monthly batch yields. Quantities: cumulative monthly totals. Current month is partial; its LY comparison is omitted.'))
     report='<html><meta charset="utf-8"><style>body{font-family:Arial;margin:25px}table{border-collapse:collapse;font-size:12px}td,th{border:1px solid #ddd;padding:6px}@media print{button{display:none}}</style><button onclick="window.print()">Print / Stampa</button><h1>Lauria '+str(year)+'-'+str(month).zfill(2)+'</h1><p>OOE; arithmetic batch mean yield and cut. Production totals may be incomplete. Review batch warnings in the app.</p>'+''.join(report_tables)+'</html>'
     st.download_button(tr('Scarica report stampabile','Download printable report'),report.encode('utf-8'),'Lauria_monthly_report.html','text/html',key='monthly_print')
     with st.expander(tr('Riferimenti storici e associazione codici','Historical references and code mapping')):
