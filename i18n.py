@@ -247,6 +247,23 @@ def machine_name(machine, language=None):
     return MACHINE_NAMES.get(language, MACHINE_NAMES["Italiano"]).get(machine, machine)
 
 
+EN.update({
+    'data_turno':'Production date','turno':'Shift','ora_inizio':'Start time','ora_fine':'End time',
+    'descrizione':'Product','tipo_produzione':'Batch operation','kg_polvere_finale':'Final powder (kg)',
+    'lotto':'Batch','ultima_data':'Last date','chiuso':'Closed','quantita_presente':'Quantity available',
+    'kg_droga':'Raw material (kg)','kg_puro':'Actual dry solids (kg)','kg_puro_equivalente':'Equivalent dry solids (kg)',
+    'kg_semilavorato':'Semi-finished (kg)','pct_puro_semilavorato':'Pure extract (%)',
+    'materia_prima':'Raw material','yield_pct':'Mass Yield (%)','codice':'Code','anno':'Year','mese':'Month',
+    'macchina':'Machine','ooe_pct':'OOE (%)','ore_riferimento':'Reference hours',
+    'cause_id':'Cause ID','causale':'Cause','categoria':'Category','esclusa_pianificato':'Excluded from OEE',
+    'penalizza_ooe':'Penalizes OOE','perdita_tecnica':'Technical loss','nota_obbligatoria':'Mandatory note','attiva':'Active',
+    'Aggiorna dati':'Refresh data','Salva modifiche causali':'Save cause changes',
+    'Confermo la riclassificazione retroattiva delle causali':'I confirm retrospective cause reclassification',
+    'Fuori OEE':'Excluded from OEE','Penalizza OOE':'Penalizes OOE','Perdita tecnica':'Technical loss','Nota obbligatoria':'Mandatory note',
+    'Fermo programmato':'Planned downtime','Organizzativa':'Organizational','Tecnica':'Technical','Operativa':'Operational',
+    'Lavaggio':'Washing','Pulizia':'Cleaning','Guasto':'Breakdown',
+})
+
 def translate(text, language=None):
     if not isinstance(text, str):
         return text

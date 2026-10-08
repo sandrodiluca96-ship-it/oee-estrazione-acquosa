@@ -1,4 +1,5 @@
-Versione 4.2.9. Sostituire app.py e monthly_dashboard.py nella radice GitHub, quindi riavviare Streamlit.
-Mass Yield annuale senza linea LY; resa storica per prodotto mantenuta nella vista del mese. Quantita mensili con linea cumulativa giornaliera nello stesso stile dell annuale, senza barre. Tooltip con incrementi e lotti.
-Intestazioni espandibili chiare e testo scuro. Production vs Target sempre in inglese. Caselle OEE e OOE distinte.
-Verificate sintassi e configurazioni grafici Plotly con interfaccia simulata IT/EN. Verifica visiva finale in Streamlit.
+Versione 4.2.11: sostituire app.py, monthly_dashboard.py e i18n.py su GitHub e riavviare Streamlit.
+Filtro chiusi: ora tabella e menu includono i chiusi e i consuntivi storici senza eventi; questi ultimi sono visibili ma non modificabili con la funzione basata su evento finale.
+Estese traduzioni intestazioni, stati e causali; testo libero e nomi prodotto restano originali. Production vs Target resta inglese.
+Test retroattivita lavaggio su evento storico: Fuori OEE SI -> NO, OEE 100 -> 80%, OOE resta 80% con Penalizza OOE SI. Il test valida formule, non le impostazioni del database online. OOE storico manuale non ricalcolato.
+Controllati sintassi, grafici e lista chiusi con UI simulata.

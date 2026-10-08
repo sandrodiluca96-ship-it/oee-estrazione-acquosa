@@ -106,15 +106,25 @@ def render_late_completion():
     show_closed=st.checkbox(tr('Mostra anche i lotti chiusi','Also show closed batches'),key='late_show_closed')
     dates=pd.to_datetime(ev.data_turno,errors='coerce').dropna()
     pending=pending_lots(events,productions,dates.min().date(),dates.max().date())
-    if not pending.empty:st.dataframe(pending,hide_index=True,use_container_width=True)
-    allowed=set(pending.lotto.astype(str)) if not pending.empty else set()
-    options=sorted(ev.lotto.unique()) if show_closed else sorted(v for v in ev.lotto.unique() if str(v).strip().upper() in allowed)
+    ev['lot_key']=ev.lotto.astype(str).str.strip().str.upper()
+    prod_keys=productions.lotto.astype(str).str.strip().str.upper()
+    all_keys=sorted(set(ev.lot_key)|set(prod_keys[productions.macchina=='Spray Dryer']))
+    incomplete=set(pending.lotto.astype(str)) if not pending.empty else set()
+    options=all_keys if show_closed else [key for key in all_keys if key in incomplete]
+    listing=[]
+    for key in options:
+        e=ev[ev.lot_key==key];p=productions[(productions.macchina=='Spray Dryer')&prod_keys.eq(key)]
+        names=pd.concat([e.descrizione,p.descrizione]).dropna()
+        qty=pd.to_numeric(p.kg_semilavorato,errors='coerce').sum(min_count=1)
+        listing.append({tr('Lotto','Batch'):key,tr('Prodotto','Product'):str(names.iloc[-1]) if not names.empty else '',tr('Semilavorato (kg)','Semi-finished (kg)'):qty,tr('Stato','Status'):tr('Da completare','To complete') if key in incomplete else tr('Consuntivato','Consuntivated')})
+    if listing:st.dataframe(pd.DataFrame(listing),hide_index=True,use_container_width=True)
     if not options:
-        st.success(tr('Nessun lotto aperto da completare.','No open batches to complete.'))
-        return
+        st.success(tr('Nessun lotto aperto da completare.','No open batches to complete.'));return
     if st.session_state.get('late_lot') not in options:st.session_state['late_lot']=options[0]
     lot=st.selectbox(tr('Lotto','Batch'),options,key='late_lot')
-    rows=ev[ev.lotto==lot].sort_values(['data_turno','turno','ora_inizio'])
+    rows=ev[ev.lot_key==lot].sort_values(['data_turno','turno','ora_inizio'])
+    if rows.empty:
+        st.info(tr('Lotto storico presente nel consuntivo, senza eventi di turno. È visibile, ma questa funzione richiede un evento di fine produzione per modificare la quantità.','Historical batch exists in production totals without shift events. It is visible, but editing here requires a final production event.'));return
     st.dataframe(rows[['data_turno','turno','ora_inizio','ora_fine','descrizione','tipo_produzione','kg_polvere_finale']],hide_index=True)
     selected=st.selectbox(tr('Evento di fine produzione','Final production event'),rows.id_evento.tolist(),index=len(rows)-1,
         format_func=lambda v: ' · '.join(str(rows[rows.id_evento==v].iloc[0][c]) for c in ['data_turno','turno','ora_fine']),key='late_event_'+str(lot))
@@ -172,9 +182,10 @@ def style_report_chart(fig,title,unit):
 
 def month_batch_data(frame,start,end):
     z=frame[frame.date.between(pd.Timestamp(start),pd.Timestamp(end))].copy()
+    if 'completed' not in z:z['completed']=True
     z['batch_key']=z.lotto.fillna('').astype(str).str.strip().str.upper()
     # Each point represents one consuntivated batch in this reporting month.
-    agg={'date':'max','lotto':'first','descrizione':'first','reference_pct':'first','pct_puro_semilavorato':'mean'}
+    agg={'date':'max','lotto':'first','descrizione':'first','reference_pct':'first','pct_puro_semilavorato':'mean','completed':'max'}
     for c in ['kg_droga','kg_puro','kg_puro_equivalente','kg_semilavorato']:agg[c]=lambda x:x.sum(min_count=1)
     z=z.groupby('batch_key',dropna=False,sort=False).agg(agg).reset_index(drop=True)
     z['yield_pct']=z.kg_puro.div(z.kg_droga.where(z.kg_droga>0))*100
@@ -191,9 +202,9 @@ def fixed_batch_chart(frame,metric,title,accent,start,end):
         lines=[html.escape(str(r.descrizione)),tr('Lotto: ','Batch: ')+html.escape(str(r.lotto)),r.date.strftime('%d/%m/%Y')]
         if metric=='yield_pct':
             direction=tr('Sopra storico','Above reference') if r.delta_pp>0 else tr('Sotto storico','Below reference') if r.delta_pp<0 else tr('In linea','In line')
-            lines += ['Mass Yield: '+chart_number(r.yield_pct,'%'),tr('Resa storica: ','Historical yield: ')+chart_number(r.reference_pct,'%'),tr('Scostamento: ','Difference: ')+chart_number(r.delta_pp,'p.p.')+((' · '+direction) if pd.notna(r.delta_pp) else ''),tr('Materia prima: ','Raw material: ')+chart_number(r.kg_droga,'kg'),tr('Secco reale: ','Actual dry solids: ')+chart_number(r.kg_puro,'kg')]
+            lines += ['Mass Yield: '+chart_number(r.yield_pct,'%'),tr('Resa storica: ','Historical yield: ')+chart_number(r.reference_pct,'%'),tr('Scostamento: ','Difference: ')+chart_number(r.delta_pp,'p.p.')+((' · '+direction) if pd.notna(r.delta_pp) else '')]
         elif metric=='kg_droga':lines += [tr('Materia prima lavorata: ','Raw material processed: ')+chart_number(r.kg_droga,'kg')]
-        else:lines += [tr('Semilavorato reale: ','Actual semi-finished: ')+chart_number(r.kg_semilavorato,'kg'),tr('Semilavorato equivalente: ','Equivalent semi-finished: ')+chart_number(r.semi_equivalent,'kg'),tr('Taglio: ','Excipient cut: ')+chart_number(r.cut_pct,'%')]
+        else:lines += [tr('Semilavorato: ','Semi-finished: ')+chart_number(r.kg_semilavorato,'kg')]
         texts.append('<br>'.join(lines))
     if metric=='yield_pct':
         fig=go.Figure(go.Scatter(x=z.date,y=z[metric],mode='lines+markers',line=dict(color=accent,width=2),marker=dict(size=7),text=texts,name=tr('Reale','Actual'),hovertemplate='%{text}<extra></extra>',connectgaps=False))
@@ -203,9 +214,16 @@ def fixed_batch_chart(frame,metric,title,accent,start,end):
         days=pd.date_range(start,end,freq='D')
         daily=z.groupby(z.date.dt.normalize())[metric].sum(min_count=1).reindex(days,fill_value=0)
         cumulative=daily.fillna(0).cumsum()
-        details=z.assign(tooltip=texts).groupby(z.date.dt.normalize()).tooltip.agg(lambda rows:'<br><br>'.join(rows)).reindex(days,fill_value='')
-        hover=[day.strftime('%d/%m/%Y')+'<br>'+tr('Incremento del giorno: ','Daily increase: ')+chart_number(qty,'kg')+'<br>'+tr('Totale cumulato: ','Cumulative total: ')+chart_number(total,'kg')+('<br><br>'+detail if detail else '<br>'+tr('Nessun incremento registrato','No recorded increase')) for day,qty,total,detail in zip(days,daily,cumulative,details)]
-        fig=go.Figure(go.Scatter(x=days,y=cumulative,mode='lines+markers',line=dict(color=accent,width=3),marker=dict(size=4),text=hover,name=tr('Cumulato','Cumulative'),hovertemplate='%{text}<extra></extra>'))
+        fig=go.Figure(go.Scatter(x=days,y=cumulative,mode='lines',line=dict(color=accent,width=3),name=tr('Cumulato','Cumulative'),hoverinfo='skip',showlegend=False))
+        completed=z[z.completed & z[metric].gt(0)].copy()
+        marker_dates=[];marker_values=[];marker_text=[]
+        for day,rows in completed.groupby(completed.date.dt.normalize()):
+            lines=[day.strftime('%d/%m/%Y')]
+            for _,r in rows.iterrows():
+                lines += [html.escape(str(r.descrizione)),tr('Lotto: ','Batch: ')+html.escape(str(r.lotto))+' · '+chart_number(r[metric],'kg')]
+            lines.append(tr('Cumulato mese: ','Month cumulative: ')+chart_number(cumulative.loc[day],'kg'))
+            marker_dates.append(day);marker_values.append(cumulative.loc[day]);marker_text.append('<br>'.join(lines))
+        fig.add_trace(go.Scatter(x=marker_dates,y=marker_values,mode='markers',marker=dict(size=7,color=accent),text=marker_text,hovertemplate='%{text}<extra></extra>',name=tr('Lotti completati','Completed batches'),showlegend=False))
         fig=style_report_chart(fig,title,unit)
         fig.update_yaxes(rangemode='tozero')
     fig.update_xaxes(range=[pd.Timestamp(start)-pd.Timedelta(hours=12),pd.Timestamp(end)+pd.Timedelta(hours=12)])
@@ -250,6 +268,15 @@ def render_monthly_dashboard(productions,events,causes,targets,quality,productio
     refs=read_optional_dataframe(REF_PATH,REF_COLS);mapping=read_optional_dataframe(MAP_PATH,MAP_COLS)
     refs.yield_pct=pd.to_numeric(refs.yield_pct,errors='coerce')
     d=attach_references(d,refs,mapping)
+    # Consuntivated historical batches have no event log; recorded modern batches use explicit completion states.
+    event_keys=events.lotto.astype(str).str.strip().str.upper()
+    completion=[]
+    for r in d.itertuples():
+        e=events[(events.macchina==r.macchina)&event_keys.eq(str(r.lotto).strip().upper())]
+        if e.empty:completion.append(True)
+        elif r.macchina=='Comber':completion.append(e.get('stato_estrazione',pd.Series(index=e.index,dtype=str)).eq('Completata').any() or e.tipo_produzione.eq('Chiusura lotto').any())
+        else:completion.append(e.get('stato_lotto',pd.Series(index=e.index,dtype=str)).eq('Completato').any() or e.tipo_produzione.eq('Chiusura lotto').any())
+    d['completed']=completion
     today=(datetime.now(ZoneInfo('Europe/Rome'))-timedelta(hours=6)).date()
     years=sorted(set(d.date.dropna().dt.year.astype(int))|{today.year},reverse=True)
     period_cols=st.columns([1,2,3])
@@ -283,7 +310,7 @@ def render_monthly_dashboard(productions,events,causes,targets,quality,productio
         dates=pd.to_datetime(events.loc[events.macchina==machine,'data_turno'],errors='coerce').dropna()
         if dates.empty or a<dates.min().date():return float('nan')
         return result[indicator]*100 if result and result['Ore totali']>0 else float('nan')
-    st.caption(tr('Calendario lunedì 06:00–sabato 06:00. Medie yield e taglio aritmetiche per lotto. OOE sui tempi registrati.','Calendar Monday 06:00–Saturday 06:00. Arithmetic batch averages for yield and cut. OOE uses recorded time.'))
+    st.caption(tr('Calendario lunedì 06:00–sabato 06:00. Media yield aritmetica per lotto. OOE sui tempi registrati.','Calendar Monday 06:00–Saturday 06:00. Arithmetic batch mean yield. OOE uses recorded time.'))
     labels={'oee_pct':'OEE (%)','ooe_pct':'OOE (%)','kg_droga':tr('Materia prima (kg)','Raw material (kg)'), 'kg_puro':tr('Secco reale (kg)','Actual dry solids (kg)'),
       'kg_puro_equivalente':tr('Secco equivalente (kg)','Equivalent dry solids (kg)'), 'yield_pct':'Mass Yield (%)','equivalent_yield_pct':tr('Yield equivalente (%)','Equivalent yield (%)'),
       'kg_semilavorato':tr('Semilavorato reale (kg)','Actual semi-finished (kg)'), 'semi_equivalent':tr('Semilavorato equivalente (kg)','Equivalent semi-finished (kg)'), 'cut_pct':tr('Taglio medio (%)','Mean excipient cut (%)')}
@@ -298,8 +325,8 @@ def render_monthly_dashboard(productions,events,causes,targets,quality,productio
                 z=md[(md.date>=pd.Timestamp(a))&(md.date<=pd.Timestamp(b))];result=metrics(z);result['ooe_pct']=ooe(machine,a,b);result['oee_pct']=ooe(machine,a,b,'OEE');return result
             periods={tr('Mese','Month'):values(start,end),tr('Mese LY','Month LY'):values(date(year-1,month,1),prev_end),
                      'YTD':values(date(year,1,1),ytd_end),'LYTD':values(date(year-1,1,1),lytd_end),'LY':values(date(year-1,1,1),date(year-1,12,31))}
-            keys=['oee_pct','ooe_pct','kg_droga','kg_puro','kg_puro_equivalente','yield_pct','equivalent_yield_pct'] if machine=='Comber' else ['oee_pct','ooe_pct','kg_semilavorato','semi_equivalent','cut_pct']
-            main=['oee_pct','ooe_pct','kg_droga','kg_puro','yield_pct'] if machine=='Comber' else ['oee_pct','ooe_pct','kg_semilavorato','semi_equivalent','cut_pct']
+            keys=['oee_pct','ooe_pct','kg_droga','kg_puro','kg_puro_equivalente','yield_pct','equivalent_yield_pct'] if machine=='Comber' else ['oee_pct','ooe_pct','kg_semilavorato','semi_equivalent']
+            main=['oee_pct','ooe_pct','kg_droga','kg_puro','yield_pct'] if machine=='Comber' else ['oee_pct','ooe_pct','kg_semilavorato','semi_equivalent']
             for offset in range(0,len(main),2):
                 cards=st.columns(2)
                 for col,key in zip(cards,main[offset:offset+2]):
@@ -320,9 +347,9 @@ def render_monthly_dashboard(productions,events,causes,targets,quality,productio
     for col,(machine,metric,title,accent) in zip(st.columns(3),chart_specs):
         with col:st.plotly_chart(fixed_batch_chart(d[d.macchina==machine],metric,title,accent,start,end),use_container_width=True,theme=None)
     with st.expander(tr('Andamento da inizio anno · confronto LY solo sulle quantità','Year-to-date trends · LY comparison for quantities only')):
-        for col,(machine,metric,title,accent) in zip(st.columns(3),chart_specs):
+        for col,(machine,metric,title,accent) in zip(st.columns(2),chart_specs[1:]):
             with col:st.plotly_chart(annual_chart(d[d.macchina==machine],metric,title,accent,year,month,end,partial),use_container_width=True,theme=None)
-        st.caption(tr('Resa: media aritmetica dei lotti del mese. Quantità: cumulato delle somme mensili. Il mese in corso è parziale; il confronto LY di quel mese è sospeso.','Yield: arithmetic mean of monthly batch yields. Quantities: cumulative monthly totals. Current month is partial; its LY comparison is omitted.'))
+        st.caption(tr('Quantità: cumulato delle somme mensili. Il mese in corso è parziale; il confronto LY di quel mese è sospeso.','Quantities: cumulative monthly totals. Current month is partial; its LY comparison is omitted.'))
     report='<html><meta charset="utf-8"><style>body{font-family:Arial;margin:25px}table{border-collapse:collapse;font-size:12px}td,th{border:1px solid #ddd;padding:6px}@media print{button{display:none}}</style><button onclick="window.print()">Print / Stampa</button><h1>Lauria '+str(year)+'-'+str(month).zfill(2)+'</h1><p>OOE; arithmetic batch mean yield and cut. Production totals may be incomplete. Review batch warnings in the app.</p>'+''.join(report_tables)+'</html>'
     st.download_button(tr('Scarica report stampabile','Download printable report'),report.encode('utf-8'),'Lauria_monthly_report.html','text/html',key='monthly_print')
     with st.expander(tr('Riferimenti storici e associazione codici','Historical references and code mapping')):
