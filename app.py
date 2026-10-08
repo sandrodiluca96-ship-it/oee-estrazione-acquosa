@@ -31,7 +31,7 @@ from oee_analytics import (
 
 st.set_page_config(page_title="OEE Produzione Lauria", page_icon="🏭", layout="wide")
 
-VERSIONE = "4.2.3"
+VERSIONE = "4.2.4"
 QUALITA = 0.95
 PROCESS_MACHINES = ["Comber", "EV200", "Spray Dryer"]
 EFFECTIVENESS_MACHINES = ["Comber", "Spray Dryer"]
@@ -134,6 +134,8 @@ h1,h2,h3,h4{color:#17324D!important}.block-container{padding-top:1.4rem;max-widt
 [data-baseweb="input"]>div,[data-baseweb="select"]>div,[data-baseweb="textarea"]>div{background:#FFF!important}
 [data-baseweb="input"] *,[data-baseweb="select"] *,[data-baseweb="textarea"] *{color:var(--ink)!important}
 .stButton>button[kind="primary"],.stFormSubmitButton>button[kind="primary"]{background:#238B73;color:#FFF;border:0;font-weight:700}
+[data-testid="stSidebar"] .stButton>button{background:#176a79!important;color:#fff!important;border:none;width:100%}
+[data-testid="stSidebar"] .stButton>button p{color:#fff!important}
 .report-head{background:#FFF;border:1px solid var(--line);border-radius:10px 10px 0 0;padding:18px 22px}
 .report-title{font-size:30px;font-weight:800;color:#2D3339}.report-sub{color:#5C6770}
 .summary{display:grid;grid-template-columns:2fr repeat(6,1fr);color:#FFF;padding:11px 16px;align-items:center}

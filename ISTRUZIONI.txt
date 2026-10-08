@@ -1,0 +1,5 @@
+Aggiornamento 4.2.4 per app 4.2.3.
+Estrarre lo ZIP. Caricare app.py e monthly_dashboard.py nella radice del repository GitHub, sostituendo quelli presenti.
+Non caricare lo ZIP sul repository. Gli altri moduli e i CSV restano quelli del pacchetto 4.2.3.
+Dashboard: due reparti affiancati, KPI 2x2, grafici di produzione visibili, filtri compatti, tabelle con unita. Correzione colore Plotly e contrasto Aggiorna dati.
+Controllo sintassi Python completato. Verifica visiva e runtime finale da eseguire in Streamlit.
