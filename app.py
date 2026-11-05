@@ -31,7 +31,7 @@ from oee_analytics import (
 
 st.set_page_config(page_title="OEE Produzione Lauria", page_icon="🏭", layout="wide")
 
-VERSIONE = "4.2.11"
+VERSIONE = "4.3.0"
 QUALITA = 0.95
 PROCESS_MACHINES = ["Comber", "EV200", "Spray Dryer"]
 EFFECTIVENESS_MACHINES = ["Comber", "Spray Dryer"]
@@ -1269,11 +1269,11 @@ if not st.session_state.get("persistent_data_bootstrapped"):
     st.session_state["persistent_data_bootstrapped"]=True
 cause_config(persist_legacy=True)
 if LOGO_FILE.exists(): st.sidebar.image(str(LOGO_FILE),width=170)
-st.sidebar.markdown("### Produzione Lauria")
+st.sidebar.markdown("### Produzione · Lauria e Guanzate")
 area=st.sidebar.radio("Area",[
     "Comber","Pianificazione Comber","EV200","Spray Dryer","Mescole","Pianificazione Mescole","Dashboard Mescole",
     "Dashboard OEE/OOE","Production vs Target","Dashboard mensile Lauria","Consuntivo e chiusura lotti",
-    "Excel","Storico","Target","Anagrafiche e causali",
+    "Guanzate – Blending","Excel","Storico","Target","Anagrafiche e causali",
 ])
 page=f"Turno {area}" if area in MACCHINE else area
 st.sidebar.caption(f"Versione {VERSIONE} · Qualità standard {QUALITA:.0%}")
@@ -1281,7 +1281,10 @@ if st.sidebar.button("Aggiorna dati", key="refresh_database"):
     invalidate_data_cache()
     st.rerun()
 
-if page=="Dashboard mensile Lauria":
+if page=="Guanzate – Blending":
+    from guanzate_blending import render_guanzate_blending
+    render_guanzate_blending()
+elif page=="Dashboard mensile Lauria":
     render_monthly_dashboard(prep_production(), read_csv(EVENTI_FILE, COL_EVENTI), cause_config(), _effectiveness_targets(), QUALITA, production_target_renderer=lambda report_date:render_monthly_production_target(prep_production(),report_date))
 elif page=="Consuntivo e chiusura lotti":
     render_late_completion()

@@ -17,6 +17,7 @@ import streamlit as st
 
 
 KEY_COLUMNS = {
+    "guanzate_blending": ["id"],
     "yield_references": ["materia_prima"],
     "yield_mapping": ["codice"],
     "ooe_monthly_history": ["anno", "mese", "macchina"],
